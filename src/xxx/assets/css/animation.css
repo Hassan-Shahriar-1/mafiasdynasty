@@ -1,0 +1,216 @@
+.mv{
+
+ 
+    background: transparent;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+  
+  
+  }
+  
+  .mv-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+   
+    height: 30px;
+    width: 0;
+  }
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+
+
+
+button#clickme{width:20px; height:20px; background:#444; cursor:pointer;display:block; text-indent:-9999px}
+button#clickm{width:20px; height:20px; background:#444; cursor:pointer;display:block; text-indent:-9999px}
+div.mydiv{width:200px; height:200px;border:2px solid #666; position:fixed; left:-200px}
+div.rtdiv{width:200px; height:200px;border:2px solid #666; position:fixed; right:-200px}
+
+
+
+
+ .tipl {
+
+  animation-name: left;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+@keyframes left {
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
+}
+
+.tipr {
+
+  animation-name: right;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+@keyframes right {
+  0% {transform: translateX(100%);}
+  100% {transform: translateX(0);}
+}
+
+
+.dl1{
+  animation-delay: 1000ms;
+}
+.dl2{
+  animation-delay: 3000ms;
+}
+.dl3{
+  animation-delay: 5000ms;
+}
+.dl4{
+  animation-delay: 7000ms;
+}
+
+
+
+.trt  {
+
+  height: auto;
+  width: auto;
+  float: left;
+  animation: fadeIn ease 8s;
+ 
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}
+
+
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .01em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(100, end),
+    blink-caret .75s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(10, 10, 10); }
+}
+
+
+
+.trt h5 {
+
+  height: 300px;
+  width: 200px;
+  float: left;
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}

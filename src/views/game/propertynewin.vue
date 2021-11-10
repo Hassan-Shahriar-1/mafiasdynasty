@@ -1,0 +1,94 @@
+<template>
+    <div class="card border-0 ptnbg">
+        <div class="card-header blkgry">
+            <h4 class="titlefnt text-center">Property Name:</h4>
+        </div>
+        <div class="card-body px-1 blksdo blk50">
+            <div class="card bg-dark text-white border-0">
+                <img src='../../assets/img/property/p1.jpg' class="card-img w-100 " alt="">
+            </div>
+
+            
+            <div class="row Gp0m0  tmibg4 my-2 rounded ">
+                <div class=" col-12 d-flex justify-content-center">
+                    <h5 class="text-center blkrds  rounded sizv20 mb-2 p-2 titlefnt mt-1">Requirments <br></h5>
+                    <br> <br>
+                </div>
+                <div class="slider">
+                    <div class="col-2  px-1 rounded bmsdo slide"><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                    <div class="col-2  px-1 rounded bmsdo slide"><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                    <div class="col-2  px-1 rounded bmsdo slide"><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                    <div class="col-2  px-1 rounded bmsdo slide"><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                    <div class="col-2  px-1 rounded bmsdo slide"><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                    <div class="col-2  px-1 rounded bmsdo slide"><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                    <div class="col-2  px-1 rounded bmsdo slide"><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                    <div class="col-2  px-1 rounded bmsdo slide"><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                    <div class="col-2  px-1 rounded bmsdo slide"><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                    <div class="col-2  px-1 rounded bmsdo slide"><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                    <div class="col-2  px-1 rounded bmsdo slide"><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                    <div class="col-2  px-1 rounded bmsdo slide"><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                </div>
+                <div class="col-12">
+                        <h5 class="text-center accid text-danger dtlsfnt"> <div class=" iC-cash incb1"></div> Cash=1000</h5>
+                        <div class="d-flex justify-content-center ">
+                            <h6 class="btn nBtn button3 px-5 text-center sizv20 mb-1">Built</h6>
+                        </div>
+                </div>
+            </div>
+
+            
+
+            <div class="row Gp0m0 my-2 p-2 tmibg6 rounded">
+                    <h5 >level:12</h5>
+                <div class="col-12 Gp0m0">
+                        <div class="progress n_bar-a" style="height:10px;">
+                        <div class="progress-bar clRBred bgD0" id="itmBr" style="width:20%"></div>
+                    </div>
+                </div>
+
+                <div class="col-9 Gp0m0 ">
+                    <div class="row Gp0m0  rounded">
+                        <div class="slider">
+                        <div class="col-2 p-1 slide  "><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                        <div class="col-2 p-1 slide  "><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                        <div class="col-2 p-1 slide  "><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                        <div class="col-2 p-1 slide  "><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                        <div class="col-2 p-1 slide  "><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                        <div class="col-2 p-1 slide  "><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>
+                        <div class="col-2 p-1 slide  "><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div> 
+                        <div class="col-2 p-1 slide  "><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div> 
+                        <div class="col-2 p-1 slide  "><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div> 
+                        <div class="col-2 p-1 slide  "><img :src="require('../../assets/img/item/'+pimg.pm)" class="card-img rounded-0" alt=""><h6 class="text-center blkrds">x2</h6></div>   
+                    </div>
+                    </div>
+                </div>
+                <div class="col-3 Gp0m0">
+                    <h5 class="sizv30"><div class=" iC-cash incb1"></div>cash:500</h5>
+                    <div class="btn nBtn dpgenbtn sizv13 mt-1 button5">Upgrade</div>
+                </div>
+            </div>
+        </div>
+    </div>             
+</template>
+<script>
+export default {
+    data() {
+        return{
+                pimg:{
+                    pm:"1.gif",
+                    
+                },
+            
+        }        
+    },
+}
+</script>
+
+
+<style scoped>
+.slideover {
+  overflow-x: scroll;
+}
+</style>
+
+

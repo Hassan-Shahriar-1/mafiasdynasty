@@ -1,0 +1,345 @@
+<template>
+     <div @focus="handleFocus" @focusout="handleFocusOut" tabindex="0">    
+        <section class="fixed-bottom Gp0m0 jaldi"> 
+            <div class="mInMenu   w-100  "   v-for="(ssb, i) in MmnDtlst.sb" :key="i"  v-show="btmenusStl[ssb.name]">
+                    <div class="row sMnMnubg text-center Gp0m0 " id='Habib1'>  
+                        <div   v-for="(ssbY, bi) in ssb.ta" :key="bi" 
+                        type="button" @click="tcrtr(ssbY.clk,ssb.name)"     class="col justify-content-between btn blkgry rounded-0 nBtn fixed" >                                                  
+                        <span v-html='ssbY.icn'></span> <h6 class="sizv10">{{ ssbY.nm }}</h6></div>  
+                    </div> 
+            </div>
+
+            <div class="row Gp0m0  btn-group bw100 sMnMnubg text-center  jaldi  " role="group" aria-label="...">
+                <div  v-for="(smn, i) in MmnDtlst.mn" :key="i" 
+                type="button" @click="bMcShw(smn.clk)" class="btn clmsz2  nBtn rounded-0 blkgry Gp0m0 py-2"><span v-html='smn.icn'></span><h6 class="sizv10">{{ smn.nm }}</h6></div>  
+            </div>
+        </section>
+ </div>
+                                    
+</template>
+<script>
+export default {   
+    data(){
+        
+        return{
+            btmenusStl:{
+                home: false,
+                combat:false,
+                mission:false,
+                Godfather:false,
+                Stats:false,
+                Shop:false
+            },
+            MmnDtlst:{
+                    mn:[
+                         {
+                            nm:"Home", 
+                            icn:"<i class='fas fa-user-secret'></i>",
+                            clk:'home',
+                           
+                        },
+                            {
+                            nm:"Stats", 
+                            icn:"<i class='fab fa-artstation'></i>",
+                            clk:'Stats'
+                        },
+                        
+                       {
+                            nm:"Mission", 
+                            icn:"<i class='fas fa-box'></i>",
+                            clk:'mission'
+                        },
+                        {
+                            nm:"Combat", 
+                            icn:"<i class='fas fa-hat-cowboy'></i>",
+                            clk:'combat'
+                        },
+                         {
+                            nm:"Godfather", 
+                            icn:"<i class='fas fa-hotel'></i>",
+                            clk:'Godfather'
+                        },
+                     
+                         {
+                            nm:"Shop", 
+                            icn:"<i class='fas fa-store-alt'></i>",
+                            clk:'Shop'
+                        }
+                    ],
+                    sb:[
+                         {
+                             name:'home',
+                             ta:[
+                                        {
+                                            nm:"Mafia Home", 
+                                            icn:"<i class='fas fa-igloo'></i>",
+                                            clk:'/game/home/gtns'
+                                        },
+                                        
+                                         {
+                                            nm:"Blab", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/home/blab'
+                                        },
+                         
+                 
+                                        {
+                                            nm:"Discussion", 
+                                            icn:"<i class='fas fa-igloo'></i>",
+                                            clk:'/game/discussion'
+                                        },
+
+                                         {
+                                            nm:"Organization", 
+                                            icn:"<i class='fas fa-igloo'></i>",
+                                            clk:'/game/organization/gossipe'
+                                        },
+
+                                           {
+                                            nm:"Bank", 
+                                            icn:"<i class='fas fa-igloo'></i>",
+                                            clk:'bank'
+                                        },
+                                        
+                                           {
+                                            nm:"Notification", 
+                                            icn:"<i class='fas fa-bell'></i>",
+                                            clk:'/game/notification/activity'
+                                        },
+                                         {
+                                            nm:"FAQ", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/faq/general'
+                                        },
+                                       
+                                   
+                                ]
+                         },
+                        {
+                             name:'combat',
+                               ta:[
+                                    {
+                                        nm:"combat", 
+                                        icn:"<i class='fas fa-igloo'></i>",
+                                        clk:'/game/combat'
+                                    }
+                               ]
+                         },
+
+                            {
+                            name:'mission',
+                            ta:[
+                                    {
+                                    nm:"mission", 
+                                    icn:"<i class='fas fa-box'></i>",
+                                    clk:'/game/missionintro'
+                                },
+                            ]
+                         }, 
+
+
+                             
+                         {
+                             name:'Godfather',
+                             ta:[
+                                       
+                                         {
+                                            nm:"Attack", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/attack'
+                                        },
+
+                                         {
+                                            nm:"Attack2", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/attack2'
+                                        },
+                                         {
+                                            nm:"combat", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/combat'
+                                        },
+                                         {
+                                            nm:"loot", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/loot'
+                                        },
+                                        {
+                                            nm:"Mission", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/missionintro'
+                                        },
+                                      
+                                          {
+                                            nm:"Godfathers", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/Godfathers'
+                                        },
+
+                                           {
+                                            nm:"Spy", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/spy'
+                                        },
+
+                                       
+                                   
+                                ]
+                         },
+                         {
+                             name:'Stats',
+                             ta:[
+                                        
+                                        {
+                                            nm:"Property", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/propertynew'
+                                        },
+
+                                        {
+                                            nm:"Profile", 
+                                            icn:"<i class='fas fa-user-alt'></i>",
+                                            clk:'/game/profile/abilities'
+                                        },
+                                         {
+                                            nm:"Friends", 
+                                            icn:"<i class='fas fa-igloo'></i>",
+                                            clk:'/game/friends/mafias'
+                                        },
+
+                                        {
+                                            nm:"Itemlist", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/profile/items'
+                                        },
+
+                                           {
+                                            nm:"Customize Avater", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/profile/eavatar'
+                                        },
+
+                                           {
+                                            nm:"Trophies", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/profile/trophies'
+                                        },
+                                           {
+                                            nm:"Abilities", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/profile/abilities'
+                                        },
+                                          {
+                                            nm:"gift", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/gift'
+                                        },
+                                        
+                                         {
+                                            nm:"Land", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/alllands'
+                                        },
+                                       
+                                     
+                                   
+                                ]
+                         },
+                         {
+                             name:'Shop',
+                             ta:[
+                                        {
+                                            nm:"Weapon", 
+                                            icn:"<i class='fas fa-igloo'></i>",
+                                            clk:'/game/shop/weapon',
+                                        },
+                                        {
+                                            nm:"Vehicls", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/shop/vehicls'
+                                        },
+                                         {
+                                            nm:"Item", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/shop/item'
+                                        },
+                                         {
+                                            nm:"Avater", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/shop/Avater'
+                                        },
+
+                                        {
+                                            nm:"Regular weapon", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/shop'
+                                        },
+
+                                        {
+                                            nm:"Blackmarket", 
+                                            icn:"<i class='fas fa-store-alt-slash'></i>",
+                                            clk:'/game/blackmarket/buys'
+                                        },
+                                ]
+                         },
+                         
+                    ]
+            }
+             
+        }
+    },
+    methods:{
+        bMcShw:function(sth){
+              if(this.btmenusStl[sth] == true){ 
+                    this.btmenusStl[sth] = false; 
+                    return;
+            }
+            else{
+                this.btmenusStl[sth] = false; 
+            }  
+            Object.keys(this.btmenusStl).forEach((value) => {
+               this.btmenusStl[value] = false;
+            });  
+ 
+            if(this.btmenusStl[sth] == false){ 
+                this.btmenusStl[sth] = true;              
+            }else{
+                this.btmenusStl[sth] = false; 
+            }  
+            
+        },
+        
+        handleFocus:function(){ 
+        },
+        handleFocusOut:function(){           
+            Object.keys(this.btmenusStl).forEach((value) => {
+               this.btmenusStl[value] = false;
+            });
+        },
+        tcrtr:function(route,sth){
+            
+         //   console.log(route); 
+         //   console.log(this.$route.path); 
+            if(this.$route.path == route){           
+              //  this.$router.push(this.$route.path);
+                return;
+            }
+            this.$router.replace(route);
+            this.btmenusStl[sth] = false; 
+            //    if(this.MmnDtlst[route] == false){ 
+            //     this.MmnDtlst[route] = true;              
+            // }else{
+            //     this.MmnDtlst[route] = false; 
+            // } 
+
+            
+        }
+
+    }
+   
+    
+
+}
+
+</script>
+

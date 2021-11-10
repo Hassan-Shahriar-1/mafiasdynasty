@@ -1,0 +1,42 @@
+
+@font-face {
+    font-family: TheGodfatherv2;
+    src: url("../fonts/the-godfather/TheGodfather-v2.ttf");
+    font-weight: bold;
+    font-size: large;
+    
+}
+@font-face {
+    font-family: Circusia;
+    src: url("../fonts/circusia/Circusia.woff");
+    font-weight: bold;
+    font-size: large;
+    
+}
+@font-face {
+    font-family: morrisroman; 
+    src: url("../fonts/morris-roman/MorrisRoman-Black.ttf");
+    font-weight: bold;
+    font-size: large;
+    
+}
+@font-face {
+    font-family: beyond-wonderland;
+    src: url("../fonts/beyond-wonderland/blackchancery.regular.ttf");    
+    font-size: 6.2em;
+    
+}
+
+
+
+
+@font-face {
+    font-family: Quantify;
+    src: url("../fonts/quantify/Quantify.ttf");
+  
+}
+
+
+
+
+ 

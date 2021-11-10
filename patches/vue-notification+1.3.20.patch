@@ -1,0 +1,89 @@
+diff --git a/node_modules/vue-notification/src/Notifications.vue b/node_modules/vue-notification/src/Notifications.vue
+index b548d88..952689d 100644
+--- a/node_modules/vue-notification/src/Notifications.vue
++++ b/node_modules/vue-notification/src/Notifications.vue
+@@ -361,6 +361,8 @@ export default Component
+ .vue-notification-group {
+   display: block;
+   position: fixed;
++  height: 500px;
++  background:chartreuse;
+   z-index: 5000;
+ }
+ 
+@@ -390,15 +392,16 @@ export default Component
+   font-size: 12px;
+   padding: 10px;
+   margin: 0 5px 5px;
+-
++  height:1000px;
++  border-radius: 3%;
+   color: white;
+-  background: #44A4FC;
+-  border-left: 5px solid #187FE7;
++  background: #232424;
++  border-left: 5px solid #161616;
+ }
+ 
+ .vue-notification.warn {
+-  background: #ffb648;
+-  border-left-color: #f48a06;
++  background: #1d1d1d;
++  border-left-color: #3f3f3f;
+ }
+ 
+ .vue-notification.error {
+@@ -411,6 +414,15 @@ export default Component
+   border-left-color: #42A85F;
+ }
+ 
++
++.vue-notification.dark {
++  border-radius: 3%;
++ background: rgb(85, 85, 85);
++    background: linear-gradient(180deg, rgb(90, 90, 90) 0%, rgb(48, 48, 48) 35%, rgba(25, 25, 25, 1) 100%);
++}
++
++
++
+ .vn-fade-enter-active, .vn-fade-leave-active, .vn-fade-move  {
+   transition: all .5s;
+ }
+diff --git a/node_modules/vue-notification/src/defaults.js b/node_modules/vue-notification/src/defaults.js
+index 97f12c8..a637ecf 100644
+--- a/node_modules/vue-notification/src/defaults.js
++++ b/node_modules/vue-notification/src/defaults.js
+@@ -1,18 +1,18 @@
+ export default {
+-  position: ['top', 'right'],
+-  cssAnimation: 'vn-fade',
+-  velocityAnimation: {
+-    enter: (el) => {
+-      var height = el.clientHeight
++    position: ['top', 'right'],
++    cssAnimation: 'vn-fade',
++    velocityAnimation: {
++        enter: (el) => {
++            var height = el.clientHeight
+ 
+-      return {
+-        height: [height, 0],
+-         opacity: [1, 0]
+-      }
+-    },
+-    leave: {
+-      height: 0,
+-      opacity: [0, 1]
++            return {
++                height: [height, 0],
++                opacity: [1, 0]
++            }
++        },
++        leave: {
++            height: 0,
++            opacity: [0, 1]
++        }
+     }
+-  }
+ }
+\ No newline at end of file

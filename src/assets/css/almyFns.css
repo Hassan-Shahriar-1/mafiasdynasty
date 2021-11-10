@@ -1,0 +1,95 @@
+@font-face {
+    font-family: TheGodfatherv2;
+    src: url("../fonts/the-godfather/TheGodfather-v2.ttf");
+    font-weight: bold;
+    font-size: large;
+}
+
+@font-face {
+    font-family: Circusia;
+    src: url("../fonts/circusia/Rye-Regular.ttf");
+    font-weight: bold;
+    font-size: large;
+}
+
+@font-face {
+    font-family: morrisroman;
+    src: url("../fonts/morris-roman/MorrisRoman-Black.ttf");
+    font-weight: bold;
+    font-size: large;
+}
+
+@font-face {
+    font-family: Quantify;
+    src: url("../fonts/quantify/Quantify.ttf");
+}
+
+@font-face {
+    font-family: jaldi;
+    src: url("../fonts/Jaldi/Jaldi-Regular.ttf");
+}
+
+@font-face {
+    font-family: custom1;
+    src: url("../fonts/FjallaOne-Regular.ttf");
+    font-weight: bold;
+    font-size: large;
+}
+
+@font-face {
+    font-family: custom2;
+    src: url("../fonts/FrancoisOne-Regular.ttf");
+    font-weight: bold;
+    font-size: large;
+}
+
+@font-face {
+    font-family: custom3;
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-weight: bold;
+    font-size: large;
+}
+
+@font-face {
+    font-family: custom4;
+    src: url("../fonts/SourceSansPro-Regular.otf");
+    font-size: 6.2em;
+}
+
+@font-face {
+    font-family: custom5;
+    src: url("../fonts/SourceSansPro-Regular.otf");
+}
+
+@font-face {
+    font-family: custom6;
+    src: url("../fonts/Teko-Regular.ttf");
+}
+
+
+/* custom title subtitle and description font */
+
+@font-face {
+    font-family: title;
+    src: url("../fonts/ttl/Rye-Regular.ttf");
+}
+
+@font-face {
+    font-family: subtitle;
+    src: url("../fonts/ttldtls/Habibi-Regular.ttf");
+}
+
+@font-face {
+    font-family: dtls;
+    src: url("../fonts/des/CantoraOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: btnbfnt;
+    src: url("../fonts/button/DaysOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: btnfnt;
+    src: url("../fonts/button2/LexendDeca-Regular.ttf");
+}

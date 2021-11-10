@@ -1,0 +1,49 @@
+
+/* stngimg */
+.stngimg{
+    height: 5vh;
+    width: 5vh;
+    padding: 7%;
+   
+  
+  
+}
+
+.logimg{
+    height: 7vh;
+    width: 7vh;
+    box-shadow: inset 1px solid white; 
+}
+.stngimg:hover{
+   background-color: #4b4b4b00;
+}
+.topicon {
+    height: 2vh;
+    width: 2vh;
+    border-radius:2px; 
+
+}
+.pdngbdr{
+    padding: 7%;
+    background-color: #0c0c0c;
+    border: 0.5px solid rgb(75,73,73);
+    border-radius: 2px;
+    box-shadow: inset 0px 0px 5px 1px rgb(75,73,73);
+}
+/* stngimg end */
+
+
+/* btn image  start */
+
+
+.btnimg{
+    padding: 7%;
+    height: 7vh;
+    width: 7vh;
+    border-radius:2%; 
+  
+}
+.btnimg:hover{
+   background-color: #11111100;
+}
+/* btn image end */

@@ -1,0 +1,71 @@
+                  /* <img class="topicon m-1" src="img/icon/home.png"/>
+                    <img class="topicon m-1" src="img/icon/heart.png"/>
+                    <img class="topicon m-1" src="img/icon/rage].png"/> */
+                  
+                  .incb1 {
+                      width: 1.2rem;
+                      height: 1.2rem;
+                      display: inline-block;
+                      background-size: 100% 100%;
+                      background-position: top left;
+                      content: '';
+                  }
+                  
+                  .incb2 {
+                      width: 2rem;
+                      height: 2rem;
+                      display: inline-block;
+                      background-size: 100% 100%;
+                      background-position: top left;
+                      content: '';
+                  }
+                  
+                  .incb3 {
+                      width: 1.5rem;
+                      height: 1.5rem;
+                      display: inline-block;
+                      background-size: 100% 100%;
+                      background-position: top left;
+                      content: '';
+                  }
+                  
+                  .incb4 {
+                      width: 1rem;
+                      height: 1rem;
+                      display: inline-block;
+                      background-size: 100% 100%;
+                      background-position: top left;
+                      content: '';
+                  }
+                  
+                  .iC-home {
+                      background-image: url("../img/icon2/h.png");
+                  }
+                  
+                  .iC-heart {
+                      background-image: url("../img/icon2/sss.png");
+                  }
+                  
+                  .iC-rage {
+                      background-image: url("../img/icon2/fuygi.png");
+                  }
+                  
+                  .iC-energy {
+                      background-image: url("../img/icon2/Rage.png");
+                  }
+                  
+                  .iC-stng {
+                      background-image: url("../img/stngimg.png");
+                  }
+                  
+                  .iC-navHome {
+                      background-image: url("../img/nav-icon/nav.jpg");
+                  }
+                  
+                  .iC-cash {
+                      background-image: url("../img/icon2/cash2.png");
+                  }
+                  
+                  .iC-gold {
+                      background-image: url("../img/icon2/M-gold.png");
+                  }
