@@ -332,23 +332,23 @@ export default new Router({
                     children: [{
                             path: 'news',
                             component: () =>
-                                import ('@/components/ntfmn/news')
+                                import ('@/components/notification/news')
                         },
                         {
                             path: 'request',
                             component: () =>
-                                import ('@/components/ntfmn/request')
+                                import ('@/components/notification/request')
                         },
                         {
                             path: 'activity',
 
                             component: () =>
-                                import ('@/components/ntfmn/activity')
+                                import ('@/components/notification/activity')
                         },
                         {
                             path: 'pchat',
                             component: () =>
-                                import ('@/components/ntfmn/pchat')
+                                import ('@/components/notification/pchat')
                         },
                     ],
                 },
@@ -461,7 +461,7 @@ export default new Router({
                 {
                     path: 'chat/:id',
                     component: () =>
-                        import ('@/components/ntfmn/chat'),
+                        import ('@/components/notification/chat'),
                     props: true
                 },
                 {
