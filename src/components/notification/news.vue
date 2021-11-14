@@ -1,14 +1,34 @@
 <template>
   <div class="ptnbg">
 
+<!-- thread section start -->
+    <div class="row Gp0m0 tmibg">
+        <div class="col-3 Gp0m0 p-2">
+        <img src="../../assets/img/item/1.gif" alt="threat image" class="card-img">
+        </div>
 
-    <div class="row Gp0m0">
+        <div class="col-9 Gp0m0">
+          <h4 class="titlefnt">Habibur Rahman</h4>
 
-      <div class="col-12">
+          <h6 class="dtlsfnt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel sequi perspiciatis. 
+        </h6>
+        </div>
 
-        <h4>News from threads</h4>
-      </div>
+        <div class="col-6"> 
+            <h6 class="mt-2 dtlsfnt">
+              <i class="fas fa-clock">10hour 25 min ago</i>
+            </h6>
+        </div>
+        
+        <div class="col-3 px-2">
+          <div class="btn p-1 nBtn nBbg siz15 btn-block button5">Ignore</div>
+        </div>
+
+        <div class="col-3 px-2">
+          <div class="btn p-1 nBtn nBbg siz15 btn-block button4">Attack</div>
+        </div>
     </div>
+<!-- thread section end -->
     <div class="row Gp0m0 tmibg p-1 my-2" v-for="(ndta, i) in Nwsdta" :key="i">
       <div class="col-8 p-1">
         <div class="d-flex">
