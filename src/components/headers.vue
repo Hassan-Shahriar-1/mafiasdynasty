@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="col-4 p-1  itmbg">
-                    <h6 class='hrtl'>Health111:<span class="hdricnpsn float-right iC-heart incb3"></span></h6> 
+                    <h6 class='hrtl'>Health1:<span class="hdricnpsn float-right iC-heart incb3"></span></h6> 
                     <div class="progress n_bar-a w-100" style="height:5px;">
                         <div class="progress-bar clRBrd bgD0" id="itmBr" :style="{width:Th.hltW+'%'}"></div>
                     </div>
