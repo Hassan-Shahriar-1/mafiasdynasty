@@ -2,7 +2,7 @@
     <div class="header jaldi ">
         <div class="row Gp0m0 hdbg  no-gutters" id='hdrvp10'>
             <div class="col-1 py-0">
-                <img class="logimg losdo mt-2 ml-2" @click="$gm.bar();" src="../assets/img/logo.png">
+                <img class="logimg losdo my-2 ml-2" @click="$gm.bar();" src="../assets/img/logo.png">
             </div>
 
             <div class="col-7 py-0 mt-2 " style="margin-left:10%;"  >
