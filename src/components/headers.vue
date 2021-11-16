@@ -5,7 +5,7 @@
                 <img class="logimg losdo mt-2 ml-2" @click="$gm.bar();" src="../assets/img/logo.png">
             </div>
 
-            <div class="col-7 py-0 mt-2 " style="margin-left:11%;"  >
+            <div class="col-7 py-0 mt-2 " style="margin-left:10%;"  >
                 <div class="row Gp0m0">
                     <div class="col-4 Gp0m0">
                         <h6 class="text-left">Level: {{ Th.lvl }}</h6>
@@ -22,16 +22,17 @@
                 </div>
                 <h6 class="text-left">Exp:{{Th.expst}}/{{Th.exped}} </h6>
             </div>
-            <div class="col-1 py-0 text-center  mt-2 Gp0m0 no-gutters" style="margin-left:3%;" @click="ntf=!ntf,lnk(ntf)">
+            <div class="col-1 py-0 text-center  mt-2 Gp0m0 no-gutters" style="margin-left:1%;" @click="ntf=!ntf,lnk(ntf)">
                 <div class=" rounded  bgD8">
                     <i class="fas fa-bell mt-1 siz20 text-white"></i>
                     <span class="bg-danger rounded-circle sizv10 bgpstn">11</span> 
                 </div>    
             </div>
 
-            <div class="col-1 py-0 text-center  mt-2 Gp0m0 no-gutters" style="margin-left: 1%;" @click="stngs = !stngs">
+            <div class="col-1 py-0 text-center  mt-2 Gp0m0 no-gutters" style="margin-left: 3%;" @click="stngs = !stngs">
                 <div class=" rounded  bgD8  ">
-                <i class="fas fa-cogs mt-1 siz20 text-white "></i>
+                <i class="fas fa-cogs mt-1 siz20 text-white"></i>
+                <span class="bg-danger rounded-circle sizv10 bgpstn">12</span> 
                 </div>        
             </div>
         </div>

@@ -2,13 +2,13 @@
   <div class="ptnbg">
 
 <!-- thread section start -->
-    <div class="row Gp0m0 tmibg">
+    <div class="row Gp0m0 tmibg pb-2">
         <div class="col-3 Gp0m0 p-2">
         <img src="../../assets/img/item/1.gif" alt="threat image" class="card-img">
-        </div>
+        </div> 
 
         <div class="col-9 Gp0m0">
-          <h4 class="titlefnt">Habibur Rahman</h4>
+          <h4 class="subtitlefnt">Habibur Rahman(Threat)</h4>
 
           <h6 class="dtlsfnt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel sequi perspiciatis. 
         </h6>
