@@ -290,6 +290,15 @@ export default {
     },
     methods:{
         bMcShw:function(sth){
+            if(sth=='mission'){
+                     this.$router.replace('/game/missionintro');
+            }else if(sth=='combat'){
+                this.$router.replace('/game/combat');
+            }else if(sth=='Godfather'){
+                this.$router.replace('/game/Godfathers');
+            }
+            else{
+            
               if(this.btmenusStl[sth] == true){ 
                     this.btmenusStl[sth] = false; 
                     return;
@@ -306,6 +315,7 @@ export default {
             }else{
                 this.btmenusStl[sth] = false; 
             }  
+            }
             
         },
         
