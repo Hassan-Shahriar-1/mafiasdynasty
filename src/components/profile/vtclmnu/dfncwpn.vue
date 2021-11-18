@@ -18,7 +18,7 @@
         <div class="col-3 Gp0m0 bdr1 " @click="show(10);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
         <div class="col-3 Gp0m0 bdr1 " @click="show(11);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
         <div class="col-2"></div>
-        <div class="col-8 mt-2"><div class="btn nBtn nBbg bgD8 px-5">Save</div></div>
+        <div class="col-8 mt-2" ><div class="btn nBtn nBbg bgD8 px-5" @click="save()">Save</div></div>
         <div class="col-2"></div>
     </div>
     
@@ -125,6 +125,12 @@ export default {
             
             this.defense[this.index]=itid;
             console.log('defense value',this.defense)
+        },
+        save(){
+            var serializedArr = JSON.stringify( this.defense );
+            this.$mgo.gt('/mp/defense/'+serializedArr,(rs)=>{
+                console.log(rs)
+            })
         }
         }
 
