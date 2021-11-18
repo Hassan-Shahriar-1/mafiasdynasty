@@ -37,7 +37,7 @@
                             <div class="col-6 Gp0m0 bdr1"  v-for="(dfnitms,i) in dfnitm" :key="i" >
                                 <div class="card">
                                     <div class="card-header blkgry">Name Here</div>
-                                <img class="card-img img-fluid" :src="require('/src/assets/img/item/'+dfnitms.img)" @click="defenses(dfnitms.itid)" alt=""/>
+                                <img class="card-img img-fluid" :src="require('/src/assets/img/item/'+dfnitms.img)" @click="defenses(dfnitms.itid);"  alt=""/>
                                 <div class="card-footer px-0 blkgry"><div class="row Gp0m0">
                                     <div class="col-6 p-0">Attack-10</div>
                                     <div class="col-6 p-0">Defense+10</div>
@@ -124,6 +124,7 @@ export default {
             console.log(itid);
             
             this.defense[this.index]=itid;
+            this.$modal.hide('ban');
             console.log('defense value',this.defense)
         },
         save(){
