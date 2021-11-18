@@ -3,24 +3,24 @@
     <h6 class="blkgry px-1 py-2"> You can't have more than 5 Item in a single Slot</h6>
 
     <div class="row Gp0m0">
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s0');"><img v-if="img[0]!=''" class="card-img" src="../../../assets/img/1.png" alt="" ></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s1');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s2');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s3');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s4');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(0);"><img v-if="img[0]!=''" class="card-img" src="../../../assets/img/1.png" alt="" ></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(1);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(2);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(3);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(4);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
         
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s5');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s6');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s7');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s8');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s9');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(5);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(6);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(7);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(8);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(9);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
         
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s10');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s11');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s12');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s13');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s14');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show('s15');"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(10);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(11);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(12);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(13);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(14);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(15);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
         <div class="col-2"></div>
         <div class="col-8 mt-2" ><div class="btn nBtn nBbg bgD8 px-5" @click="save()">Save</div></div>
         <div class="col-2"></div>
