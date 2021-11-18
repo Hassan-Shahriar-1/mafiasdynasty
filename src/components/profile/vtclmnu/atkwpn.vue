@@ -16,7 +16,7 @@
         <div class="col-3 Gp0m0 bdr1 " @click="show(9);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
         
         <div class="col-3 Gp0m0 bdr1 " @click="show(10);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
-        <div class="col-3 Gp0m0 bdr1 " @click="show(s11);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
+        <div class="col-3 Gp0m0 bdr1 " @click="show(11);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
         <div class="col-3 Gp0m0 bdr1 " @click="show(12);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
         <div class="col-3 Gp0m0 bdr1 " @click="show(13);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
         <div class="col-3 Gp0m0 bdr1 " @click="show(14);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
