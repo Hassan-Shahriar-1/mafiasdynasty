@@ -1,7 +1,7 @@
 <template>
     <div><h4 class="text-center">Defense weapon</h4>
-    <h6 class="blkgry px-1 py-2"> You can't have more than 5 Item in a single Slot</h6>
-
+    <h6 class="blkgry px-1 py-2" v-if="err==''"> You can't have more than 5 Item in a single Slot</h6>
+     <h6 class="blkgry px-1 py-2" v-else> {{ err }}</h6>
     <div class="row Gp0m0">
         <div class="col-3 Gp0m0 bdr1 " @click="show(0);"><img v-if="img[0]!=''" class="card-img" src="../../../assets/img/1.png" alt="" ></div>
         <div class="col-3 Gp0m0 bdr1 " @click="show(1);"><img   class="card-img" src="../../../assets/img/1.png" alt=""></div>
@@ -64,6 +64,7 @@ export default {
         return{
             defense:[],
             img:[],
+            err:'',
             index:0,
              dfnitm:[
                
@@ -132,10 +133,17 @@ export default {
             console.log('defense value',this.defense)
         },
         save(){
+            
             var serializedArr = JSON.stringify( this.defense );
-            this.$mgo.gt('/mp/defense/'+serializedArr,(rs)=>{
+            if(this.defense.some(el => el !== null)!=false && this.defense.length==15){
+                this.$mgo.gt('/mp/defense/'+serializedArr,(rs)=>{
                 console.log(rs)
             })
+            }else{
+                this.err='You need to Colmplete all the slot to save your defense'
+                console.log(this.err);
+            }
+            
         }
         }
 
