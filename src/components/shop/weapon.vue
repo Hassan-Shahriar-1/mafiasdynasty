@@ -59,7 +59,7 @@ export default {
             
             amnt:1,
             isAutoHeight:"false",
-            imglk:'http://mrdemo.com/item/weapon/',
+            imglk:'http://mrdemo.com/item/',
  
         }
     },

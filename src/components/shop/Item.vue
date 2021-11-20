@@ -47,7 +47,7 @@ export default {
         return{
             itmnm:'',
             itmimg:'',
-            itmallimg:'http://mrdemo.com/item/weapon/',
+            itmallimg:'http://mrdemo.com/item/',
             spitm:[],
             itmid:'',
                

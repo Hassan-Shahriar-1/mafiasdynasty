@@ -52,7 +52,7 @@ export default {
     data(){
         return{
             tl:'',
-            itmallimg:'http://mrdemo.com/item/vehicale/',
+            itmallimg:'http://mrdemo.com/item/',
             itm:[],
             mid:'',
             mnm:'',
