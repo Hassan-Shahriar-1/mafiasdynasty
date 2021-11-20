@@ -72,7 +72,7 @@ export default {
                              ta:[
                                         {
                                             nm:"Mafia Home", 
-                                            icn:"<i class='fas fa-igloo'></i>",
+                                            icn:"<i class='fas fa-hotel'></i>",
                                             clk:'/game/home/gtns'
                                         },
                                         
@@ -85,19 +85,19 @@ export default {
                  
                                         {
                                             nm:"Discussion", 
-                                            icn:"<i class='fas fa-igloo'></i>",
+                                            icn:"<i class='far fa-comments'></i>",
                                             clk:'/game/discussion'
                                         },
 
                                          {
                                             nm:"Organization", 
-                                            icn:"<i class='fas fa-igloo'></i>",
+                                            icn:"<i class='fas fa-users-cog'></i>",
                                             clk:'/game/organization/gossipe'
                                         },
 
                                            {
                                             nm:"Bank", 
-                                            icn:"<i class='fas fa-igloo'></i>",
+                                            icn:"<i class='fas fa-university'></i>",
                                             clk:'bank'
                                         },
                                         
