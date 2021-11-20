@@ -62,7 +62,7 @@ export default {
     data() {
 
         return{
-            attack:[],
+            attk:[],
             img:[],
             index:0,
              atkitm:[
@@ -109,7 +109,7 @@ export default {
         }
 
     },
-        methods: {
+    methods: {
                      beforeOspen(){
             setTimeout(()=>{ 
                  window.jq('.v--modal').height(window.jq('#gtmhyHt').outerHeight());
@@ -127,17 +127,24 @@ export default {
         attacks(itid){
             console.log(itid);
             
-            this.attack[this.index]=itid;
-            this.$modal.hide('atk');
-            console.log('attack value',this.attack)
+            this.attk[this.index]=itid;
+            this.$modal.hide('ban');
+            console.log('Attack value',this.attk)
         },
         save(){
-            var serializedArr = JSON.stringify( this.attack );
-            this.$mgo.gt('/mp/attack/'+serializedArr,(rs)=>{
+            
+            var serializedArr = JSON.stringify( this.attk );
+            if(this.attk.some(el => el !== null)!=false && this.attk.length==16){
+                this.$mgo.gt('/mp/attack/'+serializedArr,(rs)=>{
                 console.log(rs)
             })
+            }else{
+                this.err='You need to Colmplete all the slot to save your Attack Power'
+                console.log(this.err);
+            }
+            
         }
-        }
+    }
 
 }
 </script>

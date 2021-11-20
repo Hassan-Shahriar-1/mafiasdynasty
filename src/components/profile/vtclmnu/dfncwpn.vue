@@ -110,7 +110,7 @@ export default {
         }
 
     },
-        methods: {
+    methods: {
                      beforeOspen(){
             setTimeout(()=>{ 
                  window.jq('.v--modal').height(window.jq('#gtmhyHt').outerHeight());
@@ -135,7 +135,7 @@ export default {
         save(){
             
             var serializedArr = JSON.stringify( this.defense );
-            if(this.defense.some(el => el !== null)!=false && this.defense.length==15){
+            if(this.defense.some(el => el !== null)!=false && this.defense.length==16){
                 this.$mgo.gt('/mp/defense/'+serializedArr,(rs)=>{
                 console.log(rs)
             })
@@ -145,7 +145,7 @@ export default {
             }
             
         }
-        }
+    }
 
 }
 </script>
