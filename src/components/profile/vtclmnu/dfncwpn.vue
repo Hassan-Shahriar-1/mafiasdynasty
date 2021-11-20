@@ -69,40 +69,40 @@ export default {
                
                 {
                     img:'1.gif',
-                    itid:1
+                    itid:10001
                 },{
                     img:'1.gif',
-                    itid:2
+                    itid:10002
                 },{
                     img:'1.gif',
-                    itid:3
+                    itid:10003
                 },{
                     img:'1.gif',
-                    itid:4
+                    itid:10004
                 },{
                     img:'1.gif',
-                    itid:5
+                    itid:10005
                 },{
                     img:'1.gif',
-                    itid:6
+                    itid:10006
                 },{
                     img:'1.gif',
-                    itid:7
+                    itid:10007
                 },{
                     img:'1.gif',
-                    itid:8
+                    itid:10008
                 },{
                     img:'1.gif',
-                    itid:9
+                    itid:10009
                 },{
                     img:'1.gif',
-                    itid:10
+                    itid:10010
                 },{
                     img:'1.gif',
-                    itid:11
+                    itid:10011
                 },{
                     img:'1.gif',
-                    itid:12
+                    itid:10012
                 },
              ]
           
