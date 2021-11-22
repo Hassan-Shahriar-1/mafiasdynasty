@@ -23,29 +23,33 @@
                                             <div   class="btn nBtn tmibg Gp0m0 "><i class="fab fa-galactic-senate"></i> <br> <h4 class="siz10">Male</h4></div>
                                             <div  class="btn nBtn tmibg Gp0m0 "><i class="fas fa-dragon"></i> <br><h4 class="siz10">Female</h4></div>                                           
                                         </div>
-                                        <div class="card Gp0m0 blkgry">
-                                            <div class="card-header p-2 blkgry"><h2 class="titlefnt siz15">White tank 2</h2></div>
+                                        <carousel :autoplay="true" :height="200" :dots="false" :nav="false" :items='1'> 
+                                            <div class="card Gp0m0 blkgry" v-for="(avtrsp, i) in avtrshop" :key="i" >
+                                       
+                                            <div class="card-header p-2 blkgry"><h2 class="titlefnt siz15">{{avtrsp.title}}</h2></div>
                                             <div class="card-body Gp0m0">
-                                                <img class="card-img" src="../../assets/img/item/1.gif" alt="">
+                                                <img class="card-img" style="height:180px;"   :src="require('/src/assets/img/bannar/'+avtrsp.img)">
                                                 <h4 class="subtitlefnt"> Gold 25 </h4>
                                                 <div class="row Gp0m0 mt-2">
                                                     <div class="col-6 Gp0m0"><div class="btn mr-4 nBtn nBbg blkgry">Buy</div></div>
                                                     <div class="col-6 Gp0m0"><div class="btn ml-2 nBtn nBbg blkgry">Gift</div></div>
                                                 </div>
                                             </div>
+                                            </div>
+                                        </carousel>
                                         </div>
-                                    </div>
+                                 
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-3 Gp0m0">
-                            <router-link to="gtns"  class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="far fa-newspaper"></i> <br> News</router-link>
-                            <router-link to="blab" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"> <i class="fas fa-comments"></i><br> blab 2</router-link>
-                            <router-link to="lmtdofr" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fab fa-buffer"></i><br> offers</router-link>
-                            <router-link to="update" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fas fa-edit"></i> <br> Updates</router-link>
-                            <router-link to="bonus" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fas fa-money-check-alt"></i> <br>  Bonus</router-link>
+                            <router-link to="gtns"  class="btn btn-lg p-1 m-0  btn-block text-danger  nBtn bgD8"><i class="far fa-newspaper"></i> <br> News</router-link>
+                            <router-link to="blab" class="btn btn-lg p-1 m-0  btn-block text-danger  nBtn bgD8"> <i class="fas fa-comments"></i><br> blab 2</router-link>
+                            <router-link to="lmtdofr" class="btn btn-lg p-1 m-0  btn-block text-danger  nBtn bgD8"><i class="fab fa-buffer"></i><br> offers</router-link>
+                            <router-link to="update" class="btn btn-lg p-1 m-0  btn-block text-danger  nBtn bgD8"><i class="fas fa-edit"></i> <br> Updates</router-link>
+                            <router-link to="bonus" class="btn btn-lg p-1 m-0  btn-block text-danger  nBtn bgD8"><i class="fas fa-money-check-alt"></i> <br>  Bonus</router-link>
                     </div>
                 </div>
                 <div class="card Gp0m0 pt-5">
@@ -66,7 +70,9 @@
 </template>
 
 <script>
+import carousel from 'vue-owl-carousel'
 export default {
+  components: { carousel },
     data() {
         return{
             avtr:[
@@ -119,7 +125,35 @@ export default {
                 mg:"01.jpg",
             },
             
-            ]
+            ],
+
+                      avtrshop:[
+                 {
+                     img:"1.jpg",
+                     title:"Black Tanker 2"
+                 },
+                 {
+                     img:"2.jpg",
+                     title:"Black Tanker 2"
+                 },
+                 {
+                     img:"3.jpg",
+                     title:"Black Tanker 2"
+                 },
+                 {
+                     img:"4.jpg",
+                     title:"Black Tanker 2"
+                 },
+                 {
+                     img:"5.jpg",
+                     title:"Black Tanker 2"
+                 },
+                 {
+                     img:"6.jpg",
+                     title:"Black Tanker 2"
+                 }
+            
+             ]
         }
         
     },

@@ -40,7 +40,7 @@ export default {
                         },
                             {
                             nm:"Stats", 
-                            icn:"<i class='fab fa-artstation'></i>",
+                            icn:"<i class='fas fa-dragon'></i>",
                             clk:'Stats'
                         },
                         
@@ -51,18 +51,18 @@ export default {
                         },
                         {
                             nm:"Combat", 
-                            icn:"<i class='fas fa-hat-cowboy'></i>",
+                            icn:"<i class='fas fa-people-carry'></i>",
                             clk:'combat'
                         },
                          {
                             nm:"Godfather", 
-                            icn:"<i class='fas fa-hotel'></i>",
+                            icn:"<i class='fas fa-couch'></i>",
                             clk:'Godfather'
                         },
                      
                          {
                             nm:"Shop", 
-                            icn:"<i class='fas fa-store-alt'></i>",
+                            icn:"<i class='fas fa-store'></i>",
                             clk:'Shop'
                         }
                     ],
@@ -192,18 +192,18 @@ export default {
                                         
                                         {
                                             nm:"Property", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fab fa-accusoft'></i>",
                                             clk:'/game/propertynew'
                                         },
 
                                         {
                                             nm:"Profile", 
-                                            icn:"<i class='fas fa-user-alt'></i>",
+                                            icn:"<i class='fas fa-user-tie'></i>",
                                             clk:'/game/profile/abilities'
                                         },
                                          {
                                             nm:"Friends", 
-                                            icn:"<i class='fas fa-igloo'></i>",
+                                            icn:"<i class='fas fa-user-friends'></i>",
                                             clk:'/game/friends/mafias'
                                         },
 
@@ -215,29 +215,29 @@ export default {
 
                                            {
                                             nm:"Customize Avater", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fab fa-atlassian'></i>",
                                             clk:'/game/profile/eavatar'
                                         },
 
                                            {
                                             nm:"Trophies", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fas fa-trophy'></i>",
                                             clk:'/game/profile/trophies'
                                         },
                                            {
                                             nm:"Abilities", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fab fa-accessible-icon'></i>",
                                             clk:'/game/profile/abilities'
                                         },
                                           {
-                                            nm:"gift", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            nm:"Gift", 
+                                            icn:"<i class='fas fa-gift'></i>",
                                             clk:'/game/gift'
                                         },
                                         
                                          {
                                             nm:"Land", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fas fa-grip-horizontal'></i>",
                                             clk:'/game/alllands'
                                         },
                                        
