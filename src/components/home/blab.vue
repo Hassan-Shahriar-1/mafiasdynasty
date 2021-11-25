@@ -4,7 +4,7 @@
             <div class="row no-gutters">
                 <textarea v-model="Gmessage" @keyup.enter="insrtMsg" class="w-100 form-control"  name="" id="" cols="10" rows="1" placeholder="Type here" style="height:40px;"></textarea>
             </div>
-            <div class="btn nBtn blkgry w-100 mt-1  mb-2"  @click="insrtMsg()">Blab here</div>
+            <div class="btn nBtn blkgry w-100 mt-1  mb-2"  @click="insrtMsg()">Blab here <span><i class="fas fa-hand-point-down"></i></span> </div>
             <div class="contain Gp1m1 my-1" v-for="(MsgsLt, i) in MsgsLts" :key="i">
                 <div class="row no-gutters mb-1">  
                         <img src="../../assets/img/item/1.gif" alt="Avatar" style="width:100%;">

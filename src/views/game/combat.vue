@@ -52,10 +52,10 @@
 
         <div class="row Gp0m0">
             <div class="col-4 Gp0m0">
-                    <router-link to="/game/leaderboard/friend" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"> <i class="fas fa-crown"></i><br><h4 class="siz15">Leaderboard</h4></router-link> <br>
-                    <router-link to="friendsfeed" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"><i class="fas fa-user-injured"></i> <br> <h4 class="siz15">Friends feed</h4> </router-link><br>
-                    <router-link to="safehouse" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"><i class="fas fa-laptop-house"></i><br><h4 class="siz15">Safe House</h4></router-link>
-                    <router-link to="Threat" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"><i class="fas fa-laptop-house"></i><br><h4 class="siz15">Threat</h4></router-link>
+                    <router-link to="/game/leaderboard/friend" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"> <i class="fas fa-chess-king"></i><br><h4 class="siz15">Leaderboard</h4></router-link> <br>
+                    <router-link to="friendsfeed" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"><i class="fas fa-rss-square"></i> <br> <h4 class="siz15">Friends feed</h4> </router-link><br>
+                    <router-link to="safehouse" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"><i class="fas fa-shield-alt"></i><br><h4 class="siz15">Safe House</h4></router-link>
+                    <router-link to="Threat" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"><i class="fas fa-hand-middle-finger"></i><br><h4 class="siz15">Threat</h4></router-link>
                     </div>
             <div class="col-8 Gp0m0 bdr1">
 
