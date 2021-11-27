@@ -27,7 +27,7 @@
         <div class="card-body  Gp0m0 ">
             <carousel :autoplay="true"  :height="120" :dots="false" :nav="false" :items='1' class="p-2"> 
                 <div class="card blkgry w-100 "  v-for="(hbimg, i) in bimg" :key="i">
-                    <img class="card-img  bdr1 " style="height:80px padding:5px" 
+                    <img class="card-img  bdr1 " style="height:80px; padding:5px;" 
                     :src="require('/src/assets/img/bannar/'+hbimg.img)">
                     <div class="row blkgry Gp0m0">
                         <div class="col-2 "> </div>             

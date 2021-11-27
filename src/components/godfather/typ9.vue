@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="row Gp0m0">
-                    <div class="col-9 ">
+                    <div class="col-9 p-0 ">
                         <router-view></router-view>
                     </div>
                     <div class="col-3 Gp0m0">

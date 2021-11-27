@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="Gdftrt9bg">
+        <div class="Gdftrt9bg px-2">
             <h4 class="titlefnt">Call of Habib p4</h4>
             <p class="dtlsfnt siz15">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus atque officiis fuga veniam 
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center"> <button class="btn nBtn nBbg button4 btn-block"> <h4>Locked</h4></button></div>
+                <div class="text-center"> <button class="btn nBtn nBbg button4 btn-block"> <h4>Locked <i class="fas fa-lock" style="opacity:0.7;"></i></h4></button></div>
             </div>
         </div>
     </div>                   

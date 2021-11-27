@@ -118,7 +118,7 @@
 
                     <div class="col-4 Gp0m0">
                         <div class="m-1 nBtn nBbg">
-                            <router-link to="typ9">
+                            <router-link to="typ9/p1">
                                 <img class="card-img " src="../../assets/img/item/1.gif" alt="elder image">
                                 <div class="card-image-overlay">
                                     <div class="card-img-overlay text-white d-flex flex-column justify-content-center">

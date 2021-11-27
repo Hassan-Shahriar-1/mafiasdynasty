@@ -43,7 +43,7 @@
                                 <li class="list-group-item bMbg5  p-0 m-1" v-for="(lnd,i) in alllnd" :key="i">
                                     <div class="card blksdo p-0">
                                         <img class="card-img img-fluid" :src="lndimg+lnd.img" alt=""/>
-                                        <div class="card-img-overlay px-0">
+                                        <div class="card-img-overlay px-1">
                                             <h4 class="card-text titlefnt ">
                                                 {{lnd.name}} <div class="btn nBtn btn-lg float-right p-2 mt-3 button5 nBtn  siz13" @click="fly(lnd.mid)">Just fly</div>
                                             </h4>
