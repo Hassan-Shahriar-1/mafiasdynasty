@@ -142,7 +142,7 @@ export default ({
     mounted:function(){
         this.TptrgrBr();
      
-      console.log('Current Swiper instance object', this.swiper)
+      
       // this.swiper.slideTo(3, 1000, false)    
     },
     methods: {
