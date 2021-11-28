@@ -925,6 +925,18 @@ export default new Router({
                 import ('@/views/Tutorial')
         },
 
+        /* external link start */
+        {
+            path: '/gmail',
+            beforeEnter() { location.href = 'http://gmail.com' }
+        },
+        {
+            path: '/messenger',
+            beforeEnter() { location.href = ' https://m.me/vampiredynastygame' }
+        }
+        /* external link End */
+
+
 
         /*  {
            path:'/',

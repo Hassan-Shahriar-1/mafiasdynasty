@@ -1041,6 +1041,7 @@ button.big-button:active::before {
     padding: 4px 15px 7px 15px;*/
     width: auto;
     height: auto;
+    background-color: linear-gradient(180deg, rgba(29, 29, 29, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(46, 46, 46, 1) 100%);
     color: #fff;
     font-size: 20px;
     font-weight: bold;

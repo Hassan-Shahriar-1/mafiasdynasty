@@ -29,7 +29,7 @@
                         <input type="number" class="form-control" placeholder="Withdraw Cash">
                         
                     </div>
-                    <div class=" button4 btn-block pbtn text-center mt-3 nBtn nBbg"> withdraw</div>
+                    <div class=" button4 siz15 btn-block pbtn text-center mt-3 nBtn nBbg"> withdraw</div>
                 </div>
                 <div class="col-6 px-1 ">
                     <h6 class="text-center"></h6> 
@@ -41,7 +41,7 @@
                         <input type="number" class="form-control" placeholder="Deposite cash">
                         
                     </div>
-                    <div class=" button5 btn-block pbtn text-center  mt-3 nBtn nBbg"> Deposite</div>
+                    <div class=" button5 siz15 btn-block pbtn text-center  mt-3 nBtn nBbg"> Deposite</div>
                 </div>
 
             </div>
@@ -61,7 +61,7 @@
                         <input type="number" class="form-control"  placeholder=" Loan cash">
                         
                     </div>
-                    <div class=" button4 btn-block pbtn text-center mt-3  nBtn NBbg"> Loan</div>
+                    <div class=" button4 siz15 btn-block pbtn text-center mt-3  nBtn NBbg"> Loan</div>
                 </div>
                 <div class="col-6 px-1">
                     <h6 class="text-center"></h6> 
@@ -72,7 +72,7 @@
                         <input type="number" class="form-control" placeholder="Recover loan">
                         
                     </div>
-                    <div class=" button5 btn-block pbtn text-center mt-3 nBtn NBbg"> Recover</div>
+                    <div class=" button5 siz15 btn-block pbtn text-center mt-3 nBtn NBbg"> Recover</div>
                 </div>
 
             </div>

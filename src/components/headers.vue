@@ -80,17 +80,29 @@
         <div class="container Gp0m0 jaldi mnbg"></div>
         <div class="btn-group rounded jaldi bw100 p-1 m-1"  role="group" aria-label="..." v-show="stngs">
             <div class="row no-gutters">
-                <router-link to="/game/alerts" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0  " ><i class="fas fa-bell"></i><br> <h6 class="siz15">Alerts </h6></router-link>
+                <router-link to="/game/alerts" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0  " ><i class="fas fa-exclamation-triangle"></i><br> <h6 class="siz15">Alerts </h6></router-link>
+                <div tag="button"  class="btn col px-1 nBtn blkgry Gp0m0" @click="stngs=true"><i v-bind:class="{'fas fa-bell' :tgle === true, 'fas fa-bell-slash': tgle === false}" v-on:click="toggle2()"></i>
+                    <h6 class="siz15">notification</h6></div>
                 <router-link to="/game/editprofile" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0   "><i class="fas fa-user"></i><br> <h6 class="siz15">Edit profile</h6> </router-link>
                 <div tag="button"  class="btn col px-1 nBtn blkgry Gp0m0" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" v-on:click="toggle()"></i>
                     <h6 class="siz15">Music</h6></div>
                 <div tag="button" @click="Lotsw(),stngs=true" class="btn col px-1 nBtn blkgry Gp0m0"><i class="fas fa-sign-out-alt"></i><br> <h6 class="siz15">Logout</h6> </div>
-                <router-link to="/game/alerts" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fas fa-people-arrows"></i><br><h6 class="siz15"> Social Connect</h6> </router-link>
-                <router-link to="/game/alerts" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fab fa-acquisitions-incorporated"></i><br><h6 class="siz15"> Hints</h6> </router-link>
-                <router-link to="/game/alerts" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="far fa-envelope"></i><br> <h6 class="siz15">Mail </h6></router-link>
+                <div  tag="button" @click="t8nws ^= true"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fas fa-share-alt"></i><br><h6 class="siz15"  > Social Connect</h6> </div>
+                <div  tag="button"  @click="bmsho()" class="btn col px-1 nBtn blkgry Gp0m0"><i class="fas fa-lightbulb"></i><br><h6 class="siz15"> Hints</h6> </div>
+                <router-link to="/gmail" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="far fa-envelope"></i><br> <h6 class="siz15">Mail </h6></router-link>
                 <router-link to="/game/forumlist" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fab fa-wpforms"></i><br> <h6 class="siz15">Forum</h6> </router-link>
-                <router-link to="/game/notification/pchat" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fab fa-facebook-messenger"></i><br><h6 class="siz15"> Message </h6></router-link>
+                <router-link to="/messenger" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fab fa-facebook-messenger"></i><br><h6 class="siz15"> Message </h6></router-link>
             
+
+
+           
+            <div class="row  mt-3 w-100 no-guttersb3px blkgry  p-2 m-0  rounded"  v-show="t8nws" >
+                <div class="col-3"><div class="btn nBtn btn-block btn-lg button3 mlr2 "><i class="fab fa-facebook"></i></div></div>
+                <div class="col-3"><div class="btn nBtn btn-block btn-lg button5 mlr2"><i class="fab fa-whatsapp"></i></div></div>
+                <div class="col-3"><div class="btn nBtn btn-block btn-lg button7 mlr2"><i class="fas fa-envelope"></i></div></div>
+                <div class="col-3"><div class="btn nBtn btn-block btn-lg button6 mlr2"><i class="fas fa-external-link-square-alt"></i></div></div>
+            </div>
+          
 
 
                 <modal name="nrbpup" :width="330" :height="450" class="bdr4 blksdo rounded  mblr" >
@@ -127,6 +139,30 @@
                                 <div class="col-6 p-1"><div class="btn nBtn btn-block btn-lg btnbfnt button5" @click="Lothd()"> No</div></div>
                                 <div class="col-6 p-1"><div class="btn nBtn btn-block btn-lg btnbfnt blkredbtn" @click="logout()">Yes</div></div>
                             </div>
+                        </div>
+                    </div>
+                </modal>
+
+
+                   <modal name="bmsho"  :width='300'   :height='550' class="bdr4 blksdo rounded  mblr">
+                    <div class="card" style="width:300px; height:550px;" >
+                        <div class="card-header blkgry p-1">
+                            <h2 class="text-center">Hints and Tips <h3 class="float-right"><i class="fas fa-times text-danger"  @click="bmshd()"></i></h3></h2>
+                        </div>
+                        <div class="card-body tmibg" style="height:500px; overflow:scroll;">
+                            <h5>1.	Double tap on the VD logo. It will work like reloading the game.</h5><br>
+                            <h5>2.	Double tap on the bar which shows Energy, Rage, Health, Jewels and Experience. It will reload the stat and will show your current stats if there were any laggy. </h5><br>
+                            <h5>3.	If the loader stays much longer, double tap on the stat bar. </h5><br>
+                            <h5>4.	Always keep your flow rate positive in blood flow.</h5><br>
+                            <h5>5.	Keep as much minions as you can.</h5><br>
+                            <h5>6.	Use your skill points carefully. </h5><br>
+                            <h5>7.	Complete all the missions. It won't disappoint you later. If you skip one you should do it now.</h5><br>
+                            <h5>8.	Always challenge your luck by visiting Lyssa.</h5><br>
+                            <h5>9.	Visit Horkos twice or thrice in a day. .</h5><br>
+                            <h5>10.	Blood from shop follows your income. So the more you have blood income the more you can buy bloods from shop at same cost.</h5><br>
+                        </div>
+                        <div class="card-footer p-1">
+                            <div class="btn nBtn nBbg blkgry btn-block sticky-bottom"  @click="bmshd()">close</div>
                         </div>
                     </div>
                 </modal>
@@ -193,6 +229,8 @@ export default {
                  mgold:0
                 },
              tog: false,
+             tgle:false,
+             t8nws:false,
              stngs:false,
              ntf:false,
 
@@ -307,6 +345,9 @@ export default {
     toggle: function() {
       this.tog = !this.tog
     },
+     toggle2: function() {
+      this.tgle = !this.tgle
+    },
         hdrdbltp(){
            // alert('called');
            this.hgtdt();
@@ -325,6 +366,14 @@ export default {
         },
         Lothd(){
             this.$modal.hide('Lotsw');
+        },
+
+           bmsho(){
+            this.$modal.show('bmsho');
+            
+        },
+        bmshd(){
+            this.$modal.hide('bmsho');
         },
            
         hgtdt(){
