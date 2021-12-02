@@ -23,10 +23,15 @@
             <h4 class="text-center titlefnt">
               Mission
               <span class="float-right"
-                ><i class="fas fa-info-circle"></i
+                ><i class="fas fa-info-circle" @click="msndtls ^= true"></i
               ></span>
             </h4>
+          
           </div>
+              <h6 class="p-1 px-1 dtlsfnt " v-show="msndtls">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio similique nulla aliquam,
+                    amet asperiores nam minima odio iusto officiis 
+                    voluptatem eveniet natus. Atque quidem, voluptate numquam laborum accusantium architecto?
+                </h6>
            <router-link to="missionlist">
           <div class="card-body p-1 tmibg">
             <div class="card blksdo" v-for="(mnms, i) in mname" :key="i">
@@ -61,6 +66,7 @@
 export default {
   data() {
     return {
+        msndtls:false,
       mname: [
         {
           mimg: "colombia.png",

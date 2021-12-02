@@ -25,13 +25,13 @@
         
         <div class="card-header blkgry"><h4 class="titlefnt"> Door WAY</h4></div>
         <div class="card-body  Gp0m0 ">
-            <carousel :autoplay="true"  :height="120" :dots="false" :nav="false" :items='1' class="p-2"> 
+            <carousel :autoplay="true"  :height="250" :dots="false" :autoplayTimeout="2000" :nav="false" :items='1' class="px-2"> 
                 <div class="card blkgry w-100 "  v-for="(hbimg, i) in bimg" :key="i">
-                    <img class="card-img  bdr1 " style="height:80px; padding:5px;" 
+                    <img class="card-img  bdr1 " style="height:150px; padding:2px;" 
                     :src="require('/src/assets/img/bannar/'+hbimg.img)">
                     <div class="row blkgry Gp0m0">
                         <div class="col-2 "> </div>             
-                        <div class="col-8 p-3"> <div class="btn nBtn button4 nBbg text-center btn-block">Hi Button </div></div>
+                        <div class="col-8 p-1"> <div class="btn nBtn button4 nBbg text-center btn-block">Hi Button </div></div>
                         <div class="col-2 "> </div>  
                     </div>
                 </div>
