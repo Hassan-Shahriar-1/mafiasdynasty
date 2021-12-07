@@ -83,7 +83,43 @@ export default {
                     enrg:"456",
                     lvl:"456"
                     
-                }
+                },
+                      {
+                    rnk:5,
+                    limg:"Gold-bar.jpg",
+                    nm:"Abul Mall",
+                    cntry:"Youga Master",
+                    enrg:"46",
+                    lvl:"4556"
+                },
+                {
+                    rnk:6,
+                    limg:"Gold-bar.jpg",
+                    nm:"Hasan Shahriar",
+                    cntry:"Youga Master",
+                    enrg:"456",
+                    lvl:"456"
+                    
+                },
+                {
+                    rnk:7,
+                    limg:"Gold-bar.jpg",
+                    nm:"Newaz Sharif",
+                    cntry:"Youga Master",
+                    enrg:"456",
+                    lvl:"456"
+                    
+                },
+                {
+                    rnk:8,
+                    limg:"Gold-bar.jpg",
+                    nm:"Abdullah Al Baqi",
+                    cntry:"brazil Master",
+                    enrg:"456",
+                    lvl:"456"
+                    
+                },
+                
             ]
         }
         

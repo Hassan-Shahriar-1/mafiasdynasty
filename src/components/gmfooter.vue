@@ -143,46 +143,13 @@ export default {
                          {
                              name:'Godfather',
                              ta:[
-                                       
-                                         {
-                                            nm:"Attack", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/attack'
-                                        },
+                                    {
+                                    nm:"Godfathers", 
+                                    icn:"<i class='fas fa-box'></i>",
+                                    clk:'/game/Godfathers'
+                                },
 
-                                         {
-                                            nm:"Attack2", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/attack2'
-                                        },
-                                         {
-                                            nm:"combat", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/combat'
-                                        },
-                                         {
-                                            nm:"loot", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/loot'
-                                        },
-                                        {
-                                            nm:"Mission", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/missionintro'
-                                        },
-                                      
-                                          {
-                                            nm:"Godfathers", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/Godfathers'
-                                        },
-
-                                           {
-                                            nm:"Spy", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/spy'
-                                        },
-
+                                          
                                        
                                    
                                 ]
@@ -240,6 +207,29 @@ export default {
                                             nm:"Land", 
                                             icn:"<i class='fas fa-grip-horizontal'></i>",
                                             clk:'/game/alllands'
+                                        },
+                                          {
+                                            nm:"Attack", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/attack'
+                                        },
+
+                                         {
+                                            nm:"Attack2", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/attack2'
+                                        },
+                              
+                                         {
+                                            nm:"loot", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/loot'
+                                        },
+                                 
+                                         {
+                                            nm:"Spy", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/spy'
                                         },
                                        
                                      

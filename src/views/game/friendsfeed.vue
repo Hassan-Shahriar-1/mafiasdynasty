@@ -7,7 +7,7 @@
         <div class="row Gp0m0 blkgry p-2 my-1" v-for="(ffed, i) in fed" :key="i">
             <div class="col-2 Gp0m0 "><img class="card-img bdr1" src="../../assets/img/item/1.gif" alt="">
             </div>
-            <div class="col-10">
+            <div class="col-10 pr-0">
                  <h4 class=" subtitlefnt siz13 float-right ">10 min ago</h4>
                 {{ffed.anm}} ipsum dolor sit amet consectetur adipisicing elit. Magni nisi doloribus  tempora veritatis! Atque quae fugit quasi  {{ffed.dnm}}.
                 <div class="row Gp0m0">

@@ -1,7 +1,7 @@
 <template>
 
     <div>
-        <div class="Gdftrt9bg px-2">
+        <div class="Gdftrt9bg  py-1 px-2">
             <h4 class="titlefnt">Call of Habib p6</h4>
             <p class="dtlsfnt siz15">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus atque officiis fuga veniam 

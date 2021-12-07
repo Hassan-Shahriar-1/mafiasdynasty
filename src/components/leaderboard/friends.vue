@@ -7,7 +7,7 @@
         <table class=" table Gp0m0" width="100%">
             <thead class=" text-left blkgry">
                 <tr class="subtitlefnt text-center p-4">
-                    <th width="10%">Rank</th>
+                    <th width="5%">nk</th>
                     <th>Team</th>
                     <th>Country</th>
                     <th>Energy</th>
@@ -17,7 +17,7 @@
 
             <tbody>
                 <tr class="my-3 py-2" v-for="fdta in fdata" :key="fdta.rnk"  :class="cngclr(fdta.rnk)">
-                    <td>    <!-- <img class="card-img " :src="require('../../assets/img/item/'+fdta.limg)" alt=""> --> 
+                    <td >    <!-- <img class="card-img " :src="require('../../assets/img/item/'+fdta.limg)" alt=""> --> 
                     {{fdta.rnk}}</td>
                     <td>
                         <h6 class="subtitlefnt">{{fdta.nm}}</h6>
@@ -49,7 +49,7 @@ export default {
                     rnk:1,
                     limg:"Gold-bar.jpg",
                     nm:"Abul Mall",
-                    cntry:"Youga Master",
+                    cntry:"Bangladesh",
                     enrg:"46",
                     lvl:"4556"
                 },
@@ -57,7 +57,7 @@ export default {
                     rnk:2,
                     limg:"Gold-bar.jpg",
                     nm:"Hasan Shahriar",
-                    cntry:"Youga Master",
+                    cntry:"Bangladesh",
                     enrg:"456",
                     lvl:"456"
                     
@@ -66,7 +66,7 @@ export default {
                     rnk:3,
                     limg:"Gold-bar.jpg",
                     nm:"Newaz Sharif",
-                    cntry:"Youga Master",
+                    cntry:"Bangladesh",
                     enrg:"456",
                     lvl:"456"
                     
@@ -75,7 +75,42 @@ export default {
                     rnk:4,
                     limg:"Gold-bar.jpg",
                     nm:"Abdullah Al Baqi",
-                    cntry:"brazil Master",
+                    cntry:"chaina",
+                    enrg:"456",
+                    lvl:"456"
+                    
+                },
+                   {
+                    rnk:1,
+                    limg:"Gold-bar.jpg",
+                    nm:"Abul Mall",
+                    cntry:"Bangladesh",
+                    enrg:"46",
+                    lvl:"4556"
+                },
+                {
+                    rnk:2,
+                    limg:"Gold-bar.jpg",
+                    nm:"Hasan Shahriar",
+                    cntry:"Bangladesh",
+                    enrg:"456",
+                    lvl:"456"
+                    
+                },
+                {
+                    rnk:3,
+                    limg:"Gold-bar.jpg",
+                    nm:"Newaz Sharif",
+                    cntry:"Bangladesh",
+                    enrg:"456",
+                    lvl:"456"
+                    
+                },
+                {
+                    rnk:4,
+                    limg:"Gold-bar.jpg",
+                    nm:"Abdullah Al Baqi",
+                    cntry:"chaina",
                     enrg:"456",
                     lvl:"456"
                     
