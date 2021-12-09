@@ -97,8 +97,38 @@ export default new Router({
                         },
                         {
                             path: 'limited',
+                            name: 'limited',
+
                             component: () =>
-                                import ('@/components/home/limited')
+                                import ('@/components/home/limited'),
+
+                            children: [{
+                                    path: 'abilities',
+                                    name: 'abilities',
+                                    component: () =>
+                                        import ('@/components/limited/abilities')
+                                },
+                                {
+                                    path: 'fimiliers',
+                                    name: 'fimiliers',
+                                    component: () =>
+                                        import ('@/components/limited/fimiliers')
+                                },
+                                {
+                                    path: 'avater',
+                                    name: 'avater',
+                                    component: () =>
+                                        import ('@/components/limited/avater')
+                                },
+                                {
+                                    path: 'avaterbg',
+                                    name: 'avaterbg',
+                                    component: () =>
+                                        import ('@/components/limited/avaterbg')
+                                },
+
+
+                            ],
                         },
 
                         {
