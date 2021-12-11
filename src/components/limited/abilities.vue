@@ -1,45 +1,65 @@
 <template>
     <div>
-                  <div class="row py-2 text-center Gp0m0"><h4 class="hr-sect jaldi">Attacking Abilities</h4></div>
-            <div class="ptnbg blksdo p-2 m-2">
-                <div class="w-100 px-2"><h6 class="dtlsfnt">Lvero suscipit mollitia praesentium sint facilis assumenda.</h6></div>
-                <div class="row no-gutters ">
-                    <div class="col-4 p-2"><img src="../../assets/img/item/1.gif" class="card-img" alt=""> <h6 class="pl-1 dtlsfnt">ashdahs</h6></div>
-                    <div class="col-4 p-2"><img src="../../assets/img/item/1.gif" class="card-img" alt=""> <h6 class="pl-1 dtlsfnt">ashdahs</h6></div>
-                    <div class="col-4 p-2"><img src="../../assets/img/item/1.gif" class="card-img" alt=""> <h6 class="pl-1 dtlsfnt">ashdahs</h6></div>
-                    <div class="btn nBtn btn-lg btn-block Gbtn"><h6 class="text-gold">200 Gold</h6></div>
-                </div>
-            </div>
 
-            <div class="ptnbg blksdo p-2 m-2">
-                <div class="w-100 px-2"><h6 class="dtlsfnt">Lvero suscipit mollitia praesentium sint facilis assumenda.</h6></div>
-                <div class="row no-gutters ">
-                    <div class="col-4 p-2"><img src="../../assets/img/item/1.gif" class="card-img" alt=""> <h6 class="pl-1 dtlsfnt">ashdahs</h6></div>
-                    <div class="col-4 p-2"><img src="../../assets/img/item/1.gif" class="card-img" alt=""> <h6 class="pl-1 dtlsfnt">ashdahs</h6></div>
-                    <div class="col-4 p-2"><img src="../../assets/img/item/1.gif" class="card-img" alt=""> <h6 class="pl-1 dtlsfnt">ashdahs</h6></div>
-                    <div class="btn nBtn btn-lg btn-block  Gbtn"><h6 class="text-gold">200 Gold</h6></div>
-                </div>
-            </div>
 
-            <div class="row py-2 text-center Gp0m0"><h4 class="hr-sect jaldi">Defensive Abilities</h4></div>
-            <div class="ptnbg blksdo p-2 m-2">
-                <div class="w-100 px-2"><h6 class="dtlsfnt">Lvero suscipit mollitia praesentium sint facilis assumenda.</h6></div>
-                <div class="row no-gutters ">
-                    <div class="col-4 p-2"><img src="../../assets/img/item/1.gif" class="card-img" alt=""> <h6 class="pl-1 dtlsfnt">ashdahs</h6></div>
-                    <div class="col-4 p-2"><img src="../../assets/img/item/1.gif" class="card-img" alt=""> <h6 class="pl-1 dtlsfnt">ashdahs</h6></div>
-                    <div class="col-4 p-2"><img src="../../assets/img/item/1.gif" class="card-img" alt=""> <h6 class="pl-1 dtlsfnt">ashdahs</h6></div>
-                    <div class="btn nBtn btn-lg btn-block Gbtn"><h6 class="text-gold">200 Gold</h6></div>
+        <div class="div tmibg  m-1" v-for="(abl, i) in ablts" :key="i">
+			<h5 class="py-2">{{abl.ttl}}</h5>
+            <div class="row Gp0m0 pb-3">
+                <div class="col-4 text-center Gp0m0">
+                    <div class="mt-4"><img  :src="require('/src/assets/img/bannar/'+abl.img)" class="card-img"></div>Epic</div>
+                <div class="col-8">												 										 
+                        <div class="row Gp0m0">  
+                             <div class="col-12 Gp0m0 py-1"> <h5 class="py-2" style=" ">{{abl.typ}}</h5> </div> 
+                            <div class="col  Gp0m0 blkgry"> <h5 class="text-center"> Attack   <br>{{abl.atk}}</h5> </div> 
+                             <div class="col  Gp0m0 blkgry"> <h5 class="text-center"> Defense   <br>{{abl.dfnc}}</h5> </div>										</div>
+                        <button type="button" style="margin-top:10%" class="nBtn button4 btn w-100  pull-right" ><h5 class=""><strong>   75 Jewels</strong></h5></button>							 
                 </div>
             </div>
-
-            <div class="ptnbg blksdo p-2 m-2">
-                <div class="w-100 px-2"><h6 class="dtlsfnt">Lvero suscipit mollitia praesentium sint facilis assumenda.</h6></div>
-                <div class="row no-gutters ">
-                    <div class="col-4 p-2"><img src="../../assets/img/item/1.gif" class="card-img" alt=""> <h6 class="pl-1 dtlsfnt">ashdahs</h6></div>
-                    <div class="col-4 p-2"><img src="../../assets/img/item/1.gif" class="card-img" alt=""> <h6 class="pl-1 dtlsfnt">ashdahs</h6></div>
-                    <div class="col-4 p-2"><img src="../../assets/img/item/1.gif" class="card-img" alt=""> <h6 class="pl-1 dtlsfnt">ashdahs</h6></div>
-                    <div class="btn nBtn btn-lg btn-block Gbtn"><h6 class="text-gold">200 Gold</h6></div>
-                </div>
-            </div>
+		</div>
+        
     </div>
 </template>
+
+
+<script>
+export default {
+    data() {
+
+
+        return{
+            ablts:[
+
+                {
+                    img:"2.jpg",
+                    ttl:"Thunder Blaster",
+                    typ:"Offensive",
+                    atk:"313",
+                    dfnc:"222"
+                },
+                {
+                    img:"2.jpg",
+                    ttl:"Thunder Blaster",
+                    typ:"Offensive",
+                    atk:"313",
+                    dfnc:"222"
+                },
+                {
+                    img:"2.jpg",
+                    ttl:"Thunder Blaster",
+                    typ:"Offensive",
+                    atk:"313",
+                    dfnc:"222"
+                },
+                {
+                    img:"2.jpg",
+                    ttl:"Thunder Blaster",
+                    typ:"Offensive",
+                    atk:"313",
+                    dfnc:"222"
+                },
+            ]
+        }
+        
+    },
+}
+</script>

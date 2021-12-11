@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="section ">
+        <div class="section  ptnbg">
             <div class="card">
                 <div class="card-header p-0">
                     <div class="w-100 blkgry "><h2 class="text-center text-golden py-2 blk75 subtitlefnt ">Limited Edition</h2></div>
