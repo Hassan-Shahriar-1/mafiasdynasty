@@ -54,9 +54,10 @@ export default{
     },
     beforeCreate(){
       this.$mgo.gt('mp/limited/editiopn',(rs)=>{
+          console.log(rs);
           this.tmr=rs.data['tmr'][0]['sttm'];
           this.end=rs.data['tmr'][0]['endtm']; 
-          console.log(this.tmr);
+          console.log(this.tmr,'here is start timer');
           console.log(rs);
       })
     }
