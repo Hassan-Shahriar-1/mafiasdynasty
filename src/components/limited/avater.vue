@@ -180,10 +180,10 @@ export default {
         
     },
       beforeCreate(){
-      this.$mgo.gt('mp/limited/editiopn',(rs)=>{
+      this.$mgo.gt('mp/limited/editiopn/avt',(rs)=>{
           console.log(rs);
-          this.tmr=rs.data['tmr'][0]['sttm'];
-          this.end=rs.data['tmr'][0]['endtm']; 
+          this.tmr=rs.data['sttm'];
+          this.end=rs.data['endtm'];
           console.log(this.tmr,'here is start timer');
           console.log(rs);
       })
