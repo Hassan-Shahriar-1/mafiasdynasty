@@ -3,7 +3,7 @@
 
 
 
-              <div class="blkred p-2">
+    <div class="blkred p-2 siz17">
       <vue-countdown-timer
       @start_callback="startCallBack('event started')"
       @end_callback="endCallBack('event ended')"
@@ -23,7 +23,7 @@
         <h1>hi fimiliars</h1>
 
     <div class="row Gp0m0 blkgry my-2" v-for="(fmlr, i) in bimg" :key="i">	
-		<div class="col-4"><img  :src="require('/src/assets/img/bannar/'+fmlr.img)"  class="card-img mt-4"></div> 
+		<div class="col-4 px-1"><img  :src="require('/src/assets/img/item/'+fmlr.img)"  class="card-img mt-4"></div> 
 		<div class="col-8"> 
 			<h5 class="b-h2" style="border-bottom:solid #fff 1px;">{{fmlr.fnm}}</h5>	
             <div class="col-12"> <h6 class="h6">Energy : 10</h6><h6 class="h6">Attack : {{fmlr.atk}}</h6><h6 class="h6">Defence : {{fmlr.dfnc}}</h6> <h6>Jewels {{fmlr.jwls}}</h6></div> 	
@@ -53,25 +53,25 @@ export default {
 
             bimg:[
                  {
-                    img:"2.jpg",
+                    img:"1.gif",
                     fnm:"Sandra soraz",
                     atk:"5",
                     dfnc:"10",
                     jwls:"45"
                  }, {
-                    img:"2.jpg",
+                    img:"1.gif",
                     fnm:"Sandra soraz",
                     atk:"5",
                     dfnc:"10",
                     jwls:"45"
                  }, {
-                    img:"2.jpg",
+                    img:"1.gif",
                     fnm:"Sandra soraz",
                     atk:"5",
                     dfnc:"10",
                     jwls:"45"
                  }, {
-                    img:"2.jpg",
+                    img:"1.gif",
                     fnm:"Sandra soraz",
                     atk:"5",
                     dfnc:"10",

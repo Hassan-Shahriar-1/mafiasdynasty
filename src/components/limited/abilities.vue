@@ -2,7 +2,7 @@
     <div>
 
 
-      <div class="blkred p-2">
+      <div class="blkred p-2 siz17">
       <vue-countdown-timer
       @start_callback="startCallBack('event started')"
       @end_callback="endCallBack('event ended')"
@@ -21,15 +21,16 @@
     </div>
 
         <div class="div tmibg  m-1" v-for="(abl, i) in ablts" :key="i">
-			<h5 class="py-2">{{abl.ttl}}</h5>
+			<h5 class="py-2 text-center">{{abl.ttl}}</h5>
             <div class="row Gp0m0 pb-3">
                 <div class="col-4 text-center Gp0m0">
-                    <div class="mt-4"><img  :src="require('/src/assets/img/bannar/'+abl.img)" class="card-img"></div>Epic</div>
-                <div class="col-8">												 										 
+                    <div class="mt-2"><img  :src="require('/src/assets/img/item/'+abl.img)" class="card-img"></div><h6 class="pt-1">Epic</h6></div>
+                <div class="col-8 p-1">												 										 
                         <div class="row Gp0m0">  
-                             <div class="col-12 Gp0m0 py-1"> <h5 class="py-2" style=" ">{{abl.typ}}</h5> </div> 
-                            <div class="col  Gp0m0 blkgry"> <h5 class="text-center"> Attack   <br>{{abl.atk}}</h5> </div> 
-                             <div class="col  Gp0m0 blkgry"> <h5 class="text-center"> Defense   <br>{{abl.dfnc}}</h5> </div>										</div>
+                            <div class="col-12 Gp0m0 py-1"> <h5 class="py-2 text-center " style=" ">{{abl.typ}}</h5> </div> 
+                            <div class="col Gp0m0 dbgwbdr"> <h6 class="text-center"> Attack   <br>{{abl.atk}}</h6> </div> 
+                            <div class="col Gp0m0 dbgwbdr"> <h6 class="text-center"> Defense   <br>{{abl.dfnc}}</h6> </div>
+                        </div>
                         <button type="button" style="margin-top:10%" class="nBtn button4 btn w-100  pull-right" ><h5 class=""><strong>   75 Jewels</strong></h5></button>							 
                 </div>
             </div>
@@ -55,28 +56,28 @@ export default {
             ablts:[
 
                 {
-                    img:"2.jpg",
+                    img:"1.gif",
                     ttl:"Thunder Blaster",
                     typ:"Offensive",
                     atk:"313",
                     dfnc:"222"
                 },
                 {
-                    img:"2.jpg",
+                    img:"1.gif",
                     ttl:"Thunder Blaster",
                     typ:"Offensive",
                     atk:"313",
                     dfnc:"222"
                 },
                 {
-                    img:"2.jpg",
+                    img:"1.gif",
                     ttl:"Thunder Blaster",
                     typ:"Offensive",
                     atk:"313",
                     dfnc:"222"
                 },
                 {
-                    img:"2.jpg",
+                    img:"1.gif",
                     ttl:"Thunder Blaster",
                     typ:"Offensive",
                     atk:"313",

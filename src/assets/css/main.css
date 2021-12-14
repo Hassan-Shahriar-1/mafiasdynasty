@@ -895,6 +895,11 @@ p {
     background: rgb(0, 0, 0/35%);
 }
 
+.dbgwbdr {
+    background-color: #000;
+    border: 1px solid rgb(33, 32, 32);
+}
+
 
 /* Big Button start */
 
@@ -1869,6 +1874,10 @@ button.big-button:active::before {
     font-size: 15px;
 }
 
+.siz17 {
+    font-size: 17px;
+}
+
 .siz18 {
     font-size: 18px;
 }
@@ -2407,7 +2416,7 @@ label {
 }
 
 .Anm-outln15si {
-    animation: ltdbtn 0.9s ease-out infinite;
+    animation: ltdbtn 1.4s ease-out infinite;
 }
 
 @keyframes outln15si {

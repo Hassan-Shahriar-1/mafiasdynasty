@@ -1,7 +1,7 @@
 <template>
     <div>
 
-              <div class="blkred p-2">
+      <div class="blkred p-2 siz17">
       <vue-countdown-timer
       @start_callback="startCallBack('event started')"
       @end_callback="endCallBack('event ended')"
