@@ -11,11 +11,11 @@
                         <input type="text" class="form-control siz20" v-model="gnm"  placeholder="Organization Name">
                     </div> 
 
-                    <select class="form-select grnd75 text-light   py-2 pl-3 w-100 siz20" v-model="gtyp">
-                        <option value="" class="text-light">Chose Organization type</option>
-                        <option value="1">Public</option>
-                        <option value="2">Private</option>
-                        <option value="3">Secret</option>
+                    <select class="form-select grnd75  text-light   py-2 pl-3 w-100 siz20" v-model="gtyp">
+                        <option value="" class="text-light bg-secondary">Chose Organization type</option>
+                        <option value="1" class="text-light bg-secondary">Public</option>
+                        <option value="2" class="text-light bg-secondary">Private</option>
+                        <option value="3" class="text-light bg-secondary">Secret</option>
                     </select>  
 
                     <div class="text-center">
