@@ -214,11 +214,7 @@ export default {
                                             clk:'/game/attack'
                                         },
 
-                                         {
-                                            nm:"Attack2", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/attack2'
-                                        },
+                                     
                               
                                          {
                                             nm:"loot", 

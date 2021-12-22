@@ -30,7 +30,7 @@
                         <div class="col-12">
                             <div class="nC-pd4p">
                                 <h6><em>"I am happy to see your progress. Let's try your luck. May Lord Dracula bless you."</em></h6>
-                                <button type="button" class="nBtn nBbg blkgry  btn-block  w-100 float-right"><h5 class="">
+                                <button type="button" class=" mt-2 nBtn nBbg  py-2 button4  btn-block  w-100 float-right"><h5 class="">
                                     <strong>Spin for 19,470 Blood</strong></h5>
                                 </button>
                             </div>

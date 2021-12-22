@@ -13,11 +13,13 @@
                     <div class="row Gp0m0  rounded blkd75 p-2">
                         <div class="col-2 Gp0m0 p-1"><img :src="require('../../assets/img/'+masrc.mfaimg)"  class="card-img bdrblk2" alt=""></div>
                         <div class="col-6"> <h5 class="text-info subtitlefnt siz25">{{masrc.mfattl}}</h5> <h6 class="subtitlefnt siz20">{{masrc.mfades}}</h6></div>
-                        <div class="col-4 "> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center"><i class="fas fa-plus-square"></i>&nbsp;Invite</h6></div></div>
+                        <div class="col-4 "> <div class=" button4 nBtn mt-2 border py-2 rounded" ><h6 class="text-center"><i class="fas fa-plus-square"></i>&nbsp;Invite</h6></div></div>
                     </div>
                 </li>
             </ul>
         </div>
+
+
     </div>
 </template>
 
@@ -59,6 +61,14 @@ export default {
                     ]
 
             }
+    },
+    methods:{
+            show () {
+            this.$modal.show('invfnd');            
+        },
+        hide () {
+            this.$modal.hide('invfnd');
+        },
     }
 }
 </script>

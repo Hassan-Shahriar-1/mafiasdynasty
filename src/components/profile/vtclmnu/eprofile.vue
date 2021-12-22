@@ -30,9 +30,9 @@
                         <div class="position-relative has-icon-right form-control form-control-lg text-left  blkd50">
                             <h6 class="lblblk dtlsfnt ">Please select your gender:</h6>
                             <input type="radio" id="male" name="gender" value="male">
-                            <label for="male" class="lblblk">Male</label>
+                            <label for="male" class="lblblk">&nbsp;Male</label> &nbsp;&nbsp;
                             <input type="radio" id="female" name="gender" value="female">
-                            <label for="female" class="lblblk">Female</label><br>
+                            <label for="female" class="lblblk">&nbsp;Female</label><br>
                             <div class="form-control-position">
                                 <i class=" fas fa-user"></i>
                             </div>
@@ -57,6 +57,9 @@
 
 <script>
 export default{
+data(){
+  
 
+}
 }
 </script>

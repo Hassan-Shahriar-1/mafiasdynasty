@@ -8,8 +8,8 @@
             <div class="col-2 Gp0m0 "><img class="card-img bdr1" src="../../assets/img/item/1.gif" alt="">
             </div>
             <div class="col-10 pr-0">
-                 <h4 class=" subtitlefnt siz13 float-right ">10 min ago</h4>
-                {{ffed.anm}} ipsum dolor sit amet consectetur adipisicing elit. Magni nisi doloribus  tempora veritatis! Atque quae fugit quasi  {{ffed.dnm}}.
+                 <h4 class=" subtitlefnt siz15 float-right ">10 min ago</h4>
+                <div class="subtitlefnt siz20">{{ffed.anm}}</div> <div class="siz15">ipsum dolor sit amet consectetur adipisicing elit. Magni nisi doloribus  tempora veritatis! Atque quae fugit quasi  {{ffed.dnm}}.</div>
                 <div class="row Gp0m0">
                     <div class="col-6">
                         <div class="btn nBbg nBtn p-0 py-2 button6 btn-lg btn-block"><h4 class="siz15">Add to hitlist</h4></div>

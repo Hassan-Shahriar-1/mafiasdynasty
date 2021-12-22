@@ -679,13 +679,6 @@ export default new Router({
                         import ('@/views/game/attack')
                 },
 
-                {
-
-                    path: 'attack2',
-                    name: 'attack2',
-                    component: () =>
-                        import ('@/views/game/attack2')
-                },
 
                 {
 

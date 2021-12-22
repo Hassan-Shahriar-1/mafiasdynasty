@@ -21,9 +21,9 @@
                             <i class="fas fa-thumbs-up bgmn ">100&nbsp;</i>
                             <i class="fas fa-thumbs-down bgmn mlr3 ">100</i>
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 Gp0m0">
                             <span class="float-right "><i class="fas fa-flag bgmn"></i></span>
-                            <h6 class="mt-2 mlr2 siz13 float-right"><i class="fas fa-clock"></i> {{MsgsLt.Tm}} </h6>     
+                            <h6 class="mt-2 mlr2 siz11 float-right"><i class="fas fa-clock"></i> {{MsgsLt.Tm}} </h6>     
                         </div>
                     </div>  
                 </div>  

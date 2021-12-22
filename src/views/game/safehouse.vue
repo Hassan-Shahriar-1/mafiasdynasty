@@ -10,30 +10,30 @@
                 </h6>
                 <div class="card p-1">
                     <div class="card-header  blkgry p-2"><div class="col-12"><h4 class="text-center titlefnt">Wooden Safe House</h4></div></div>
-                    <div class="card-body blkgry">
+                    <div class="card-body blk">
                         <div class="row Gp0m0">
-                            <div class="col-7"><h5 class="dtlsfnt">Safe House for 1 Hour Which will cost Cash</h5></div>
-                            <div class="col-5 Gp0m0"><h5 class="dtlsfnt">Requirment</h5><h6 class="text-success">1564536 Cash</h6> <div class=" mt-1 btn nBbg nBtn button4 btn-block p-1">Activate</div></div>
+                            <div class="col-8"><h5 class="dtlsfnt siz17">Safe House for 1 Hour Which will cost Cash</h5></div>
+                            <div class="col-4 Gp0m0"><h6 class="dtlsfnt">Requirment</h6><h6 class="text-success">1564536 Cash</h6> <div class=" mt-1 btn nBbg nBtn  button4 btn-block p-1">Activate</div></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="card p-1">
                     <div class="card-header  blkgry p-2"><div class="col-12"><h4 class="text-center titlefnt">Safe House of East</h4></div></div>
-                    <div class="card-body blkgry">
+                    <div class="card-body blk">
                         <div class="row Gp0m0">
-                            <div class="col-7"><h5 class="dtlsfnt">Safe House for 5 Hour Which will cost Gold</h5></div>
-                            <div class="col-5 Gp0m0"><h5 class="dtlsfnt">Requirment</h5><h6 class="text-warning">1564536 Gold</h6> <div class=" mt-1 btn nBbg nBtn button4 btn-block p-1">Activate</div></div>
+                            <div class="col-8"><h5 class="dtlsfnt siz17">Safe House for 5 Hour Which will cost Gold</h5></div>
+                            <div class="col-4 Gp0m0"><h6 class="dtlsfnt">Requirment</h6><h6 class="text-warning">1564536 Gold</h6> <div class=" mt-1 btn nBbg nBtn  button4 btn-block p-1">Activate</div></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="card p-1">
                     <div class="card-header  blkgry p-2"><div class="col-12"><h4 class="text-center titlefnt">Safe House of South</h4></div></div>
-                    <div class="card-body blkgry">
+                    <div class="card-body blk">
                         <div class="row Gp0m0">
-                            <div class="col-7"><h5 class="dtlsfnt">Safe House for 24 Hour Which will cost Gold</h5></div>
-                            <div class="col-5 Gp0m0"><h5 class="dtlsfnt">Requirment</h5><h6 class="text-warning">1564536 Gold</h6> <div class=" mt-1 btn nBbg nBtn button4 btn-block p-1">Activate</div></div>
+                            <div class="col-8"><h5 class="dtlsfnt siz17">Safe House for 24 Hour Which will cost Gold</h5></div>
+                            <div class="col-4 Gp0m0"><h6 class="dtlsfnt">Requirment</h6><h6 class="text-warning">1564536 Gold</h6> <div class=" mt-1 btn nBbg nBtn  button4 btn-block p-1">Activate</div></div>
                         </div>
                     </div>
                 </div>

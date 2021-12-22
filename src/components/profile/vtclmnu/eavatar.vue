@@ -4,9 +4,15 @@
             <div class="card-header blkgry">
                 <h4 class="text-left subtitlefnt">
                     Customize Avater
-                    <h4 class="float-right"><i class="fas fa-info-circle"></i></h4>
+                    <h4 class="float-right"><i class="fas fa-info-circle"  @click="info ^= true"></i></h4>
                 </h4>
+                 
             </div>
+             <h6 class="p-1 px-1 dtlsfnt blk text-center" v-show="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio similique nulla aliquam,
+                    amet asperiores nam minima odio iusto officiis 
+                    voluptatem eveniet natus. Atque quidem, voluptate numquam laborum accusantium architecto?
+                </h6>
+
 
             <div class="card-body pt-1 Gp0m0">
                         <div class="bw100 w-100 rounded jaldi blkgry" role="group" aria-label="...">
@@ -83,8 +89,8 @@ export default {
             hr:'',
             otr:'',
             edt:'',
-        }
-        
+            info:false,
+        }  
     },
     mounted() {
         this.bdy,this.famlr,this.pnt,this.trs,this.she,this.hr

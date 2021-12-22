@@ -54,8 +54,8 @@
                 </div>
                 <div class="card Gp0m0 pt-5">
                     <div class="card-header blkgry"> <h2 class="subtitlefnt">Avater Sets</h2> </div>
-                    <div class="card-body">
-                        <div class="slider pb-3">  
+                    <div class="card-body h-100 py-1">
+                        <div class="slider" style="height:150px;">  
                             <div class="col-3 Gp0m0 slide" v-for="(avtrs, i) in avtr" :key="i" >
                                 <div class=" m-1 border rounded">
                                     <img :src="require('/src/assets/img/custom profile/'+avtrs.mg)" class="card-img" alt=""> <br>

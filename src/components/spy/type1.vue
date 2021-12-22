@@ -25,17 +25,17 @@
 
                 <div class="card blkgry" style="width:300px;">
                     <div class="card-header tmibg2 p-1">
-                    <h4 class=" rounded-0 text-center py-1 w-100 " style="position:sticky;">Welcome To the flight
+                    <h4 class=" rounded-0 text-center py-1 w-100 " style="position:sticky;">Grab This things
                         <span class="float-right" style="margin-right:2%;"  @click="hide();"><div class="crossbtn"><i class="fas fa-times " ></i></div></span></h4>
                     </div>
                     <div class="card-body bg-transparent p-0"  style="height:250px; overflow:scroll;">
                         <div class="w-100  Gp0m0" >   
 
-                            <h5 class="text-center">
+                            <h6 class="text-center dtlsfnt mt-3">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus 
                                 veniam deleniti error accusantium, distinctio sint alias! Error fugit
                                  ducimus suscipit nisi. Officia fuga ad dolor aspernatur nam architecto asperiores quis.
-                            </h5>
+                            </h6>
                         </div>
                     </div>
                 </div>
