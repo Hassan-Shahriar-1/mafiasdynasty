@@ -24,7 +24,10 @@
 			<h5 class="py-2 text-center">{{abl.ttl}}</h5>
             <div class="row Gp0m0 pb-3">
                 <div class="col-4 text-center Gp0m0">
-                    <div class="mt-2"><img  :src="require('/src/assets/img/item/'+abl.img)" class="card-img"></div><h6 class="pt-1">Epic</h6></div>
+                    <div class="mt-2"><img  :src="require('/src/assets/img/item/'+abl.img)"  class="card-img"></div><h6 class="pt-1">Epic</h6></div>
+
+
+                  
                 <div class="col-8 p-1">												 										 
                         <div class="row Gp0m0">  
                             <div class="col-12 Gp0m0 py-1"> <h5 class="py-2 text-center " style=" ">{{abl.typ}}</h5> </div> 
