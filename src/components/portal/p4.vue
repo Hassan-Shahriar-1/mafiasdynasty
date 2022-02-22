@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div class="Gdftrt9bg  py-1 px-2">
+        <div class="Gdftrt9bg  py-1 px-2 scale-up-center">
             <h4 class="titlefnt">Call of Habib p4</h4>
-            <p class="dtlsfnt siz15">
+            <p class="dtlsfnt siz15 p-2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus atque officiis fuga veniam 
                 omnis modi porro illum voluptate? Eius inventore laboriosam ab doloremque dicta repellat? Magnam a ex autem.
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus atque officiis fuga veniam 

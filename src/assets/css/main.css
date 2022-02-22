@@ -6,7 +6,8 @@
     margin: 0;
     padding: 0;
     color: white;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
+    scroll-behavior: auto;
 }
 
 
@@ -106,29 +107,6 @@
     font-family: btnfnt;
 }
 
-.custom1 {
-    font-family: custom1;
-}
-
-.custom2 {
-    font-family: custom2;
-}
-
-.custom3 {
-    font-family: custom3;
-}
-
-.custom4 {
-    font-family: custom4;
-}
-
-.custom5 {
-    font-family: custom5;
-}
-
-.custom6 {
-    font-family: custom6;
-}
 
 .TypoFormal {
     font-family: TypoFormal;
@@ -171,13 +149,7 @@
     /* background:linear-gradient(0deg, rgb(0, 25, 31) 0%, rgb(9, 91, 115) 100%); */
 }
 
-.bgmn {
-    background: linear-gradient(0deg, rgb(37, 37, 37) 0%, rgb(45, 45, 45) 100%);
-    color: white;
-    box-shadow: 0px 0px 15px 2px #161717;
-    padding: 10px;
-    border-radius: 8%;
-}
+
 
 .contain::after {
     content: "";
@@ -893,7 +865,7 @@ p {
 }
 
 .dark50 {
-    background: rgb(0, 0, 0/35%);
+    background: rgb(0, 0, 0,80%);
 }
 
 .dbgwbdr {
@@ -2508,7 +2480,7 @@ label {
 /* form color for edit profile section */
 
 .nwfrmclr {
-    background-color: rgb(125 125 125);
+    background-color: rgb(207, 207, 207,100);
 }
 
 
@@ -2586,3 +2558,79 @@ label {
 
 
 /* gift section ribbon design End */
+
+
+
+.bnrbxsdo{
+
+    box-shadow:inset 0px 0px 5px 3px #103241;
+    padding: 2%;
+
+}
+
+/* Godfather  animation css start */
+
+.scale-up-center {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
+    @keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
+
+
+    .scale-up-center {
+        -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+    
+    
+/* Godfather animation css End */

@@ -75,7 +75,13 @@
     <div class="col-4 py-5 border msg_cotainergsp"><h6>cyan  class="msg_cotainergsp"</h6></div>
     <div class="col-4 py-5 border msg_cotainer_sendgsp"><h6>lightcyan   class="msg_cotainer_sendgsp"</h6></div>
     <div class="col-4 py-5 border msg_timegsp"><h6>black masg time   class="msg_timegsp</h6></div>
-    
+
+
+    <div class="col-4 py-5 border blk50"><h6>div inner background time   class="blk50</h6></div>
+    <div class="col-4 py-5 border blkd50"><h6>div inner background time   class="blkd50</h6></div>
+    <div class="col-4 py-5 border grnd75"><h6>div inner background time   class="grnd75</h6></div>
+    <div class="col-4 py-5 border blkd75"><h6>div inner background time   class="blkd75</h6></div> 
+    <div class="col-4 py-5 border dark50"><h6>div inner background time   class="dark50"</h6></div> 
 </div>
 
     </div>

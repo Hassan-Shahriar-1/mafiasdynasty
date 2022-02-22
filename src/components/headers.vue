@@ -81,10 +81,10 @@
         <div class="btn-group rounded jaldi bw100 p-1 m-1"  role="group" aria-label="..." v-show="stngs">
             <div class="row no-gutters">
                 <router-link to="/game/alerts" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0  " ><i class="fas fa-exclamation-triangle"></i><br> <h6 class="siz15">Alerts </h6></router-link>
-                <div tag="button"  class="btn col px-1 nBtn blkgry Gp0m0" @click="stngs=true"><i v-bind:class="{'fas fa-bell' :tgle === true, 'fas fa-bell-slash': tgle === false}" v-on:click="toggle2()"></i>
+                <div tag="button"  class="btn col px-1 nBtn blkgry Gp0m0" v-on:click="toggle2()" @click="stngs=true"><i v-bind:class="{'fas fa-bell' :tgle === true, 'fas fa-bell-slash': tgle === false}" ></i>
                     <h6 class="siz15">notification</h6></div>
                 <router-link to="/game/editprofile" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0   "><i class="fas fa-user"></i><br> <h6 class="siz15">Edit profile</h6> </router-link>
-                <div tag="button"  class="btn col px-1 nBtn blkgry Gp0m0" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" v-on:click="toggle()"></i>
+                <div tag="button"  class="btn col px-1 nBtn blkgry Gp0m0" v-on:click="toggle()" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" ></i>
                     <h6 class="siz15">Music</h6></div>
                 <div tag="button" @click="Lotsw(),stngs=true" class="btn col px-1 nBtn blkgry Gp0m0"><i class="fas fa-sign-out-alt"></i><br> <h6 class="siz15">Logout</h6> </div>
                 <div  tag="button" @click="t8nws ^= true"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fas fa-share-alt"></i><br><h6 class="siz15"  > Social Connect</h6> </div>

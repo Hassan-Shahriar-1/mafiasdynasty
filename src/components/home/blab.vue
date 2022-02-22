@@ -2,10 +2,10 @@
     <div>
         <div class="section mt-1 tmibg">
             <div class="row no-gutters">
-                <textarea v-model="Gmessage" @keyup.enter="insrtMsg" class="w-100 form-control"  name="" id="" cols="10" rows="1" placeholder="Type here" style="height:40px;"></textarea>
+                <textarea v-model="Gmessage"  @keyup.enter="insrtMsg()" class="w-100 form-control"  name="" id="" cols="10" rows="1" placeholder="Type here" style="height:40px;"></textarea>
             </div>
             <div class="btn nBtn blkgry w-100 mt-1  mb-2"  @click="insrtMsg()">Blab here <span><i class="fas fa-hand-point-down"></i></span> </div>
-            <div class="contain Gp1m1 my-1" v-for="(MsgsLt, i) in MsgsLts" :key="i">
+            <div class="contain Gp1m1 my-1 p-1" v-for="(MsgsLt, i) in MsgsLts" :key="i">
                 <div class="row no-gutters mb-1">  
                         <img src="../../assets/img/item/1.gif" alt="Avatar" style="width:100%;">
                         <div class="header">
@@ -13,8 +13,8 @@
                         </div>
                 </div>
                 <div class="dtlsfnt">
-                    <div class="row no-gutters" style="word-break:break-all;">
-                        <h6 class="mb-2 ">{{ MsgsLt.msg }}</h6>
+                    <div class="row no-gutters p-1" style="word-break:break-all;">
+                        <h6  class="mb-2 ">{{ MsgsLt.msg }}</h6>
                     </div> 
                     <div class="row no-gutters">
                         <div class="col-6">
@@ -60,16 +60,26 @@ export default{
         
     },
     methods:{
-        insrtMsg:function(){           
-             this.MsgsLts.push({
-                   msg:this.Gmessage,
-                   Tm:Date.now(),
-                   nm:"Hasan Shahriar"
-            }); 
-            console.log(this.MsgsLts);
-            this.MsgsLts = this.MsgsLts.reverse();
-            this.socket.emit('gblmsg',this.Gmessage);
-            this.Gmessage = "";
+        insrtMsg:function(){   
+        
+            let msggg = this.Gmessage.replace(/  +/g, ' ');
+            console.log(msggg )
+            if(msggg==' ' || msggg==''){
+
+                     console.log('msg log empty')
+
+            }else{
+                this.MsgsLts.push({
+                        msg:this.Gmessage,
+                        Tm:Date.now(),
+                        nm:"Hasan Shahriar"
+                    }); 
+                    /* console.log(this.MsgsLts); */
+                    this.MsgsLts = this.MsgsLts.reverse();
+                    this.socket.emit('gblmsg',this.Gmessage);
+                    this.Gmessage = "";
+               
+            }
         }
     }
 }

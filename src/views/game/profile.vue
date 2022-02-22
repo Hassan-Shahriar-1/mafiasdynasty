@@ -111,7 +111,7 @@
                         <router-link to="abilities" tag="button" class="btn nBtn Gp0m0 blkgry">  <i class="fas fa-gopuram"></i> <br><h4 class="siz15">Abilities</h4></router-link>
                         <router-link to="items" tag="button" class="btn nBtn Gp0m0 blkgry"><i class="fas fa-sitemap"></i> <br> <h4 class="siz15">Items</h4> </router-link>
                         <router-link to="trophies" tag="button" class="btn nBtn Gp0m0 blkgry"><i class="fas fa-trophy"></i><br><h4 class="siz15">Trophies</h4></router-link>
-                        <router-link to="minion" tag="button" class="btn nBtn Gp0m0 blkgry"><i class="fas fa-glass-cheers"></i> <br><h4 class="siz15">Properties</h4></router-link>
+                        <router-link to="property" tag="button" class="btn nBtn Gp0m0 blkgry"><i class="fas fa-glass-cheers"></i> <br><h4 class="siz15">Properties</h4></router-link>
 
                         </div>
                     </div>

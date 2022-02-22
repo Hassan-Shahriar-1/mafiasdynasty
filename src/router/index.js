@@ -159,9 +159,9 @@ export default new Router({
                                 import ('@/components/profile/items')
                         },
                         {
-                            path: 'minion',
+                            path: 'property',
                             component: () =>
-                                import ('@/components/profile/minion')
+                                import ('@/components/profile/property')
                         },
                         {
                             path: 'trophies',
@@ -745,7 +745,12 @@ export default new Router({
                 {
                     path: 'typ8',
                     component: () =>
-                        import ('@/components/godfather/typ8')
+                        import ('@/components/godfather/typ8'),
+                },
+                {
+                    path: 'gfight',
+                    component: () =>
+                        import ('@/components/godfather/gfight')
                 },
                 {
                     path: 'typ9',
@@ -951,11 +956,11 @@ export default new Router({
         /* external link start */
         {
             path: '/gmail',
-            beforeEnter() { location.href = 'http://gmail.com' }
+            beforeEnter() { location.href = 'mailto:support@mafiasrival.com?subject=subject&cc=cc@example.com"' }
         },
         {
             path: '/messenger',
-            beforeEnter() { location.href = ' https://m.me/vampiredynastygame' }
+            beforeEnter() { location.href = 'https://m.me/mafiasrivalgame'}
         }
         /* external link End */
 

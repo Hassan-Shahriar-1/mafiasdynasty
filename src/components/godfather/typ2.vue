@@ -3,7 +3,7 @@
         <div class="row py-2 text-center Gp0m0"><h4 class="hr-sect jaldi">Spinner</h4></div>
             <div class="card Gp0m0">
                 <div class="card-header blkgry text-center"><h4 class="titlefnt">Sandra Corleone</h4></div>
-                   <h6 class=" dtlsfnt p-2 blkgry bdr1">
+                   <h6 class=" dtlsfnt p-2 blk50 bdr1">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequatur ipsa nesciunt reiciendis facilis ut adipisci totam,
                          doloribus qui ex quam debitis voluptatem eveniet pariatur delectus quasi alias odit hic!
                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur optio reiciendis, quia perferendis iste suscipit soluta 

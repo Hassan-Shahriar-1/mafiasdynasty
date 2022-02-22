@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3 class="text-center subtitlefnt">weaponshop</h3>
+        <h3 class="text-center subtitlefnt">Property</h3>
         <!--<div class="slider pb-3">  
                 <div class="col-4 Gp0m0 slide" v-for="(mnons, i) in mnon" :key="i" >
                     <div class=" m-1 border rounded">
