@@ -39,7 +39,7 @@
     <div class="col-4 py-5 border tmibg"><h6>blkish   class="tmibg"</h6></div>
     <div class="col-4 py-5 border blkgu"><h6>yeallow   class="blkgu</h6></div>
 
-    <div class="col-4 py-5 border clRBred"><h6>pirple progress  class="clRBred"</h6></div>
+    <div class="col-4 py-5 border clRBppl"><h6>pirple progress  class="clRBppl"</h6></div>
     <div class="col-4 py-5 border clRBrd"><h6>red progress   class="clRBrd"</h6></div>
     <div class="col-4 py-5 border clRBblue"><h6>blue progress   class="clRBblue</h6></div>
 

@@ -30,7 +30,7 @@
 
                                             <!-- PROGRESSBAR START -->
                                         <div class="progress n_bar-a" style="height: 5px;">
-                                            <div  id="weaponbar" class="progress-bar clRBred bgD0" style="width: 50%;"></div>
+                                            <div  id="weaponbar" class="progress-bar clRBppl bgD0" style="width: 50%;"></div>
                                         </div>
                                                <h6 class="mt-1">Time: 5 days</h6>
                                             <!-- PROGRESSBAR END -->

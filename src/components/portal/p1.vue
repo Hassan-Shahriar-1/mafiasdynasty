@@ -48,7 +48,7 @@
                     <h6 >{{itm.nm}} <span  class="pull-right">0/2240</span></h6>
                     <div class="clearfix"></div>
                     <div class="progress n_bar-a" style="height:10px;">
-                        <div class="progress-bar clRBred bgD0" id="itmBr" style="width:10%;"></div>
+                        <div class="progress-bar clRBppl bgD0" id="itmBr" style="width:10%;"></div>
                     </div>
                 </div>
             </div>

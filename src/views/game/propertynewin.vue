@@ -37,7 +37,7 @@
                     <h5 >level:12</h5>
                 <div class="col-12 Gp0m0">
                         <div class="progress n_bar-a" style="height:10px;">
-                        <div class="progress-bar clRBred bgD0" id="itmBr" style="width:20%"></div>
+                        <div class="progress-bar clRBppl bgD0" id="itmBr" style="width:20%"></div>
                     </div>
                 </div>
                 <div class="col-9 Gp0m0">

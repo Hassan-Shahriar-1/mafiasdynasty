@@ -1,7 +1,7 @@
 
 <template>
 <!--  <script src='assets/js/lib/jquery.fittext'></script> -->
-  <div id="app" class="tbg">
+  <div id="app" class="tbg" >
 
     <div class="mainC">
        <div class="mainCp text-left">
@@ -9,6 +9,8 @@
       </div>
     </div>
   </div>
+
+    
 </template>
 
 
@@ -20,8 +22,8 @@ export default {
   created(){
      // alert(window.jq);
       window.jq.getScript('dist/js/jquery.fittext.js');
-  }
- 
+  },
+
 }
 </script>
 
@@ -37,7 +39,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 0px;
-  margin-bottom:70px;
+  /* margin-bottom:70px; */
 }
 </style>
 

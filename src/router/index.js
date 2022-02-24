@@ -334,11 +334,11 @@ export default new Router({
                     ],
                 },
 
-                {
+                /* {
                     path: 'orgmbrpg',
                     component: () =>
                         import ('@/components/organization/orgmbrpg')
-                },
+                }, */
                 {
                     path: 'searchorg',
                     component: () =>
@@ -956,7 +956,7 @@ export default new Router({
         /* external link start */
         {
             path: '/gmail',
-            beforeEnter() { location.href = 'mailto:support@mafiasrival.com?subject=subject&cc=cc@example.com"' }
+            beforeEnter() { location.href = 'mailto:support@mafiasrival.com?subject=New mail' }
         },
         {
             path: '/messenger',
