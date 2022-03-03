@@ -1,11 +1,9 @@
 <template>
-<div class="bMbg">
-
-      
+<div class="bMbg overflow-auto" style="margin-bottom: 50px;">
       <div class="row Gp0m0 text-center ">
                 <div class="col-2"></div>
                 <div class="col-8">
-                    <img class=" card-img" src="../../assets/img/sections/bank.jpg" alt="">
+                    <img class="mt-2 card-img" src="../../assets/img/sections/bank.jpg" alt="">
                 </div>
                 <div class="col-2"></div>
 
@@ -23,10 +21,10 @@
                 <div class="col-6 px-1 ">
                     <h6 class="text-center"></h6> 
                         <div class="input-group mb-3">
-                        <div class="input-group-prepend">
+                        <div class="input-group-prepend border-0">
                             <span class="input-group-text">$</span>
                         </div>
-                        <input type="number" class="form-control" placeholder="Withdraw Cash">
+                        <input type="number" class="form-control border-0 p-1" placeholder="Withdraw">
                         
                     </div>
                     <div class=" button4 siz15 btn-block pbtn text-center mt-3 nBtn nBbg"> withdraw</div>
@@ -35,10 +33,10 @@
                     <h6 class="text-center"></h6> 
 
                     <div class="input-group mb-3">
-                        <div class="input-group-prepend">
+                        <div class="input-group-prepend border-0">
                             <span class="input-group-text">$</span>
                         </div>
-                        <input type="number" class="form-control" placeholder="Deposite cash">
+                        <input type="number" class="form-control border-0 p-1" placeholder="Deposite">
                         
                     </div>
                     <div class=" button5 siz15 btn-block pbtn text-center  mt-3 nBtn nBbg"> Deposite</div>
@@ -55,22 +53,21 @@
                     <h6 class="text-center"></h6> 
 
                         <div class="input-group mb-3">
-                        <div class="input-group-prepend">
+                        <div class="input-group-prepend border-0">
                             <span class="input-group-text">$</span>
                         </div>
-                        <input type="number" class="form-control"  placeholder=" Loan cash">
+                        <input type="number" class="form-control border-0"  placeholder="Credit">
                         
                     </div>
-                    <div class=" button4 siz15 btn-block pbtn text-center mt-3  nBtn NBbg"> Loan</div>
+                    <div class=" button4 siz15 btn-block pbtn text-center mt-3  nBtn NBbg"> Credit</div>
                 </div>
                 <div class="col-6 px-1">
                     <h6 class="text-center"></h6> 
                     <div class="input-group mb-3">
-                        <div class="input-group-prepend">
+                        <div class="input-group-prepend border-0">
                             <span class="input-group-text">$</span>
                         </div>
-                        <input type="number" class="form-control" placeholder="Recover loan">
-                        
+                        <input type="number" class="form-control border-0" placeholder="Recovery">
                     </div>
                     <div class=" button5 siz15 btn-block pbtn text-center mt-3 nBtn NBbg"> Recover</div>
                 </div>

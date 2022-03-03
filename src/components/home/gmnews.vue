@@ -2,7 +2,7 @@
     <div class=" no-gutters w-100 ">
         <div class="">
             <h5 class="text-warning tmibg2 py-2 px-1 subtitlefnt">Game news  <a href="">View all</a></h5>
-            <div class="rounded tmibg o px-1 py-2 my-1" v-for="(gmnws,i) in gm" :key="i">
+            <div class="rounded tmibg px-1 py-2 my-1" v-for="(gmnws,i) in gm" :key="i">
                 <h5 class="text-success subtitlefnt">{{gmnws.nttl}}<h6>{{gmnws.nsttl}}</h6></h5>
             </div>
         </div>

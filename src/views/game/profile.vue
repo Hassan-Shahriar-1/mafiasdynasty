@@ -1,7 +1,7 @@
 <template>
     <div class="container Gp0m0 jaldi">
         <div class="StryCntnr">
-            <div class="mrgnbtm">
+  
                 <div class="container-fluid  no-gutters Gp0m0 ">
                     <div class="row Gp0m0  blksdout rounded bdr3 tmibg"> 
                         <div class="col-4 p-1 ">
@@ -134,7 +134,7 @@
             </div>
             <!-- Body Content End -->  
         </div>
-    </div>
+
 </template>
 <script>
 export default {

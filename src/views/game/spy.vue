@@ -2,9 +2,17 @@
       <div class="">
   <div class="container text-center trt">
                   <div class="spybg ">
-                        <h5 class="dtlsfnt">Lorem ipsum dolor sit amet consectetur,Laborum harum fuga sequi laboriosam quidem! 
+
+                      <div class="row">
+
+                          <div class="col-6"><h5 class="dtlsfnt">Lorem ipsum dolor sit amet consectetur,Laborum harum fuga sequi laboriosam quidem! 
                               Nulla voluptatibus voluptatum tenetur
-                              quasi, maiores dicta dolorum deleniti veritatis alias magni dolore magnam voluptate quidem.</h5> 
+                              quasi, maiores dicta dolorum deleniti veritatis alias magni dolore magnam voluptate quidem.</h5></div>
+                          <div class="col-6"> 
+                              <img src="../../assets/img/custom profile/01.jpg"  class="card-img" style="opacity:1;" alt="">
+                          </div>
+                      </div>
+                         
                   </div>
             </div> 
 

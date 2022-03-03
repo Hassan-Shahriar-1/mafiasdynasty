@@ -87,24 +87,20 @@
                 <div tag="button"  class="btn col px-1 nBtn blkgry Gp0m0" v-on:click="toggle()" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" ></i>
                     <h6 class="siz15">Music</h6></div>
                 <div tag="button" @click="Lotsw(),stngs=true" class="btn col px-1 nBtn blkgry Gp0m0"><i class="fas fa-sign-out-alt"></i><br> <h6 class="siz15">Logout</h6> </div>
-                <div  tag="button" @click="t8nws ^= true"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fas fa-share-alt"></i><br><h6 class="siz15"  > Social Connect</h6> </div>
+                <div  tag="button" @click="sconnect ^= true"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fas fa-share-alt"></i><br><h6 class="siz15"  > Social Connect</h6> </div>
                 <div  tag="button"  @click="bmsho()" class="btn col px-1 nBtn blkgry Gp0m0"><i class="fas fa-lightbulb"></i><br><h6 class="siz15"> Hints</h6> </div>
                 <router-link to="/gmail" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="far fa-envelope"></i><br> <h6 class="siz15">Mail </h6></router-link>
                 <router-link to="/game/forumlist" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fab fa-wpforms"></i><br> <h6 class="siz15">Forum</h6> </router-link>
                 <router-link to="/messenger" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fab fa-facebook-messenger"></i><br><h6 class="siz15"> Message </h6></router-link>
             
-
-
            
-            <div class="row  mt-3 w-100 no-guttersb3px blkgry  p-2 m-0  rounded"  v-show="t8nws" >
-                <div class="col-3"><div class="btn nBtn btn-block btn-lg button3 mlr2 "><i class="fab fa-facebook"></i></div></div>
-                <div class="col-3"><div class="btn nBtn btn-block btn-lg button5 mlr2"><i class="fab fa-whatsapp"></i></div></div>
-                <div class="col-3"><div class="btn nBtn btn-block btn-lg button7 mlr2"><i class="fas fa-envelope"></i></div></div>
+            <div class="row  mt-3 w-100 no-guttersb3px blkgry  p-2 m-0  rounded"  v-show="sconnect" >
+                <div class="col-3"><a href="https://www.facebook.com/mafiasrivalgame" class="btn nBtn btn-block btn-lg button3 mlr2 "><i class="fab fa-facebook"></i></a></div>
+                <div class="col-3"><a href="https://mafiasrival.com/" class="btn nBtn btn-block btn-lg button5 mlr2"><i class="fab fa-firefox-browser"></i></a></div>
+                <div class="col-3"><router-link to="/gmail"><div class="btn nBtn btn-block btn-lg button7 mlr2"><i class="fas fa-envelope"></i></div></router-link></div>
                 <div class="col-3"><div class="btn nBtn btn-block btn-lg button6 mlr2"><i class="fas fa-external-link-square-alt"></i></div></div>
             </div>
           
-
-
                 <modal name="nrbpup" :width="330" :height="450" class="bdr4 blksdo rounded  mblr" >
                     <div class="card">
                         <div class="card-header blkgry">
@@ -161,7 +157,7 @@
                             <h5>9.	Visit Horkos twice or thrice in a day. .</h5><br>
                             <h5>10.	Blood from shop follows your income. So the more you have blood income the more you can buy bloods from shop at same cost.</h5><br>
                         </div>
-                        <div class="card-footer p-1">
+                        <div class="card-footer blkgry p-3">
                             <div class="btn nBtn nBbg blkgry btn-block sticky-bottom"  @click="bmshd()">close</div>
                         </div>
                     </div>
@@ -230,7 +226,7 @@ export default {
                 },
              tog: false,
              tgle:false,
-             t8nws:false,
+             sconnect:false,
              stngs:false,
              ntf:false,
 
