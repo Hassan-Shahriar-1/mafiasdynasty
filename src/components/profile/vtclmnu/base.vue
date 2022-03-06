@@ -1,5 +1,5 @@
 <template>
-    <div><h4 class="text-center">Attack weapon</h4>
+    <div><h4 class="text-center">Base Defense</h4>
     <h6 class="blkgry px-1 py-2"> You can't have more than 5 Item in a single Slot</h6>
 
     <div class="row Gp0m0">

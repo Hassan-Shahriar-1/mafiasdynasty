@@ -206,9 +206,9 @@ export default new Router({
                         },
 
                         {
-                            path: 'atkwpn',
+                            path: 'base',
                             component: () =>
-                                import ('@/components/profile/vtclmnu/atkwpn')
+                                import ('@/components/profile/vtclmnu/base')
                         },
                         {
                             path: 'dfncwpn',
@@ -681,12 +681,38 @@ export default new Router({
 
 
                 {
-
                     path: 'combat',
                     name: 'combat',
                     component: () =>
                         import ('@/views/game/combat')
                 },
+
+                {
+                    path: 'fightlist',
+                    name: 'fightlist',
+                    component: () =>
+                        import ('@/components/combat/fightlist')
+                },
+
+                {
+                    path: 'arenalist',
+                    name: 'arenalist',
+                    component: () =>
+                        import ('@/components/combat/arenalist')
+                },
+                {
+                    path: 'hitlist',
+                    name: 'hitlist',
+                    component: () =>
+                        import ('@/components/combat/hitlist')
+                },
+
+
+
+
+
+
+
 
                 {
 
