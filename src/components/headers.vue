@@ -42,7 +42,7 @@
                 <div class="col-4 p-1 itmbg">
                     <h6 class='hrtl'>Enargy: <span class="hdricnpsn float-right iC-energy incb3"></span> <br></h6>
                     <div class="progress n_bar-a w-100" style="height:5px;">
-                        <div class="progress-bar clRBblue bgD0 mv-value2" id="itmBr" :style="{width: Th.engW+'%'}"></div>
+                        <div class="progress-bar clRBblue bgD0" id="itmBr" :style="{width: Th.engW+'%'}"></div>
                     </div>
                     <h6 class="text-left">{{Th.engst}}/{{Th.enged}}</h6>
                 </div>
@@ -50,7 +50,7 @@
                 <div class="col-4 p-1 itmbg" >
                     <h6 class='hrtl'>Stamina:<span class="hdricnpsn float-right iC-rage incb3"> </span></h6>
                     <div class="progress n_bar-a w-100" style="height:5px;">
-                        <div class="progress-bar clRBgreen bgD0 mv-value2" id="itmBr" :style="{width:Th.RagW+'%'}"></div>
+                        <div class="progress-bar clRBgreen bgD0" id="itmBr" :style="{width:Th.RagW+'%'}"></div>
                     </div>
                     <h6 class="text-left">{{Th.Ragst}}/{{Th.Raged}}</h6>
                 </div>
@@ -58,7 +58,7 @@
                 <div class="col-4 p-1  itmbg">
                     <h6 class='hrtl'>Health:<span class="hdricnpsn float-right iC-heart incb3"></span></h6> 
                     <div class="progress n_bar-a w-100" style="height:5px;">
-                        <div class="progress-bar clRBrd bgD0 mv-value2" id="itmBr" :style="{width:Th.hltW+'%'}"></div>
+                        <div class="progress-bar clRBrd bgD0" id="itmBr" :style="{width:Th.hltW+'%'}"></div>
                     </div>
                     <h6 class="text-left">{{Th.hltst}}/{{Th.hlted}}  </h6>
                 </div>

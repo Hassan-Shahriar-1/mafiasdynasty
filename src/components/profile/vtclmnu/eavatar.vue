@@ -28,6 +28,8 @@
                         </div>
                 <div class="row Gp0m0">
                     <div class="col-7 Gp0m0">
+
+                        <printMe>
                         <div v-if="edt!=''">
                             <img  class="card-img " v-if="bdy!=''"  :src="bdy" alt="">
                             <div class="card-img-overlay Gp0m0" v-if="hr!=''"><img class="card-img" src="../../../assets/img/avatar/H2.png" alt=""></div>
@@ -36,10 +38,13 @@
                             <div class="card-img-overlay Gp0m0" v-if="she!=''"> <img class="card-img"  src="../../../assets/img/avatar/shocks.png" alt=""></div>  
                             <div class="card-img-overlay Gp0m0" v-if="otr!=''"> <img class="card-img"  src="../../../assets/img/avatar/cat.png" alt=""></div> 
                         </div>
+                     
 
                         <div v-else>
                             <img  class="card-img "   src="../../../assets/img/avatar/H2.png">                
                         </div>
+
+                           </printMe>
                         <div class="btn nBbg nBtn btn-lg btn-block tmibg text-center"  @click="print()">Save</div>
                             <img class="card-img" :src="output">
                     </div>
@@ -142,6 +147,9 @@ export default {
 
         async print(){
       const el = this.$refs.printMe;
+
+      /* var img = this.$refs.printMe
+      this.output = img.toDataURL() */
       // add option type to get the image version
       // if not provided the promise will return 
       // the canvas.
