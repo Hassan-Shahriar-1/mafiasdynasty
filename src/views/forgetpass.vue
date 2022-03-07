@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="form-group mt-5">
-                            <button type="submit" class="bgD2 siz25 custom6 nBtn nBbg btn-lg btn-block">Recover Password</button>
+                            <button type="submit" class="bgD2 siz25 custom6 nBtn nBbg btn-lg btn-block btnfnt">Recover Password</button>
                         </div>
                     </div>
                     

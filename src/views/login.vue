@@ -8,10 +8,10 @@
                     </div>
                 </div>
                 <h4 class="text-center titlefnt pt-2 rounded">Log in</h4>
-                <div class="alert blk50 py-2 Gp0m0 my-3 "  v-show="errormsgsts" >
+                <div class="alert blk50 py-3 pr-4 Gp0m0 my-3 "  v-show="errormsgsts" >
                        <h5 class="text-danger text-center"> {{ errormsg }} </h5>
                         <div  type="button" class="close btn eremsg" aria-label="Close" style="margin-top: -5%; margin-right: -6%;">
-                      <span aria-hidden="true"  class="text-white" style=" position:absolute; top:8px; right:10px;" @click="errormsgsts^=true">&times;</span>
+                      <span aria-hidden="true"  class="text-white" style=" position:absolute; top:0px; right:5px;" @click="errormsgsts=true">&times;</span>
                     </div>
                     </div>
                 <div class="pt-3">
@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="form-group text-center">
-                        <button type="submit" class="button mt-5 py-0 bgD2 nBtn nBbg btn-lg btn-block custom6 siz30" @click="logindata()">Log In</button>
+                        <button type="submit" class="button mt-5 py-0 bgD2 nBtn nBbg btn-lg btn-block btnfnt siz30" @click="logindata()">Log In</button>
                         <!-- bg-dark btn-lg btn-block signup-btn -->
                     </div>
                 </div>
