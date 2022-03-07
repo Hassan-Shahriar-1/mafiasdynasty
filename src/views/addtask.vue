@@ -8,7 +8,7 @@
                         <div class="row">
                             <div class=" col-8 ">
                                 <div class="progress n_bar-a mt-2" style="height:10px;">
-                                    <div class="progress-bar clRBred bgD0" id="itmBr" style="width: 50%;"></div>
+                                    <div class="progress-bar clRBppl bgD0" id="itmBr" style="width: 50%;"></div>
                                 </div>
                             </div>
                             <div class="col-4 blkblue btn pbtn  btn-block nBtn Gp0m0">move</div>

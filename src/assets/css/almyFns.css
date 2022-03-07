@@ -74,6 +74,12 @@
     src: url("../fonts/ttl/Rye-Regular.ttf");
 }
 
+
+@font-face {
+    font-family: title2;
+    src: url("../fonts/headerfont2.ttf");
+}
+
 @font-face {
     font-family: subtitle;
     src: url("../fonts/ttldtls/Habibi-Regular.ttf");

@@ -4,7 +4,7 @@
           <div class="card bg-dark text-white">
                <img :src="require('../../assets/img/land/'+pdt.ppImg)" class="card-img w-100 " alt="" style="height:100px;">
                <div class="card-img-overlay">
-                    <h5 class="card-title subtitlefnt">Kingdom of mafias</h5>
+                    <h5 class="card-title subtitlefnt siz25">Kingdom of mafias</h5>
                     <h6 class="card-text dtlsfnt">Properties of this land will show here</h6>
                </div>
           </div>

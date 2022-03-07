@@ -4,9 +4,15 @@
             <div class="card-header blkgry">
                 <h4 class="text-left subtitlefnt">
                     Customize Avater
-                    <h4 class="float-right"><i class="fas fa-info-circle"></i></h4>
+                    <h4 class="float-right"><i class="fas fa-info-circle"  @click="info ^= true"></i></h4>
                 </h4>
+                 
             </div>
+             <h6 class="p-1 px-1 dtlsfnt blk text-center" v-show="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio similique nulla aliquam,
+                    amet asperiores nam minima odio iusto officiis 
+                    voluptatem eveniet natus. Atque quidem, voluptate numquam laborum accusantium architecto?
+                </h6>
+
 
             <div class="card-body pt-1 Gp0m0">
                         <div class="bw100 w-100 rounded jaldi blkgry" role="group" aria-label="...">
@@ -22,6 +28,8 @@
                         </div>
                 <div class="row Gp0m0">
                     <div class="col-7 Gp0m0">
+
+                        <printMe>
                         <div v-if="edt!=''">
                             <img  class="card-img " v-if="bdy!=''"  :src="bdy" alt="">
                             <div class="card-img-overlay Gp0m0" v-if="hr!=''"><img class="card-img" src="../../../assets/img/avatar/H2.png" alt=""></div>
@@ -30,10 +38,13 @@
                             <div class="card-img-overlay Gp0m0" v-if="she!=''"> <img class="card-img"  src="../../../assets/img/avatar/shocks.png" alt=""></div>  
                             <div class="card-img-overlay Gp0m0" v-if="otr!=''"> <img class="card-img"  src="../../../assets/img/avatar/cat.png" alt=""></div> 
                         </div>
+                     
 
                         <div v-else>
                             <img  class="card-img "   src="../../../assets/img/avatar/H2.png">                
                         </div>
+
+                           </printMe>
                         <div class="btn nBbg nBtn btn-lg btn-block tmibg text-center"  @click="print()">Save</div>
                             <img class="card-img" :src="output">
                     </div>
@@ -83,8 +94,8 @@ export default {
             hr:'',
             otr:'',
             edt:'',
-        }
-        
+            info:false,
+        }  
     },
     mounted() {
         this.bdy,this.famlr,this.pnt,this.trs,this.she,this.hr
@@ -136,6 +147,9 @@ export default {
 
         async print(){
       const el = this.$refs.printMe;
+
+      /* var img = this.$refs.printMe
+      this.output = img.toDataURL() */
       // add option type to get the image version
       // if not provided the promise will return 
       // the canvas.

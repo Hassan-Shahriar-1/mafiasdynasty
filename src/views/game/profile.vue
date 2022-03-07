@@ -1,7 +1,7 @@
 <template>
     <div class="container Gp0m0 jaldi">
         <div class="StryCntnr">
-            <div class="mrgnbtm">
+  
                 <div class="container-fluid  no-gutters Gp0m0 ">
                     <div class="row Gp0m0  blksdout rounded bdr3 tmibg"> 
                         <div class="col-4 p-1 ">
@@ -111,7 +111,7 @@
                         <router-link to="abilities" tag="button" class="btn nBtn Gp0m0 blkgry">  <i class="fas fa-gopuram"></i> <br><h4 class="siz15">Abilities</h4></router-link>
                         <router-link to="items" tag="button" class="btn nBtn Gp0m0 blkgry"><i class="fas fa-sitemap"></i> <br> <h4 class="siz15">Items</h4> </router-link>
                         <router-link to="trophies" tag="button" class="btn nBtn Gp0m0 blkgry"><i class="fas fa-trophy"></i><br><h4 class="siz15">Trophies</h4></router-link>
-                        <router-link to="minion" tag="button" class="btn nBtn Gp0m0 blkgry"><i class="fas fa-glass-cheers"></i> <br><h4 class="siz15">Properties</h4></router-link>
+                        <router-link to="property" tag="button" class="btn nBtn Gp0m0 blkgry"><i class="fas fa-glass-cheers"></i> <br><h4 class="siz15">Properties</h4></router-link>
 
                         </div>
                     </div>
@@ -119,12 +119,12 @@
                     <div class="row Gp0m0  itmbg rounded ">
                         <div class="col-3 Gp0m0  p-1">
                             <router-link to="recordbook"><div class="btn nBtn btn-block "><i class="fas fa-book-open"></i> <br> <h4 class="siz13">Record <br> book</h4></div></router-link>
-                            <router-link to="editprofile"><div class="btn nBtn btn-block "><i class="fas fa-user"></i> <br><h4 class="siz13">Edit <br>Profile </h4></div></router-link>
-                            <router-link to="/game/profile/eavatar"><div class="btn nBtn btn-block "><i class="fas fa-user-tie"></i> <br><h4 class="siz13">Edit <br>Avatar</h4></div></router-link>
+                            <router-link to="eprofile"><div class="btn nBtn btn-block "><i class="fas fa-edit"></i> <br><h4 class="siz13">Edit <br>Profile </h4></div></router-link>
+                            <router-link to="/game/profile/eavatar"><div class="btn nBtn btn-block "><i class="fas fa-user-edit"></i> <br><h4 class="siz13">Edit <br>Avatar</h4></div></router-link>
                             <router-link to="about"> <div class="btn nBtn btn-block "><i class="fas fa-address-card"></i> <br><h4 class="siz13">About</h4></div></router-link>
                             <div class="btn nBtn btn-block" @click="ppup(userdtls.skl)"><i class="fas fa-award"></i> <br><h4 class="siz13">Skill <br>Allocation</h4></div>
-                            <router-link to="atkwpn"><div class="btn nBtn btn-block "><i class="fas fa-book-open"></i> <br> <h4 class="siz13">Attack <br> Weapon</h4></div></router-link>
-                            <router-link to="dfncwpn"><div class="btn nBtn btn-block "><i class="fas fa-user"></i> <br><h4 class="siz13">defense <br>Weapon </h4></div></router-link>
+                            <router-link to="atkwpn"><div class="btn nBtn btn-block "><i class="fas fa-biohazard"></i> <br> <h4 class="siz13">Attack <br> Weapon</h4></div></router-link>
+                            <router-link to="dfncwpn"><div class="btn nBtn btn-block "><i class="fas fa-fist-raised"></i> <br><h4 class="siz13">defense <br>Weapon </h4></div></router-link>
                         </div>
                         <div class="col-9 Gp0m0 tmibg">
                                 <router-view class="rounded m-1"></router-view>
@@ -134,7 +134,7 @@
             </div>
             <!-- Body Content End -->  
         </div>
-    </div>
+
 </template>
 <script>
 export default {

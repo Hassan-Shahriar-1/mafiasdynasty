@@ -1,8 +1,8 @@
 <template>
     <div>
-    <div class="Gdftrt9bg">
+    <div class="Gdftrt9bg  py-1 px-2 scale-up-center">
         <h4 class="titlefnt">Call of Habib p1</h4>
-        <p class="dtlsfnt siz15">
+        <p class="dtlsfnt siz15 p-2">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus atque officiis fuga veniam 
             omnis modi porro illum voluptate? Eius inventore laboriosam ab doloremque dicta repellat? Magnam a ex autem.
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus atque officiis fuga veniam 
@@ -48,11 +48,11 @@
                     <h6 >{{itm.nm}} <span  class="pull-right">0/2240</span></h6>
                     <div class="clearfix"></div>
                     <div class="progress n_bar-a" style="height:10px;">
-                        <div class="progress-bar clRBred bgD0" id="itmBr" style="width:10%;"></div>
+                        <div class="progress-bar clRBppl bgD0" id="itmBr" style="width:10%;"></div>
                     </div>
                 </div>
             </div>
-           <div class="text-center"> <button class="btn nBtn nBbg button4 btn-block"> <h4>Locked</h4></button></div>
+           <div class="text-center"> <button class="btn nBtn nBbg button4 btn-block"> <h4>Locked <i class="fas fa-lock" style="opacity:0.7;"></i></h4></button></div>
         </div>
     </div>
     </div>                   

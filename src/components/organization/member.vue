@@ -2,8 +2,8 @@
     <div>
         <section >
             <div class="row Gp0m0 dtlsfnt">
-                <div class="col-6 Gp0m0 "  @click="imfsw()"><div class="btn nBtn btn-lg  btn-block blkgry Gp0m0"><i class="fas fa-user-plus"></i> <br> Invite Organization</div></div>
-                <div class="col-6 Gp0m0 pl-1"> <router-link to="/game/orgmbrpg"> <div class="btn nBtn btn-lg  btn-block blkgry Gp0m0 " ><i class="fas fa-tools"></i> <br> Settings</div></router-link></div>
+                <div class="col-6 Gp0m0"  @click="imfsw()"><div class="btn nBtn btn-lg  btn-block blkgry Gp0m0"><i class="fas fa-user-plus"></i> <br> Invite Organization</div></div>
+                <div class="col-6 Gp0m0 pl-1" @click="mbrsw()">  <div class="btn nBtn btn-lg  btn-block blkgry Gp0m0 " ><i class="fas fa-tools"></i> <br> Settings</div></div>
             </div>
             <h5 class="text-center text-white dtlsfnt" v-if="err">{{err}}</h5>
             <div class="blk" >
@@ -59,6 +59,19 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </modal> 
+
+                <modal name="mbrstngs" :width="350"   :height="550"  class="mblr " id="gtmhyHt"  >
+                    <div class="card-header  w-100 blkgry text-center">
+                         <h4 class="subtitlefnt">Settings for Member<span class="float-right" style="margin-right:2%;"  @click="mbrhd();"><div class="crossbtn"><i class="fas fa-times "></i></div></span></h4>
+                        <div class="col-2">
+                        </div>
+                    </div>
+                <div class="row no-gutters blkgry  w-100" style=" height:500px; overflow: scroll;" >
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Fugiat eos quos id voluptatem sit saepe optio quae quibusdam soluta libero praesentium odit quia, 
+                      maxime quas vel ea possimus quisquam adipisci!</p>
                 </div>
             </modal> 
 </div>
@@ -242,6 +255,16 @@ export default {
                
              this.$modal.hide('orginvmbr')
             },
+
+             mbrsw(){
+              this.$modal.show('mbrstngs')
+          },
+            mbrhd(){
+               
+             this.$modal.hide('mbrstngs')
+            },
+
+            
         show(dt) {
             this.mdl.nm=dt.name;
             this.mdl.btns=dt.btn;

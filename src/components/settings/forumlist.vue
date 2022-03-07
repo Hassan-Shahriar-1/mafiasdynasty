@@ -12,7 +12,7 @@
                     <div class="row Gp0m0  rounded blkd75  p-3">
                         <div class="col-10"> <h5 class="text-warning subtitlefnt"> Announcements </h5> 
                         <div class="row Gp0m0">
-                            <div class="col-6"><h5>Posts:26|</h5></div>
+                            <div class="col-6 Gp0m0"><h5 class="float-right">Posts:26&nbsp;||&nbsp;</h5></div>
                             <div class="col-6 pl-0"><h5>Replies:26</h5></div>
                         </div>
                         </div>
@@ -25,7 +25,7 @@
                     <div class="row Gp0m0  rounded blkd75  p-3">
                         <div class="col-10"> <h5 class="text-warning subtitlefnt"> General Discusstion </h5> 
                         <div class="row Gp0m0">
-                            <div class="col-6"><h5>Posts:26|</h5></div>
+                            <div class="col-6 Gp0m0"><h5 class="float-right">Posts:26&nbsp;||&nbsp;</h5></div>
                             <div class="col-6 pl-0"><h5>Replies:26</h5></div>
                         </div>
                         </div>
@@ -39,7 +39,7 @@
                     <div class="row Gp0m0  rounded blkd75  p-3">
                         <div class="col-10"> <h5 class="text-warning subtitlefnt"> New Player Area </h5> 
                         <div class="row Gp0m0">
-                            <div class="col-6"><h5>Posts:26|</h5></div>
+                            <div class="col-6 Gp0m0"><h5 class="float-right">Posts:26&nbsp;||&nbsp;</h5></div>
                             <div class="col-6 pl-0"><h5>Replies:26</h5></div>
                         </div>
                         </div>
@@ -53,7 +53,7 @@
                     <div class="row Gp0m0  rounded blkd75  p-3">
                         <div class="col-10"> <h5 class="text-warning subtitlefnt"> Question & Answer </h5> 
                         <div class="row Gp0m0">
-                            <div class="col-6"><h5>Posts:26|</h5></div>
+                            <div class="col-6 Gp0m0"><h5 class="float-right">Posts:26&nbsp;||&nbsp;</h5></div>
                             <div class="col-6 pl-0"><h5>Replies:26</h5></div>
                         </div>
                         </div>
@@ -67,7 +67,7 @@
                     <div class="row Gp0m0  rounded blkd75  p-3">
                         <div class="col-10"> <h5 class="text-warning subtitlefnt"> Suggestions </h5> 
                         <div class="row Gp0m0">
-                            <div class="col-6"><h5>Posts:26|</h5></div>
+                            <div class="col-6 Gp0m0"><h5 class="float-right">Posts:26&nbsp;||&nbsp;</h5></div>
                             <div class="col-6 pl-0"><h5>Replies:26</h5></div>
                         </div>
                         </div>
@@ -81,7 +81,7 @@
                     <div class="row Gp0m0  rounded blkd75  p-3">
                         <div class="col-10"> <h5 class="text-warning subtitlefnt"> Bugs/Issues </h5> 
                         <div class="row Gp0m0">
-                            <div class="col-6"><h5>Posts:26|</h5></div>
+                            <div class="col-6 Gp0m0"><h5 class="float-right">Posts:26&nbsp;||&nbsp;</h5></div>
                             <div class="col-6 pl-0"><h5>Replies:26</h5></div>
                         </div>
                         </div>
@@ -95,7 +95,7 @@
                     <div class="row Gp0m0  rounded blkd75  p-3">
                         <div class="col-10"> <h5 class="text-warning subtitlefnt"> Supports </h5> 
                         <div class="row Gp0m0">
-                            <div class="col-6"><h5>Posts:26|</h5></div>
+                            <div class="col-6 Gp0m0"><h5 class="float-right">Posts:26&nbsp;||&nbsp;</h5></div>
                             <div class="col-6 pl-0"><h5>Replies:26</h5></div>
                         </div>
                         </div>

@@ -37,6 +37,15 @@
                       background-position: top left;
                       content: '';
                   }
+                  /* new size for footer icons */
+                  
+                  .incbicn {
+                      width: 2rem;
+                      height: 2rem;
+                      display: inline-block;
+                      background-size: 100% 100%;
+                      content: '';
+                  }
                   
                   .iC-home {
                       background-image: url("../img/icon2/h.png");
@@ -68,4 +77,8 @@
                   
                   .iC-gold {
                       background-image: url("../img/icon2/M-gold.png");
+                  }
+                  
+                  .iC-wpn {
+                      background-image: url("../img/icon/AK47.png");
                   }

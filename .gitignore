@@ -56,3 +56,18 @@ pnpm-debug.log*
 /src-cordova/platforms
 /src-cordova/plugins
 /public/cordova.js
+
+# Cordova
+/APP/platforms
+/APP/plugins
+/public/cordova.js
+
+# Cordova
+/cordova/platforms
+/cordova/plugins
+/public/cordova.js
+
+# Cordova
+/cordova/platforms
+/cordova/plugins
+/public/cordova.js

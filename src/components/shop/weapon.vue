@@ -37,11 +37,21 @@
                     <div class="col-12 Gp0m0 pr-1"><div class="btn nBtn btn-lg text-center btnbfnt btn-block button5 sizv35" @click="hide(),purchase(mitmid,amnt)" > <div> Buy Now</div></div></div>
             </div> 
         </modal> 
-    <popover name="foo">
+<!--     <popover name="foo">
     hi this is popover
-    </popover>
+    </popover> -->
+      <popover  name="foo" topright  class="bg-danger">
+          
+            <h5>Post Your Answer
+           Hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa architecto expedita iste quisquam aspernatur,
+            quibusdam aliquam numquam quas tempore corporis dignissimos perferendis pariatur accusamus quo. Blanditiis, possimus. Praesentium, animi esse. clan </h5></popover>
+              <div class="btn nBtn btn-block"  v-popover:foo></div>  
    </div>
+
+     
 </template>
+
+
 
 
 
@@ -59,7 +69,7 @@ export default {
             
             amnt:1,
             isAutoHeight:"false",
-            imglk:'http://mrdemo.com/item/weapon/',
+            imglk:'http://mrdemo.com/item/',
  
         }
     },

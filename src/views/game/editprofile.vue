@@ -18,6 +18,12 @@
                                 <i class="fas fa-user"></i>
                             </div>
                         </div>
+                             <div class="position-relative has-icon-right">
+                            <input type="email" class="form-control form-control-lg text-left" name="Email" placeholder="Update Email">
+                            <div class="form-control-position">
+                               <i class="far fa-envelope"></i>
+                            </div>
+                        </div>
             
                         <div class="position-relative has-icon-right text-dark">
                             <input type="date" class="form-control form-control-lg text-left" name="age" placeholder="Update Age in year">

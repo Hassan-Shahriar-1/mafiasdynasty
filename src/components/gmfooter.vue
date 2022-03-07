@@ -34,13 +34,13 @@ export default {
                     mn:[
                          {
                             nm:"Home", 
-                            icn:"<i class='fas fa-user-secret'></i>",
+                            icn:"<i class='fas fa-hotel'></i>",
                             clk:'home',
                            
                         },
                             {
                             nm:"Stats", 
-                            icn:"<i class='fab fa-artstation'></i>",
+                            icn:"<i class='fas fa-dragon'></i>",
                             clk:'Stats'
                         },
                         
@@ -51,18 +51,19 @@ export default {
                         },
                         {
                             nm:"Combat", 
-                            icn:"<i class='fas fa-hat-cowboy'></i>",
+                            icn:"<i class='fas fa-people-carry'></i>",
                             clk:'combat'
                         },
                          {
+
                             nm:"Godfather", 
-                            icn:"<i class='fas fa-hotel'></i>",
+                            icn:"<i class='fas fa-couch'></i>",
                             clk:'Godfather'
                         },
                      
                          {
                             nm:"Shop", 
-                            icn:"<i class='fas fa-store-alt'></i>",
+                            icn:"<i class='fas fa-store'></i>",
                             clk:'Shop'
                         }
                     ],
@@ -72,32 +73,32 @@ export default {
                              ta:[
                                         {
                                             nm:"Mafia Home", 
-                                            icn:"<i class='fas fa-igloo'></i>",
+                                            icn:"<i class='fas fa-hotel'></i>",
                                             clk:'/game/home/gtns'
                                         },
                                         
                                          {
                                             nm:"Blab", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fas fa-comment-alt'></i>",
                                             clk:'/game/home/blab'
                                         },
                          
                  
                                         {
                                             nm:"Discussion", 
-                                            icn:"<i class='fas fa-igloo'></i>",
+                                            icn:"<i class='far fa-comments'></i>",
                                             clk:'/game/discussion'
                                         },
 
                                          {
                                             nm:"Organization", 
-                                            icn:"<i class='fas fa-igloo'></i>",
+                                            icn:"<i class='fas fa-users-cog'></i>",
                                             clk:'/game/organization/gossipe'
                                         },
 
                                            {
                                             nm:"Bank", 
-                                            icn:"<i class='fas fa-igloo'></i>",
+                                            icn:"<i class='fas fa-university'></i>",
                                             clk:'bank'
                                         },
                                         
@@ -108,7 +109,7 @@ export default {
                                         },
                                          {
                                             nm:"FAQ", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fas fa-question-circle'></i>",
                                             clk:'/game/faq/general'
                                         },
                                        
@@ -142,46 +143,13 @@ export default {
                          {
                              name:'Godfather',
                              ta:[
-                                       
-                                         {
-                                            nm:"Attack", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/attack'
-                                        },
+                                    {
+                                    nm:"Godfathers", 
+                                    icn:"<i class='fas fa-box'></i>",
+                                    clk:'/game/Godfathers'
+                                },
 
-                                         {
-                                            nm:"Attack2", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/attack2'
-                                        },
-                                         {
-                                            nm:"combat", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/combat'
-                                        },
-                                         {
-                                            nm:"loot", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/loot'
-                                        },
-                                        {
-                                            nm:"Mission", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/missionintro'
-                                        },
-                                      
-                                          {
-                                            nm:"Godfathers", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/Godfathers'
-                                        },
-
-                                           {
-                                            nm:"Spy", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/spy'
-                                        },
-
+                                          
                                        
                                    
                                 ]
@@ -192,18 +160,18 @@ export default {
                                         
                                         {
                                             nm:"Property", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fab fa-accusoft'></i>",
                                             clk:'/game/propertynew'
                                         },
 
                                         {
                                             nm:"Profile", 
-                                            icn:"<i class='fas fa-user-alt'></i>",
+                                            icn:"<i class='fas fa-user-tie'></i>",
                                             clk:'/game/profile/abilities'
                                         },
                                          {
                                             nm:"Friends", 
-                                            icn:"<i class='fas fa-igloo'></i>",
+                                            icn:"<i class='fas fa-user-friends'></i>",
                                             clk:'/game/friends/mafias'
                                         },
 
@@ -215,30 +183,49 @@ export default {
 
                                            {
                                             nm:"Customize Avater", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fab fa-atlassian'></i>",
                                             clk:'/game/profile/eavatar'
                                         },
 
                                            {
                                             nm:"Trophies", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fas fa-trophy'></i>",
                                             clk:'/game/profile/trophies'
                                         },
                                            {
                                             nm:"Abilities", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fab fa-accessible-icon'></i>",
                                             clk:'/game/profile/abilities'
                                         },
                                           {
-                                            nm:"gift", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            nm:"Gift", 
+                                            icn:"<i class='fas fa-gift'></i>",
                                             clk:'/game/gift'
                                         },
                                         
                                          {
                                             nm:"Land", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fas fa-grip-horizontal'></i>",
                                             clk:'/game/alllands'
+                                        },
+                                          {
+                                            nm:"Attack", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/attack'
+                                        },
+
+                                     
+                              
+                                         {
+                                            nm:"loot", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/loot'
+                                        },
+                                 
+                                         {
+                                            nm:"Spy", 
+                                            icn:"<i class='fas fa-box'></i>",
+                                            clk:'/game/spy'
                                         },
                                        
                                      
@@ -250,12 +237,12 @@ export default {
                              ta:[
                                         {
                                             nm:"Weapon", 
-                                            icn:"<i class='fas fa-igloo'></i>",
+                                            icn:"<span class='incbicn iC-wpn'></span>",
                                             clk:'/game/shop/weapon',
                                         },
                                         {
                                             nm:"Vehicls", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fas fa-truck-monster'></i>",
                                             clk:'/game/shop/vehicls'
                                         },
                                          {
@@ -265,19 +252,19 @@ export default {
                                         },
                                          {
                                             nm:"Avater", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fas fa-user-ninja'></i>",
                                             clk:'/game/shop/Avater'
                                         },
 
                                         {
                                             nm:"Regular weapon", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fas fa-bomb'></i>",
                                             clk:'/game/shop'
                                         },
 
                                         {
                                             nm:"Blackmarket", 
-                                            icn:"<i class='fas fa-store-alt-slash'></i>",
+                                            icn:"<i class='fas fa-store-slash'></i>",
                                             clk:'/game/blackmarket/buys'
                                         },
                                 ]
@@ -290,6 +277,15 @@ export default {
     },
     methods:{
         bMcShw:function(sth){
+            if(sth=='mission'){
+                     this.$router.replace('/game/missionintro');
+            }else if(sth=='combat'){
+                this.$router.replace('/game/combat');
+            }else if(sth=='Godfather'){
+                this.$router.replace('/game/Godfathers');
+            }
+            else{
+            
               if(this.btmenusStl[sth] == true){ 
                     this.btmenusStl[sth] = false; 
                     return;
@@ -306,6 +302,7 @@ export default {
             }else{
                 this.btmenusStl[sth] = false; 
             }  
+            }
             
         },
         

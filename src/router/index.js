@@ -97,8 +97,38 @@ export default new Router({
                         },
                         {
                             path: 'limited',
+                            name: 'limited',
+
                             component: () =>
-                                import ('@/components/home/limited')
+                                import ('@/components/home/limited'),
+
+                            children: [{
+                                    path: 'abilities',
+                                    name: 'abilities',
+                                    component: () =>
+                                        import ('@/components/limited/abilities')
+                                },
+                                {
+                                    path: 'fimiliers',
+                                    name: 'fimiliers',
+                                    component: () =>
+                                        import ('@/components/limited/fimiliers')
+                                },
+                                {
+                                    path: 'avater',
+                                    name: 'avater',
+                                    component: () =>
+                                        import ('@/components/limited/avater')
+                                },
+                                {
+                                    path: 'avaterbg',
+                                    name: 'avaterbg',
+                                    component: () =>
+                                        import ('@/components/limited/avaterbg')
+                                },
+
+
+                            ],
                         },
 
                         {
@@ -129,9 +159,9 @@ export default new Router({
                                 import ('@/components/profile/items')
                         },
                         {
-                            path: 'minion',
+                            path: 'property',
                             component: () =>
-                                import ('@/components/profile/minion')
+                                import ('@/components/profile/property')
                         },
                         {
                             path: 'trophies',
@@ -304,11 +334,11 @@ export default new Router({
                     ],
                 },
 
-                {
+                /* {
                     path: 'orgmbrpg',
                     component: () =>
                         import ('@/components/organization/orgmbrpg')
-                },
+                }, */
                 {
                     path: 'searchorg',
                     component: () =>
@@ -332,23 +362,23 @@ export default new Router({
                     children: [{
                             path: 'news',
                             component: () =>
-                                import ('@/components/ntfmn/news')
+                                import ('@/components/notification/news')
                         },
                         {
                             path: 'request',
                             component: () =>
-                                import ('@/components/ntfmn/request')
+                                import ('@/components/notification/request')
                         },
                         {
                             path: 'activity',
 
                             component: () =>
-                                import ('@/components/ntfmn/activity')
+                                import ('@/components/notification/activity')
                         },
                         {
                             path: 'pchat',
                             component: () =>
-                                import ('@/components/ntfmn/pchat')
+                                import ('@/components/notification/pchat')
                         },
                     ],
                 },
@@ -461,7 +491,7 @@ export default new Router({
                 {
                     path: 'chat/:id',
                     component: () =>
-                        import ('@/components/ntfmn/chat'),
+                        import ('@/components/notification/chat'),
                     props: true
                 },
                 {
@@ -649,13 +679,6 @@ export default new Router({
                         import ('@/views/game/attack')
                 },
 
-                {
-
-                    path: 'attack2',
-                    name: 'attack2',
-                    component: () =>
-                        import ('@/views/game/attack2')
-                },
 
                 {
 
@@ -722,7 +745,12 @@ export default new Router({
                 {
                     path: 'typ8',
                     component: () =>
-                        import ('@/components/godfather/typ8')
+                        import ('@/components/godfather/typ8'),
+                },
+                {
+                    path: 'gfight',
+                    component: () =>
+                        import ('@/components/godfather/gfight')
                 },
                 {
                     path: 'typ9',
@@ -924,6 +952,18 @@ export default new Router({
             component: () =>
                 import ('@/views/Tutorial')
         },
+
+        /* external link start */
+        {
+            path: '/gmail',
+            beforeEnter() { location.href = 'mailto:support@mafiasrival.com?subject=New mail' }
+        },
+        {
+            path: '/messenger',
+            beforeEnter() { location.href = 'https://m.me/mafiasrivalgame'}
+        }
+        /* external link End */
+
 
 
         /*  {

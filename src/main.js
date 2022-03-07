@@ -26,6 +26,9 @@ Vue.use(VModal, {
     }
 });
 
+import VueCountdownTimer from 'vuejs-countdown-timer';
+Vue.use(VueCountdownTimer);
+
 import Notifications from 'vue-notification'
 import VueAWN from "vue-awesome-notifications"
 Vue.use(VueAWN)
@@ -106,8 +109,8 @@ Vue.axios.interceptors.response.use(function(response) {
 });
 
 
-import VueCountdownTimer from 'vuejs-countdown-timer';
-Vue.use(VueCountdownTimer);
+import vueCountdownTimer from 'vuejs-countdown-timer';
+Vue.use(vueCountdownTimer);
 
 Vue.use(store)
 Vue.use(Popover)
@@ -156,12 +159,8 @@ Vue.use({
         Vue.prototype.$mgo = mgo;
     }
 });
-
-
 new Vue({
     router,
     store,
-
-
     render: h => h(App)
 }).$mount('#app')

@@ -1,4 +1,7 @@
 <template>
+
+
+
 <div class="Gp0m0 texture1">
     <div class="mrgnbtm">
 
@@ -47,6 +50,12 @@
 
            
 </template>
+
+
+
+
+
+
 <script>
 export default{
 

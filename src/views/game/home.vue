@@ -14,12 +14,12 @@
             <div class="row Gp0m0 px-1">
 
                 <div class="col-3 Gp0m0 jaldi">
-                        <router-link to="gtns"  class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="far fa-newspaper"></i> <br> News</router-link>
-                        <router-link to="blab" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"> <i class="fas fa-comments"></i><br> blab 2</router-link>
+                        <router-link to="gtns"  class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fas fa-globe-americas"></i> <br> News</router-link>
+                        <router-link to="blab" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"> <i class="fas fa-comment-alt"></i><br> blab 2</router-link>
                         <router-link to="lmtdofr" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fab fa-buffer"></i><br> offers</router-link>
-                        <router-link to="limited" class="btn btn-lg p-1  btn-block text-light Anm-outln15si incb4 button4 " v-if="lmtd!=''"> <img  style="height:60px; width:60px;" src="../../assets/img/icon/Hi-habib-vai.png"  alt=""> </router-link>
+                        <router-link :to="{ name: 'abilities'}" class="btn btn-lg p-1  btn-block text-light Anm-outln15si incb4 button4 " v-if="lmtd!=''"> <img  style="height:60px; width:60px;" src="../../assets/img/icon/Hi-habib-vai.png"  alt=""> </router-link>
                         <router-link to="update" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fas fa-edit"></i> <br> Updates</router-link>
-                        <router-link to="dailytask" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fas fa-tasks"></i> <br> Daily task</router-link>
+                        <router-link to="dailytask" class="btn btn-lg py-1 px-0  btn-block text-danger  nBtn bgD8"><i class="fas fa-tasks"></i> <br>Daily<br>task</router-link>
                         <router-link to="bonus" class="btn btn-lg p-1  btn-block text-light Anm-outln15si incb4 button4" v-if="bns!=''"><i class="fas fa-money-check-alt"></i> <br>  Bonus</router-link>
                 </div>
                 <div class="col-9 Gp0m0 pl-2  overflow-scroll">
@@ -29,8 +29,7 @@
         </div>
 
         <modal name="ban" :width='300'   :isAutoHeight="true" v-if="alllnd"  @before-open="beforeOspen" class="mblr bdr p-1 rounded-2">
-            <div class="row Gp0m0 blkgry " >
-                <div class="card blkgry">
+            <div class="row Gp0m0 card blkgry">
                     <div class="card-header tmibg2 p-1">
                     <h4 class=" rounded-0 text-center py-1 w-100 " style="position:sticky;">Welcome To the flight
                         <span class="float-right" style="margin-right:2%;"  @click="hide();"><div class="crossbtn"><i class="fas fa-times "></i></div></span></h4>
@@ -43,7 +42,7 @@
                                 <li class="list-group-item bMbg5  p-0 m-1" v-for="(lnd,i) in alllnd" :key="i">
                                     <div class="card blksdo p-0">
                                         <img class="card-img img-fluid" :src="lndimg+lnd.img" alt=""/>
-                                        <div class="card-img-overlay px-0">
+                                        <div class="card-img-overlay px-1">
                                             <h4 class="card-text titlefnt ">
                                                 {{lnd.name}} <div class="btn nBtn btn-lg float-right p-2 mt-3 button5 nBtn  siz13" @click="fly(lnd.mid)">Just fly</div>
                                             </h4>
@@ -54,7 +53,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
             </div>
         </modal> 
     </div>
@@ -117,6 +115,30 @@ export default ({
                  {
                      img:"4.jpg"
                  },
+                   {
+                     img:"3.jpg"
+                 },
+                 {
+                     img:"4.jpg"
+                 },
+                 {
+                     img:"5.jpg"
+                 },
+                 {
+                     img:"6.jpg"
+                 },
+                 {
+                     img:"1.jpg"
+                 },
+                 {
+                     img:"2.jpg"
+                 },
+                 {
+                     img:"3.jpg"
+                 },
+                 {
+                     img:"4.jpg"
+                 },
              ]
         }
     },
@@ -142,7 +164,7 @@ export default ({
     mounted:function(){
         this.TptrgrBr();
      
-      console.log('Current Swiper instance object', this.swiper)
+      
       // this.swiper.slideTo(3, 1000, false)    
     },
     methods: {

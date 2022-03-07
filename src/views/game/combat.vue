@@ -23,6 +23,13 @@
                     </div>
                 </div>
 
+
+
+                <div class="row">
+                    <div class="col-4 float-left"><h6 class="titlefnt siz15">leftSidebar</h6></div>
+                    <div class="col-4 text-center"><h6 class="subtitlefnt siz15">Middlebar</h6></div>
+                    <div class="col-4 float-right"><h6 class="dtlsfnt siz15">Rightsidebar</h6></div>
+                </div>
                 <div class="row Gp0m0 py-2 my-1 blkgry">
                     <div class="col-3 "><img  class="card-img" src="../../assets/img/item/1.gif"  alt=""></div>
                     <div class="col-9 Gp0m0"> 
@@ -42,8 +49,6 @@
                 </div>
             </div>
         </div>
-
-
         <div class="row Gp0m0">
             <div class="col-4 blk bdr1 py-3 "><h4 class="Subtitlefnt siz13">Bounty:{{bnty}}</h4></div>
             <div class="col-4 blk bdr1 py-3 "><h4 class="Subtitlefnt siz13">Skill Rank:{{sr}}</h4></div>
@@ -52,13 +57,12 @@
 
         <div class="row Gp0m0">
             <div class="col-4 Gp0m0">
-                    <router-link to="/game/leaderboard/friend" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"> <i class="fas fa-crown"></i><br><h4 class="siz15">Leaderboard</h4></router-link> <br>
-                    <router-link to="friendsfeed" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"><i class="fas fa-user-injured"></i> <br> <h4 class="siz15">Friends feed</h4> </router-link><br>
-                    <router-link to="safehouse" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"><i class="fas fa-laptop-house"></i><br><h4 class="siz15">Safe House</h4></router-link>
-                    <router-link to="Threat" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"><i class="fas fa-laptop-house"></i><br><h4 class="siz15">Threat</h4></router-link>
+                    <router-link to="/game/leaderboard/friend" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"><i class="fas fa-crown"></i><br><h4 class="siz15">Leaderboard</h4></router-link> <br>
+                    <router-link to="friendsfeed" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"><i class="fas fa-rss-square"></i> <br> <h4 class="siz15">Friends feed</h4> </router-link><br>
+                    <router-link to="safehouse" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"><i class="fas fa-shield-alt"></i><br><h4 class="siz15">Safe House</h4></router-link>
+                    <router-link to="Threat" tag="button" class="btn nBtn Gp0m0 blkgry w-100 p-2 my-1"><i class="fas fa-theater-masks"></i><br><h4 class="siz15">Threat</h4></router-link>
                     </div>
             <div class="col-8 Gp0m0 bdr1">
-
                 <div class="row Gp0m0 blkgry p-1">
                     <div class="col-9">
                         <h4 class="subtitlefnt">Position in Leader Board <h6>from 100 Mafias</h6></h4>
@@ -93,6 +97,8 @@
                         <h4 class="subtitlefnt">Bounty Leader <h6>No Possition</h6></h4>
                     </div>
                 </div>
+
+               
             </div>
         </div>
     </div>
@@ -103,7 +109,6 @@
 export default {
     data(){
         return{
-
             th:{
                 fl:25,
                 al:35,
@@ -116,7 +121,6 @@ export default {
             bnty:100,
             sr:1524,
             asr:459,
-
         }
     }
 }

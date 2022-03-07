@@ -6,6 +6,8 @@
     margin: 0;
     padding: 0;
     color: white;
+    scroll-behavior:smooth;
+    scroll-behavior: auto;
 }
 
 
@@ -13,16 +15,17 @@
 
 .cbtn {
     height: 10vh!important;
-    width: 11vh!important;
+    width: 10vh!important;
 }
 
 
 /* header background */
 
 .hdbg {
-    background: url('../img/background/headerbg.png');
+    background: url('../img/background/headerbg3.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+  
 }
 
 .losdo {
@@ -88,6 +91,10 @@
     font-family: title;
     font-size: x-large;
 }
+.titlefnt2 {
+    font-family: title2;
+    font-size: x-large;
+}
 
 .subtitlefnt {
     font-family: subtitle;
@@ -105,29 +112,6 @@
     font-family: btnfnt;
 }
 
-.custom1 {
-    font-family: custom1;
-}
-
-.custom2 {
-    font-family: custom2;
-}
-
-.custom3 {
-    font-family: custom3;
-}
-
-.custom4 {
-    font-family: custom4;
-}
-
-.custom5 {
-    font-family: custom5;
-}
-
-.custom6 {
-    font-family: custom6;
-}
 
 .TypoFormal {
     font-family: TypoFormal;
@@ -170,13 +154,7 @@
     /* background:linear-gradient(0deg, rgb(0, 25, 31) 0%, rgb(9, 91, 115) 100%); */
 }
 
-.bgmn {
-    background: linear-gradient(0deg, rgb(37, 37, 37) 0%, rgb(45, 45, 45) 100%);
-    color: white;
-    box-shadow: 0px 0px 15px 2px #161717;
-    padding: 10px;
-    border-radius: 8%;
-}
+
 
 .contain::after {
     content: "";
@@ -246,6 +224,7 @@
     background-size: 100% 100%;
     background-repeat: repeat-y;
     height: 300px;
+    opacity: 0.4;
 }
 
 .mnbg {
@@ -599,12 +578,15 @@ p {
 .ptnbg {
     background-color: #272727;
     background-position: top left;
-    background: url("../img/background/ptnbg2.png"), linear-gradient(#0000008f, rgb(13 101 72 / 55%));
+  /*   background: url("../img/background/ptnbg2.png"), linear-gradient(#0000008f, rgb(13 101 72 / 55%)); */
     /*color: #FF7575 !important; */
     /* text-shadow: 0px 0px 2px #333, 0px 3px 2px #000; */
+
+    background: url("../img/background/ptnbg2.png"), linear-gradient(#0000008f, rgb(13 101 72 / 55%));
     border-radius: 5px;
     box-shadow: inset 0px 0px 5px 2px #000;
     background-size: 100% 100%;
+   
 }
 
 .fightbg {
@@ -892,7 +874,12 @@ p {
 }
 
 .dark50 {
-    background: rgb(0, 0, 0/35%);
+    background: rgb(0, 0, 0,80%);
+}
+
+.dbgwbdr {
+    background-color: #000;
+    border: 1px solid rgb(33, 32, 32);
 }
 
 
@@ -1041,6 +1028,7 @@ button.big-button:active::before {
     padding: 4px 15px 7px 15px;*/
     width: auto;
     height: auto;
+    background-color: linear-gradient(180deg, rgba(29, 29, 29, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(46, 46, 46, 1) 100%);
     color: #fff;
     font-size: 20px;
     font-weight: bold;
@@ -1491,17 +1479,18 @@ button.big-button:active::before {
 
 /* progressbar start  */
 
-.clRBred {
+.clRBppl {
     background: linear-gradient(0deg, rgba(42, 1, 69, 1) 0%, rgba(75, 6, 117, 1) 55%, rgba(50, 2, 65, 1) 100%);
 }
 
 .clRBrd {
-    background: linear-gradient( #CC0000, #000);
+    background: rgb(77,23,1);
+    background: linear-gradient(180deg, rgba(77,23,1,1) 0%, rgba(122,3,3,1) 50%, rgba(77,23,1,1) 100%);
 }
 
 .clRBblue {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(12, 30, 233, 0.844) 55%, rgb(11, 39, 250) 100%);
+    background: rgb(15,1,77);
+    background: linear-gradient(180deg, rgba(15,1,77,1) 0%, rgba(15,3,122,1) 50%, rgba(15,1,77,1) 100%);
 }
 
 .clRBgreen {
@@ -1866,6 +1855,10 @@ button.big-button:active::before {
 
 .siz15 {
     font-size: 15px;
+}
+
+.siz17 {
+    font-size: 17px;
 }
 
 .siz18 {
@@ -2406,7 +2399,7 @@ label {
 }
 
 .Anm-outln15si {
-    animation: ltdbtn 0.9s ease-out infinite;
+    animation: ltdbtn 1.4s ease-out infinite;
 }
 
 @keyframes outln15si {
@@ -2497,5 +2490,157 @@ label {
 /* form color for edit profile section */
 
 .nwfrmclr {
-    background-color: rgb(125 125 125);
+    background-color: rgb(207, 207, 207,100);
 }
+
+
+/* gift section ribbon design start */
+
+.box {
+    position: relative;
+    width: 90%;
+    background: #000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+
+/* common */
+
+.ribbon {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.ribbon::before,
+.ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+}
+
+.ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: #3498db;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* top left*/
+
+.ribbon-top-left {
+    top: -1px;
+    left: -1px;
+}
+
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.ribbon-top-left::before {
+    top: 0;
+    right: 0;
+}
+
+.ribbon-top-left::after {
+    bottom: 0;
+    left: 0;
+}
+
+.ribbon-top-left span {
+    right: -25px;
+    top: 30px;
+    transform: rotate(-45deg);
+}
+
+
+/* gift section ribbon design End */
+
+
+
+.bnrbxsdo{
+
+    box-shadow:inset 0px 0px 5px 3px #103241;
+    padding: 2%;
+
+}
+
+/* Godfather  animation css start */
+
+.scale-up-center {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
+    @keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
+
+
+    .scale-up-center {
+        -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+    
+/* Godfather animation css End */
+

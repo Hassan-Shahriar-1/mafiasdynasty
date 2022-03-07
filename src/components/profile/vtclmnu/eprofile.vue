@@ -1,20 +1,65 @@
 <template>
-    <div>
-        <div class="container Gp0m0 rounded border p-2 ">
-            <div class="row  Gp0m0 p-2">
-                    <h4 class="bMbg5 w-100 ">Franken-Don</h4>
-            </div>
-            <div class="row  w-100 Gp0m0 jaldi p-2 ">
-                <ul class="list-group w-100  text-white jaldi">
-                    <li class="list-group-item bMbg Gp0m0 py-2 "> <h5 class="float-left"><i class="fas fa-poop  text-warning"></i>&nbsp;ahsgfdjhasigdfj</h5> <h6 class="float-right">11</h6></li>
-                    <li class="list-group-item bMbg Gp0m0 py-2 "> <h5 class="float-left"><i class="fas fa-poop  text-warning"></i>&nbsp;ahsgfdjhasigdfj</h5> <h6 class="float-right">11</h6></li>
-                    <li class="list-group-item bMbg Gp0m0 py-2 "> <h5 class="float-left"><i class="fas fa-poop  text-warning"></i>&nbsp;ahsgfdjhasigdfj</h5> <h6 class="float-right">11</h6></li>
-                    <li class="list-group-item bMbg Gp0m0 py-2 "> <h5 class="float-left"><i class="fas fa-poop  text-warning"></i>&nbsp;ahsgfdjhasigdfj</h5> <h6 class="float-right">11</h6></li>
-                    <li class="list-group-item bMbg Gp0m0 py-2 "> <h5 class="float-left"><i class="fas fa-poop  text-warning"></i>&nbsp;ahsgfdjhasigdfj</h5> <h6 class="float-right">11</h6></li>
-                </ul>
-                <hr>
-                <h6 class="bMbg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint illo obcaecati minus, eligendi sapiente placeat facere molestias quibusdam incidunt corrupti voluptatibus, unde beatae saepe omnis magni ipsa at ducimus veritatis. </h6>
-            </div>
-        </div>
-    </div>
+<div>
+
+
+
+       
+                <h2 class="text-center text-white titlefnt">Edit Your Account</h2>
+                <br>
+                <form action="#">
+                    <div class="form-control p-0">
+                        <div class="position-relative has-icon-right">
+                            <input type="text" class="form-control form-control-lg text-left blkd50" name="username" placeholder="Update Username">
+                            <div class="form-control-position">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                             <div class="position-relative has-icon-right">
+                            <input type="email" class="form-control form-control-lg text-left blkd50" name="Email" placeholder="Update Email">
+                            <div class="form-control-position">
+                               <i class="far fa-envelope"></i>
+                            </div>
+                        </div>
+            
+                        <div class="position-relative has-icon-right text-dark">
+                            <input type="date" class="form-control form-control-lg text-left blkd50 text-white" name="age" placeholder="Update Age in year">
+                            <div class="form-control-position">
+                            </div>
+                        </div>
+                    
+                        <div class="position-relative has-icon-right form-control form-control-lg text-left  blkd50">
+                            <h6 class="lblblk dtlsfnt ">Please select your gender:</h6>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male" class="lblblk">&nbsp;Male</label> &nbsp;&nbsp;
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female" class="lblblk">&nbsp;Female</label><br>
+                            <div class="form-control-position">
+                                <i class=" fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group text-center mt-3 ">
+                        <button type="submit" class="bgD2 m-0 nBtn nBbg btn-lg btn-block">Update profile</button>
+                    </div>
+                </form>
+  </div>
 </template>
+
+<style>
+.blkd50::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}
+
+</style>
+
+
+<script>
+export default{
+data(){
+  
+
+}
+}
+</script>

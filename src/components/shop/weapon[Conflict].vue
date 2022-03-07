@@ -56,7 +56,7 @@ export default {
             mimg:'',
             mcst:'',
             amnt:1,
-            imglk:'http://mrdemo.com/item/weapon/',
+            imglk:'http://mrdemo.com/item/',
  
         }
     },

@@ -7,7 +7,7 @@
           
         <div class="row no-gutters mx-2">
             <div class="col-12"> <textarea v-model="Gmessage" @keyup.enter="insrtMsg" class="w-100 form-control form-control-lg"  name="" id="" cols="10" rows="3" placeholder="Type here..." style="height:40px;"></textarea></div>
-            <div class="col-12 pt-2"> <div class="btn nBtn blkgry py-2 w-100 jaldi"  @click="insrtMsg()">Send </div></div>
+            <div class="col-12 pt-2"> <div class="btn nBtn blkgry py-2 w-100 jaldi"  @click="insrtMsg()">Send <span><i class="fas fa-paper-plane"></i></span> </div></div>
 
         </div>
         <div class="hr-sect w-100"></div>
