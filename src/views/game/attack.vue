@@ -2,7 +2,7 @@
     <div class="fightbg">
         <h1 class="text-center subtitlefnt mb-0">Attack</h1>
         <div class="container-fluid Gp0m0">
-            <div class="row no-gutters ">
+            <div class="row no-gutters  card">
                 <div class="col-12"><h4 class='hr-sect titlefnt text-center'>Fight</h4> </div>
                 <div class="col-6 p-2 px-3">
                     <div class="row  p-2 ">

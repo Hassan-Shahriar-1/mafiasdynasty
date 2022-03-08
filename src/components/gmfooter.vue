@@ -208,12 +208,7 @@ export default {
                                             icn:"<i class='fas fa-grip-horizontal'></i>",
                                             clk:'/game/alllands'
                                         },
-                                          {
-                                            nm:"Attack", 
-                                            icn:"<i class='fas fa-box'></i>",
-                                            clk:'/game/attack'
-                                        },
-
+                                          
                                      
                               
                                          {

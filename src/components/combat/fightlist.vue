@@ -15,10 +15,10 @@
                         <div class="col-2 Gp0m0"><img src="../../assets/img/item/1.gif"  class="card-img " alt=""></div>
                         <div class="col-8 px-1"> <h5 class="text-info titlefnt2 siz25">{{masrc.name}}</h5> 
                         <div class="row Gp0m0">
-                            <div class="col-6 p-0">  <h6 class="titlefnt2 siz17">Cash: {{masrc.mcash}}</h6></div>
-                            <div class="col-6 pl-2">  <h6 class="titlefnt2 siz17">Org: {{masrc.org}}</h6></div>
-                            <div class="col-6 p-0">  <h6 class="titlefnt2 siz17">Level: {{masrc.lvl}}</h6></div>
-                            <div class="col-6 pl-2">  <h6 class="titlefnt2 siz17">Rank: {{masrc.rank}}</h6></div>
+                            <div class="col-6 p-0">  <h6 class="dtlsfnt siz17">Cash: {{masrc.mcash}}</h6></div>
+                            <div class="col-6 pl-2">  <h6 class="dtlsfnt siz17">Org: {{masrc.org}}</h6></div>
+                            <div class="col-6 p-0">  <h6 class="dtlsfnt siz17">Level: {{masrc.lvl}}</h6></div>
+                            <div class="col-6 pl-2">  <h6 class="dtlsfnt siz17">Rank: {{masrc.rank}}</h6></div>
                         </div>
                     </div>
                     <div class="col-2 p-1"> <router-link :to="{path:'/game/attack/'+masrc.id}"> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center"><i class="fab fa-wolf-pack-battalion"></i></h6></div></router-link></div>

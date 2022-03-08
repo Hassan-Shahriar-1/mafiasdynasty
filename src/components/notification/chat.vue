@@ -1,11 +1,11 @@
 <template>
     <div>
-    <div class=" col-12 card-header tmibg text-center">
+    <div class="row Gp0m0 card-header tmibg text-center mb-2">
         <router-link to="/game/notification/pchat"> <button class="float-left p-1 nBtn tmibg "><i class="fas fa-arrow-left"></i>Back</button></router-link><h3 class="text-white text-center titlefnt">{{usrnm}}</h3>
     </div>
 
 
-        <div class=" Gp0m0 bw100 rounded " style="width:100%; border-radious:1px solid red; position:sticky;">         
+        <div class=" Gp0m0 bw100 rounded " style="width:100%; border-radius:1px solid red; position:sticky;">         
             <div class="input-group Gp0m0 ">
                 <div class="input-group-append Gp0m0" style="height:42px;"> </div>
                 <input v-model="Wmessage" @keyup.enter="insrtMsg"  class="form-control type_msg bg-white siz20 text-dark rounded border-0" placeholder="Type your message..."  /> 
@@ -15,7 +15,7 @@
             </div> 
         </div>
 
-        <div class="row Gp0m0  rounded blk" id='Chmsgh'>
+        <div class="row Gp0m0  rounded " id='Chmsgh'>
             <div v-for="(MsgsLt,i) in MsgsLts" :key="i" class='m-4' style='min-width:90%' >
                 <div class="d-flex justify-content-start" v-if="MsgsLt.pstn==='l'">
                     <img class="card-img rounded-circle img_cont_msg " src="../../assets/img/logo.png" alt="">
