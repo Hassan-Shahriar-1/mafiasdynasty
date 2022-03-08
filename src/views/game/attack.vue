@@ -42,4 +42,12 @@
          </div>
     </div>
 </template>
+<script>
+export default {
+     props: ['who'],
+    created(){
+        console.log(this.$props.who);
+    }
+}
+</script>
 
