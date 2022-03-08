@@ -4,15 +4,16 @@ export default {
 
         rt.sktd.tmr = '';
         rt.sktd.sts = false;
+        let jttkn= window.localStorage.getItem("Usrtkn");
         rt.socket.on('connect', function() {
             rt.sktd.sts = true;
             console.log('Socket Connected');
             clearInterval(rt.sktd.tmr);  
-                console.log("My connection is not Established yet"+rt.usrtkn);
-                rt.socket.emit('usrinfo', rt.usrtkn);
+                console.log("My connection is not Established yet"+jttkn);
+                rt.socket.emit('usrinfo', jttkn);
                 rt.socket.on('scrCstbl', (sckt)=> {
                     console.log('sckt',sckt);
-                    if(sckt[0] == rt.usrtkn){
+                    if(sckt[0] == jttkn){
                         console.log("My connection Established I can go any where");
                         rt.socket.on('ntmsg', data=>{
                             console.log(data);
