@@ -10,6 +10,8 @@
             <img class="card-img" src="../../assets/img/custom profile/01.jpg" alt="">
             </div>
             <div class="col-8 Gp0m0">
+
+                <router-link to="fightlist">
                 <div class="row Gp0m0 py-2 my-1 blkgry">
                     <div class="col-3 "><img  class="card-img" src="../../assets/img/item/1.gif"  alt=""></div>
                     <div class="col-9 Gp0m0"> 
@@ -22,6 +24,7 @@
                             </div>
                     </div>
                 </div>
+                </router-link>
 
 
 
@@ -30,6 +33,8 @@
                     <div class="col-4 text-center"><h6 class="subtitlefnt siz15">Middlebar</h6></div>
                     <div class="col-4 float-right"><h6 class="dtlsfnt siz15">Rightsidebar</h6></div>
                 </div>
+
+                  <router-link to="arenalist">
                 <div class="row Gp0m0 py-2 my-1 blkgry">
                     <div class="col-3 "><img  class="card-img" src="../../assets/img/item/1.gif"  alt=""></div>
                     <div class="col-9 Gp0m0"> 
@@ -42,11 +47,13 @@
                             </div>
                     </div>
                 </div>
+                </router-link>
 
-
+                <router-link to="hitlist">
                     <div class="row Gp0m0 py-2 my-1 blkgry">
                     <h4 class="subtitlefnt">Hitlist ({{hlvl}})</h4>
                 </div>
+                </router-link>
             </div>
         </div>
         <div class="row Gp0m0">

@@ -10,10 +10,10 @@
                 <h2 class="text-center text-white titlefnt mb-1">Create an Account</h2>
        
                
-                    <div class="alert blk50 py-2 Gp0m0 my-3 rounded"  v-show="errorsts" >
+                    <div class="alert blk50 py-3 pr-4 Gp0m0 my-3 rounded"  v-show="errorsts" >
                        <h5 class="text-danger text-center">{{ errormsg }}</h5>
                         <div  type="button" class="close btn eremsg" aria-label="Close" style="margin-top: -5%; margin-right: -6%;">
-                      <span aria-hidden="true"  class="text-white" style=" position:absolute; top:8px; right:10px;" @click="errorsts ^=true">&times;</span>
+                      <span aria-hidden="true"  class="text-white" style=" position:absolute; top:0px; right:5px;" @click="errorsts ^=true">&times;</span>
                     </div>
                     </div>
 
@@ -24,14 +24,14 @@
                 <div class="pt-2">
                     <div class="form-control rounded p-0 ">
                         <div class="position-relative has-icon-right">
-                            <input type="text" class="form-control form-control-lg text-left"  v-model="usrname"  placeholder="Username" required>
+                            <input type="text" class="form-control form-control-lg text-left rounded-0"  v-model="usrname"  placeholder="Username" required>
                             <div class="form-control-position">
                                 <i class=" fas fa-user text-dark"></i>
                             </div>
                         </div>
                   
                         <div class="position-relative has-icon-right">
-                            <input type="email" class="form-control form-control-lg text-left" v-model="ueemail"  placeholder="Email Address" required>
+                            <input type="email" class="form-control form-control-lg text-left rounded-0" v-model="ueemail"  placeholder="Email Address" required>
                             <div class="form-control-position">
                                 <i class="fas fa-envelope-open text-dark"></i>
                             </div>
@@ -56,7 +56,7 @@
                 </div>
                    
                     <div class=" text-center mt-5">
-                        <button type="submit" @click="signup" class="bgD2 nBtn nBbg  btn-lg btn-block siz25 custom6">Sign Up</button>
+                        <button type="submit" @click="signup" class="bgD2 nBtn nBbg  btn-lg btn-block siz25 btnfnt">Sign Up</button>
                     </div>
                
                 <div class="text-center dtlsfnt">
