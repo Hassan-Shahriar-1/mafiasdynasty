@@ -62,20 +62,116 @@
                 </div>
             </modal> 
 
-                <modal name="mbrstngs" :width="350"   :height="550"  class="mblr " id="gtmhyHt"  >
+                <modal name="mbrstngs"  :width="350"   :height="550"  class="mblr" style="color:blue" id="gtmhyHt"  >
                     <div class="card-header  w-100 blkgry text-center">
                          <h4 class="subtitlefnt">Settings for Member<span class="float-right" style="margin-right:2%;"  @click="mbrhd();"><div class="crossbtn"><i class="fas fa-times "></i></div></span></h4>
                         <div class="col-2">
                         </div>
                     </div>
-                <div class="row no-gutters blkgry  w-100" style=" height:500px; overflow: scroll;" >
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                      Fugiat eos quos id voluptatem sit saepe optio quae quibusdam soluta libero praesentium odit quia, 
-                      maxime quas vel ea possimus quisquam adipisci!</p>
-                </div>
+               <div class="card tmibg" style="height:500px; overflow:scroll;" >
+
+       
+            <div class="card-body">
+
+               <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
+                   <div class="col-8"><h5 class="subtitlefnt">Music Enable</h5></div>
+                   <div class="col-4">    
+                        <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                        </label>
+                    </div>
+               </div>
+
+                <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
+                   <div class="col-8"><h5 class="subtitlefnt">Sound Effects Enable</h5></div>
+                   <div class="col-4">    
+                        <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                        </label>
+                    </div>
+               </div>
+       
+         
+            <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
+            <label for="customRange1"><h5 class="subtitlefnt">Music Volume</h5></label> <br>
+            <input type="range" class="custom-range" id="customRange1">
+            </div>
+
+            <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
+            <label for="customRange1"><h5 class="subtitlefnt">Sounds Effects Volume</h5></label> <br>
+            <input type="range" class="custom-range" id="customRange1">
+            </div>
+
+        </div>
+    </div>   
             </modal> 
 </div>
 </template>
+
+
+<style scoped>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(141, 1, 1);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 1px;
+  bottom: 1px;
+  background-color: rgb(255, 255, 255);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #02a541;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #004e18;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
 
 <script>
 export default {
