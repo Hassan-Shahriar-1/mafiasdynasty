@@ -3,7 +3,12 @@
 
 
         <div class="row no-gutters">
+            <div>
+                <h3 v-if="chtmsg!=''">{{chtmsg}}</h3>
+            
+            <div v-else>
 
+            
             <ul class="list-group blkgry" v-for="(mlist, i) in ctdta" :key="i">
                 <router-link :to="{path:'/game/chat/'+i}"> 
                     <li class="list-group-item Gp0m blk50 Gp0m0 py-2 my-1" >
@@ -20,7 +25,9 @@
                     </li>
                 </router-link>
             </ul>
-        </div>      <!-- <router-view></router-view> -->
+            </div>
+        </div> 
+        </div>     <!-- <router-view></router-view> -->
     </div>
 </template>
 
@@ -41,6 +48,7 @@
 export default {
     data() {
         return{
+                chtmsg:'',
                 ctdta:[
                     {
                         mpic:'1.png',
@@ -78,7 +86,11 @@ export default {
 
     created() {
         this.$mgo.gt('mp/chatlst',(resp)=>{
-            console.log(resp);
+            if(resp.sts=='chtlst'){
+                console.log('null')
+            }else {
+                this.chtmsg='You didnt Chat With Anyone'
+            }
         })
     },
 }
