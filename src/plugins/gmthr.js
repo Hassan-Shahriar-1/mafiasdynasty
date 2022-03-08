@@ -10,10 +10,10 @@ export default {
             console.log('Socket Connected');
             clearInterval(rt.sktd.tmr);  
                 console.log("My connection is not Established yet"+jttkn);
-                rt.socket.emit('usrinfo', rt.usrtkn);
+                rt.socket.emit('usrinfo', jttkn);
                 rt.socket.on('scrCstbl', (sckt)=> {
                     console.log('sckt',sckt);
-                    if(sckt[0] == rt.usrtkn){
+                    if(sckt[0] == jttkn){
                         console.log("My connection Established I can go any where");
                         rt.socket.on('ntmsg', data=>{
                             console.log(data);
