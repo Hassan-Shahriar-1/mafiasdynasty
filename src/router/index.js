@@ -673,12 +673,13 @@ export default new Router({
 
                 {
 
-                    path: 'attack',
-                    name: 'attack',
+                    path: 'attack/:who',
                     component: () =>
-                        import ('@/views/game/attack')
+                        import ('@/views/game/attack'),
+                        props: true
                 },
 
+               
 
                 {
                     path: 'combat',

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="card border-0">
+        <div class="card border-0 p-2">
             <div class="card-header blkgry"><h4 class="titlefnt text-center">In-Game-Alerts</h4></div>
             <div class="card-body tmibg">
                     <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
@@ -35,7 +35,7 @@
             </div>
         </div>  
 
-      <div class="card mt-2 border-0">
+      <div class="card mt-2 border-0 p-2">
 
         <div class="card-header blkgry"><h4 class="titlefnt text-center">Push notifications</h4></div>
 
