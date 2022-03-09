@@ -1,5 +1,13 @@
 <template>
     <div>
+
+            <!-- <popover  name="foo"   class="bg-danger">
+                <h5>Culpa architecto expedita iste quisquam aspernatur,
+                quibusdam aliquam numquam quas tempore corporis dignissimos
+                 perferendis pariatur accusamus quo. Blanditiis, possimus. 
+                 Praesentium, animi esse. clan </h5>
+            </popover>
+              <div class="btn nBtn btn-block"  v-popover:foo>foo</div> -->  
         <div class="section mt-1 tmibg">
             <div class="row no-gutters">
                 <textarea v-model="Gmessage"  @keyup.enter="insrtMsg()" class="w-100 form-control"  name="" id="" cols="10" rows="1" placeholder="Type here" style="height:40px;"></textarea>
@@ -23,7 +31,7 @@
                         </div>
                         <div class="col-6 Gp0m0">
                             <span class="float-right "><i class="fas fa-flag bgmn"></i></span>
-                            <h6 class="mt-2 mlr2 siz11 float-right"><i class="fas fa-clock"></i> {{MsgsLt.Tm}} </h6>     
+                            <h6 class="mlr2 siz13 float-right"><i class="fas fa-clock"></i> {{MsgsLt.Tm}} </h6>     
                         </div>
                     </div>  
                 </div>  

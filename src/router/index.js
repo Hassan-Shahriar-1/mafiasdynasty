@@ -71,6 +71,7 @@ export default new Router({
                         },
                         {
                             path: 'blab',
+                            name: 'blab',
                             component: () =>
                                 import ('@/components/home/blab')
                         },

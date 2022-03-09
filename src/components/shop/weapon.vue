@@ -10,7 +10,7 @@
                     <div class="card-header Gp0m0 " style="white-space: normal;"><h5 class="subtitlefnt siz15 ">{{aitm.name}}</h5></div>
                     <div class="card-body Gp0m0 p-2"><img class="card-img"  :src="imglk+aitm.img" alt=""> </div>
                     <div class="card-footer Gp0m0"><h6 class="dtlsfnt" ><span data-v-7a13c6a6="" class="incb4 iC-gold " v-if="aitm.tp=='g'">
-                        </span><span data-v-7a13c6a6="" class="incb4 iC-cash " v-else ></span>{{aitm.cst}}</h6>
+                        </span><span class="incb4 iC-cash " v-else ></span>{{aitm.cst}}</h6>
                     </div>
                 </div>       
             </div>  
@@ -40,12 +40,7 @@
 <!--     <popover name="foo">
     hi this is popover
     </popover> -->
-      <popover  name="foo" topright  class="bg-danger">
-          
-            <h5>Post Your Answer
-           Hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa architecto expedita iste quisquam aspernatur,
-            quibusdam aliquam numquam quas tempore corporis dignissimos perferendis pariatur accusamus quo. Blanditiis, possimus. Praesentium, animi esse. clan </h5></popover>
-              <div class="btn nBtn btn-block"  v-popover:foo></div>  
+
    </div>
 
      

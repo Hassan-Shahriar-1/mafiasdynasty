@@ -1,7 +1,6 @@
 <template>
-<div class="mainC">
-    <div class="mainCp ptnbg ">
-  <div class="signup-form m-0">
+
+  <div class="signup-form m-0 ptnbg" style=" height:100vh; margin-bottom:-60px!important;">
                 <div class="lgnFromIcn mt-3 ">
                     <div class="row justify-content-sm-center">
                         <div class="col-12"> <img src="../assets/img/logo.png" class='img-thumbnail'></div>
@@ -48,8 +47,7 @@
                 <br>
                 <div class="text-center  text-white dtlsfnt"> <h3><router-link class="text-info siz20" :to="{name:'forget'}">Forget Password? </router-link>  | <router-link class="text-info siz20" :to="{name:'signup'}" >Sign Up Here</router-link></h3>  </div>
             </div>
-            </div>
-            </div>
+       
 </template>
 
 <script>
