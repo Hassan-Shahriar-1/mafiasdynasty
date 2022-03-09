@@ -54,7 +54,7 @@ export default{
             Wmessage:"",
             data:'',
             oid:'0',
-            MsgsLts:[]
+            MsgsLts:Array
         }
     },
    
@@ -92,7 +92,7 @@ export default{
                 oid:this.oid, 
                 msg:this.Wmessage,
             }        
-             this.MsgsLts.unshift({
+            Array.from( this.MsgsLts).unshift({
                    pstn:'r',
                    msg:this.Wmessage,
                    tm:this.moment().format(),

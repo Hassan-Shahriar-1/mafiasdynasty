@@ -9,11 +9,11 @@
             <div v-else>
 
             
-            <ul class="list-group blkgry" v-for="(mlist, i) in ctdta" :key="i">
+            <ul class="list-group blkgry" v-for="(mlist, i) in chtlst" :key="i">
                 <router-link :to="{path:'/game/chat/'+i}"> 
                     <li class="list-group-item Gp0m blk50 Gp0m0 py-2 my-1" >
                         <div class="row no-gutters ">
-                            <div class="col-2 p-2"> <img :src="require('../../assets/img/'+mlist.mpic)" class="card-img BORDER rounded-circle" alt=""> 
+                            <div class="col-2 p-2"> <img src="../../assets/img/1.gif" class="card-img BORDER rounded-circle" alt=""> 
                                 <div class="card-img-overlay">
                                 <p class="bg-success dot"></p></div>
                             </div>      
@@ -49,45 +49,15 @@ export default {
     data() {
         return{
                 chtmsg:'',
-                ctdta:[
-                    {
-                        mpic:'1.png',
-                        mnm:'Habibur Rahman',
-                        mdtls:"abahsdfkag lorme lisdyn is non"
-                    },
-                     {
-                        mpic:'1.png',
-                        mnm:'Habibur Rahman',
-                        mdtls:"abahsdfkag lorme lisdyn is non"
-                    },
-                     {
-                        mpic:'1.png',
-                        mnm:'Habibur Rahman',
-                        mdtls:"abahsdfkag lorme lisdyn is non"
-                    },
-                     {
-                        mpic:'1.png',
-                        mnm:'Habibur Rahman',
-                        mdtls:"abahsdfkag lorme lisdyn is non"
-                    },
-                     {
-                        mpic:'1.png',
-                        mnm:'Habibur Rahman',
-                        mdtls:"abahsdfkag lorme lisdyn is non"
-                    },
-                     {
-                        mpic:'1.png',
-                        mnm:'Habibur Rahman',
-                        mdtls:"abahsdfkag lorme lisdyn is non"
-                    },
-                ]
+               chtlst:Array,
         }        
     },
 
     created() {
         this.$mgo.gt('mp/chatlst',(resp)=>{
             if(resp.sts=='chtlst'){
-                console.log('null')
+              this.chtlst=resp.list
+              console.log(resp.list)
             }else {
                 this.chtmsg='You didnt Chat With Anyone'
             }
