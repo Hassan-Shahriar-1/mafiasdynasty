@@ -109,7 +109,7 @@ export default {
  props: ['who'],
  
     beforeCreate() {
-        this.$mgo.gt('/fight/list',(rs)=>{
+        this.$mgo.gt('/fight/list/1',(rs)=>{
             console.log(rs)
             if(rs.sts=='fghtlst'){
                 this.mbrlst=(rs.list)
