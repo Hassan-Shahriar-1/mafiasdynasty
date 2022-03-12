@@ -4,7 +4,7 @@
   <div id="app" class="tbg" >
     <div class="mainC">
        <div class="mainCp text-left">
-            <router-view></router-view> 
+            <router-view ></router-view> 
       </div>
     </div>
   </div>
@@ -33,7 +33,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 0px;
-  margin-bottom:60px;
+ /*  margin-bottom:60px; */
 }
 </style>
 

@@ -1,5 +1,5 @@
 <template>
-          <div class="m-0 ptnbg" style="overflow: hidden;height:100vh;">
+          <div class="m-0 ptnbg" style="overflow: hidden;height:100vh; margin-bottom:-60px!important;">
                   <!-- <div class="lgnFromIcn mt-3 ">
                       <div class="row justify-content-sm-center">
                           <div class="col-12"> <img src="../assets/img/logo.png" class='img-thumbnail'></div>

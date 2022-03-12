@@ -27,10 +27,12 @@
                                 </div>  
                         </div>
                 <div class="row Gp0m0">
-                    <div class="col-7 Gp0m0">
+                    <div class="col-7 Gp0m0" >
 
-                        <printMe>
-                        <div v-if="edt!=''">
+                       
+    
+  
+                        <div v-if="edt!=''" style="background:rgba(207, 33, 33, 0.514)">
                             <img  class="card-img " v-if="bdy!=''"  :src="bdy" alt="">
                             <div class="card-img-overlay Gp0m0" v-if="hr!=''"><img class="card-img" src="../../../assets/img/avatar/H2.png" alt=""></div>
                             <div class="card-img-overlay Gp0m0" v-if="pnt!=''"> <img class="card-img"  src="../../../assets/img/avatar/pant2.png" alt=""></div>
@@ -38,15 +40,17 @@
                             <div class="card-img-overlay Gp0m0" v-if="she!=''"> <img class="card-img"  src="../../../assets/img/avatar/shocks.png" alt=""></div>  
                             <div class="card-img-overlay Gp0m0" v-if="otr!=''"> <img class="card-img"  src="../../../assets/img/avatar/cat.png" alt=""></div> 
                         </div>
+                        
                      
 
                         <div v-else>
                             <img  class="card-img "   src="../../../assets/img/avatar/H2.png">                
                         </div>
-
-                           </printMe>
+                        <vue-drawing-canvas ref="VueCanvasDrawing" :props="additionalImages" :inheritAttrs="true">
+                        </vue-drawing-canvas>
+                          
                         <div class="btn nBbg nBtn btn-lg btn-block tmibg text-center"  @click="print()">Save</div>
-                            <img class="card-img" :src="output">
+                           <!--  <img class="card-img " :src="output"> -->
                     </div>
                 
                     <div class="col-5 Gp0m0 tmibg2">
@@ -71,10 +75,16 @@
 
 
 <script>
+
+
+
 export default {
+  
     data() {
         return{
+            output: null,
             list:[],
+            additionalImages:Array,
             torso:[],
             shoe:[],
             pant:[],
@@ -85,7 +95,7 @@ export default {
             title:'',
             chk:'',
             userProfilePic:[],
-            output: null,
+         
             bdy:'',
             famlr:'',
             pnt:'',
@@ -99,6 +109,7 @@ export default {
     },
     mounted() {
         this.bdy,this.famlr,this.pnt,this.trs,this.she,this.hr
+       
         
     },
     beforeCreate(){
@@ -142,22 +153,17 @@ export default {
     },
 
    
+
    
     methods:{
 
-        async print(){
-      const el = this.$refs.printMe;
+   
 
-      /* var img = this.$refs.printMe
-      this.output = img.toDataURL() */
-      // add option type to get the image version
-      // if not provided the promise will return 
-      // the canvas.
-      const options = {
-        type: 'dataURL'
-      }
-      this.output = await this.$html2canvas(el, options);
-    },
+         async print(){
+
+             console.log('ok')
+      
+    },  
   
  
         bind(val){
@@ -184,6 +190,7 @@ export default {
             }else{
                 this.chk='body'
                 this.list=this.body
+               
             } 
         },
 

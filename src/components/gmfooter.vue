@@ -11,7 +11,7 @@
 
             <div class="row Gp0m0  btn-group bw100 sMnMnubg text-center  jaldi  " role="group" aria-label="...">
                 <div  v-for="(smn, i) in MmnDtlst.mn" :key="i" 
-                type="button" @click="bMcShw(smn.clk)" class="btn clmsz2  nBtn rounded-0 blkgry Gp0m0 py-2"><span v-html='smn.icn'></span><h6 class="sizv10">{{ smn.nm }}</h6></div>  
+                type="button" @click="bMcShw(smn.clk)" class="btn clmsz2  nBtn rounded-0 blkgry Gp0m0 py-2"><span v-html='smn.icn'></span><h6 class="sizv10 pt-1">{{ smn.nm }}</h6></div>  
             </div>
         </section>
  </div>

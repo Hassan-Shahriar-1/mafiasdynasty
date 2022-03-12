@@ -1,6 +1,6 @@
 <template>
-    <div class="mainC">
-        <div class="mainCp ptnbg ">
+
+        <div class="ptnbg" style=" height:100vh; margin-bottom:-60px!important;">
             <div class="signup-form m-0">
                 <div class="lgnFromIcn mt-3">
                     <div class="row justify-content-sm-center">
@@ -81,7 +81,6 @@
                 </div> -->
             </div>
         </div>
-    </div>
 </template>
 
 <script>

@@ -1,6 +1,5 @@
 <template>
-    <div class='mainC'>
-        <div class='mainCp ptnbg'>
+        <div class='ptnbg' style=" height:100vh; margin-bottom:-60px!important;">
             <form >
                 <div class="signup-form  m-0">
                     <div class="lgnFromIcn mt-3">
@@ -20,7 +19,7 @@
                     </div>
                     </div>
                         <div class="position-relative has-icon-right">
-                            <input class="form-control form-control-lg text-left rounded " name="email" type="email" placeholder="Email" required>
+                            <input class="form-control form-control-lg text-left rounded" name="email" type="email" placeholder="Email" required>
                             <div class="form-control-position">
                                 <i class="fas fa-envelope-open text-dark" style="font-size: large;"></i>
                             </div>
@@ -42,7 +41,7 @@
                     </div>     
             </form>
         </div>
-    </div>
+
 </template>
 <script>
 export default {
