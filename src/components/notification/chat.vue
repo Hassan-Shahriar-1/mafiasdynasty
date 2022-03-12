@@ -1,7 +1,7 @@
 <template>
     <div>
-    <div class="row Gp0m0 card-header tmibg text-center mb-2">
-        <router-link to="/game/notification/pchat"> <button class="float-left p-1 nBtn tmibg "><i class="fas fa-arrow-left"></i>Back</button></router-link><h3 class="text-white text-center titlefnt">{{usrnm}}</h3>
+    <div class="row Gp0m0 card-header tmibg p-2  text-center mb-2">
+        <router-link to="/game/notification/pchat"> <button class="float-left p-1 nBtn tmibg "><i class="fas fa-arrow-left"></i>Back</button></router-link><h3 class=" ml-2 text-white text-center titlefnt">{{usrnm}}</h3>
     </div>
 
 
