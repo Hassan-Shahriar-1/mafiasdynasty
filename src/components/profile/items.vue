@@ -3,8 +3,8 @@
              <!-- items start -->
         <div class="container Gp0m0 bMbg4 border-0 rounded p-2" style="word-break: break-all;">
             <h3 class="text-center  subtitlefnt">Items</h3>
-                <div class="row Gp0m0" @click=" show()">      
-                    <div class="col-6 Gp0m0" v-for="(itmg, i) in itm" :key="i"><div class=" m-1 tmibg border rounded"> <h6 class="sizv13 tmibg p-2 text-center dtlsfnt">{{itmg.name}}</h6><img :src="itmg.img" class="card-img" alt=""> <br> 
+                <div class="row Gp0m0">      
+                    <div class="col-6 Gp0m0" v-for="(itmg, i) in itm" :key="i"><div   @click="show()" class=" m-1 tmibg border rounded"> <h6 class="sizv13 tmibg p-2 text-center dtlsfnt">{{itmg.name}}</h6><img :src="itmg.img" class="card-img" alt=""> <br> 
                     <h6 class="sizv13 tmibg p-2 text-center dtlsfnt">X {{itmg.cnts}}</h6></div></div>
                 </div>
         </div>
@@ -12,7 +12,7 @@
         <modal name="itmmdl"  :width='300' :height='271' :isAutoHeight="true" class="mblr"  id='gtmhyHt'>
             <div class="card  w-100 Gp0m0">
                 
-                <div class="card-header blkgry text-center">Details</div>
+                <div class="card-header blkgry text-center">Details  <span class="float-right" style="margin-right: 2%;"><div @click=" hide()" class="crossbtn"><i class=" siz15 fas fa-times "></i></div></span></div>
                 <div class="row Gp0m0 tmibg  bdr3  blksdout rounded"  style=" height:271px; overflow: scroll;">
                     <div class="card-body Gp0m0">
                         <ul class="list-group w-100 tmibg">
@@ -40,6 +40,12 @@ export default {
 
 
     methods:{
+
+        beforeOspen() {
+      setTimeout(() => {
+        window.jq(".vm--modal").height(window.jq("#ablht").outerHeight());
+      }, 10);
+    },
             show(){
                 
                 this.$modal.show("itmmdl")

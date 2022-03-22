@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="card tmibg2 bdr1">
+        <div class="card tmibg2 m-1 p-2 bdr1">
             <div class="card-header blkgry Gp0m0">
 
-                <div class="row Gp0m0 pt-2">
-                    <div class="col-2 Gp0m0"><img class="card-img" src="../../assets/img/item/1.gif" alt=""></div>
+                <div class="row Gp0m0 py-1">
+                    <div class="col-2 p-1 Gp0m0"><img class="card-img" src="../../assets/img/item/1.gif" alt=""></div>
                     <div class="col-7"><h4 class="siz15">Habibur rahman<h5 class="siz13">Style</h5></h4></div>
                     <div class="col-3 Gp0m0"><p class="siz13 bottom-0">1 day ago</p></div>
                 </div>
@@ -38,11 +38,11 @@
         </div>
 
 
-                <div class="card tmibg2 bdr1">
+                <div class="card tmibg2 m-1 p-2 bdr1">
             <div class="card-header blkgry Gp0m0">
 
-                <div class="row Gp0m0 pt-2">
-                    <div class="col-2 Gp0m0"><img class="card-img" src="../../assets/img/item/1.gif" alt=""></div>
+                <div class="row Gp0m0 py-1">
+                    <div class="col-2 p-1 Gp0m0"><img class="card-img" src="../../assets/img/item/1.gif" alt=""></div>
                     <div class="col-7"><h4 class="siz15">Habibur rahman<h5 class="siz13">Style</h5></h4></div>
                     <div class="col-3 Gp0m0"><p class="siz13 bottom-0">1 day ago</p></div>
                 </div>

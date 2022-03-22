@@ -9,29 +9,29 @@
                 <form action="#">
                     <div class="form-control p-0">
                         <div class="position-relative has-icon-right">
-                            <input type="text" class="form-control form-control-lg text-left blkd50" name="username" placeholder="Update Username">
+                            <input type="text" class="form-control form-control-lg rounded-0 text-left blkd50" name="username" placeholder="Update Username">
                             <div class="form-control-position">
                                 <i class="fas fa-user"></i>
                             </div>
                         </div>
                              <div class="position-relative has-icon-right">
-                            <input type="email" class="form-control form-control-lg text-left blkd50" name="Email" placeholder="Update Email">
+                            <input type="email" class="form-control form-control-lg rounded-0 text-left blkd50" name="Email" placeholder="Update Email">
                             <div class="form-control-position">
                                <i class="far fa-envelope"></i>
                             </div>
                         </div>
             
                         <div class="position-relative has-icon-right text-dark">
-                            <input type="date" class="form-control form-control-lg text-left blkd50 text-white" name="age" placeholder="Update Age in year">
+                            <input type="date" class="form-control form-control-lg rounded-0 text-left blkd50 text-white" name="age" placeholder="Update Age in year">
                             <div class="form-control-position">
                             </div>
                         </div>
                     
-                        <div class="position-relative has-icon-right form-control form-control-lg text-left  blkd50">
+                        <div class="position-relative has-icon-right form-control form-control-lg rounded-0 text-left  blkd50">
                             <h6 class="lblblk dtlsfnt ">Please select your gender:</h6>
-                            <input type="radio" id="male" name="gender" value="male">
+                            <input type="radio" style="height:20px;width:20px;" id="male" name="gender" value="male">
                             <label for="male" class="lblblk">&nbsp;Male</label> &nbsp;&nbsp;
-                            <input type="radio" id="female" name="gender" value="female">
+                            <input type="radio" style="height:20px;width:20px;" id="female" name="gender" value="female">
                             <label for="female" class="lblblk">&nbsp;Female</label><br>
                             <div class="form-control-position">
                                 <i class=" fas fa-user"></i>
@@ -49,7 +49,7 @@
 <style>
 .blkd50::placeholder {
   color: rgb(255, 255, 255);
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
 
 </style>

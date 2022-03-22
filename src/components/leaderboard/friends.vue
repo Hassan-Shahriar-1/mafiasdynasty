@@ -7,20 +7,20 @@
    </div>
 
 
-        <div class="row blkgry p-3 text-center Gp0m0">
-                <div class="col-2">Rank</div>
-                <div class="col-4">Name</div>
-                <div class="col-3">Energy</div>
-                <div class="col-3">Level</div>
+        <div class="row blkgry py-3 text-center Gp0m0">
+                <div class="col-2 text-center">Rank</div>
+                <div class="col-4 text-center">Name</div>
+                <div class="col-3 text-center">Energy</div>
+                <div class="col-3 text-center">Level</div>
         </div>
             <div class="blkd50 p-1" v-for="fdta in fdata" :key="fdta.rnk"  :class="cngclr(fdta.rnk)">
         <div class="row Gp0m0 rounded blkd75 p-2">
-            <div class="col-2 p-0"> <br>  <img class="card-img rounded-circle blksdo3" style="height:50px; width:50px; margin-top:-30%;" :src="require('../../assets/img/item/'+fdta.limg)" alt="">
+            <div class="col-2 p-0 text-center"> <br>  <img class="card-img rounded-circle blksdo3" style="height:50px; width:50px; margin-top:-30%;" :src="require('../../assets/img/item/'+fdta.limg)" alt="">
             <div class="card-img-overlay">{{fdta.rnk}} </div></div>
-            <div class="col-4 px-1">
+            <div class="col-4 text-center px-1">
             <h6 class="subtitlefnt">{{fdta.nm}}</h6></div>
-            <div class="col-3 p-1"><h6 class="ml-1 dtlsfnt"><span><i class="fas fa-burn text-danger"></i></span> &nbsp;{{fdta.enrg}}</h6></div>
-            <div class="col-3 p-1"><h6 class="ml-1 dtlsfnt"><span><i class="fas fa-layer-group text-success"></i></span>&nbsp;{{fdta.lvl}}</h6></div>
+            <div class="col-3 text-center p-1"><h6 class="ml-1 dtlsfnt"><span><i class="fas fa-burn text-danger"></i></span> &nbsp;{{fdta.enrg}}</h6></div>
+            <div class="col-3 text-center p-1"><h6 class="ml-1 dtlsfnt"><span><i class="fas fa-layer-group text-success"></i></span>&nbsp;{{fdta.lvl}}</h6></div>
         </div>
         </div>
        <!--  <table class=" table Gp0m0" width="100%">

@@ -22,7 +22,7 @@
                     </div>
             </div>
 
-            <div class="p-1" style="word-break:break-all;">
+            <div class="p-1" >
                 <h6 class="mb-2 dtlsfnt">{{ MsgsLt.msg }}</h6>
             </div> 
 
