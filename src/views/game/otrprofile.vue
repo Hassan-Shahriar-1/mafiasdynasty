@@ -76,30 +76,32 @@
                 <i class="fas fa-users"></i> <br />
                 <h4 class="siz13 text-success">Clan <br />Request</h4>
               </div>
+              <div class="btn nBtn btn-block">
               <router-link to="/cablities"
-                ><div class="btn nBtn btn-block">
+                >
                   <i class="fas fa-gopuram"></i> <br />
                   <h4 class="siz13">Ablities</h4>
-                </div></router-link
-              >
-              <router-link to="/cabout"
-                ><div class="btn nBtn btn-block">
-                  <i class="far fa-address-card"></i> <br />
-                  <h4 class="siz13">About</h4>
-                </div></router-link
-              >
-              <router-link to="/badge"
-                ><div class="btn nBtn btn-block">
+                </router-link> </div>
+                <div class="btn nBtn btn-block">
+                    <router-link to="/cabout">
+                        <i class="far fa-address-card"></i> <br />
+                        <h4 class="siz13">About</h4>
+                    </router-link> 
+                </div>
+
+             <div class="btn nBtn btn-block"> <router-link to="/badge">
                   <i class="fas fa-award"></i> <br />
                   <h4 class="siz13">Badge</h4>
-                </div></router-link
-              >
-              <router-link to="/wall">
+                </router-link> </div>
+
+
                 <div class="btn nBtn btn-block">
+              <router-link to="/wall">
                   <i class="fas fa-pallet"></i> <br />
                   <h4 class="siz13">Wall</h4>
-                </div></router-link
-              >
+                </router-link>
+                </div>
+                
               <div class="btn nBtn btn-block" @click="ppup()">
                 <i class="fas fa-heartbeat"></i> <br />
                 <h4 class="siz13">
@@ -194,12 +196,7 @@
                     <div class="col-6 p-1">
                       <div class="card">
                         <img
-                          class="card-img-top"
-                          :src="
-                            require('../../assets/img/item/' + MmnDtlst.mimg)
-                          "
-                          alt="Card image cap"
-                        />
+                          class="card-img-top" :src="require('../../assets/img/item/' + MmnDtlst.mimg)" alt="Card image cap"/>
                         <div class="card-body p-1">
                           <p class="card-text p-2">Some quick</p>
                         </div>
@@ -431,13 +428,13 @@
       <modal
         name="cgift"
         :width="300"
-        :height="200"
+        :height="250"
         :isAutoHeight="true"
         @before-open="beforeOspen"
         class="mblr"
       >
-        <div class="row Gp0m0 tmibg" id="ablht">
-          <div class="card">
+        <div class="row Gp0m0 " id="ablht">
+          <div class="card w-100" style="height:300px; width:250px;">
             <div class="card-header p-2 blkgry">
               <h5 class="subtitlefnt">
                 Send Your Abilities to Me
@@ -446,7 +443,7 @@
                 </h5>
               </h5>
             </div>
-            <div class="card-body Gp0m0 tmibg"></div>
+            <div class="card-body Gp0m0 tmibg p-1"><h6>Lorem laudantium cupiditate vel vero!</h6></div>
           </div>
         </div>
       </modal>
@@ -565,7 +562,7 @@ export default {
   methods: {
     beforeOspen() {
       setTimeout(() => {
-        window.jq(".v--modal").height(window.jq("#ablht").outerHeight());
+        window.jq(".vm--modal").height(window.jq("#ablht").outerHeight());
       }, 10);
     },
     ppup() {

@@ -68,7 +68,7 @@
                         <div class="col-2">
                         </div>
                     </div>
-               <div class="card tmibg" style="height:500px; overflow:scroll;" >
+               <div class="card rounded-0 tmibg" style="height:500px; overflow:scroll;" >
 
        
             <div class="card-body">
@@ -92,17 +92,29 @@
                         </label>
                     </div>
                </div>
+
+                   <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
+                   <div class="col-8"><h5 class="subtitlefnt">Music Enable</h5></div>
+                   <div class="col-4">    
+                        <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                        </label>
+                    </div>
+               </div>
+
+                <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
+                   <div class="col-8"><h5 class="subtitlefnt">Sound Effects Enable</h5></div>
+                   <div class="col-4">    
+                        <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                        </label>
+                    </div>
+               </div>
        
          
-            <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
-            <label for="customRange1"><h5 class="subtitlefnt">Music Volume</h5></label> <br>
-            <input type="range" class="custom-range" id="customRange1">
-            </div>
-
-            <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
-            <label for="customRange1"><h5 class="subtitlefnt">Sounds Effects Volume</h5></label> <br>
-            <input type="range" class="custom-range" id="customRange1">
-            </div>
+          
 
         </div>
     </div>   

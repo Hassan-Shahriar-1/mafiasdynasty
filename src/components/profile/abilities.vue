@@ -18,51 +18,51 @@ export default {
             ablits:[
                 {
                     mg:"1.gif",
-                    des:"description"
+                    des:"description big big one"
                 },
                 {
                     mg:"1.gif",
-                    des:"description"
+                    des:"description big big one"
                 },
                 {
                     mg:"1.gif",
-                    des:"description"
+                    des:"description big big one"
                 },
                  {
                     mg:"1.gif",
-                    des:"description"
+                    des:"description big big one"
                 },
                 {
                     mg:"1.gif",
-                    des:"description"
+                    des:"description big big one"
                 },
                 {
                     mg:"1.gif",
-                    des:"description"
+                    des:"description big big one"
                 },
                  {
                     mg:"1.gif",
-                    des:"description"
+                    des:"description big big one"
                 },
                 {
                     mg:"1.gif",
-                    des:"description"
+                    des:"description big big one"
                 },
                 {
                     mg:"1.gif",
-                    des:"description"
+                    des:"description big big one"
                 },
                  {
                     mg:"1.gif",
-                    des:"description"
+                    des:"description big big one"
                 },
                 {
                     mg:"1.gif",
-                    des:"description"
+                    des:"description big big one"
                 },
                 {
                     mg:"1.gif",
-                    des:"description"
+                    des:"description big big one"
                 },
             ]
         }

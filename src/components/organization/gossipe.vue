@@ -9,7 +9,7 @@
         </div>       
                   
     </div>
-    <div id="Gmsg"  class="jaldi bMbg3" style="height:500px; overflow-y:scroll;">
+    <div id="Gmsg"  class="jaldi bMbg3" style="height:570px; overflow-y:scroll;">
         <section>
             <div v-for="(MsgsLt, i) in MsgsLts" :key="i">
 
@@ -63,7 +63,7 @@
         </div>
       </div>
     </div>
- <div  class="d-flex justify-content-start py-2" v-else-if="MsgsLt.typ=='mJr'" style="word-break:break-all;">
+ <div  class="d-flex justify-content-start py-2" v-else-if="MsgsLt.typ=='mJr'" >
         <div class="container">
       <div class="card rounded-1 clr711">
         <div class="card-header blkrds p-0">
@@ -100,20 +100,20 @@
  </div>
 
             
-                <div class="d-flex justify-content-start py-2" v-else-if="MsgsLt.typ=='l'" style="word-break:break-all;">
+                <div class="d-flex justify-content-start py-2" v-else-if="MsgsLt.typ=='l'" >
                                 <img class="card-img rounded-circle img_cont_msggsp " src="../../assets/img/logo.png" alt="">
                                 <div class="msg_cotainergsp w-100 ">
                                 <div class=" Gp0m0 siz20 subtitlefnt "> {{MsgsLt.nm}}</div>
-                                 <h6 class="dtlsfnt">  {{ MsgsLt.msg }}</h6>
+                                 <h6 class="dtlsfnt mt-1">  {{ MsgsLt.msg }}</h6>
                                 <span class="msg_timegsp text-white dtlsfnt">{{ MsgsLt.Tm }}</span>
                                 </div>
                 </div>
                 
-                <div class="d-flex justify-content-end py-2" v-else-if="MsgsLt.typ=='r'" style="word-break:break-all;">
+                <div class="d-flex justify-content-end py-2" v-else-if="MsgsLt.typ=='r'" >
                                 <div class="msg_cotainer w-100">
-                                   <h3 class=" Gp0m0 siz20  text-right subtitlefnt" > {{MsgsLt.nm}}</h3>
-                                   <h6 class="text-right dtlsfnt">{{ MsgsLt.msg }}</h6>
-                                    <span class="msg_time text-white float-right dtlsfnt">{{ MsgsLt.Tm }}</span>
+                                   <h3 class=" Gp0m0 siz20 subtitlefnt" > {{MsgsLt.nm}}</h3>
+                                   <h6 class="text-left mt-1 dtlsfnt">{{ MsgsLt.msg }}</h6>
+                                    <span class="msg_time text-white dtlsfnt">{{ MsgsLt.Tm }}</span>
                                 </div>
                                 <img class="card-img rounded-circle img_cont_msg " src="../../assets/img/logo.png" alt="">
                 </div>

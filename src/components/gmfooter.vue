@@ -102,11 +102,11 @@ export default {
                                             clk:'bank'
                                         },
                                         
-                                           {
+                                          /*  {
                                             nm:"Notification", 
                                             icn:"<i class='fas fa-bell'></i>",
                                             clk:'/game/notification/activity'
-                                        },
+                                        }, */
                                          {
                                             nm:"FAQ", 
                                             icn:"<i class='fas fa-question-circle'></i>",

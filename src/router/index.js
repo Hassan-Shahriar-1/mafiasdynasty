@@ -136,7 +136,7 @@ export default new Router({
                             path: 'bank',
                             name: 'bank',
                             component: () =>
-                                import ('@/views/game/bank')
+                                import ('@/components/home/bank')
                         },
 
 

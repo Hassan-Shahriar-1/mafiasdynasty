@@ -2,7 +2,9 @@
     <div class="section rounded bMbg5 border p-2">
         <!-- trophics section start -->
         <div class="container Gp0m0 " style="word-break: break-all;">
-            <h3 class="w-100 dark50 text-center py-1"> Trophies <i class="fas fa-question-circle float-right sizv35 p-2"></i></h3>
+            <h3 class="w-100 dark50 text-center py-1"> Trophies <i  @click="ctropiesinfo ^= true" class="fas fa-question-circle float-right sizv35 p-2"></i></h3>
+
+            <h6 class="p-1 blk50 m-1" style="border: 1px solid rgb(131 124 124);" v-show="ctropiesinfo">All the Trophies that are achievable from the game are enlisted here. The dark ones are those Trophies that are still to be achieved and the highlighted ones are the Trophies that are already achieved.</h6>
             <div class="row Gp0m0 w-100">
                 <h4 class="hr-sect subtitlefnt">Introduction</h4>
                 <div class="col-4 Gp0m0" v-for="(itmg, i) in Trophy.iitm" :key="i"><div class=" m-1 border rounded"><img :src="require('/src/assets/img/item/'+itmg.mg)" class="card-img" alt=""> <br> <h6 class="sizv13 blkred p-2 dtlsfnt">{{itmg.idtls}}</h6></div></div>
@@ -32,6 +34,9 @@ export default {
     data() {
         return{
 
+
+
+            ctropiesinfo:false,
             Trophy:{
             iitm:[
                     {
