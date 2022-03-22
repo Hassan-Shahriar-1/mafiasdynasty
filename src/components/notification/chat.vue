@@ -92,7 +92,7 @@ export default{
                 oid:this.oid, 
                 msg:this.Wmessage,
             }        
-            Array.from( this.MsgsLts).unshift({
+             this.MsgsLts.unshift({
                    pstn:'r',
                    msg:this.Wmessage,
                    tm:this.moment().format(),

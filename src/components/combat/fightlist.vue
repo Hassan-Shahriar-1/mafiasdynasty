@@ -44,7 +44,7 @@
                         <h4 class="card-title  mb-0 text-center p-1">Gone</h4>
                         <img class="card-img p-2" src="../../assets/img/item/1.gif" alt="">
                         
-                        <div class="btn btn-block nBtn blkred text-center"  @click="demoV1()"> attack</div>
+                        <div class="btn btn-block nBtn blkred text-center"  @click="demoV1(dfnd,arkey)"> attack</div>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
         <div class="row blkgry Gp0m0">
             <div class="col-2 p-1"><img src="../../assets/img/item/1.gif" class="card-img rounded-circle vertical-center" alt=""></div>
             <div class="col-10">
-                <h3 class="p-4 subtitlefnt">  Fight List({{flstnmbr}}) <h5>Bronze V</h5></h3>
+                <h3 class="p-4 subtitlefnt">  Fight List({{cnt}}) <h5>{{grnd}}</h5></h3>
             </div>
      </div>
         <div class="row no-gutters w-100">
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                    <!--  <div class="col-2 p-1"> <router-link :to="{path:'/game/attack/'+masrc.id}" @click="attack()"> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center"><i class="fab fa-wolf-pack-battalion"></i></h6></div></router-link></div> -->
-                    <div class="col-2 p-1"> <div @click="attack(masrc.id,masrc.name)"> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center"><i class="fab fa-wolf-pack-battalion"></i></h6></div></div></div>
+                    <div class="col-2 p-1"> <div @click="attack(masrc.id,i,masrc.name)"> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center"><i class="fab fa-wolf-pack-battalion"></i></h6></div></div></div>
                         
                         
                         </div>
@@ -101,6 +101,10 @@ export default {
                  mbrlst:Array,  
                  msg:'',
                  atk:'',
+                 cnt:'',
+                 dfnd:Number,
+                 arkey:Number,
+                 grnd:String,
            
         }
     },
@@ -112,7 +116,9 @@ export default {
         this.$mgo.gt('/fight/list/1',(rs)=>{
             console.log(rs)
             if(rs.sts=='fghtlst'){
+                this.grnd=rs.lv
                 this.mbrlst=(rs.list)
+                this.cnt=rs.cnt
                 console.log('list',this.mbrlst)
             }else{
                 this.msg=rs.msg
@@ -125,7 +131,6 @@ export default {
        updated(){
         this.TptrgrBr();
      
-
     },
     mounted:function(){
         this.TptrgrBr();
@@ -134,14 +139,16 @@ export default {
  
     
     methods:{
-        attack(mid,name){
+        attack(mid,key,name){
+            this.arkey=key;
             console.log(mid)
-          this.$mgo.gt('/fight/attack/'+mid,(res)=>{
+          this.$mgo.gt('/fight/attack/'+mid+'/'+key+'/arena',(res)=>{
               this.atk=false
               if(res.sts=='found'){
                   this.atk=true,
                   this.whos=name,
-                  this.me=res.mme
+                  this.me=res.mme,
+                  this.dfnd=mid
 
                   console.log(this.whos)
                   
@@ -155,7 +162,11 @@ export default {
             this.bh.hpW = 100 / this.bh.hped * this.bh.hpst;
             this.bh.hpoW = 100 / this.bh.hpoed * this.bh.hpost;
         },
-        demoV1(){
+        demoV1(mid,key){
+         
+              this.$mgo.gt('/fight/attack/'+mid+'/'+key+'/arena',(res)=>{
+                  console.log(res)
+              })
             if((this.bh.hpst!=this.bh.hped)&(this.bh.hpst>0)){
             this.bh.hpst = this.bh.hpst-21;
 
@@ -171,8 +182,6 @@ export default {
                 }
             
             }
-
-
     }
 }
 }

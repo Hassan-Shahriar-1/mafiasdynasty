@@ -15,8 +15,8 @@
                 <div class="row Gp0m0 py-2 my-1 blkgry">
                     <div class="col-3 "><img  class="card-img" src="../../assets/img/item/1.gif"  alt=""></div>
                     <div class="col-9 Gp0m0"> 
-                        <h4 class="subtitlefnt">Fightlist ({{flvl}})</h4>
-                        <h5 class="subtitlefnt">{{ftlvl}}</h5>
+                        <h4 class="subtitlefnt">Fightlist ({{fghtcnt}})</h4>
+                        <h5 class="subtitlefnt">{{flvl}}</h5>
                     </div>
                     <div class="col-12">
                         <div class="progress n_bar-a w-100" style="height:8px;">
@@ -38,8 +38,8 @@
                 <div class="row Gp0m0 py-2 my-1 blkgry">
                     <div class="col-3 "><img  class="card-img" src="../../assets/img/item/1.gif"  alt=""></div>
                     <div class="col-9 Gp0m0"> 
-                        <h4 class="subtitlefnt">Arena List ({{alvl}})</h4>
-                        <h5 class="subtitlefnt">{{atlvl}}</h5>
+                        <h4 class="subtitlefnt">Arena List ({{arncnt}})</h4>
+                        <h5 class="subtitlefnt">{{arlvl}}</h5>
                     </div>
                     <div class="col-12">
                         <div class="progress n_bar-a w-100" style="height:8px;">
@@ -120,15 +120,30 @@ export default {
                 fl:25,
                 al:35,
             },
-            flvl:'165',
-            ftlvl:'Bronze V',
-            alvl:'145',
-            atlvl:'bronze VI',
-            hlvl:'18',
+            
+            
+          
+            hlvl:'0',
             bnty:100,
             sr:1524,
             asr:459,
+            arncnt:Number,
+            fghtcnt:Number,
+            arlvl:'',
+            flvl:''
         }
+    },
+    beforeCreate(){
+        this.$mgo.gt('fight/alllist',(rs)=>{
+            console.log(rs)
+            if(rs.sts=='ldr'){
+                this.arncnt=rs.arenacnt,
+                this.fghtcnt=rs.fghtcnt,
+                this.arlvl=rs.arnlvl,
+                this.flvl=rs.fghtlvl
+
+            }
+        })
     }
 }
 </script>
