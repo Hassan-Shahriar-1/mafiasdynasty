@@ -76,7 +76,7 @@
 
                 <router-link to="hitlist">
                     <div class="row Gp0m0 py-2 my-1 blkgry">
-                    <h4 class="subtitlefnt">Hitlist ({{hlvl}})</h4>
+                    <h4 class="subtitlefnt">Hitlist ({{htlst}})</h4>
                 </div>
                 </router-link>
 
@@ -154,10 +154,11 @@ export default {
             bnty:100,
             sr:1524,
             asr:459,
-            arncnt:Number,
-            fghtcnt:Number,
+            arncnt:'',
+            fghtcnt:'',
             arlvl:'',
-            flvl:''
+            flvl:'',
+            htlst:''
         }
     },
     beforeCreate(){
@@ -176,6 +177,7 @@ export default {
                  console.log(new Date()).getFullYear();
 
           
+                this.htlst=rs.hitlist
 
             }
         })
