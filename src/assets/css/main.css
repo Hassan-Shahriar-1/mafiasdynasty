@@ -223,7 +223,7 @@
     background-image: url("../img/spy/lady2.png");
     background-size: 100% 100%;
     background-repeat: repeat-y;
-    height: 300px;
+    height: 500px;
     opacity: 0.4;
 }
 
@@ -375,7 +375,7 @@
     margin: 0 auto;
     min-height: 100vh;
     max-width: 532px;
-    margin-bottom:60px;
+    margin-bottom:7.7vh!important;
 
     
     /*  max-width:575.98px;  */
@@ -2397,7 +2397,9 @@ label {
     /* text-shadow: 0px 0px 2px #333, 0px 3px 2px #000; */
     border-radius: 5px;
     box-shadow: inset 0px 0px 5px 2px #000;
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
+
+    background-size: cover;
 }
 
 .chbrk {
@@ -2582,6 +2584,10 @@ label {
     box-shadow:inset 0px 0px 5px 3px #103241;
     padding: 2%;
 
+}
+
+.disable{
+    opacity: 0.7;
 }
 
 /* Godfather  animation css start */

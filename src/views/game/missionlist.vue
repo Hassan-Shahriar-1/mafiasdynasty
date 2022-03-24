@@ -30,7 +30,7 @@
                     </div>
                     <h6 class="text-left text-white">100% complete</h6>
                 </div>
-                <div class="col-4 px-1"><router-link to="/game/mission"><div class="btn nBtn btn-block button4 btnbfnt sizv20">Do job</div></router-link></div>
+                <div class="col-4 px-1"><router-link to="/game/mission"><div class="btn  py-2 nBtn btn-block button4 btnbfnt sizv20">Do job</div></router-link></div>
             </div>
         </div>
     </div>

@@ -5,10 +5,10 @@
             <div class="card-header p-2 blkgry">
                 <h3 class="text-left">Record book</h3>
             </div>
-            <div class="card-body" style="height: 200px; overflow: scroll;" v-if="rcdlst.length==0">
+            <div class="card-body h-100"  style=" overflow: scroll;" v-if="rcdlst.length==0">
                 <h6>No Record Found</h6>
             </div>
-            <div class="card-body p-2" style="height: 300px; overflow: scroll;" v-else>
+            <div class="card-body p-2 h-100" v-else>
                 <ul class="list-group tmibg" v-for="(rlst,i) in rcdlst" :key="i" style="overflow:scroll;">
                 <li class="list-group-item py-2 my-1 blkd75"><h6>{{rlst.msg}}</h6><p class="btmrt text-right"><vue-moments-ago prefix="" suffix="ago" :date="rlst.dttm" lang="en" /> </p></li>
                 </ul>

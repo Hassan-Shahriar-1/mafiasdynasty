@@ -18,8 +18,8 @@
             </div>
           </div>
      
-        <div class="card">
-          <div class="card-header blkgry px-1">
+        <div class="card border-0">
+          <div class="card-header blkgry p-3">
             <h4 class="text-center titlefnt">
               Mission
               <span class="float-right"
@@ -34,10 +34,10 @@
                 </h6>
            <router-link to="missionlist">
           <div class="card-body p-1 tmibg">
-            <div class="card blksdo" v-for="(mnms, i) in mname" :key="i">
+            <div class="card border-0  p-2 blksdo" v-for="(mnms, i) in mname" :key="i">
               <img
                 class="card-img img-fluid  my-2 rounded bdr1"
-                style="height:100px;"
+                style="height:120px;"
                 :src="require('../../assets/img/land/' + mnms.mimg)"
                 alt=""
               />

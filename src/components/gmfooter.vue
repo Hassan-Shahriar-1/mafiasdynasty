@@ -167,7 +167,7 @@ export default {
                                         {
                                             nm:"Profile", 
                                             icn:"<i class='fas fa-user-tie'></i>",
-                                            clk:'/game/profile/abilities'
+                                            clk:'/game/profile/about'
                                         },
                                          {
                                             nm:"Friends", 

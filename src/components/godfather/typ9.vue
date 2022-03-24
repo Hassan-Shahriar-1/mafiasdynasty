@@ -33,8 +33,8 @@
                         <router-link to="/game/typ9/p4" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fab fa-buffer"></i><br>p4</router-link>
                         <router-link to="/game/typ9/p5" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fas fa-edit"></i> <br>p5</router-link>
                         <router-link to="/game/typ9/p6" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fas fa-money-check-alt"></i><br>p6</router-link>
-                        <router-link to="/game/typ9/p6" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8 disable"><i class="fas fa-money-check-alt"></i><br>Disable</router-link>
-                        <router-link to="/game/typ9/p6" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8 disable"><i class="fas fa-money-check-alt"></i><br>Disable</router-link>
+                        <router-link to="/game/typ9/p6" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8 disable"><i class="fas fa-lock"></i><br>Disable</router-link>
+                        <router-link to="/game/typ9/p6" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8 disable"><i class="fas fa-lock"></i><br>Disable</router-link>
                     </div>
                 </div>
             </div>
