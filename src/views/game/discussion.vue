@@ -18,7 +18,7 @@
             <div class="row no-gutters mb-1">  
                     <img src="../../assets/img/item/1.gif" alt="Avatar" style="width:100%;">
                     <div class="header">
-                    <strong class="text-white subtitlefnt"><h5>{{MsgsLt.nm}}</h5></strong> <small class="text-right text-muted"></small> 
+                    <strong class="text-white subtitlefnt"> <router-link :to="{path:'/game/otrprofile/'+MsgsLt.uid}"><h5>{{MsgsLt.nm}}</h5></router-link> </strong> <small class="text-right text-muted"></small> 
                     </div>
             </div>
 
@@ -64,13 +64,15 @@ export default{
         return {
             Gmessage:"",
             MsgsLtslstd:0,
-            MsgsLts:[]            
+            MsgsLts:[],
+                  
         }
     },   
   
     created() {
         this.socket.emit('callForGetGblbMsg');
-        this.socket.on('RspForGetGblbMsg', (msglst)=> {                   
+        this.socket.on('RspForGetGblbMsg', (msglst)=> { 
+            console.log(msglst);                      
                     this.MsgsLts = msglst
         }); 
         this.socket.on('RspForPushGblbMsg', (msg)=> {         

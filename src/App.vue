@@ -3,7 +3,7 @@
 <!--  <script src='assets/js/lib/jquery.fittext'></script> -->
   <div id="app" class="tbg" >
     <div class="mainC">
-       <div class="mainCp text-left">
+       <div class="mainCp text-left ">
             <router-view ></router-view> 
       </div>
     </div>

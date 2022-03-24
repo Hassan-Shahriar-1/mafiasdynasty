@@ -39,7 +39,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group text-center mt-3 ">
+                    <div class="text-center mt-3  px-4">
                         <button type="submit" class="bgD2 m-0 nBtn nBbg btn-lg btn-block">Update profile</button>
                     </div>
                 </form>

@@ -9,8 +9,39 @@
             <div class="col-4 ">
             <img class="card-img" src="../../assets/img/custom profile/01.jpg" alt="">
             </div>
-            <div class="col-8 Gp0m0">
+            <div class="col-8 bg-transparent Gp0m0">
+                <div class="mb-2" v-if="chk==true">
+                    <div class="row Gp0m0 p-2">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                         <img class="card-img" src="../../assets/img/custom profile/01.jpg" alt="">
+                         </div>
+                        <div class="col-2"></div>
 
+                        <div class="blkd75 p-2 siz15">
+                        <vue-countdown-timer
+                        @start_callback="startCallBack('event started')"
+                        @end_callback="endCallBack('event ended')"
+                        :start-time="tmstrt"
+                        :end-time="tmend"
+                        :interval="1000"
+                        :start-label="'Until start:'"
+                        :end-label="' Time Left:'"
+                        label-position="begin"
+                        :end-text="'Event ended!'"
+                        :day-txt="'days'"
+                        :hour-txt="'hours'"
+                        :minutes-txt="'minutes'"
+                        :seconds-txt="'seconds'">
+                        </vue-countdown-timer>
+                        </div>
+                        <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisic
+                            ut qui porro corrupti, debitis fugit quisquam 
+                            consequuntur maxime corporis doloribus aliquid odit odio modi. Aut, soluta!</p>
+
+                    </div>
+                </div>
+            <div v-if="chk==false">
                 <router-link to="fightlist">
                 <div class="row Gp0m0 py-2 my-1 blkgry">
                     <div class="col-3 "><img  class="card-img" src="../../assets/img/item/1.gif"  alt=""></div>
@@ -27,12 +58,6 @@
                 </router-link>
 
 
-
-                <div class="row">
-                    <div class="col-4 float-left"><h6 class="titlefnt siz15">leftSidebar</h6></div>
-                    <div class="col-4 text-center"><h6 class="subtitlefnt siz15">Middlebar</h6></div>
-                    <div class="col-4 float-right"><h6 class="dtlsfnt siz15">Rightsidebar</h6></div>
-                </div>
 
                   <router-link to="arenalist">
                 <div class="row Gp0m0 py-2 my-1 blkgry">
@@ -54,6 +79,8 @@
                     <h4 class="subtitlefnt">Hitlist ({{htlst}})</h4>
                 </div>
                 </router-link>
+
+                </div>
             </div>
         </div>
         <div class="row Gp0m0">
@@ -119,10 +146,10 @@ export default {
             th:{
                 fl:25,
                 al:35,
+                tmstrt:'',
+                tmend:'',
             },
-            
-            
-          
+          chk:false,
             hlvl:'0',
             bnty:100,
             sr:1524,
@@ -143,6 +170,14 @@ export default {
                 this.arlvl=rs.arnlvl,
                 this.flvl=rs.fghtlvl,
                 this.htlst=rs.hitlist
+                this.chk=rs.chk,
+                this.tmstrt=rs.stm,
+                this.tmend=rs.etm,
+                 console.log(this.tmstrt,'here is start timer');
+                 console.log(this.tmend,'here is End timer');
+                 console.log(new Date()).getFullYear();
+
+          
 
             }
         })

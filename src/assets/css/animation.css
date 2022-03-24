@@ -220,7 +220,8 @@ div.rtdiv {
 .trt h5 {
     height: 300px;
     width: 200px;
-    float: left;
+    margin-top: 20%;
+    text-align: center;
     animation: fadeIn ease 10s;
     -webkit-animation: fadeIn ease 10s;
     -moz-animation: fadeIn ease 10s;

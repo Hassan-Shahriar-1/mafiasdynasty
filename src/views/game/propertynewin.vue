@@ -34,10 +34,10 @@
                 </div>
             </div>
             <div class="row Gp0m0 my-2 p-2 tmibg6 rounded">
-                    <h5 >level:12</h5>
+                    <h5 >level:{{bh.lvl}}</h5>
                 <div class="col-12 Gp0m0">
                         <div class="progress n_bar-a" style="height:10px;">
-                        <div class="progress-bar clRBppl bgD0" id="itmBr" style="width:20%"></div>
+                        <div class="progress-bar clRBppl bgD0" id="itmBr" :style="{width:bh.updtW+'%'}"></div>
                     </div>
                 </div>
                 <div class="col-9 Gp0m0">
@@ -54,7 +54,7 @@
   
                 <div class="col-3 Gp0m0 px-1">
                     <h5 class="sizv30 text-success "><div class="iC-cash incb1" style="margin-right:1%;" ></div>Cash:{{upcash}}</h5>
-                    <div class="btn nBtn dpgenbtn sizv13 mt-1 button5">Upgrade</div>
+                    <div class="btn nBtn dpgenbtn sizv13 mt-1 button5" @click="updt()">Upgrade</div>
                 </div>
             </div>
         </div>
@@ -66,6 +66,10 @@ export default {
     components: { carousel },
     data() {
         return{
+            bh:{
+                updtW:0,
+                lvl:0,
+                },
                 pimg:{
                     pm:"1.gif",
                 },
@@ -120,6 +124,27 @@ export default {
             ]
         }        
     },
+
+         updated(){
+        this.TptrgrBr();
+    },
+    mounted:function(){
+        this.TptrgrBr();
+    },
+ 
+
+    methods:{
+            TptrgrBr(){
+            this.bh.lvl = this.bh.updtW /5;
+        },
+
+         updt(){
+            /* this.bh.updtW=this.bh.updtW+5; */
+            if(this.bh.lvl<20){
+            this.bh.updtW=this.bh.updtW+5;
+            }
+        },
+    }
 }
 </script>
 <style scoped>

@@ -13,10 +13,13 @@
             <div class="card-body Gp0m0 bg-transparent">
                 <div class="card">
                     <img class="card-img p-2" src="../../assets/img/bannar/1.jpg" alt="">
-                    <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                        <h6 class="card-title dtlsfnt " style="margin-right: 25%;box-shadow: inset 0px 0px 150px #330000, 0px 0px 20px #000033;padding: 2%;text-align: justify;"> 
-                            Time was standing between me and them.The dark side brings them to life again and again. I am the first person who is fearlessly diving into the ocean of terror to put an end of the dark side. I can take you in that dimension to fight with them. If you can prove yourself through powers will get a robust ability. </h6>
-                    </div>
+                   <div class="card-img-overlay p-2">
+                       <div style="margin-right:30%; box-shadow:inset 0px 0px 150px #000; padding: 4%;">    
+                        <h6>I have gathered all the knowledge and items for ages. To be updated with 
+                            the upcoming news, come to pay a visit. My knowledge adroitness is unrevealed which will be revealed very soon. <br> 
+                            </h6>
+                     </div>
+                 </div>
                 </div>
             </div>
         </div>
@@ -32,9 +35,9 @@
                 <div class="card blkgry w-100 bdr1"  v-for="(hbimg, i) in bimg" :key="i">
                     <img class="card-img" style="height:150px; padding:2px;" 
                     :src="require('/src/assets/img/bannar/'+hbimg.img)">
-                    <div class="row blkd75 Gp0m0">
+                    <div class="row tmibg Gp0m0">
                         <div class="col-3"> </div>             
-                        <div class="col-6 p-3"> <div class="btn nBtn button4 nBbg text-center btn-block">Hi Button </div></div>
+                        <div class="col-6 p-3"> <div class="btn nBtn  nBbg text-center btn-block">Hi Button </div></div>
                         <div class="col-2"> </div>  
                     </div>
                 </div>
