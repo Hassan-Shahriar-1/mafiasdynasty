@@ -285,19 +285,15 @@ export default {
     },
     updated(){
         this.TptrgrBr();
-        
+    
     },
     mounted(){
         this.TptrgrBr();  
         window.addEventListener('scroll', this.handleScroll);
         /* this.socket.on('popupntf',(data)=>{
         console.log(data);
-       
-
-        })    */ 
+        })    */
          this.hgtdt()
-
-    
     },  
   
        /*  beforeUpdate(){
@@ -325,16 +321,13 @@ export default {
                }else if(this.$router.currentRoute.path=='/game/notification/activity'){
                    this.$router.replace('/game/home/gtns')
                }else{
-                this.$router.go(-1)
-                    
+                this.$router.go(-1) 
                 }
             }
-
         },
         logout(){
             this.$mgo.gt('auth/logout',(rs)=>{
                 console.log(rs)
-                
             })
         },
 
@@ -425,10 +418,7 @@ export default {
         demoV4(){
             this.Th.expst=this.Th.expst+2;
         },
-        
-    
     },
-
 }
 </script>
 <style scoped>

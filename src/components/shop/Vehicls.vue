@@ -72,8 +72,12 @@ export default {
             }
         })
     },
+
+  
     mounted(){
-        this.$notify()
+        this.$notify();
+       
+       
     },
     methods:{
 
