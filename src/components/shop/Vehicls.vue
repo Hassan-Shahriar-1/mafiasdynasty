@@ -73,9 +73,10 @@ export default {
         })
     },
 
-  
+
     mounted(){
         this.$notify();
+  
        
        
     },
@@ -113,13 +114,14 @@ export default {
           this.mimg=this.itmallimg+itmimg,
           this.mid=itid,
           this.vcst=cst,
-           this.$modal.show('vhcls',  { height: 'auto' });        
+          this.$modal.show('vhcls',  { height: 'auto' });        
         },
         hide() {
             this.$modal.hide('vhcls');
         },
         buy(id){
             console.log(id)
+            console.log(this.$notify())
             /* this.$mgo.gt('itminvtry/add'+itmid,(res)=>{
                 console.log(res);
             }) */

@@ -7,11 +7,11 @@
    </div>
 
 
-        <div class="row blkgry p-3 text-center Gp0m0">
-                <div class="col-2">Rank</div>
-                <div class="col-4">Name</div>
-                <div class="col-3">Energy</div>
-                <div class="col-3">Level</div>
+        <div class="row blkgry py-3 text-center Gp0m0">
+                <div class="col-2 text-center">Rank</div>
+                <div class="col-4 text-center">Name</div>
+                <div class="col-3 text-center">Energy</div>
+                <div class="col-3 text-center">Level</div>
         </div>
             <div class="blkd50 p-1" v-for="fdta in fdata" :key="fdta.rnk"  :class="cngclr(fdta.rnk)">
         <div class="row Gp0m0 rounded blkd75 p-2">
@@ -63,7 +63,7 @@ export default {
     data() {
         return{
             fdata:[
-                {
+                 {
                     rnk:"1st",
                     limg:"Gold-bar.jpg",
                     nm:"Abul Mall",

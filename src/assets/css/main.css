@@ -1,7 +1,6 @@
 @import './almyFns.css';
 
 /*  custom font area start */
-
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +9,9 @@
     scroll-behavior: auto;
 }
 
+*,body,html,div {
+    scroll-behavior: smooth;
+  }
 
 /* button circle with size*/
 
@@ -17,15 +19,12 @@
     height: 10vh!important;
     width: 10vh!important;
 }
-
-
 /* header background */
 
 .hdbg {
     background: url('../img/background/headerbg3.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-  
 }
 
 .losdo {
@@ -41,7 +40,6 @@
     color: gray;
     text-transform: lowercase;
 }
-
 .ttlfnt2 {
     font-family: morrisroman;
     font-size: 35px;
@@ -99,7 +97,6 @@
 .subtitlefnt {
     font-family: subtitle;
 }
-
 .dtlsfnt {
     font-family: dtls;
 }
@@ -154,8 +151,6 @@
     /* background:linear-gradient(0deg, rgb(0, 25, 31) 0%, rgb(9, 91, 115) 100%); */
 }
 
-
-
 .contain::after {
     content: "";
     clear: both;
@@ -194,8 +189,6 @@
 
 
 /* style for discussion board end */
-
-
 /* texture image start */
 
 .texture1 {
@@ -280,8 +273,6 @@
 #d-none {
     display: none;
 }
-
-
 /* border start */
 
 .rdbdr {
@@ -304,13 +295,8 @@
     border: 1px solid #3e3c3c;
 }
 
-
 /* border end */
-
-
 /* texture image end */
-
-
 /*padding  margin sizing start */
 
 .Gp0m0 {
@@ -354,8 +340,6 @@
 .mb-0 {
     bottom: 0px;
 }
-
-
 /* padding margin sizing start */
 
 .mainC {
@@ -375,9 +359,11 @@
     margin: 0 auto;
     min-height: 100vh;
     max-width: 532px;
+    max-width:575.98px;
+    border: 1px solid #1b1b1b;
+    background: inherit;
     margin-bottom:60px;
-
-    
+    box-shadow: inset 0 0 2000px rgba(14, 1, 1, 0.678);
     /*  max-width:575.98px;  */
     /* border: 1px solid #330000;  background: inherit; */
     /*   box-shadow: inset 0 0 2000px rgba(14, 1, 1, 0.678); */
@@ -392,7 +378,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.678);
+    box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.678);
     filter: blur(10px);
 }
 
@@ -1322,7 +1308,7 @@ button.big-button:active::before {
 
 .blkred {
     background: rgb(62, 0, 0);
-    background: linear-gradient(0deg, rgb(138, 3, 3) 0%, rgba(93, 1, 1, 1) 44%, rgb(165, 9, 9)100%)
+    background: linear-gradient(0deg, rgb(138, 3, 3) 0%, rgba(93, 1, 1, 1) 44%, rgb(165, 9, 9) 100%)
 }
 
 .blkredbg {
@@ -2233,11 +2219,11 @@ label {
 /* border css start */
 
 .bdr1 {
-    border: 3px solid rgb(48, 45, 45);
+    border: 2px solid rgb(48, 45, 45);
 }
 
 .bdr2 {
-    border: 3px solid rgb(71, 68, 68);
+    border: 2px solid rgb(71, 68, 68);
 }
 
 .bdr3 {
@@ -2256,11 +2242,11 @@ label {
     border: 2px solid rgb(85, 85, 85);
 }
 
-.bdw2 {
+.bdw3 {
     border: 3px solid rgb(85, 85, 85);
 }
 
-.bdw2 {
+.bdw4 {
     border: 4px solid rgb(85, 85, 85);
 }
 
@@ -2368,10 +2354,7 @@ label {
     padding: 0px 2px;
 }
 
-
 /* inGame Css  */
-
-
 /* #Ingks {
     margin-bottom: 25px;
 } */
@@ -2573,17 +2556,13 @@ label {
     top: 30px;
     transform: rotate(-45deg);
 }
-
-
 /* gift section ribbon design End */
 
 
 
 .bnrbxsdo{
-
     box-shadow:inset 0px 0px 5px 3px #103241;
     padding: 2%;
-
 }
 
 .disable{
@@ -2620,13 +2599,10 @@ label {
     opacity: 1;
     }
     }
-
-
     .scale-up-center {
         -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
                 animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
-
 /**
  * ----------------------------------------
  * animation scale-up-center
@@ -2652,7 +2628,5 @@ label {
               transform: scale(1);
     }
   }
-  
-    
 /* Godfather animation css End */
 

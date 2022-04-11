@@ -37,7 +37,7 @@
             </div>
         </div>
         <!-- sticky top start  -->
-        <v-touch id='StkinHmnu' @doubletap="hdrdbltp()"  class="container Gp0m0 itmbg" style="z-index:+1030"> 
+        <v-touch id='StkinHmnu' @doubletap="hdrdbltp()"  class="container Gp0m0 itmbg" style="z-index:+1030; max-width:575.98px;"> 
             <div class="row Gp0m0" >
                 <div class="col-4 p-1 itmbg">
                     <h6 class='hrtl'>Enargy: <span class="hdricnpsn float-right iC-energy incb3"></span> <br></h6>
@@ -273,9 +273,9 @@ export default {
              clg:"Close",
              rcdlst:[],
              nrcd:'',
-            
-             
         
+
+
         }
     }, 
     
@@ -284,8 +284,7 @@ export default {
         window.addEventListener('scroll', this.handleScroll);       
     },
     updated(){
-        this.TptrgrBr();
-    
+        this.TptrgrBr();    
     },
     mounted(){
         this.TptrgrBr();  
@@ -344,22 +343,18 @@ export default {
         },
         show(){
             this.$modal.show('ntfctn');
-            
         },
         hide(){
             this.$modal.hide('ntfctn');
         },
          Lotsw(){
             this.$modal.show('Lotsw');
-            
         },
         Lothd(){
             this.$modal.hide('Lotsw');
         },
-
            bmsho(){
-            this.$modal.show('bmsho');
-            
+            this.$modal.show('bmsho');  
         },
         bmshd(){
             this.$modal.hide('bmsho');
@@ -374,21 +369,21 @@ export default {
                     }    
                 }        
             })
-
-
         },
         handleScroll () {
            var isPositionFixed = (window.jq('#StkinHmnu').css('position') == 'fixed');
          //   on Screoll down
             if (window.jq(window).scrollTop() >= window.jq('#hdrvp10').height() && !isPositionFixed){          
-               window.jq('#StkinHmnu').css({'position': 'fixed', 'top': '0px', 'max-width':'532px'}); 
+               window.jq('#StkinHmnu').css({'position': 'fixed', 'top': '0px', 'max-width':'575.98px'}); 
                 let sthgt = window.jq('#StkinHmnu').height();
+                  window.jq('#Ingks').css('marginTop', sthgt+'px');
                   window.jq('#Ingks').css('marginTop', sthgt+'px');
             }
              //   on Screoll Top
             if (window.jq(window).scrollTop() <  window.jq('#hdrvp10').height() &&  isPositionFixed){
                 window.jq('#StkinHmnu').css({'position': 'static', 'top': '0px'}); 
                  window.jq('#Ingks').css('marginTop', '0px');
+                 window.jq('#Ingks').css('ScrollBehaviour', 'smooth');
             } 
         },
          TptrgrBr(){
@@ -396,11 +391,9 @@ export default {
             this.Th.RagW = 100 / this.Th.Raged  * this.Th.Ragst;
             this.Th.hltW = 100 / this.Th.hlted  * this.Th.hltst;
             this.Th.expW = 100 / this.Th.exped  * this.Th.expst;
-           
         },
 
         hdrFrsh(){         
-              
             this.Th.engst=this.Th.enged;
             this.Th.Ragst=this.Th.Raged;
             this.Th.hltst=this.Th.hlted;
@@ -435,13 +428,11 @@ h6{
     min-height: 9vh; 
 } */
 .fadeInDown {
-
-    position: relative;
+  position: relative;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   -webkit-animation-duration: 0.7s;
   animation-duration: 0.7s;
-  
   }
   @-webkit-keyframes fadeInDown {
   0% {

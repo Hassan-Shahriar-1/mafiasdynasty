@@ -116,7 +116,7 @@
                         </div>
                     </div>
 
-                    <div class="row Gp0m0  itmbg rounded ">
+                    <div class="row Gp0m0 mx-1  itmbg rounded ">
                         <div class="col-3 Gp0m0  p-1">
                             <router-link to="recordbook"><div class="btn nBtn btn-block "><i class="fas fa-book-open"></i> <br> <h4 class="siz13">Record <br> book</h4></div></router-link>
                             <router-link to="eprofile"><div class="btn nBtn btn-block "><i class="fas fa-edit"></i> <br><h4 class="siz13">Edit <br>Profile </h4></div></router-link>
@@ -126,15 +126,25 @@
                             <router-link to="base"><div class="btn nBtn btn-block "><i class="fas fa-biohazard"></i> <br> <h4 class="siz13">Base <br> defense</h4></div></router-link>
                             <router-link to="dfncwpn"><div class="btn nBtn btn-block "><i class="fas fa-fist-raised"></i> <br><h4 class="siz13">defense <br>Weapon </h4></div></router-link>
                         </div>
+
+
                         <div class="col-9 Gp0m0 tmibg">
-                                <router-view class="rounded m-1"></router-view>
+                        <div class="bw100 w-100 rounded jaldi blkgry" role="group" aria-label="...">
+                            <div class="btn-group  bw100 w-100  sizv13">
+                                 
+                                    <router-link to="wall" tag="button" class="btn nBtn Gp0m0 blkgry"><i class="fa fa-user"></i> <br> <h4 class="siz15">Wall</h4> </router-link>
+                                    <router-link to="badge" tag="button" class="btn nBtn Gp0m0 blkgry"><i class="fas fa-certificate"></i><br><h4 class="siz15">Badge</h4></router-link>
+                                    <router-link to="closet" tag="button" class="btn nBtn Gp0m0 blkgry"><i class="fas fa-glass-cheers"></i> <br><h4 class="siz15">Closet</h4></router-link>
+
+                            </div>
+                        </div>
+                            <router-view class="rounded m-1"></router-view>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Body Content End -->  
         </div>
-
 </template>
 <script>
 export default {

@@ -18,7 +18,7 @@
                             <router-view></router-view>
                         </div>
                     </div>
-                    <modal name="leve" :width="350" :height="250" class="mblr">
+                    <modal v-if="org==true" name="leve" :width="350" :height="250" class="mblr">
                         <div class="mrgnbtm tmibg bdr3 p-2 bmsdo rounded overflow-y" style="height:250px; width:auto;">
                             <h3 class="mb-2 subtitlefnt">Do you really want to leave?</h3>
                             <div class=" row no-gutters rounded mt-5">
@@ -39,7 +39,7 @@ export default {
    
       data() {
           return {
-              
+              org:false,
               gngcrt:false,
               err:'',
               cln:'',

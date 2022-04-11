@@ -778,7 +778,19 @@ export default new Router({
                 {
                     path: 'gfight',
                     component: () =>
-                        import ('@/components/godfather/gfight')
+                        import ('@/components/godfather/fight/gfight')
+                },
+
+                {
+                    path: 'gatkintro',
+                    component: () =>
+                        import ('@/components/godfather/fight/gatkintro')
+                },
+
+                {
+                    path: 'gattack',
+                    component: () =>
+                        import ('@/components/godfather/fight/gattack')
                 },
                 {
                     path: 'typ9',

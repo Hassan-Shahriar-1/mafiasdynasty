@@ -2,10 +2,8 @@
     <div>
         <div class="row py-2 text-center Gp0m0"><h4 class="hr-sect jaldi">Task Traveller</h4></div>
         <div class="card bg-transparent border  Gp0m0">
-            <div class="card-header blkgry text-center"><h4 class="titlefnt">Sophia Sharon <i @click="t8nws ^= true" class="float-right siz20 fas fa-question-circle"></i></h4>
-                
+            <div class="card-header blkgry text-center"><h4 class="titlefnt">Sophia Sharon <i @click="t8nws ^= true" class="float-right siz20 fas fa-question-circle"></i></h4>                
             </div>
-
             <h6 class="p-2 m-2 text-justify dtlsfnt blkgry scale-up-center" v-show="t8nws">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio similique nulla aliquam,
                     amet asperiores nam minima odio iusto officiis 
                     voluptatem eveniet natus. Atque quidem, voluptate numquam laborum accusantium architecto?
@@ -23,22 +21,19 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="bg-transparent p-4">
             <h4 class="titlefnt">Boss fight
             <router-link to="gfight"><div class="btn nBbg nBtn float-right btnfnt button4">Lets Go!</div></router-link></h4>
         </div>
-        
         <div class="card-header blkgry"><h3 class="titlefnt"> Door WAY</h3></div>
-        <div class="card-body  Gp0m0  pt-2">
-            <carousel :autoplay="true" :height="250" :dots="false" :autoplayTimeout="2000" :nav="false" :items='1' class="px-2"> 
+        <div class="card-body p-2  Gp0m0  ">
+            <carousel :autoplay="true" :height="300" :dots="false" :autoplayTimeout="3000" :nav="false" :items='1' > 
                 <div class="card blkgry w-100 bdr1"  v-for="(hbimg, i) in bimg" :key="i">
-                    <img class="card-img" style="height:150px; padding:2px;" 
+                    <img class="card-img" style="height:150px;" 
                     :src="require('/src/assets/img/bannar/'+hbimg.img)">
-                    <div class="row tmibg Gp0m0">
-                        <div class="col-3"> </div>             
-                        <div class="col-6 p-3"> <div class="btn nBtn  nBbg text-center btn-block">Hi Button </div></div>
-                        <div class="col-2"> </div>  
+                    <div class="row tmibg justify-content-center Gp0m0">
+                        <div class="col-6 p-3"> <div class="btn nBtn nBbg blkgry btn-block">Hi Button </div></div>
                     </div>
                 </div>
             </carousel>
@@ -86,7 +81,6 @@ export default {
                      img:"4.jpg"
                  },
              ]
-        
         }
     }
 }

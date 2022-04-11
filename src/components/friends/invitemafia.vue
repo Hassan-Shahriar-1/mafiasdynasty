@@ -29,7 +29,7 @@
             <div class="row Gp0m0 blkgry mt-2 p-2">
                     <div class="col-2 Gp0m0 p-1"><img src="../../assets/img/1.png" class="card-img" alt=""></div>
                     <div class="col-6"> <h4 class="text-warning subtitlefnt">Habibur</h4> <h6 class="dtlsfnt">aghsfiohasygfiua</h6></div>
-                    <div class="col-4 "> <div class=" blk50 mt-1 border py-3 rounded"><h6 class="text-center dtlsfnt">100</h6></div></div>
+                    <div class="col-4 "> <div class=" blk50 mt-1 py-3 rounded" style="border: 1px solid #1c1c1c !important;"><h6 class="text-center dtlsfnt">100</h6></div></div>
             </div>
 
             <div class="blkd75 border py-2 mt-1 rounded">
@@ -67,12 +67,12 @@
                     </h4>
                 </div>             
                 <div class="card-body p-1">
-                    <div class="row Gp0m0 tmibg blksdo dtlsfnt" style="height:300px; width:350px; overflow-y: scroll;" >
+                    <div class="row Gp0m0 tmibg blksdo dtlsfnt" style="height:300px; width:340px; overflow-y: scroll;" >
                         <div class="w-100 ">
                             <div class="form-group p-2">
                                 <h6 class="siz20 dtlsfnt">fugiat porro accusantium iusto vel esse? Voluptatum neque dolor doloribus distinctio.</h6>
-                                <input type="text" class="form-control mt-2 text-center" v-model="fndcyp" placeholder="Submit code">
-                                <div class="btn nBtn btn-lg mt-2 btn-block blkgry"  @click="hide(),sendReq()">Submit</div>
+                                <input type="text" class="form-control text-center" v-model="fndcyp" placeholder="Submit code">
+                                <div class="btn nBtn btn-lg my-2 mx-0 btn-block blkgry"  @click="hide(),sendReq()">Submit</div>
                             </div>
                         </div>
                     </div>
@@ -119,8 +119,8 @@
                             <div class="form-group p-2 mt-2">
                                 <h6 class="siz20 px-1 dtlsfnt">fugiat porro accusantium iusto vel esse? Voluptatum neque dolor doloribus distinctio.</h6>
                                 <div class="row Gp0m0 no-guttersb3px mt-2">
-                                    <div class="col-6 Gp0m0 "><div class=" bg-white text-dark rounded text-center btn-block p-2 siz20" > {{copym}} </div>
-                                        <input type="text" class="py-2 text-dark" :value="copym"  id="test">
+                                    <div class="col-6 Gp0m0 ">
+                                        <input type="text" class="py-2 w-100 text-dark siz20" :value="copym"  id="test">
                                     </div>
                                     <div class="col-6 Gp0m0"> <div class=" btn nBtn blkred btn-block" @click="cpy()"> <i class="fas fa-copy"></i> copy</div></div>
                                 </div>

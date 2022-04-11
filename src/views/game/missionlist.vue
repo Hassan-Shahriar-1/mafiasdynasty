@@ -12,7 +12,6 @@
         </div>
     </div>
 
-
     <div class="card  m-2 bdr1" v-for="(mlst,i) in msnlst" :key="i">
             <div class="card-header px-1 blkgry">
                 <h4 class="titlefnt">{{mlst.msnnm}}</h4>
@@ -20,8 +19,8 @@
 
         <div class="card-body p-1 blkd50">
             <div class="row no-gutters">
-                <div class="col-6"><h4 class="subtitlefnt">Requirments</h4> <br> <h6 class="dtlsfnt "> <div class=" iC-rage incb1"></div>1</h6></div>
-                <div class="col-6"><h4 class="subtitlefnt">Rewards</h4> <br> <h6 class="dtlsfnt "> <div class=" iC-cash incb1"></div> 100</h6>  <br> <h6 class="dtlsfnt "><div class=" iC-energy incb1"></div>101</h6></div>
+                <div class="col-6 "><h4 class="subtitlefnt">Requirments</h4> <br> <div class="bMbg3 bnrbxsdo  p-1 rounded mx-1"> <h6 class="dtlsfnt py-1"> <div class=" iC-rage incb1"></div>1</h6>   <h6 class="dtlsfnt  py-1"> <div class=" iC-rage incb1"></div>1</h6></div></div>
+                <div class="col-6 "><h4 class="subtitlefnt">Rewards</h4> <br> <div class="bMbg3 bnrbxsdo   p-1 rounded mx-1"> <h6 class="dtlsfnt  py-1"> <div class=" iC-cash incb1"></div> 100</h6>  <h6 class="dtlsfnt  py-1 "><div class=" iC-energy incb1"></div>101</h6></div></div>
             </div>
             <div class="row Gp0m0 mt-2">
                 <div class="col-8 px-1">
@@ -30,7 +29,7 @@
                     </div>
                     <h6 class="text-left text-white">100% complete</h6>
                 </div>
-                <div class="col-4 px-1"><router-link to="/game/mission"><div class="btn  py-2 nBtn btn-block button4 btnbfnt sizv20">Do job</div></router-link></div>
+                <div class="col-4 px-1"><router-link to="/game/mission"><div class="btn  py-2 nBtn btn-block bgD8 btnbfnt sizv20">Do job</div></router-link></div>
             </div>
         </div>
     </div>

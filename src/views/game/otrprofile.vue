@@ -68,11 +68,11 @@
           <div class="row Gp0m0 itmbg rounded">
             <div class="col-3 Gp0m0 p-1">
               <popover name="foo" topCenter> Hello clan </popover>
-              <div class="btn nBtn btn-block" v-popover:foo>
+              <div  v-if="dclan=true" class="btn nBtn btn-block" v-popover:foo>
                 <i class="fas fa-user-slash"></i> <br />
                 <h4 class="siz13 text-danger">D-clan</h4>
               </div>
-              <div class="btn nBtn btn-block">
+              <div v-if="clan==false" class="btn nBtn btn-block">
                 <i class="fas fa-users"></i> <br />
                 <h4 class="siz13 text-success">Clan <br />Request</h4>
               </div>
@@ -475,6 +475,8 @@ export default {
         hlth: 0,
         atck: 0,
         defnc: 0,
+        dclan:true,
+        clan:true,
       },
       usrdata: [],
       MmnDtlst: {

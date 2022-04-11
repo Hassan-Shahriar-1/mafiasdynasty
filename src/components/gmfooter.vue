@@ -1,6 +1,6 @@
 <template>
      <div @focus="handleFocus" @focusout="handleFocusOut" tabindex="0">    
-        <section class="fixed-bottom Gp0m0 jaldi"> 
+        <section class="fixed-bottom Gp0m0 jaldi" style="max-width:575.98px;"> 
             <div class="mInMenu   w-100  "   v-for="(ssb, i) in MmnDtlst.sb" :key="i"  v-show="btmenusStl[ssb.name]">
                     <div class="row sMnMnubg text-center Gp0m0 " id='Habib1'>  
                         <div   v-for="(ssbY, bi) in ssb.ta" :key="bi" 
@@ -97,7 +97,7 @@ export default {
                                         },
 
                                            {
-                                            nm:"Bank", 
+                                            nm:"bank", 
                                             icn:"<i class='fas fa-university'></i>",
                                             clk:'bank'
                                         },
@@ -136,10 +136,7 @@ export default {
                                     clk:'/game/missionintro'
                                 },
                             ]
-                         }, 
-
-
-                             
+                         },  
                          {
                              name:'Godfather',
                              ta:[
@@ -148,10 +145,6 @@ export default {
                                     icn:"<i class='fas fa-box'></i>",
                                     clk:'/game/Godfathers'
                                 },
-
-                                          
-                                       
-                                   
                                 ]
                          },
                          {
@@ -222,9 +215,7 @@ export default {
                                             icn:"<i class='fas fa-box'></i>",
                                             clk:'/game/spy'
                                         },
-                                       
-                                     
-                                   
+
                                 ]
                          },
                          {
@@ -323,14 +314,8 @@ export default {
             // }else{
             //     this.MmnDtlst[route] = false; 
             // } 
-
-            
         }
-
     }
-   
-    
-
 }
 
 </script>

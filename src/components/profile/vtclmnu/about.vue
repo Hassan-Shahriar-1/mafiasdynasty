@@ -1,6 +1,6 @@
 <template>
   <div class="blk">
-    <div class="card mx-1 my-2 rounded grybdr">
+    <div class="card  my-2 rounded grybdr">
       <div class="card-header blkgry p-0">
         <h3 class="text-center">Mafia States</h3>
         <h6 class="text-center">Level:1000</h6>
@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div class="card mx-1 my-2 rounded grybdr">
+    <div class="card  my-2 rounded grybdr">
       <div class="card-header blkgry p-0">
         <h3 class="text-center">Fight States</h3>
         <h6 class="text-center">Level:1000</h6>
@@ -34,7 +34,7 @@
       </div>
     </div>
 
-    <div class="card mx-1 my-2 rounded grybdr">
+    <div class="card  my-2 rounded grybdr">
       <div class="card-header blkgry p-0">
         <h3 class="text-center">Arena States</h3>
         <h6 class="text-center">Level:1000</h6>
@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <div class="card mx-1 my-2 rounded grybdr">
+    <div class="card  my-2 rounded grybdr">
       <div class="card-header blkgry p-0">
         <h3 class="text-center">Activity</h3>
         <h6 class="text-center">Level:1100</h6>
@@ -100,7 +100,7 @@
       </div>
     </div>
 
-    <div class="card mx-1 my-2 rounded grybdr">
+    <div class="card  my-2 rounded grybdr">
       <div class="card-header blkgry p-0">
         <h3 class="text-center">Power</h3>
         <h6 class="text-center">Level:1200</h6>

@@ -25,7 +25,7 @@
                     <div class="mt-4"><img  :src="require('/src/assets/img/item/'+abg.img)" class="card-img"></div>
                 </div>
                 <div class="col-8">
-                    <h5 class="subtitlefnt" style="border-bottom:solid #fff 1px;">{{abg.ttl}}</h5> 
+                    <h5 class="subtitlefnt"> <u style="text-underline-offset: 0.1em;">{{abg.ttl}}</u></h5> 
                     <h5 class="text-center">Jewels {{abg.jwls}}</h5>
                     <div class="row Gp0m0 my-2 ">
                         <div class="col-6 Gp0m0"> <button  type="button" class="nBtn mlr1 Anm-outln15si btn btn-lg button4 w-100"> <h6><strong>Buy</strong></h6></button></div> 

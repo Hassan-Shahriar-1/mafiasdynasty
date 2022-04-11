@@ -15,12 +15,12 @@
         </div>
             <div class="blkd50 p-1" v-for="fdta in fdata" :key="fdta.rnk"  :class="cngclr(fdta.rnk)">
         <div class="row Gp0m0 rounded blkd75 p-2">
-            <div class="col-2 p-0 text-center"> <br>  <img class="card-img rounded-circle blksdo3" style="height:50px; width:50px; margin-top:-30%;" :src="require('../../assets/img/item/'+fdta.limg)" alt="">
+            <div class="col-2 p-0"> <br>  <img class="card-img rounded-circle blksdo3" style="height:50px; width:50px; margin-top:-30%;" :src="require('../../assets/img/item/'+fdta.limg)" alt="">
             <div class="card-img-overlay">{{fdta.rnk}} </div></div>
-            <div class="col-4 text-center px-1">
+            <div class="col-4 px-1">
             <h6 class="subtitlefnt">{{fdta.nm}}</h6></div>
-            <div class="col-3 text-center p-1"><h6 class="ml-1 dtlsfnt"><span><i class="fas fa-burn text-danger"></i></span> &nbsp;{{fdta.enrg}}</h6></div>
-            <div class="col-3 text-center p-1"><h6 class="ml-1 dtlsfnt"><span><i class="fas fa-layer-group text-success"></i></span>&nbsp;{{fdta.lvl}}</h6></div>
+            <div class="col-3 p-1"><h6 class="ml-1 dtlsfnt"><span><i class="fas fa-burn text-danger"></i></span> &nbsp;{{fdta.enrg}}</h6></div>
+            <div class="col-3 p-1"><h6 class="ml-1 dtlsfnt"><span><i class="fas fa-layer-group text-success"></i></span>&nbsp;{{fdta.lvl}}</h6></div>
         </div>
         </div>
        <!--  <table class=" table Gp0m0" width="100%">
@@ -63,10 +63,11 @@ export default {
     data() {
         return{
             fdata:[
-                {
+                 {
                     rnk:"1st",
                     limg:"Gold-bar.jpg",
                     nm:"Abul Mall",
+                    
                     enrg:"46",
                     lvl:"45556"
                 },
@@ -74,13 +75,16 @@ export default {
                     rnk:"2nd",
                     limg:"Gold-bar.jpg",
                     nm:"Hasan Shahriar",
+                    
                     enrg:"456",
                     lvl:"456"
+                    
                 },
                 {
                     rnk:"3rd",
                     limg:"Gold-bar.jpg",
                     nm:"Newaz Sharif",
+                    
                     enrg:"456",
                     lvl:"456"
                     
@@ -91,11 +95,13 @@ export default {
                     nm:"Abdullah Al Baqi",
                     enrg:"456",
                     lvl:"456"
+                    
                 },
                    {
                     rnk:"5th",
                     limg:"Gold-bar.jpg",
                     nm:"Abul Mall",
+                    
                     enrg:"46",
                     lvl:"4556"
                 },
@@ -103,6 +109,7 @@ export default {
                     rnk:"6th",
                     limg:"Gold-bar.jpg",
                     nm:"Hasan Shahriar",
+                    
                     enrg:"456",
                     lvl:"456"
                     
@@ -111,8 +118,10 @@ export default {
                     rnk:"7th",
                     limg:"Gold-bar.jpg",
                     nm:"Newaz Sharif",
+                    
                     enrg:"456",
                     lvl:"456"
+                    
                 },
                 {
                     rnk:"8th",
@@ -120,6 +129,7 @@ export default {
                     nm:"Abdullah Al Baqi",
                     enrg:"456",
                     lvl:"456"
+                    
                 },
                   {
                     rnk:"9th",
@@ -127,6 +137,7 @@ export default {
                     nm:"Abdullah Al Baqi",
                     enrg:"456",
                     lvl:"456"
+                    
                 },
                   {
                     rnk:"10th",
@@ -141,9 +152,12 @@ export default {
         
     },    
     methods:{
-        cngclr(i){   
+
+        cngclr(i){
+            
             return ((i % 2) !==0) ? `blkd75`:'blkd75';
-        } 
+        }
+         
     }
 }
 </script>

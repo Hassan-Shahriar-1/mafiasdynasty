@@ -1,6 +1,6 @@
 <template>
     <div class="container px-0  ">
-        <div class="StryCntnr">       
+        <div class="StryCntnr" style="margin-bottom:10vh;">       
             <carousel :autoplay="true" :height="200" :dots="false" :nav="false" :items='1' class="p-2"> 
             <img v-for="(hbimg, i) in bimg" :key="i" class="card-img  bdr1 " style="height:200px; " 
             :src="require('/src/assets/img/bannar/'+hbimg.img)">
@@ -8,7 +8,7 @@
             
             <div class="row Gp0m0 bg-dark  p-2">                       
                 <div class="col-9 Gp0m0"><h2 class="text-warning titlefnt">Filght for Colambia</h2></div>
-                <div class="col-3 Gp0m0"><div class="btn nBtn Gp0m0 py-2 btn-block bgD8 btn-lg siz10" @click="show()"><i class="fas fa-plane text-info siz15"></i>Fly now</div></div>
+                <div class="col-3 Gp0m0"><div class="btn nBtn Gp0m0  btn-block bgD8 btn-lg siz10" style="padding:12px 0px;" @click="show()"><i class="fas fa-plane text-info siz15"></i>Fly now</div></div>
             </div>
 
             <div class="row Gp0m0 px-1">
