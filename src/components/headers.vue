@@ -22,15 +22,15 @@
                 </div>
                 <h6 class="text-left">Exp:{{Th.expst}}/{{Th.exped}} </h6>
             </div>
-            <div class="col-1 py-0 text-center  mt-2 Gp0m0 no-gutters" style="margin-left:1%;" @click="ntf=!ntf,lnk(ntf)">
-                <div class=" rounded  bgD8">
+            <div class="col-1 py-0 text-center  mt-2 Gp0m0 no-gutters" style="margin-left:1%;" >
+                <div class=" rounded  bgD8" @click="ntf=!ntf,lnk(ntf)">
                     <i class="fas fa-bell mt-1 siz20 text-white"></i>
                     <span class="bg-danger rounded-circle sizv10 bgpstn">11</span> 
                 </div>    
             </div>
 
-            <div class="col-1 py-0 text-center  mt-2 Gp0m0 no-gutters" style="margin-left: 3%;" @click="stngs = !stngs">
-                <div class=" rounded  bgD8  ">
+            <div class="col-1 py-0 text-center  mt-2 Gp0m0 no-gutters" style="margin-left: 3%;">
+                <div class="rounded bgD8"   @click="stngs = !stngs">
                 <i class="fas fa-cogs mt-1 siz20 text-white"></i>
                 <span class="bg-danger rounded-circle sizv10 bgpstn">12</span> 
                 </div>        
@@ -39,24 +39,24 @@
         <!-- sticky top start  -->
         <v-touch id='StkinHmnu' @doubletap="hdrdbltp()"  class="container Gp0m0 itmbg" style="z-index:+1030; max-width:575.98px;"> 
             <div class="row Gp0m0" >
-                <div class="col-4 p-1 itmbg">
-                    <h6 class='hrtl'>Enargy: <span class="hdricnpsn float-right iC-energy incb3"></span> <br></h6>
+                <div class="col-4 p-1 itmbgbdr blkgry">
+                    <h6 class='hrtl  '>Enargy  <span class="hdricnpsn float-right iC-energy incb3"></span> <br></h6>
                     <div class="progress n_bar-a w-100" style="height:5px;">
                         <div class="progress-bar clRBblue bgD0" id="itmBr" :style="{width: Th.engW+'%'}"></div>
                     </div>
                     <h6 class="text-left">{{Th.engst}}/{{Th.enged}}</h6>
                 </div>
 
-                <div class="col-4 p-1 itmbg" >
-                    <h6 class='hrtl'>Stamina:<span class="hdricnpsn float-right iC-rage incb3"> </span></h6>
+                <div class="col-4 p-1 itmbgbdr blkgry" >
+                    <h6 class='hrtl  '>Stamina<span class="hdricnpsn float-right iC-rage incb3"> </span></h6>
                     <div class="progress n_bar-a w-100" style="height:5px;">
                         <div class="progress-bar clRBgreen bgD0" id="itmBr" :style="{width:Th.RagW+'%'}"></div>
                     </div>
                     <h6 class="text-left">{{Th.Ragst}}/{{Th.Raged}}</h6>
                 </div>
 
-                <div class="col-4 p-1  itmbg">
-                    <h6 class='hrtl'>Health:<span class="hdricnpsn float-right iC-heart incb3"></span></h6> 
+                <div class="col-4 p-1   blkgry">
+                    <h6 class='hrtl' >Health<span class="hdricnpsn float-right iC-heart incb3"></span></h6> 
                     <div class="progress n_bar-a w-100" style="height:5px;">
                         <div class="progress-bar clRBrd bgD0" id="itmBr" :style="{width:Th.hltW+'%'}"></div>
                     </div>
@@ -66,13 +66,13 @@
                 <div class="col-6 Gp0m0 itmbg">
                     <div class="row no-gutters ">
                         <div class="col-2 Gp0m0"><span class="incb3 iC-cash ml-1 mt-1 "></span></div>
-                        <div class="col-10 Gp0m0"> <h6 class="float-left mt-1 hrtl text-success siz13"> Cash : {{Th.mcash}}</h6></div>
+                        <div class="col-10 Gp0m0"> <h6 id="mcash" class="float-left mt-1 hrtl text-success  siz13"> Cash : {{Th.mcash}}</h6></div>
                     </div>
                 </div>
                 <div class="col-6 Gp0m0 itmbg ">
                     <div class="row no-gutters ">
                         <div class="col-2 Gp0m0"><span class="incb3 iC-gold ml-1 mt-1"></span> </div>
-                        <div class="col-10 Gp0m0">  <h6 class=" float-left hrtl text-warning mt-1 siz13"> Gold : {{Th.mgold}}</h6></div>
+                        <div class="col-10 Gp0m0">  <h6 id="mgold" class=" float-left hrtl  mt-1 siz13"> Gold : {{Th.mgold}}</h6></div>
                     </div>
                 </div>
             </div>

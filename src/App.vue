@@ -3,7 +3,7 @@
 <!--  <script src='assets/js/lib/jquery.fittext'></script> -->
   <div id="app" class="tbg" >
     <div class="mainC">
-       <div class="mainCp text-left ">
+       <div class="mainCp text-left">
             <router-view ></router-view> 
       </div>
     </div>
@@ -33,7 +33,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 0px;
- /*  margin-bottom:60px; */
+  /* margin-bottom:60px; */
+  margin-bottom: auto;
 }
 </style>
 

@@ -37,7 +37,7 @@
                                 <div class="progress-bar clRBrd  bgD0" id="itmBr" style="width:50%" ></div>
                             </div>
                             </div>
-                            <div class="col-4 Gp0m0"><h6 class="dtlsfnt">Requirment</h6><h6 class="text-warning dtlsfnt siz17">1564536 Gold</h6> <div class=" mt-1 btn nBbg nBtn  button5 btnfnt siz15 btn-block p-1">Activate</div></div>
+                            <div class="col-4 Gp0m0"><h6 class="dtlsfnt">Requirment</h6><h6 class=" dtlsfnt siz17">1564536 Gold</h6> <div class=" mt-1 btn nBbg nBtn  button5 btnfnt siz15 btn-block p-1">Activate</div></div>
                         </div>
                     </div>
                 </div> -->
@@ -53,7 +53,7 @@
                             <div class="progress n_bar-a mt-1" style="height:10px;">
                                 <div class="progress-bar clRBrd  bgD0" id="itmBr" style="width:50%" ></div>
                             </div></div>
-                            <div class="col-4 Gp0m0"><h6 class="dtlsfnt">Requirment</h6><h6 class="text-warning dtlsfnt siz17">1564536 Gold</h6> <div class=" mt-1 btn nBbg nBtn  button5 btnfnt siz15 btn-block p-1">Activate</div></div>
+                            <div class="col-4 Gp0m0"><h6 class="dtlsfnt">Requirment</h6><h6 class=" dtlsfnt siz17">1564536 Gold</h6> <div class=" mt-1 btn nBbg nBtn  button5 btnfnt siz15 btn-block p-1">Activate</div></div>
                         </div>
                     </div>
                 </div> -->

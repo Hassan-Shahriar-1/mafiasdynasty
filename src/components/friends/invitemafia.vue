@@ -28,7 +28,7 @@
 
             <div class="row Gp0m0 blkgry mt-2 p-2">
                     <div class="col-2 Gp0m0 p-1"><img src="../../assets/img/1.png" class="card-img" alt=""></div>
-                    <div class="col-6"> <h4 class="text-warning subtitlefnt">Habibur</h4> <h6 class="dtlsfnt">aghsfiohasygfiua</h6></div>
+                    <div class="col-6"> <h4 class=" subtitlefnt">Habibur</h4> <h6 class="dtlsfnt">aghsfiohasygfiua</h6></div>
                     <div class="col-4 "> <div class=" blk50 mt-1 py-3 rounded" style="border: 1px solid #1c1c1c !important;"><h6 class="text-center dtlsfnt">100</h6></div></div>
             </div>
 

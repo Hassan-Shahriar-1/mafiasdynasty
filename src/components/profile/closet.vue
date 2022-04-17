@@ -6,6 +6,7 @@
             </div>
             <div class="card-body ">
                <div class="row Gp0m0">
+
                    <div class="col-4 Gp0m0" v-for="(obg,i) in obadge" :key="i">
                        <div class=" m-1 border rounded"><img :src="require('/src/assets/img/item/'+obg.img)" class="card-img" alt="">
                         <br> <h6 class="sizv35 blkgry p-1 text-center dtlsfnt text-white">{{obg.nm}}</h6></div>

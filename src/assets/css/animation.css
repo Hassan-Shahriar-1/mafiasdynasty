@@ -294,3 +294,24 @@ Spin animation for all kind of rotation of 360 degree CSS
         transform: rotateZ(-360deg);
     }
 }
+
+
+/* card image rotate animation start */
+
+.rotAnimate-x {
+    -webkit-animation-name: spingskrotateD;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 16s;
+    animation-name: spingskrotateD;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 26s;
+}
+
+@keyframes spingskrotateD{
+    from{-webkit-transform:rotateZ(-360deg);transform:rotateZ(-360deg);}
+    to{-webkit-transform:rotateZ(360deg);transform:rotateZ(360deg);}
+}
+
+/* Card image rotate animation End */

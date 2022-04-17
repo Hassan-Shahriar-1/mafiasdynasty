@@ -59,7 +59,7 @@
                           />
                         </div>
                         <div class="col-6">
-                          <h5 class="text-warning subtitlefnt">
+                          <h5 class=" subtitlefnt">
                             {{ orgsrc.name }}
                           </h5>
                           <h6 class="dtlsfnt">{{ orgsrc.type }}</h6>

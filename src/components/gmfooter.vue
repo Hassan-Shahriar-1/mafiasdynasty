@@ -264,11 +264,20 @@ export default {
     methods:{
         bMcShw:function(sth){
             if(sth=='mission'){
-                     this.$router.replace('/game/missionintro');
+                     this.$router.replace('/game/missionintro'),
+                     this.home=false;
+                     this.Stats=false;
+                     this.Shop=false;
             }else if(sth=='combat'){
                 this.$router.replace('/game/combat');
+                   this.home=false;
+                     this.Stats=false;
+                     this.Shop=false;
             }else if(sth=='Godfather'){
                 this.$router.replace('/game/Godfathers');
+                   this.home=false;
+                     this.Stats=false;
+                     this.Shop=false;
             }
             else{
             

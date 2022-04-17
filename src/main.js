@@ -18,6 +18,8 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
 import Popover from 'vue-js-popover'
+import carousel from 'vue-owl-carousel'
+Vue.use(carousel);
 
 import VModal from 'vue-js-modal'
 Vue.use(VModal, {

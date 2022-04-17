@@ -26,8 +26,10 @@
             <h4 class="titlefnt">Boss fight
             <router-link to="gfight"><div class="btn nBbg nBtn float-right btnfnt button4">Lets Go!</div></router-link></h4>
         </div>
+
+        
         <div class="card-header blkgry"><h3 class="titlefnt"> Door WAY</h3></div>
-        <div class="card-body p-2  Gp0m0  ">
+        <div class="card-body p-2 Gp0m0">
             <carousel :autoplay="true" :height="300" :dots="false" :autoplayTimeout="3000" :nav="false" :items='1' > 
                 <div class="card blkgry w-100 bdr1"  v-for="(hbimg, i) in bimg" :key="i">
                     <img class="card-img" style="height:150px;" 

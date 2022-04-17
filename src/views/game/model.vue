@@ -4,7 +4,7 @@
 <!-- model -->
            <div class="row Gp0m0 bg-dark  p-2">
                                               
-                        <div class="col-9 Gp0m0"><h2 class="text-warning">Filght for Colambia</h2></div>
+                        <div class="col-9 Gp0m0"><h2 class="">Filght for Colambia</h2></div>
                         <div class="col-3 Gp0m0"><div class="btn nBtn Gp0m0 p-2 btn-block  mlr2 blkpplbtn btn-lg siz13" @click="show()"><i class="fas fa-plane text-info siz20"></i>Fly now</div></div>
             </div>
 
@@ -33,7 +33,7 @@
 <!-- model 2 -->
                  <div class="row Gp0m0 bg-dark  p-2">
                                               
-                        <div class="col-9 Gp0m0"><h2 class="text-warning">Filght for Colambia</h2></div>
+                        <div class="col-9 Gp0m0"><h2 class="">Filght for Colambia</h2></div>
                         <div class="col-3 Gp0m0"><div class="btn nBtn Gp0m0 p-2 btn-block  mlr2 blkpplbtn btn-lg siz13" @click="so()"><i class="fas fa-plane text-info siz20"></i>Fly now</div></div>
             </div>
 
@@ -85,7 +85,7 @@
 <!-- model 3 -->
                <div class="row Gp0m0 bg-dark  p-2">
                                               
-                        <div class="col-9 Gp0m0"><h2 class="text-warning">Filght for Colambia</h2></div>
+                        <div class="col-9 Gp0m0"><h2 class="">Filght for Colambia</h2></div>
                         <div class="col-3 Gp0m0"><div class="btn nBtn Gp0m0 p-2 btn-block  mlr2 blkpplbtn btn-lg siz13" @click="s3()"><i class="fas fa-plane text-info siz20"></i>Fly now</div></div>
             </div>
 
@@ -116,7 +116,7 @@
 
                <div class="row Gp0m0 bg-dark  p-2">
                                               
-                        <div class="col-9 Gp0m0"><h2 class="text-warning">Filght for Colambia</h2></div>
+                        <div class="col-9 Gp0m0"><h2 class="">Filght for Colambia</h2></div>
                         <div class="col-3 Gp0m0"><div class="btn nBtn Gp0m0 p-2 btn-block  mlr2 blkpplbtn btn-lg siz13" @click="s4()"><i class="fas fa-plane text-info siz20"></i>Model 4</div></div>
             </div>
 
@@ -152,7 +152,7 @@
 
                <div class="row Gp0m0 bg-dark  p-2">
                                               
-                        <div class="col-9 Gp0m0"><h2 class="text-warning">Filght for Colambia</h2></div>
+                        <div class="col-9 Gp0m0"><h2 class="">Filght for Colambia</h2></div>
                         <div class="col-3 Gp0m0"><div class="btn nBtn Gp0m0 p-2 btn-block  mlr2 blkpplbtn btn-lg siz13" @click="s5()"><i class="fas fa-plane text-info siz20"></i>Model 5</div></div>
             </div>
 
@@ -183,7 +183,7 @@
 
                <div class="row Gp0m0 bg-dark  p-2">
                                               
-                        <div class="col-9 Gp0m0"><h2 class="text-warning">Filght for Colambia</h2></div>
+                        <div class="col-9 Gp0m0"><h2 class="">Filght for Colambia</h2></div>
                         <div class="col-3 Gp0m0"><div class="btn nBtn Gp0m0 p-2 btn-block  mlr2 blkpplbtn btn-lg siz13" @click="s6()"><i class="fas fa-plane text-info siz20"></i>Model 6</div></div>
             </div>
 

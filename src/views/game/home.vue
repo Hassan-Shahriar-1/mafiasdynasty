@@ -7,7 +7,7 @@
             </carousel>
             
             <div class="row Gp0m0 bg-dark  p-2">                       
-                <div class="col-9 Gp0m0"><h2 class="text-warning titlefnt">Filght for Colambia</h2></div>
+                <div class="col-9 Gp0m0"><h2 class=" siz30 titlefnt">Filght for Colambia</h2></div>
                 <div class="col-3 Gp0m0"><div class="btn nBtn Gp0m0  btn-block bgD8 btn-lg siz10" style="padding:12px 0px;" @click="show()"><i class="fas fa-plane text-info siz15"></i>Fly now</div></div>
             </div>
 
@@ -23,8 +23,42 @@
                         <router-link to="bonus" class="btn btn-lg p-1  btn-block text-light Anm-outln15si incb4 button4" v-if="bns!=''"><i class="fas fa-money-check-alt"></i> <br>  Bonus</router-link>
                 </div>
                 <div class="col-9 Gp0m0 pl-2  overflow-scroll">
+
                     <router-view></router-view>
+
                 </div>
+
+                <div class="card">
+                    <img src="../../assets/img/bannar/mbnr.gif" class="card-img ">
+                    <div class="card-img-overlay">
+                        <div class="text-left">
+                            <div class="row ">
+                                <div class="col-8"> 
+                                    <h5 class="b1-h2">The Burning Fate<br></h5>
+                                    <h6 class="b1-h6"><br>
+                                        Vampires are awakened by a voice from the beyond.<br>They all must protect their realm.<br>This time, survival is the biggest crisis. <br><br></h6>
+                                </div>  
+                                <div class="col-4">
+                                    <div class="text-center" style="background-image: radial-gradient(rgba(51, 0, 0, 1), rgba(51, 0, 0, 0.8), rgba(51, 0, 0, 0.01));"><!--style="margin-top: -20px;"-->
+                                        <h6 class="text-center "> 
+                                            <span>10</span>D -   <span id="GspH96029">15</span>H -  <span>33</span>M  - <span>33</span>S Left to Close</h6>
+                                        <img src="../../assets/img/bannar/ptl-ic1.png"  class="card-img rotAnimate-x">  															 						 <h4 onclick="game.page.Portal.list(21)" class="nC-pdTB-5p nC-mgTB-5p  "> Enter </h4>
+                                    </div> 
+                                </div>  
+                            </div>  
+                        </div> 
+                    </div>     
+                </div>
+
+
+            <div class="blkgry w-100 p-2 "><h3 class="titlefnt text-center"> News</h3></div>
+        <div class="card p-2 Gp0m0">
+            <carousel :autoplay="true" :height="300" :dots="true" :autoplayTimeout="3000" :nav="false" :items='1' > 
+                <div class="card border-0  w-100 "  v-for="(news, i) in newsdtls" :key="i">
+                  <h6 class="dtlsfnt" style="height:150px;">{{news.name}}</h6>
+                </div>
+            </carousel>
+        </div> 
             </div> 
         </div>
 
@@ -83,7 +117,59 @@ export default ({
              },
              lmtd:'',
              bns:'',
-
+            newsdtls:[
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                              {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                            {
+                                name:"lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc lorem lipasgh du asgcujhhs x fashcyix f fdtasufas rfasdtxfyuasd dfatysxcf jascfryfc"
+                            },
+                        ],
              bimg:[
                  {
                      img:"1.jpg"
