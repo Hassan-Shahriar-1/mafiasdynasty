@@ -13,7 +13,7 @@
                 <router-link :to="{path:'/game/chat/'+i}"> 
                     <li class="list-group-item Gp0m blk50 Gp0m0 py-2 my-1" >
                         <div class="row no-gutters ">
-                            <div class="col-2 p-2"> <img src="../../assets/img/1.gif" class="card-img BORDER rounded-circle" alt=""> 
+                            <div class="col-2 p-2"> <img src="../../assets/img/item/1.gif" class="card-img BORDER rounded-circle" alt=""> 
                                 <div class="card-img-overlay">
                                 <p class="bg-success dot"></p></div>
                             </div>      
@@ -38,7 +38,7 @@
   background-color: rgb(0, 255, 42);
   border:1px solid green;
   border-radius: 50%;
- position: absolute;
+  position: absolute;
     left: 25%;
     top: 30%;
 }

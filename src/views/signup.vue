@@ -1,6 +1,6 @@
 <template>
 
-        <div class="ptnbg" style=" height:100vh; margin-bottom:-60px!important;">
+        <div class="ptnbg" style=" height:100vh; overflow:scroll;">
             <div class="signup-form m-0">
                 <div class="lgnFromIcn mt-3">
                     <div class="row justify-content-sm-center">
@@ -56,17 +56,17 @@
                 </div>
                    
                     <div class=" text-center mt-5">
-                        <button type="submit" @click="signup" class="bgD2 nBtn nBbg  btn-lg btn-block siz25 btnfnt">Sign Up</button>
+                        <button type="submit" @click="signup" class="bgD2 nBtn nBbg  btn-lg btn-block siz25 btnfnt2">Sign Up</button>
                     </div>
                
                 <div class="text-center dtlsfnt">
-                    <h3>Already have an account? </h3> <router-link to="/login" > <h3 class="text-info siz20">Login here</h3></router-link> </div>
+                    <h3 class="siz20">Already have an account? </h3> <router-link to="/login" > <h3 class="text-info siz20">Login here</h3></router-link> </div>
 
-                             <h4 class="text-center dtlsfnt ">Sign up with your social media account or email address</h4> <br>
+                             <h4 class="text-center dtlsfnt siz20 ">Sign up with your social media account or email address</h4> <br>
 
                 <div class=" social-btn text-center">
             
-                    <div class="row">
+                    <div class="row Gp0m0">
                         <div class="col-4 px-0"><a href="#" class="btn-lg button3 nBtn d-block"><i class="fab fa-facebook"></i></a></div>
                         <div class="col-4 px-0"><a href="#" class="btn-lg button6 nBtn d-block"><i class="fab fa-twitter"></i></a></div>
                         <div class="col-4 px-0"><a href="#" class="btn-lg button7 nBtn d-block"><i class="fab fa-google"></i></a></div>
@@ -82,6 +82,19 @@
             </div>
         </div>
 </template>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 0px;
+  margin-bottom:0px!important;
+/*   margin-bottom: auto; */
+}
+</style>
 
 <script>
 export default {

@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="card bg-transparent border  Gp0m0">
+    <div style="margin-bottom:87px;">
+        <div class="card bg-transparent border Gp0m0" >
             <div class=" card-header blkgry text-center">
                 <h4 class="titlefnt">Sophia Sharon <router-link to="typ8">
                     <span class="float-left"><i class="fas fa-arrow-circle-left siz25"></i></span></router-link> 
@@ -13,7 +13,7 @@
                 voluptatem eveniet natus. Atque quidem, voluptate numquam laborum accusantium architecto?
             </h6>
 
-            <div class=" card-body Gp0m0 bg-transparent">
+            <div class="card-body Gp0m0 bg-transparent">
                 <div class="pagination">
                     <a class="blkgry btn nBtn" href="#">1</a>
                     <a class="blkgry btn nBtn" href="#">2</a>
@@ -49,9 +49,12 @@
             </div>
         </div>
     
-            <carousel :autoplay="false" :height="250"  :dots="false" :autoplayTimeout="2000" :nav="false" :items='1' class="px-2 mt-5"> 
-                <div class="card blk50 w-100 bdr1"  v-for="(hbimg, i) in bimg" :key="i">
+            <carousel :autoplay="true" :height="250"  :dots="false" :autoplayTimeout="2000" :nav="true" :items='1' class=" card p-0 mt-3"> 
+                <div class=" blk50 w-100 "  v-for="(hbimg, i) in bimg" :key="i">
                     <div class="card-header text-center blkgry"><h4>{{hbimg.nm}}</h4>
+                    
+                        </div>
+                    <div class="card-body p-1">
                         <img class="card-img" 
                             :src="require('/src/assets/img/bannar/'+hbimg.img)">
                         <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -60,7 +63,8 @@
                                     I can take you in that dimension to fight with them. If you can prove yourself through powers will get a robust ability. 
                             </h6>  
                         </div>
-                    </div>
+                        </div>
+                 
                     
                     <div class="card-body p-1">
                         <div class="row Gp0m0">
@@ -76,7 +80,11 @@
                                     <h6 ><i class="fa fa-bookmark"></i> &nbsp;Exp:120</h6>
                                     <h6><i class="fa fa-tint"></i> &nbsp;Blood: + ( 22,575 - 37,625 )</h6>
                                 </div>
-                            <button type="button" style="margin: 5%;" class="w-100 nBtn blkgry"><h5 class="p-2"><strong>Lets Go</strong></h5></button>
+
+
+                            <div class="col-12 px-1 mt-2">
+                                <router-link to="gatkintro"> <div   class=" btn btn-block nBtn blkgry">Lets Go</div></router-link>
+                            </div>
                              </div>
                             </div>
                                 <div class="col-4">
@@ -120,39 +128,39 @@ export default {
                  },
                  {
                      img:"2.jpg",
-                     nm:"divas Secret"
+                     nm:"divas man"
                  },
                  {
                      img:"3.jpg",
-                     nm:"divas Secret"
+                     nm:"divas women"
                  },
                  {
                      img:"4.jpg",
-                     nm:"divas Secret"
+                     nm:"divas boy"
                  },
                  {
                      img:"5.jpg",
-                     nm:"divas Secret"
+                     nm:"divas girl"
                  },
                  {
                      img:"6.jpg",
-                     nm:"divas Secret"
+                     nm:"divas call girl"
                  },
                  {
                      img:"1.jpg",
-                     nm:"divas Secret"
+                     nm:"divas maid"
                  },
                  {
                      img:"2.jpg",
-                     nm:"divas Secret"
+                     nm:"divas paid"
                  },
                  {
                      img:"3.jpg",
-                     nm:"divas Secret"
+                     nm:"divas homemade"
                  },
                  {
                      img:"4.jpg",
-                     nm:"divas Secret"
+                     nm:"divas pure"
                  },
              ]
         

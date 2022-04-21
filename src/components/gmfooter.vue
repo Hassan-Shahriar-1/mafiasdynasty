@@ -1,6 +1,6 @@
 <template>
      <div @focus="handleFocus" @focusout="handleFocusOut" tabindex="0">    
-        <section class="fixed-bottom Gp0m0 jaldi"> 
+        <section class="fixed-bottom Gp0m0 jaldi" style="max-width:575.98px;"> 
             <div class="mInMenu   w-100  "   v-for="(ssb, i) in MmnDtlst.sb" :key="i"  v-show="btmenusStl[ssb.name]">
                     <div class="row sMnMnubg text-center Gp0m0 " id='Habib1'>  
                         <div   v-for="(ssbY, bi) in ssb.ta" :key="bi" 
@@ -11,7 +11,7 @@
 
             <div class="row Gp0m0  btn-group bw100 sMnMnubg text-center  jaldi  " role="group" aria-label="...">
                 <div  v-for="(smn, i) in MmnDtlst.mn" :key="i" 
-                type="button" @click="bMcShw(smn.clk)" class="btn clmsz2  nBtn rounded-0 blkgry Gp0m0 py-2"><span v-html='smn.icn'></span><h6 class="sizv10 pt-1">{{ smn.nm }}</h6></div>  
+                type="button" @click="bMcShw(smn.clk)" class="btn clmsz2 nBtn rounded-0 blkgry Gp0m0 p-2"><span v-html='smn.icn'></span><h6 class="sizv10 pt-1">{{ smn.nm }}</h6></div>  
             </div>
         </section>
  </div>
@@ -97,7 +97,7 @@ export default {
                                         },
 
                                            {
-                                            nm:"Bank", 
+                                            nm:"bank", 
                                             icn:"<i class='fas fa-university'></i>",
                                             clk:'bank'
                                         },
@@ -136,10 +136,7 @@ export default {
                                     clk:'/game/missionintro'
                                 },
                             ]
-                         }, 
-
-
-                             
+                         },  
                          {
                              name:'Godfather',
                              ta:[
@@ -148,10 +145,6 @@ export default {
                                     icn:"<i class='fas fa-box'></i>",
                                     clk:'/game/Godfathers'
                                 },
-
-                                          
-                                       
-                                   
                                 ]
                          },
                          {
@@ -222,9 +215,7 @@ export default {
                                             icn:"<i class='fas fa-box'></i>",
                                             clk:'/game/spy'
                                         },
-                                       
-                                     
-                                   
+
                                 ]
                          },
                          {
@@ -271,14 +262,31 @@ export default {
         }
     },
     methods:{
+        closeall:function(){
+           
+                Object.keys(this.btmenusStl).forEach((value) => {
+               this.btmenusStl[value] = false;
+            }); 
+        },
+        
         bMcShw:function(sth){
             if(sth=='mission'){
-                     this.$router.replace('/game/missionintro');
-            }else if(sth=='combat'){
+                     this.$router.replace('/game/missionintro'),
+                     
+                     this.closeall()
+                 }
+
+            else if(sth=='combat'){
                 this.$router.replace('/game/combat');
-            }else if(sth=='Godfather'){
+                this.closeall()
+               
+                 }
+
+            else if(sth=='Godfather'){
                 this.$router.replace('/game/Godfathers');
-            }
+                this.closeall()
+
+                }
             else{
             
               if(this.btmenusStl[sth] == true){ 
@@ -323,14 +331,8 @@ export default {
             // }else{
             //     this.MmnDtlst[route] = false; 
             // } 
-
-            
         }
-
     }
-   
-    
-
 }
 
 </script>

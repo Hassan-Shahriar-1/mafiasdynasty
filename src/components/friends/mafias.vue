@@ -13,7 +13,7 @@
                             <li class="list-group-item blk50 p-2 mt-1"> 
                                 <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
                                     <div class="col-2 Gp0m0 p-1"><img src="../../assets/img/1.png"  class="card-img bdrblk2" alt=""></div>
-                                    <div class="col-6"> <h5 class="text-warning subtitlefnt">{{masrc.name}}</h5> <h6 class="dtlsfnt">{{masrc.lvl}}</h6></div>
+                                    <div class="col-6"> <h5 class=" subtitlefnt">{{masrc.name}}</h5> <h6 class="dtlsfnt">{{masrc.lvl}}</h6></div>
                                     <div class="col-4 "> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center">View profile</h6></div></div>
                                 </div>
                             </li>

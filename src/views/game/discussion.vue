@@ -3,7 +3,7 @@
         <div class="card-header p-1 blkgry">
           <div class='card-title  titlefnt text-center'> Discussion Board </div>
         </div>
-         <div class="card-body p-1 tmibg3">
+         <div class="card-body p-1 tmibg3" style=" background:inherit;">
           
         <div class="row no-gutters mx-2">
             <div class="col-12"> <textarea v-model="Gmessage" @keyup.enter="insrtMsg" class="w-100 form-control form-control-lg"  name="" id="" cols="10" rows="3" placeholder="Type here..." style="height:40px;"></textarea></div>

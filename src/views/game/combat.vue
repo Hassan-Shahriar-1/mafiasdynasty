@@ -178,6 +178,7 @@ export default {
                  console.log(new Date()).getFullYear();
 
           
+                this.htlst=rs.hitlist
 
             }
         })

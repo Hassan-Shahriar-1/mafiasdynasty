@@ -58,6 +58,23 @@
                 </div>
             </div>
         </div>
+
+
+            <modal name="property" :width='300' class="mblr bdr p-1 rounded-2">
+            <div class="row Gp0m0 card blkgry" style="height:100%">
+
+
+                  <div class=" card-header py-1 tmibg2">
+                        <h4 class="rounded-0 py-1 text-center w-100 siz17" style="position:sticky;">Welcome To your Property
+                        <span class="float-right" style="margin-right:2%;" @click="hide();"><div class="crossbtn"><i class="fas fa-times "></i></div></span></h4>
+                   </div>
+
+                   <div class="card-body">
+                        <h2 class="subtitlefnt siz20">You have <span class="text-success">Successfully</span> Upgrade the (Property name)</h2>
+                    </div>
+
+            </div>
+        </modal> 
     </div>             
 </template>
 <script>
@@ -141,9 +158,20 @@ export default {
          updt(){
             /* this.bh.updtW=this.bh.updtW+5; */
             if(this.bh.lvl<20){
-            this.bh.updtW=this.bh.updtW+5;
+            this.bh.updtW=this.bh.updtW+5
+           
+            }
+
+            if(this.bh.lvl>=20){
+                 this.$modal.show('property');
+
             }
         },
+
+
+        hide(){
+            this.$modal.hide('property');
+        }
     }
 }
 </script>

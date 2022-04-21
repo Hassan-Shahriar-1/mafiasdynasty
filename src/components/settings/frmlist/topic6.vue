@@ -7,7 +7,7 @@
             <ul class="list-group w-100" v-for="(gfq,i) in st" :key="i">
                     <li class="list-group-item blk50 p-1"> 
                         <div class="row Gp0m0  rounded blkd75 mt-1 p-2" @click="faqshwr(gfq, gfq.und)">
-                            <div class="col-10"> <h5 class="text-warning subtitlefnt">{{gfq.title}}</h5></div>
+                            <div class="col-10"> <h5 class=" subtitlefnt">{{gfq.title}}</h5></div>
                             <div class="col-2"> <div class=" rounded"><i class="fas fa-chevron-down siz20 text-secondary"></i></div></div>
                             <div class="col-12 dtlsfnt" v-show="gfq.shwsts">
                                 <h6>{{ gfq.dtls }}</h6>

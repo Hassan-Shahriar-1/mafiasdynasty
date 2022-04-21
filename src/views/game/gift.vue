@@ -14,11 +14,11 @@
                 <div class="card-body p-1">
                 <div class="row Gp0m0">
                     <div class="col-4 G0m0 p-1" v-for="(gft, i) in gftlst" :key="i">
-                        <div class="card blkgry text-white border-0">
+                        <div class="card blkd75 text-white border-0">
                             <h6 class="siz20 p-1 text-center subtitlefnt">{{gft.name}}</h6>
                             <img class="card-img p-2" src="../../assets/img/item/1.gif" alt="Card image cap">
-                            <div class="text-center blkgry p-2">
-                                <button type="button" class="btn nBbg nBtn tmibg2 grysdo" style="margin-top:-2%;">
+                            <div class="text-center  p-2">
+                                <button type="button" class="btn nBbg nBtn blkd50 " style="margin-top:-2%;">
                                 <h5 class="siz18"><strong> Collect</strong></h5>
                                 </button>
                             </div>

@@ -51,7 +51,7 @@
                 </div>
                 <p class="text-center desfnt">Log in with your social media account</p> <br>
 
-                <div class="row text-center">
+                <div class="row Gp0m0 text-center">
                     <div class="col-4 px-0"><a href="#" class="btn-lg button3 nBtn d-block"><i class="fab fa-facebook"></i></a></div>
                     <div class="col-4 px-0"><a href="#" class="btn-lg button6 nBtn d-block"><i class="fab fa-twitter"></i></a></div>
                     <div class="col-4 px-0"><a href="#" class="btn-lg button7 nBtn d-block"><i class="fab fa-google"></i></a></div>
@@ -64,7 +64,18 @@
     </div>
 </template>
 
-
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 0px;
+  margin-bottom:0px!important;
+/*   margin-bottom: auto; */
+}
+</style>
 
 
 <script>

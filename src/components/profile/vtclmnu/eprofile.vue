@@ -1,12 +1,9 @@
 <template>
 <div>
-
-
-
-       
+       <div class="card p-2 tmibg">
                 <h2 class="text-center text-white titlefnt">Edit Your Account</h2>
                 <br>
-                <form action="#">
+                <form action="#" class="mx-2">
                     <div class="form-control p-0">
                         <div class="position-relative has-icon-right">
                             <input type="text" class="form-control form-control-lg rounded-0 text-left blkd50" name="username" placeholder="Update Username">
@@ -43,6 +40,7 @@
                         <button type="submit" class="bgD2 m-0 nBtn nBbg btn-lg btn-block">Update profile</button>
                     </div>
                 </form>
+                </div>
   </div>
 </template>
 

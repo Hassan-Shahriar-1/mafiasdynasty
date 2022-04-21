@@ -55,7 +55,7 @@
 
                     <div class="row Gp0m0 mb-5 mt-2">
                         <div class="col-6 Gp0m0 px-0 ">
-                        <router-link to="missionlist"> <div class="btn  blkred btn-lg btn-block nBtn nBbg py-1">Go back</div></router-link>
+                        <router-link to="missionlist"> <div class="btn  blkgry btn-lg btn-block nBtn nBbg py-1">Go back</div></router-link>
                         </div>
                         <div class="col-6 Gp0m0 px-1 ">
                             <div class="btn  button5 btn-lg btn-block nBtn py-1" @click="demoV1()">Do Job</div>

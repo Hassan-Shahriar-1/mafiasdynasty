@@ -1,7 +1,7 @@
 <template>    
     <div class="container Gp0m0">
         <div class="row Gp0m0  blksdo">
-            <h3 class=" px-1 w-100 tmibg subtitlefnt">Player updates <br></h3><h6 class="text-warning px-1 dtlsfnt">[Invite your Friends Now] <i class="fab fa-wpbeginner"></i></h6>
+            <h3 class=" px-1 w-100 tmibg subtitlefnt">Player updates <br></h3><h6 class=" px-1 dtlsfnt">[Invite your Friends Now] <i class="fab fa-wpbeginner"></i></h6>
             <div class="row Gp0m0  blkgry text-white w-100 my-1" v-for="(Th, k) in Ths" :key="k">
                 <div class="col-2 Gp0m0 p-1"><img :src="require('../../assets/img/'+Th.pictr)" class="card-img" alt=""></div>
                 <div class="col-2 Gp0m0 p-1"><img :src="require('../../assets/img/'+Th.pictr)" class="card-img" alt=""></div>

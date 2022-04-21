@@ -2,7 +2,7 @@
     <div>
         <div class="row bMbg5 border p-2 rounded Gp0m0 jaldi" section="profilepage">     
             <div class=" row Gp0m0 text-inline-block">
-                <h5>"[501 Elite] SoulSlasherz", level 344 Mogul</h5><h6 class="text-warning jaldi">&nbsp;&nbsp;Report Abusive Behavior <br></h6>
+                <h5>"[501 Elite] SoulSlasherz", level 344 Mogul</h5><h6 class=" jaldi">&nbsp;&nbsp;Report Abusive Behavior <br></h6>
             </div>
 
             <div class="row">
@@ -26,7 +26,7 @@
                 <h5>You have</h5><h5 class="text-success">&nbsp;283</h5><h5>experience points to your next level</h5>
             </div>
             <div class="row Gp0m0">
-                <h4 class="text-warning">Share your Profile:</h4>
+                <h4 class="">Share your Profile:</h4>
             </div>
 
             <ul class="list-group w-100  jaldi text-white">
