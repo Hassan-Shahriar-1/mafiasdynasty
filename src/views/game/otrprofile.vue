@@ -284,11 +284,7 @@
       </div>
 
       <modal
-        name="ppup"
-        :width="300"
-        :isAutoHeight="true"
-        @before-open="beforeOspen"
-        class="mblr"
+        name="ppup" :width="300" :isAutoHeight="true" @before-open="beforeOspen" class="mblr"
       >
         <div class="row Gp0m0 tmibg" id="ablht">
           <div class="card">

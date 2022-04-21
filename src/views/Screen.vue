@@ -1,5 +1,5 @@
 <template>
-          <div class="m-0 ptnbg" style="overflow: hidden;height:100vh; margin-bottom:-60px!important;">
+          <div class="m-0 ptnbg " style="overflow: hidden;height:100vh; margin-bottom:-60px!important;">
                   <!-- <div class="lgnFromIcn mt-3 ">
                       <div class="row justify-content-sm-center">
                           <div class="col-12"> <img src="../assets/img/logo.png" class='img-thumbnail'></div>
@@ -27,12 +27,17 @@
                   </div>
               </div>
               <h4 class="text-center mt-2"> Loading <span class=" pl-2 loading-dots">•</span></h4> -->
-                
+                 <div class="lgnFromIcn mt-5">
+                      <div class="row justify-content-sm-center">
+                          <div class="col-12"> <img src="../assets/img/logo.png" class='img-thumbnail'></div>
+                      </div>
+                  </div>
             <div class="fixed-bottom mrgtp95 px-4">
+
                 <div class="row Gp0m0" style="margin-bottom:15%;">
                   <div class="col-12">
                        <h5 class="siz20 text-center">Loading <span class=" pl-2 loading-dots">•</span></h5>
-                    <div class="progress n_bar-a" style="height:18px;">
+                    <div class="progress n_bar-a" style="height:10px;">
                         <div class="progress-bar mv-value clRBrd bgD0" id="itmBr" style="width: 100%;">
                         </div>
                     </div>
@@ -47,7 +52,18 @@
        </div>
 
 </template>
-
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 0px;
+  margin-bottom:0px!important;
+/*   margin-bottom: auto; */
+}
+</style>
 <style>
 .mrgtp95 {
 margin-bottom:5%; 

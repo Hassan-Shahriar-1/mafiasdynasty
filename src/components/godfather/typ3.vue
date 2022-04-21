@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mb-2">
         <div class="row py-2 text-center Gp0m0"><h4 class="hr-sect jaldi">Exchanger</h4></div>
         <div class="card Gp0m0 bg-transparent border-0">
             <div class="card-header blkgry text-center"><h4 class="titlefnt">Key Adams</h4></div>

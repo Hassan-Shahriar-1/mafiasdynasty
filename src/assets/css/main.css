@@ -1,10 +1,9 @@
 @import './almyFns.css';
-
 /*  custom font area start */
 * {
     margin: 0;
     padding: 0;
-    color: rgb(212, 207, 207);
+    color: rgb(202, 197, 197);
     scroll-behavior:smooth;
     scroll-behavior: auto;
 }
@@ -658,8 +657,8 @@ p {
     
     border: 1px solid black; */
     padding: 6%;
-    height: 4.5vh;
-    width: 4.5vh;
+    height: 4.8vh;
+    width: 4.8vh;
     position: relative;
     background: hsl(210, 30%, 0%) radial-gradient( hsl(210, 30%, 20%), hsl(210, 30%, 0%));
     border: 0.5px solid rgb(75, 73, 73);

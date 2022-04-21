@@ -1,5 +1,5 @@
-<template>
-    <div class="signup-form m-0 ptnbg" style=" height:100vh;overflow-y:hidden;">
+<template >
+    <div class="signup-form m-0 ptnbg " style=" height:100vh;overflow-y:hidden;">
         <div class="lgnFromIcn mt-3 ">
             <div class="row justify-content-sm-center">
                 <div class="col-12"> <img src="../assets/img/logo.png" class='img-thumbnail'></div>
@@ -40,7 +40,7 @@
         </div> 
         <h4 class="text-center dtlsfnt">Log in with your social media account</h4> <br>
 
-        <div class="row text-center">
+        <div class="row Gp0m0 text-center">
             <div class="col-4 px-0"><a href="#" class="btn-lg button3 nBtn d-block"><i class="fab fa-facebook"></i></a></div>
             <div class="col-4 px-0"><a href="#" class="btn-lg button6 nBtn d-block"><i class="fab fa-twitter"></i></a></div>
             <div class="col-4 px-0"><a href="#" class="btn-lg button7 nBtn d-block"><i class="fab fa-google"></i></a></div>
@@ -108,3 +108,16 @@ export default {
 }
 
 </script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 0px;
+  margin-bottom:0px!important;
+/*   margin-bottom: auto; */
+}
+</style>

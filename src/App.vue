@@ -20,11 +20,13 @@ export default {
       window.jq.getScript('dist/js/jquery.fittext.js');
   },
 }
+
 </script>
 <style scoped src="@/assets/css/allcss.css">
 
 </style>
 <style>
+
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -33,8 +35,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 0px;
-  /* margin-bottom:60px; */
-  margin-bottom: auto;
+  margin-bottom:60px;
+/*   margin-bottom: auto; */
 }
+
 </style>
 

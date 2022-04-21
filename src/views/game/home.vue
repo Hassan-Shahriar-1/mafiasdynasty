@@ -35,7 +35,7 @@
                             <div class="row ">
                                 <div class="col-8"> 
                                     <h5 class="b1-h2">The Burning Fate<br></h5>
-                                    <h6 class="b1-h6"><br>
+                                    <h6 class="siz13"><br>
                                         Vampires are awakened by a voice from the beyond.<br>They all must protect their realm.<br>This time, survival is the biggest crisis. <br><br></h6>
                                 </div>  
                                 <div class="col-4">

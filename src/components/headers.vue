@@ -7,30 +7,30 @@
 
             <div class="col-7 py-0 mt-2 " style="margin-left:10%;"  >
                 <div class="row Gp0m0">
-                    <div class="col-4 Gp0m0">
-                        <h6 class="text-left">Level: {{ Th.lvl }}</h6>
+                    <div class="col-6 Gp0m0">
+                        <h6 class="text-left"><span class="siz20">Level: </span>{{ Th.lvl }}</h6>
                     </div>
 
-                    <div class="col-8 ">
+                    <div class="col-6 p-0 ">
                         <span class="incb1 float-right iC-home ml-1"></span>
                         <span class="incb1 float-right iC-heart ml-1"></span>
                         <span class="incb1 float-right iC-rage ml-1"></span>
                     </div>
                 </div>
-                <div class="progress n_bar-a" style="height:10px;">
+                <div class="progress n_bar-a" style="height:8px;">
                     <div class="progress-bar clRBppl bgD0" id="itmBr" :style="{width: Th.expW+'%'}" ></div>
                 </div>
                 <h6 class="text-left">Exp:{{Th.expst}}/{{Th.exped}} </h6>
             </div>
             <div class="col-1 py-0 text-center  mt-2 Gp0m0 no-gutters" style="margin-left:1%;" >
-                <div class=" rounded  bgD8" @click="ntf=!ntf,lnk(ntf)">
-                    <i class="fas fa-bell mt-1 siz20 text-white"></i>
+                <div class=" rounded  bgD8" @click="ntf^=true,lnk(ntf),ntfn()">
+                    <i class="fas fa-bell mt-1 siz20 text-white"></i>   
                     <span class="bg-danger rounded-circle sizv10 bgpstn">11</span> 
                 </div>    
             </div>
 
             <div class="col-1 py-0 text-center  mt-2 Gp0m0 no-gutters" style="margin-left: 3%;">
-                <div class="rounded bgD8"   @click="stngs = !stngs">
+                <div class="rounded bgD8"   @click="growDiv()"  >
                 <i class="fas fa-cogs mt-1 siz20 text-white"></i>
                 <span class="bg-danger rounded-circle sizv10 bgpstn">12</span> 
                 </div>        
@@ -78,28 +78,40 @@
             </div>
         </v-touch>
         <div class="container Gp0m0 jaldi mnbg"></div>
-        <div class="btn-group rounded jaldi bw100 p-1 m-1"  role="group" aria-label="..." v-show="stngs">
-            <div class="row no-gutters">
-                <router-link to="/game/alerts" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0  " ><i class="fas fa-exclamation-triangle"></i><br> <h6 class="siz15">Alerts </h6></router-link>
-                <div tag="button"  class="btn col px-1 nBtn blkgry Gp0m0" v-on:click="toggle2()" @click="stngs=true"><i v-bind:class="{'fas fa-bell' :tgle === true, 'fas fa-bell-slash': tgle === false}" ></i>
-                    <h6 class="siz15">notification</h6></div>
-                <router-link to="/game/editprofile" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0   "><i class="fas fa-user"></i><br> <h6 class="siz15">Edit profile</h6> </router-link>
-                <div tag="button"  class="btn col px-1 nBtn blkgry Gp0m0" v-on:click="toggle()" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" ></i>
-                    <h6 class="siz15">Music</h6></div>
-                <div tag="button" @click="Lotsw(),stngs=true" class="btn col px-1 nBtn blkgry Gp0m0"><i class="fas fa-sign-out-alt"></i><br> <h6 class="siz15">Logout</h6> </div>
-                <div  tag="button" @click="sconnect ^= true"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fas fa-share-alt"></i><br><h6 class="siz15"  > Social Connect</h6> </div>
-                <div  tag="button"  @click="bmsho()" class="btn col px-1 nBtn blkgry Gp0m0"><i class="fas fa-lightbulb"></i><br><h6 class="siz15"> Hints</h6> </div>
-                <router-link to="/gmail" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="far fa-envelope"></i><br> <h6 class="siz15">Mail </h6></router-link>
-                <router-link to="/game/forumlist" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fab fa-wpforms"></i><br> <h6 class="siz15">Forum</h6> </router-link>
-                <router-link to="/messenger" tag="button"  class="btn col px-1 nBtn blkgry Gp0m0"><i class="fab fa-facebook-messenger"></i><br><h6 class="siz15"> Message </h6></router-link>
-            
-           
-            <div class="row  mt-3 w-100 no-guttersb3px blkgry  p-2 m-0  rounded"  v-show="sconnect" >
-                <div class="col-3"><a href="https://www.facebook.com/mafiasrivalgame" class="btn nBtn btn-block btn-lg button3 mlr2 "><i class="fab fa-facebook"></i></a></div>
-                <div class="col-3"><a href="https://mafiasrival.com/" class="btn nBtn btn-block btn-lg button5 mlr2"><i class="fab fa-firefox-browser"></i></a></div>
-                <div class="col-3"><router-link to="/gmail"><div class="btn nBtn btn-block btn-lg button7 mlr2"><i class="fas fa-envelope"></i></div></router-link></div>
-                <div class="col-3"><div class="btn nBtn btn-block btn-lg button6 mlr2"><i class="fas fa-external-link-square-alt"></i></div></div>
-            </div>
+        <div class="btn-group rounded jaldi bw100"  role="group" aria-label="..." >
+         <div  id='grow'>
+
+             <div class="measuringWrapper">
+                 <div class=" row no-gutters blkgry">
+                
+              <div class="col-4 p-1"> <router-link to="/game/alerts"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i    class="fas fa-exclamation-triangle"></i><br> <h6 class="siz15">Alerts </h6></div></router-link></div>
+              <div class=" col-4 p-1"><div tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0" v-on:click="toggle2()" @click="stngs=true"><i v-bind:class="{'fas fa-bell' :tgle === true, 'fas fa-bell-slash': tgle === false}" ></i><h6 class="siz15">notification</h6></div></div>
+              <div class="col-4 p-1"><router-link to="/game/editprofile"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0 "><i class="fas fa-user"></i><br> <h6 class="siz15">Edit profile</h6></div> </router-link></div> 
+              <div class="col-4 p-1"><div  tag="button"  class="btn btn-block   nBtn blkgry my-1 Gp0m0" v-on:click="toggle()" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" ></i><h6 class="siz15">Music</h6></div></div>
+              <div class="col-4 p-1"><div tag="button" @click="Lotsw(),stnghd(),stngs=true" class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-sign-out-alt"></i><br> <h6 class="siz15">Logout</h6> </div></div>
+              <div class="col-4 p-1"><div  tag="button" @click="sconnectshow() ,stnghd()"  class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-share-alt"></i><br><h6 class="siz15"  > Social Connect</h6> </div></div>
+              <div class="col-4 p-1"><div  tag="button"  @click="bmsho(),stnghd()" class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-lightbulb"></i><br><h6 class="siz15"> Hints</h6> </div></div>
+              <div class="col-4 p-1"><router-link to="/gmail"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="far fa-envelope"></i><br> <h6 class="siz15">Mail </h6></div></router-link></div>     
+              <div class="col-4 p-1"><router-link to="/game/forumlist"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fab fa-wpforms"></i><br> <h6 class="siz15">Forum</h6></div> </router-link></div> 
+              <div class="col-4 p-1"><router-link to="/messenger"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fab fa-facebook-messenger"></i><br><h6 class="siz15"> Message </h6></div></router-link></div> 
+                </div>
+                </div>
+                </div>
+
+            <modal name="sconnect"  :width="330" :isAutoHeight="true" @before-open="beforeOspen"  class="bdr4 blksdo  rounded mblr"  >
+               
+                         <div class="card tmibg" id="fds" >
+                        <div class="card-header ">
+                            <h2 class="text-left">Social Connect<h3 class="float-right"><i class="fas fa-times text-danger"  @click="sconnecthd()"></i></h3></h2>
+                        </div>
+                         <div class="row  mt-3 w-100 no-guttersb3px   p-2 m-0  rounded" >
+                    <div class="col-3"><a href="https://www.facebook.com/mafiasrivalgame" class="btn nBtn btn-block btn-lg button3 mlr2 "><i class="fab fa-facebook"></i></a></div>
+                    <div class="col-3"><a href="https://mafiasrival.com/" class="btn nBtn btn-block btn-lg button5 mlr2"><i class="fab fa-firefox-browser"></i></a></div>
+                    <div class="col-3"><router-link to="/gmail"><div class="btn nBtn btn-block btn-lg button7 mlr2"><i class="fas fa-envelope"></i></div></router-link></div>
+                    <div class="col-3"><div class="btn nBtn btn-block btn-lg button6 mlr2"><i class="fas fa-external-link-square-alt"></i></div></div>
+                </div>
+                  </div>
+            </modal>
           
                 <modal name="nrbpup" :width="330" :height="450" class="bdr4 blksdo rounded  mblr" >
                     <div class="card">
@@ -162,13 +174,39 @@
                         </div>
                     </div>
                 </modal>
-            </div> 
+           
         </div>
   </div>
 </template>
 
 
 <style scoped>
+
+#more-button {
+  border-style: none;
+  background: none;
+  font: 16px Serif;
+  color: blue;
+  margin: 0 0 10px 0;
+}
+
+#grow input:checked {
+  color: red;
+}
+
+#more-button:hover {
+  color: black;
+}
+
+#grow {
+  -moz-transition: height .5s;
+  -ms-transition: height .5s;
+  -o-transition: height .5s;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+  height: 0;
+  overflow: hidden;
+}
 
 .slide-enter-active {
    -moz-transition-duration: 0.4s;
@@ -284,15 +322,20 @@ export default {
         window.addEventListener('scroll', this.handleScroll);       
     },
     updated(){
-        this.TptrgrBr();    
+        this.TptrgrBr(); 
+      /*   this.growDiv();  */
+       window.addEventListener('scroll', this.handleScroll);
+        
     },
     mounted(){
         this.TptrgrBr();  
         window.addEventListener('scroll', this.handleScroll);
+
         /* this.socket.on('popupntf',(data)=>{
         console.log(data);
         })    */
          this.hgtdt()
+          
     },  
   
        /*  beforeUpdate(){
@@ -307,8 +350,16 @@ export default {
         }, */
     
     methods: {
+
+           beforeOspen() {
+      setTimeout(() => {
+        window.jq(".vm--modal").height(window.jq("#fds").outerHeight());
+      }, 0);
+    },
         lnk(vl){
             console.log(vl);
+             var md = document.getElementById('grow');
+   md.style.height = 0;
             if(vl==true){
                 this.$router.push('/game/notification/news')
             }else{
@@ -359,6 +410,13 @@ export default {
         bmshd(){
             this.$modal.hide('bmsho');
         },
+
+        sconnectshow(){
+            this.$modal.show('sconnect');
+        },
+          sconnecthd(){
+            this.$modal.hide('sconnect');
+        },
            
         hgtdt(){
             this.$mgo.gt('mp/hrtbt', (rsp)=>{  
@@ -392,6 +450,24 @@ export default {
             this.Th.hltW = 100 / this.Th.hlted  * this.Th.hltst;
             this.Th.expW = 100 / this.Th.exped  * this.Th.expst;
         },
+
+         growDiv() {
+  var growDiv = document.getElementById('grow');
+  if (growDiv.clientHeight) {
+    growDiv.style.height = 0;
+  } else {
+    var wrapper = document.querySelector('.measuringWrapper');
+    growDiv.style.height = wrapper.clientHeight + "px";
+    this.ntf==false;
+  }
+},
+
+
+stnghd(){
+ var growDiv = document.getElementById('grow');
+    growDiv.style.height = 0;
+},
+
 
         hdrFrsh(){         
             this.Th.engst=this.Th.enged;
