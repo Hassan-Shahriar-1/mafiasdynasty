@@ -658,19 +658,7 @@ export default new Router({
 
 
 
-                {
-                    path: 'missionintro',
-                    name: 'missionintro',
-                    component: () =>
-                        import ('@/views/game/missionintro')
-                },
-
-                {
-                    path: 'mission',
-                    name: 'mission',
-                    component: () =>
-                        import ('@/views/game/mission')
-                },
+             
 
                 {
 
@@ -863,13 +851,32 @@ export default new Router({
                 },
 
 
-
+                {
+                    path: 'alllndmission',
+                    name: 'alllndmission',
+                    component: () =>
+                        import ('@/views/game/alllndmission')
+                },
+                
 
                 {
                     path: 'missionlist',
                     name: 'missionlist',
                     component: () =>
-                        import ('@/views/game/missionlist')
+                        import ('@/components/mission/missionlist')
+                },
+                {
+                    path: 'missionintro',
+                    name: 'missionintro',
+                    component: () =>
+                        import ('@/components/mission/missionintro')
+                },
+
+                {
+                    path: 'mission',
+                    name: 'mission',
+                    component: () =>
+                        import ('@/components/mission/mission')
                 },
                 {
                     path: 'land/:lndid',
@@ -883,7 +890,7 @@ export default new Router({
                     component: () =>
                         import ('@/views/game/alllands')
                 },
-
+               
                 {
                     path: '/model',
                     name: 'model',

@@ -15,43 +15,53 @@
 
 
             <div class="card-body pt-1 Gp0m0">
-                        <div class="bw100 w-100 rounded jaldi blkgry" role="group" aria-label="...">
-                                <div class="btn-group  bw100 w-100  sizv13">
-                                    <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('torso')">  <i class="fas fa-gopuram"></i> <br><h4 class="siz15">torso</h4></div>
-                                    <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('shirt')"><i class="fas fa-sitemap"></i> <br> <h4 class="siz15">Shirt</h4> </div>
-                                    <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('pant')"><i class="fas fa-trophy"></i><br><h4 class="siz15">Pant</h4></div>
-                                    <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('head')"><i class="fas fa-glass-cheers"></i> <br><h4 class="siz15">Head</h4></div>
-                                    <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('other')"><i class="fas fa-sitemap"></i> <br> <h4 class="siz15">Other</h4> </div>
-                                    <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('body')"><i class="fas fa-trophy"></i><br><h4 class="siz15">Body</h4></div>
-                                    <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('familiar')"><i class="fas fa-glass-cheers"></i> <br><h4 class="siz15">Familiars</h4></div>
-                                </div>  
-                        </div>
+                <div class="bw100 w-100 rounded jaldi blkgry" role="group" aria-label="...">
+                    <div class="btn-group  bw100 w-100  sizv13">
+                        <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('torso')">  <i class="fas fa-gopuram"></i> <br><h4 class="siz15">torso</h4></div>
+                        <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('shirt')"><i class="fas fa-sitemap"></i> <br> <h4 class="siz15">Shirt</h4> </div>
+                        <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('pant')"><i class="fas fa-trophy"></i><br><h4 class="siz15">Pant</h4></div>
+                        <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('head')"><i class="fas fa-glass-cheers"></i> <br><h4 class="siz15">Head</h4></div>
+                        <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('other')"><i class="fas fa-sitemap"></i> <br> <h4 class="siz15">Other</h4> </div>
+                        <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('body')"><i class="fas fa-trophy"></i><br><h4 class="siz15">Body</h4></div>
+                        <div  tag="button" class="btn nBtn Gp0m0 blkgry" @click="bind('familiar')"><i class="fas fa-glass-cheers"></i> <br><h4 class="siz15">Familiars</h4></div>
+                    </div>  
+                </div>
                 <div class="row Gp0m0">
                     <div class="col-7 Gp0m0" >
+                        <div id="html-content-holder" >
+        <strong>Codepedia.info</strong><hr/>
+        <h3 style="color: #3e4b51;">
+            Html to canvas, and canvas to proper image
+        </h3>
+      
 
-                       
-    
-  
-                        <div v-if="edt!=''" style="background:rgba(207, 33, 33, 0.514)">
-                            <img  class="card-img " v-if="bdy!=''"  :src="bdy" alt="">
-                            <div class="card-img-overlay Gp0m0" v-if="hr!=''"><img class="card-img" src="../../../assets/img/avatar/H2.png" alt=""></div>
-                            <div class="card-img-overlay Gp0m0" v-if="pnt!=''"> <img class="card-img"  src="../../../assets/img/avatar/pant2.png" alt=""></div>
-                            <div class="card-img-overlay Gp0m0" v-if="trs!=''"> <img class="card-img"  src="../../../assets/img/avatar/tops.png" alt=""></div>
-                            <div class="card-img-overlay Gp0m0" v-if="she!=''"> <img class="card-img"  src="../../../assets/img/avatar/shocks.png" alt=""></div>  
-                            <div class="card-img-overlay Gp0m0" v-if="otr!=''"> <img class="card-img"  src="../../../assets/img/avatar/cat.png" alt=""></div> 
-                        </div>
-                        
-                     
 
-                        <div v-else>
-                            <img  class="card-img "   src="../../../assets/img/avatar/H2.png">                
+       <div v-if="edt!=''" id="alpha" style="background:rgba(207, 33, 33, 0.514)">
+                                <img  class="card-img " v-if="bdy!=''"  :src="bdy" alt="">
+                                <div class="card-img-overlay Gp0m0" v-if="hr!=''"><img class="card-img" src="../../../assets/img/avatar/H2.png" alt=""></div>
+                                <div class="card-img-overlay Gp0m0" v-if="pnt!=''"> <img class="card-img"  src="../../../assets/img/avatar/pant2.png" alt=""></div>
+                                <div class="card-img-overlay Gp0m0" v-if="trs!=''"> <img class="card-img"  src="../../../assets/img/avatar/tops.png" alt=""></div>
+                                <div class="card-img-overlay Gp0m0" v-if="she!=''"> <img class="card-img"  src="../../../assets/img/avatar/shocks.png" alt=""></div>  
+                                <div class="card-img-overlay Gp0m0" v-if="otr!=''"> <img class="card-img"  src="../../../assets/img/avatar/cat.png" alt=""></div> 
+                            </div>
+
+                            <div v-else>
+                                <img  class="card-img" src="../../../assets/img/avatar/H2.png">                
+                            </div>
+    </div>
+    <input id="btn-Preview-Image" type="button" value="Preview"/>
+    <a id="btn-Convert-Html2Image" href="#">Download</a>
+    <br/>
+    <h3>Preview :</h3>
+    <div id="previewImage">
+    </div>
+                           
+                        <!--     <vue-drawing-canvas ref="VueCanvasDrawing" :props="additionalImages" :inheritAttrs="true">
+                            </vue-drawing-canvas> -->
+                            
+                            <div class="btn nBbg nBtn btn-lg btn-block tmibg text-center" style="z-index:+1055;" @click="print()">Save</div>
+                            <!--  <img class="card-img " :src="output"> -->
                         </div>
-                        <vue-drawing-canvas ref="VueCanvasDrawing" :props="additionalImages" :inheritAttrs="true">
-                        </vue-drawing-canvas>
-                          
-                        <div class="btn nBbg nBtn btn-lg btn-block tmibg text-center"  @click="print()">Save</div>
-                           <!--  <img class="card-img " :src="output"> -->
-                    </div>
                 
                     <div class="col-5 Gp0m0 tmibg2">
                         <div class="card Gp0m0 ">
@@ -62,7 +72,6 @@
                                 </div>
                                 <div class="row Gp0m0"  style="height:440px; overflow:scroll;" v-else>
                                     <div class="col-6 Gp0m0 p-1 " v-for="(lst ,i) in list " :key="i" @click="vwavt(title,lst.img)"> <img  class="card-img border" :src="lst.img" alt=""></div>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -73,11 +82,7 @@
     </div>
 </template>
 
-
 <script>
-
-
-
 export default {
   
     data() {
@@ -152,18 +157,16 @@ export default {
         console.log('why')
     },
 
-   
-
-   
     methods:{
+        async print(){
+            console.log('ok')
+            var canvas = document.getElementById("alpha");
+            var dataURL = canvas.toDataURL("image/png");
+            var newTab = window.open('about:blank','image from canvas');
+            newTab.document.write("<img src='" + dataURL + "' alt='from canvas'/>");
 
-   
-
-         async print(){
-
-             console.log('ok')
-      
-    },  
+            console.log('eid hobena')
+            },  
   
  
         bind(val){
@@ -190,7 +193,6 @@ export default {
             }else{
                 this.chk='body'
                 this.list=this.body
-               
             } 
         },
 

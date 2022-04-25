@@ -2,7 +2,7 @@
     <div class="signup-form m-0 ptnbg " style=" height:100vh;overflow-y:hidden;">
         <div class="lgnFromIcn mt-3 ">
             <div class="row justify-content-sm-center">
-                <div class="col-12"> <img src="../assets/img/logo.png" class='img-thumbnail'></div>
+                <div class="col-12"> <img src="../assets/img/logo/logo.png" class='img-thumbnail' style="height:100%; width:60%;"></div>
             </div>
         </div>
             <h4 class="text-center titlefnt pt-2 rounded">Log in</h4>
@@ -30,7 +30,7 @@
             </div>
 
             <div class="form-group text-center">
-                <button type="submit" class="button mt-5 py-0 bgD2 nBtn nBbg btn-lg btn-block btnfnt siz30" @click="logindata()">Log In</button>
+                <button type="submit" class="button mt-5 py-0 bgD2 nBtn nBbg btn-lg btn-block btnfnt2 siz30" @click="logindata()">Log In</button>
                 <!-- bg-dark btn-lg btn-block signup-btn -->
             </div>
         </div>

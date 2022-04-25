@@ -24,7 +24,7 @@
         
         <div class="bg-transparent p-4">
             <h4 class="titlefnt">Boss fight
-            <router-link to="gfight"><div class="btn nBbg nBtn float-right btnfnt button4">Lets Go!</div></router-link></h4>
+            <router-link to="gfight"><div class="btn nBbg nBtn float-right btnfnt2 button4">Lets Go!</div></router-link></h4>
         </div>
 
         

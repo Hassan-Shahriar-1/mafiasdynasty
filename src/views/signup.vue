@@ -1,8 +1,8 @@
 <template>
 
-        <div class="ptnbg" style=" height:100vh; overflow:scroll;">
+        <div class="ptnbg" style=" height:100vh;position:fixedl; overflow:scroll;">
             <div class="signup-form m-0">
-                <div class="lgnFromIcn mt-3">
+                <div class="lgnFromIcn mt-1">
                     <div class="row justify-content-sm-center">
                         <div class="col-12 htwit"> <img  src="../assets/img/logo.png" class='img-thumbnail'></div>
                     </div>
