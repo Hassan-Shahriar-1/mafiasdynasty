@@ -81,7 +81,7 @@
         <div class="btn-group rounded jaldi bw100"  role="group" aria-label="..." >
          <div  id='grow'>
 
-             <div class="measuringWrapper">
+             <div class="measuringWrapper" >
                  <div class=" row no-gutters blkgry">
                 
               <div class="col-4 p-1"> <router-link to="/game/alerts"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i    class="fas fa-exclamation-triangle"></i><br> <h6 class="siz15">Alerts </h6></div></router-link></div>
@@ -451,16 +451,19 @@ export default {
             this.Th.expW = 100 / this.Th.exped  * this.Th.expst;
         },
 
-         growDiv() {
-  var growDiv = document.getElementById('grow');
-  if (growDiv.clientHeight) {
-    growDiv.style.height = 0;
-  } else {
-    var wrapper = document.querySelector('.measuringWrapper');
-    growDiv.style.height = wrapper.clientHeight + "px";
-    this.ntf==false;
-  }
-},
+        growDiv() {
+        var growDiv = document.getElementById('grow');
+        if (growDiv.clientHeight) {
+            growDiv.style.height = 0;
+        } else {
+            var wrapper = document.querySelector('.measuringWrapper');
+            growDiv.style.height = wrapper.clientHeight + "px";
+            //window.jq('#grow').css('position', 'fixed' );
+            window.jq('#grow').css({'position':'fixed','z-index':'+1500'});
+            this.ntf==false;
+        }
+        },
+        
 
 
 stnghd(){

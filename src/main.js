@@ -55,7 +55,7 @@ import bmitm from './components/bmitm'
 import msgrcv from './components/msgrcv'
 import msgsend from './components/msgsend'
 import msgftr from './components/msgftr'
-import mission from './components/mission'
+
 
 import chatcom from '@/components/chatcom'
 import property1 from '@/components/property1'
@@ -132,7 +132,7 @@ Vue.component('msgrcv', msgrcv)
 Vue.component('msgsend', msgsend)
 Vue.component('msgftr', msgftr)
 
-Vue.component('mission', mission)
+
 
 Vue.component('chatcom', chatcom)
 

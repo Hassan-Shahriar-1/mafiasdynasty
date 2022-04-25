@@ -1,7 +1,7 @@
 <template>
     <div class="container Gp0m0 blkbg jaldi" style='margin-bottom:40px;' >
         <div class="row Gp0m0">
-            <img class="card-img img-fluid p-1" src="../assets/img/land/colombia.png" alt="">
+            <img class="card-img img-fluid p-1" src="../../assets/img/land/colombia.png" alt="">
         </div>
         <div class="row Gp0m0 tmibg ">
             <div class="card blkbg">

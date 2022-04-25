@@ -271,7 +271,7 @@ export default {
         
         bMcShw:function(sth){
             if(sth=='mission'){
-                     this.$router.replace('/game/missionintro'),
+                     this.$router.replace('/game/alllndmission'),
                      
                      this.closeall()
                  }
