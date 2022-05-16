@@ -169,6 +169,7 @@ export default {
                 this.fghtcnt=rs.fghtcnt,
                 this.arlvl=rs.arnlvl,
                 this.flvl=rs.fghtlvl,
+                this.htlst=rs.hitlist
                 this.chk=rs.chk,
                 this.tmstrt=rs.stm,
                 this.tmend=rs.etm,
