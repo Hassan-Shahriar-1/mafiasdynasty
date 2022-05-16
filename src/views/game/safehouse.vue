@@ -4,7 +4,7 @@
             <div class="card-header blkgry p-2"><div class="col-12"><h4 class="text-center titlefnt">Safe House</h4></div></div>
             <div class="card-body Gp2m2">
                 <img src="../../assets/img/item/Gold-bar.jpg"  class="card-img rounded-0 blksdout" alt="" style="height:120px;">
-                <h6 class="dtlsfnt">
+                <h6 class="dtlsfnt text-center py-2">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ex! Expedita sed nam nulla hic 
                     in ratione rerum, libero quasi veritatis minus delectus voluptate veniam tenetur, quis ad unde consequatur!
                 </h6>

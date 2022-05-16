@@ -9,7 +9,7 @@
         <div class="alert blk50 py-3 pr-4 Gp0m0 my-3 "  v-show="errormsgsts" >
                     <h5 class="text-danger text-center"> {{ errormsg }} </h5>
                 <div  type="button" class="close btn eremsg" aria-label="Close" style="margin-top: -5%; margin-right: -6%;">
-                    <span aria-hidden="true"  class="text-white" style=" position:absolute; top:0px; right:5px;" @click="errormsgsts=true">&times;</span>
+                    <span aria-hidden="true"  class="text-white" style=" position:absolute; top:0px; right:5px;" @click="errormsgsts^=true">&times;</span>
                 </div>
         </div>
 

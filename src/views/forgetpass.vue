@@ -27,18 +27,20 @@
                         <div class="form-group mt-5">
                             <button type="submit" class="bgD2 siz25 custom6 nBtn nBbg btn-lg btn-block btnfnt">Recover Password</button>
                         </div>
-                    </div>
+               
                     
                     <div class="text-center dtlsfnt"> <router-link to="/signup"> <h3 class="text-info siz20">Sign Up Here</h3></router-link> </div>
                     <!-- <div class="or-seperator text-center ttlfnt2">
                         <p class="desfnt">or</p>
                     </div> -->
                     <h4 class="text-center dtlsfnt">Signup with your social media account</h4> <br>
-                    <div class="row text-center Gp0m0">
+                    <div class="row text-center m-0 ">
                         <div class="col-4 px-0"><a href="https://facebook.com" class="btn-lg button3 nBtn d-block"><i class="fab fa-facebook"></i></a></div>
                         <div class="col-4 px-0"><a href="#" class="btn-lg button6 nBtn d-block"><i class="fab fa-twitter"></i></a></div>
                         <div class="col-4 px-0"><a href="#" class="btn-lg button7 nBtn d-block"><i class="fab fa-google"></i></a></div>
-                    </div>     
+                    </div>    
+
+                         </div> 
             </form>
         </div>
 

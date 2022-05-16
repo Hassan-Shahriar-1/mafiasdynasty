@@ -19,8 +19,8 @@
 
         <div class="card-body p-1 blkd50">
             <div class="row no-gutters">
-                <div class="col-6 "><h4 class="subtitlefnt">Requirments</h4> <br> <div class="bMbg3 bnrbxsdo  p-1 rounded mx-1"> <h6 class="dtlsfnt py-1"> <div class=" iC-rage incb1"></div>1</h6>   <h6 class="dtlsfnt  py-1"> <div class=" iC-rage incb1"></div>1</h6></div></div>
-                <div class="col-6 "><h4 class="subtitlefnt">Rewards</h4> <br> <div class="bMbg3 bnrbxsdo   p-1 rounded mx-1"> <h6 class="dtlsfnt  py-1"> <div class=" iC-cash incb1"></div> 100</h6>  <h6 class="dtlsfnt  py-1 "><div class=" iC-energy incb1"></div>101</h6></div></div>
+                <div class="col-6 "><h4 class="subtitlefnt siz20 pl-2">Requirments</h4> <br> <div class="bMbg3 bnrbxsdo  p-1 rounded mx-1"> <h6 class="dtlsfnt py-1"> <div class=" iC-rage incb1"></div>1</h6>   <h6 class="dtlsfnt  py-1"> <div class=" iC-rage incb1"></div>1</h6></div></div>
+                <div class="col-6 "><h4 class="subtitlefnt siz20 pl-2">Rewards</h4> <br> <div class="bMbg3 bnrbxsdo   p-1 rounded mx-1"> <h6 class="dtlsfnt  py-1"> <div class=" iC-cash incb1"></div> 100</h6>  <h6 class="dtlsfnt  py-1 "><div class=" iC-energy incb1"></div>101</h6></div></div>
             </div>
             <div class="row Gp0m0 mt-2">
                 <div class="col-8 px-1">

@@ -366,3 +366,172 @@ Spin animation for all kind of rotation of 360 degree CSS
 
   
 /* topbar css end */
+
+/* limited offer button css start */
+
+
+.Anm-outln15si {
+    animation: ltdbtn 1.4s ease-out infinite;
+}
+
+@keyframes outln15si {
+    0% {
+        outline-color: rgb(66, 65, 65);
+        outline-style: solid;
+        outline-offset: 0.5px;
+    }
+    85% {
+        outline-width: 0.9px;
+    }
+    100% {
+        outline-offset: 10px;
+        outline-color: transparent;
+    }
+}
+
+@keyframes ltdbtn {
+    0% {
+        outline-style: solid;
+        outline-offset: 0.5px;
+        width: auto;
+        height: auto;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 1px;
+        outline-color: rgb(78, 4, 4);
+        font-smooth: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        -o-font-smoothing: antialiased;
+        -ms-font-smoothing: antialiased;
+        text-decoration: none;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.50);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        /* border-top: 1px solid rgba(0,0,0,0.001); */
+        box-shadow: 0 0 5px rgba(36, 36, 36, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(134, 134, 134, 0.877);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(160, 156, 156, 0.877);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(150, 144, 144, 0.877);
+        -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(136, 133, 133, 0.877);
+        -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(146, 143, 143, 0.87);
+        cursor: pointer;
+    }
+    85% {
+        outline-width: 0.9px;
+    }
+    100% {
+        outline-offset: 10px;
+        outline-color: transparent;
+        width: auto;
+        height: auto;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 1px;
+        outline-color: rgb(78, 5, 5);
+        font-smooth: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        -o-font-smoothing: antialiased;
+        -ms-font-smoothing: antialiased;
+        text-decoration: none;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.50);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(41, 41, 41, 0.25);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(10, 10, 10, 0.25);
+        -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(0, 0, 0, 0.25);
+        -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(0, 0, 0, 0.25);
+        animation: glow 1s infinite ease-in-out;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+
+
+.Anm-outln10si {
+    animation: ofrbtn 1.4s ease-out infinite;
+}
+
+
+@keyframes ofrbtn {
+    0% {
+        outline-style: solid;
+        outline-offset: 0.5px;
+        width: auto;
+        height: auto;
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 1px;
+        outline-color: rgba(1, 22, 36, 0.877);
+        -webkit-font-smooth: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        -o-font-smoothing: antialiased;
+        -ms-font-smoothing: antialiased;
+        text-decoration: none;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.50);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        /* border-top: 1px solid rgba(0,0,0,0.001); */
+        box-shadow: 0 0 5px rgba(36, 36, 36, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(82, 81, 81, 0.877);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(82, 81, 81, 0.877);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(82, 81, 81, 0.877);
+        -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(82, 81, 81, 0.877);
+        -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(82, 81, 81, 0.877);
+        cursor: pointer;
+    }
+    85% {
+        outline-width: 0.5px;
+    }
+    100% {
+        outline-offset: 5px;
+        outline-color: transparent;
+        width: auto;
+        height: auto;
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 1px;
+        outline-color: rgba(1, 22, 36, 0.815);
+        -webkit-font-smooth: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        -o-font-smoothing: antialiased;
+        -ms-font-smoothing: antialiased;
+        text-decoration: none;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.50);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(41, 41, 41, 0.25);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(10, 10, 10, 0.25);
+        -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(0, 0, 0, 0.25);
+        -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(0, 0, 0, 0.25);
+        animation: glow 1s infinite ease-in-out;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+/* limited offer button css end */

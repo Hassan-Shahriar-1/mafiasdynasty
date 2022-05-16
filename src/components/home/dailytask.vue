@@ -38,7 +38,7 @@
         <div class="row Gp0m0 mt-2 py-1 blkgry ">
             <div class="col-8"><h6>Task:0/4</h6></div>
             <div class="col-4"><span class="float-right"><i class="  rounded px-2  fas fa-sort-down siz25" @click="t8nws ^= true"></i></span></div>
-            <div class="  mt-3 progress n_bar-a w-100" style="height: 10px;"><div  class="progress-bar clRBrd bgD0" style="width: 10%;"></div></div>
+            <div class="mt-3 progress n_bar-a w-100" style="height: 10px;"><div  class="progress-bar clRBrd bgD0" style="width: 10%;"></div></div>
         </div>
 
 
