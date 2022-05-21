@@ -1,5 +1,5 @@
 <template>
-<div class="bMbg overflow-auto">
+<div class="bMbg3 rounded bnrbxsdo overflow-auto">
     <div style="margin-bottom:50px;">
         <div class="row Gp0m0 text-center ">
             <div class="col-2"></div>
@@ -38,6 +38,8 @@
                 <div class=" button5 siz15 btn-block pbtn text-center  mt-3 nBtn nBbg"> Deposite</div>
             </div>
         </div>
+
+
         <div class="row Gp0m0 py-2 my-2 bgscn">
             <div class="container text-center">
                 <h2 class="text-danger">Recover Your loan </h2>

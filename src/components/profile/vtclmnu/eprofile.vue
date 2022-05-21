@@ -12,7 +12,7 @@
                             </div>
                         </div>
                              <div class="position-relative has-icon-right">
-                            <input type="email" class="form-control form-control-lg rounded-0 text-left blkd50" name="Email" placeholder="Update Email">
+                            <input type="email" class="form-control text-light form-control-lg rounded-0 text-left blkd50" name="Email" placeholder="Update Email">
                             <div class="form-control-position">
                                <i class="far fa-envelope"></i>
                             </div>

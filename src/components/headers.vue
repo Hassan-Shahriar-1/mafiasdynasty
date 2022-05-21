@@ -1,5 +1,5 @@
-<template>
-    <div class="header jaldi ">
+<template id="bdy" >
+    <div class="header jaldi"  @click=" md()">
         <div class="row Gp0m0 hdbg  no-gutters" id='hdrvp10'>
             <div class="col-1 py-0">
                 <img class="logimg losdo my-2 ml-2" @click="$gm.bar();" src="../assets/img/logo.png">
@@ -23,14 +23,14 @@
                 <h6 class="text-left">Exp:{{Th.expst}}/{{Th.exped}} </h6>
             </div>
             <div class="col-1 py-0 text-center  mt-2 Gp0m0 no-gutters" style="margin-left:1%;" >
-                <div class=" rounded  bgD8" @click="ntf^=true,lnk(ntf),ntfn()">
+                <div class=" rounded  bgD8" @click="ntf=!ntf,lnk(ntf)">
                     <i class="fas fa-bell mt-1 siz20 text-white"></i>   
                     <span class="bg-danger rounded-circle sizv10 bgpstn">11</span> 
                 </div>    
             </div>
 
             <div class="col-1 py-0 text-center  mt-2 Gp0m0 no-gutters" style="margin-left: 3%;">
-                <div class="rounded bgD8"   @click="growDiv()"  >
+                <div class="rounded bgD8"  @click="growDiv()"  >
                 <i class="fas fa-cogs mt-1 siz20 text-white"></i>
                 <span class="bg-danger rounded-circle sizv10 bgpstn">12</span> 
                 </div>        
@@ -82,7 +82,7 @@
          <div  id='grow'>
 
              <div class="measuringWrapper" >
-                 <div class=" row no-gutters blkgry">
+                 <div class=" row no-gutters blkgry" @click="handleClick">
                 
               <div class="col-4 p-1"> <router-link to="/game/alerts"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i    class="fas fa-exclamation-triangle"></i><br> <h6 class="siz15">Alerts </h6></div></router-link></div>
               <div class=" col-4 p-1"><div tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0" v-on:click="toggle2()" @click="stngs=true"><i v-bind:class="{'fas fa-bell' :tgle === true, 'fas fa-bell-slash': tgle === false}" ></i><h6 class="siz15">notification</h6></div></div>
@@ -358,10 +358,11 @@ export default {
     },
         lnk(vl){
             console.log(vl);
-             var md = document.getElementById('grow');
-   md.style.height = 0;
+            
             if(vl==true){
                 this.$router.push('/game/notification/news')
+                 var md = document.getElementById('grow');
+                 md.style.height = 0;
             }else{
     
                if(this.$router.currentRoute.path=='/game/notification/pchat'){
@@ -370,7 +371,8 @@ export default {
                     this.$router.replace('/game/home/gtns')
                }else if(this.$router.currentRoute.path=='/game/notification/activity'){
                    this.$router.replace('/game/home/gtns')
-               }else{
+               }
+               else{
                 this.$router.go(-1) 
                 }
             }
@@ -452,17 +454,43 @@ export default {
         },
 
         growDiv() {
+
         var growDiv = document.getElementById('grow');
         if (growDiv.clientHeight) {
             growDiv.style.height = 0;
-        } else {
+ }
+        
+
+   
+        else {
             var wrapper = document.querySelector('.measuringWrapper');
             growDiv.style.height = wrapper.clientHeight + "px";
             //window.jq('#grow').css('position', 'fixed' );
             window.jq('#grow').css({'position':'fixed','z-index':'+1500'});
             this.ntf==false;
         }
+   
+      
         },
+
+
+        md(){
+            var growDiv = document.getElementById('grow');
+        if (growDiv.clientHeight) {
+            growDiv.style.height = 0;
+ }
+
+        },
+
+handleClick() {
+    var growDiv = document.getElementById('grow');
+  if (growDiv) {
+    this.$emit("hide"); //fires only on click outside
+    console.log('this is clicked')
+  }
+},
+
+
         
 
 

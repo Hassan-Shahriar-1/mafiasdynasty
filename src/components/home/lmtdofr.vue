@@ -15,8 +15,8 @@
                             <h6 class="sizv13 dtlsfnt"> {{ofrs.ofrdtls}}</h6>
                         </div>
                     </div>
-                    <div class="col-12 Gp0m0 pt-2 "><div class="btn  nBtn px-1 btn-block no-gutters blkgry sizv13">{{ofrs.ofrb1}}</div></div>
-                    <div class="col-12 Gp0m0 pt-2 "><div class="btn   px-1 nBtn btn-block no-gutters blkd75 sizv13">{{ofrs.ofrb2}}</div></div>
+                    <div class="col-12 Gp0m0 pt-2"><div class="btn Anm-outln10si nBtn px-1 btn-block no-gutters blkgry sizv13">{{ofrs.ofrb1}}</div></div>
+                    <div class="col-12 Gp0m0 pt-2"><div class="btn Anm-outln10si  px-1 nBtn btn-block no-gutters blkd75 sizv13">{{ofrs.ofrb2}}</div></div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 <template>
     <div class="container px-0  ">
-        <div class="StryCntnr" style="margin-bottom:10vh;">       
+        <div class="StryCntnr" style="margin-bottom:1vh;">       
             <carousel :autoplay="true" :height="200" :dots="false" :nav="false" :items='1' class="p-2"> 
             <img v-for="(hbimg, i) in bimg" :key="i" class="card-img  bdr1 " style="height:200px; " 
             :src="require('/src/assets/img/bannar/'+hbimg.img)">
@@ -52,9 +52,9 @@
 
 
             <div class="blkgry w-100 p-2 "><h3 class="titlefnt text-center"> News</h3></div>
-        <div class="card p-2 Gp0m0">
+        <div class="card p-2 bMbg3 bnrbxsdo Gp0m0">
             <carousel :autoplay="true" :height="300" :dots="true" :autoplayTimeout="3000" :nav="false" :items='1' > 
-                <div class="card border-0  w-100 "  v-for="(news, i) in newsdtls" :key="i">
+                <div class="card border-0 w-100 bg-transparent"  v-for="(news, i) in newsdtls" :key="i">
                   <h6 class="dtlsfnt" style="height:150px;">{{news.name}}</h6>
                 </div>
             </carousel>
@@ -62,11 +62,11 @@
             </div> 
         </div>
 
-        <modal name="ban" :width='300'   :isAutoHeight="true" v-if="alllnd"  @before-open="beforeOspen" class="mblr bdr p-1 rounded-2">
+        <modal name="ban" :width='300' :isAutoHeight="true" v-if="alllnd"  @before-open="beforeOspen" class="mblr bdr p-1 rounded-2">
             <div class="row Gp0m0 card blkgry">
                     <div class="card-header tmibg2 p-1">
                     <h4 class=" rounded-0 text-center py-1 w-100 " style="position:sticky;">Welcome To the flight
-                        <span class="float-right" style="margin-right:2%;"  @click="hide();"><div class="crossbtn"><i class="fas fa-times "></i></div></span></h4>
+                        <span class="float-right" style="margin-right:2%;"  @click="hide()"><div class="crossbtn"><i class="fas fa-times "></i></div></span></h4>
                     </div>
                     <div class="card-body bg-transparent p-0"  style="height:250px; overflow:scroll;">
                         <div class="w-100  Gp0m0" >   

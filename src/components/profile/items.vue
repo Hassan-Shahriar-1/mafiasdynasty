@@ -12,7 +12,7 @@
         <modal name="itmmdl"  :width='300' :height='271' :isAutoHeight="true" class="mblr"  id='gtmhyHt'>
             <div class="card  w-100 Gp0m0">
                 
-                <div class="card-header blkgry text-center">Details  <span class="float-right" style="margin-right: 2%;"><div @click=" hide()" class="crossbtn"><i class=" siz15 fas fa-times "></i></div></span></div>
+                <div class="card-header blkgry text-center px-0">Details  <span class="float-right" style="margin-right: 2%;"><div @click=" hide()" class="crossbtn"><i class=" siz15 fas fa-times "></i></div></span></div>
                 <div class="row Gp0m0 tmibg  bdr3  blksdout rounded"  style=" height:271px; overflow: scroll;">
                     <div class="card-body Gp0m0">
                         <ul class="list-group w-100 tmibg">
