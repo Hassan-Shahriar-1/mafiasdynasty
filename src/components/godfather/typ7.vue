@@ -106,11 +106,12 @@
     </div>
 </template>
 
+
 <script>
 export default {
     data(){
         return{
-            btn:'',
+        btn:'nesw',
         t7nws:true,
         t7gft:false,
         t7hlp:false,
@@ -125,7 +126,7 @@ export default {
     created() {
         this.$mgo.gt('elders/get/7',(rs)=>{
             console.log(rs);
-            this.btn=rs.btn;
+          /*   this.btn=rs.btn; */
         })
     },
 

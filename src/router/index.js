@@ -485,6 +485,13 @@ export default new Router({
                                 import ('@/components/shop/Avater')
                         },
 
+                        {
+                            path: 'intellegence',
+                            component: () =>
+                                import ('@/components/shop/intellegence')
+                        },
+
+
 
 
                     ],

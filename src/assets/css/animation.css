@@ -295,6 +295,23 @@ Spin animation for all kind of rotation of 360 degree CSS
     }
 }
 
+.rotation_ainm2 {
+    animation-name: spin2;
+    animation-duration: 2s;
+    animation-iteration-count: linear;
+    animation-timing-function: 10s;
+}
+
+@keyframes spin2 {
+    from {
+        transform: rotateZ(360deg);
+    }
+    to {
+        transform: rotateZ(-360deg);
+    }
+}
+
+
 
 /* card image rotate animation start */
 

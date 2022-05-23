@@ -121,11 +121,11 @@
                 <div class="card-body tmibg">
                   <div class="row">
                     <div class="col-6 p-1">
-                      <h6 class="blk bdr1 py-2 rounded text-center">Toxic5</h6>
+                      <h6 class="blk bdr1 py-2 rounded text-center">Toxic <br>5264554</h6>
                     </div>
                     <div class="col-6 p-1">
                       <h6 class="blk bdr1 py-2 rounded text-center">
-                        Tempting3
+                        Tempting <br>59645654
                       </h6>
                     </div>
                   </div>
@@ -140,10 +140,10 @@
                 <div class="card-body tmibg">
                   <div class="row">
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Toxic5</h6>
+                      <h6 class="blk py-2 rounded text-center">Toxic <br>5264554</h6>
                     </div>
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Tempting3</h6>
+                      <h6 class="blk py-2 rounded text-center">Tempting <br>59645654</h6>
                     </div>
                   </div>
                 </div>
@@ -158,11 +158,11 @@
                   <div class="row">
                     <div class="col-6 p-1">
                       <h6 class="blk blkbdr py-2 rounded text-center">
-                        Toxic5
+                        Toxic <br>5264554
                       </h6>
                     </div>
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Tempting3</h6>
+                      <h6 class="blk py-2 rounded text-center">Tempting <br>59645654</h6>
                     </div>
                   </div>
                 </div>
@@ -177,19 +177,19 @@
                   <div class="row">
                     <div class="col-6 p-1">
                       <h6 class="blk blkbdr py-2 rounded text-center">
-                        Toxic5
+                        Toxic <br>5264554
                       </h6>
                     </div>
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Tempting3</h6>
+                      <h6 class="blk py-2 rounded text-center">Tempting <br>59645654</h6>
                     </div>
                     <div class="col-6 p-1">
                       <h6 class="blk blkbdr py-2 rounded text-center">
-                        Toxic5
+                        Toxic <br>5264554
                       </h6>
                     </div>
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Tempting3</h6>
+                      <h6 class="blk py-2 rounded text-center">Tempting <br>59645654</h6>
                     </div>
                   </div>
                   <div class="row">
@@ -259,21 +259,21 @@
                   <div class="row">
                     <div class="col-6 p-1">
                       <h6 class="blk blkbdr py-2 rounded text-center">
-                        Toxic5
+                        Toxic <br>5264554
                       </h6>
                     </div>
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Tempting3</h6>
+                      <h6 class="blk py-2 rounded text-center">Tempting <br>59645654</h6>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-6 p-1">
                       <h6 class="blk blkbdr py-2 rounded text-center">
-                        Toxic5
+                        Toxic <br>5264554
                       </h6>
                     </div>
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Tempting3</h6>
+                      <h6 class="blk py-2 rounded text-center">Tempting <br>59645654</h6>
                     </div>
                   </div>
                 </div>
@@ -286,7 +286,7 @@
       <modal
         name="ppup" :width="300" :isAutoHeight="true" @before-open="beforeOspen" class="mblr"
       >
-        <div class="row Gp0m0 tmibg" id="ablht">
+        <div class="row Gp0m0 px-1 tmibg" id="ablht">
           <div class="card">
             <div class="card-header p-2 blkgry">
               <h5 class="subtitlefnt">
@@ -296,17 +296,13 @@
                 </h5>
               </h5>
             </div>
-            <div class="card-body Gp0m0 tmibg">
-              <div class="row Gp0m0 py-2">
+            <div class="card-body Gp0m0 tmibg" >
+              <div class="row Gp0m0 py-2" v-for="(sabl, i) in abl" :key="i" >
                 <div class="col-2 Gp0m0">
-                  <img
-                    class="card-img"
-                    src="../../assets/img/item/1.gif"
-                    alt=""
-                  />
+                  <img class="card-img" :src="require('../../assets/img/'+sabl.img)" alt=""/>
                 </div>
                 <div class="col-4 Gp0m0 mt-2">
-                  <h6 class="siz15">Habibur Rahman</h6>
+                  <h6 class="siz15">{{sabl.nm}}</h6>
                 </div>
                 <div class="col-3 Gp0m0 mt-2">
                   <select name="Select" id="" class="w-100 text-dark">
@@ -318,99 +314,9 @@
                     <option value="10">5</option>
                   </select>
                 </div>
-                <div class="col-3 Gp0m0">
+                <div class="col-3 p-1">
                   <div class="btn nBtn button5 btn-block btn-lg py-1 px-0">
-                    <h4 class="siz15">
-                      Send<i class="fas fa-paper-plane"></i>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row Gp0m0 py-2">
-                <div class="col-2 Gp0m0">
-                  <img
-                    class="card-img"
-                    src="../../assets/img/item/1.gif"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4 Gp0m0 mt-2">
-                  <h6 class="siz15">Habibur Rahman</h6>
-                </div>
-                <div class="col-3 Gp0m0 mt-2">
-                  <select name="Select" id="sablits" class="w-100 text-dark">
-                    <option selected class="text-dark">Select</option>
-                    <option value="1">1</option>
-                    <option value="3">2</option>
-                    <option value="5">3</option>
-                    <option value="7">4</option>
-                    <option value="10">5</option>
-                  </select>
-                </div>
-                <div class="col-3 Gp0m0">
-                  <div class="btn nBtn button5 btn-block btn-lg py-1 px-0">
-                    <h4 class="siz15">
-                      Send<i class="fas fa-paper-plane"></i>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="row Gp0m0 py-2">
-                <div class="col-2 Gp0m0">
-                  <img
-                    class="card-img"
-                    src="../../assets/img/item/1.gif"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4 Gp0m0 mt-2">
-                  <h6 class="siz15">Habibur Rahman</h6>
-                </div>
-                <div class="col-3 Gp0m0 mt-2">
-                  <select name="Select" id="sablits" class="w-100 text-dark">
-                    <option selected class="text-dark">Select</option>
-                    <option value="1">1</option>
-                    <option value="3">2</option>
-                    <option value="5">3</option>
-                    <option value="7">4</option>
-                    <option value="10">5</option>
-                  </select>
-                </div>
-                <div class="col-3 Gp0m0">
-                  <div class="btn nBtn button5 btn-block btn-lg py-1 px-0">
-                    <h4 class="siz15">
-                      Send<i class="fas fa-paper-plane"></i>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="row Gp0m0 py-2">
-                <div class="col-2 Gp0m0">
-                  <img
-                    class="card-img"
-                    src="../../assets/img/item/1.gif"
-                    alt=""
-                  />
-                </div>
-                <div class="col-4 Gp0m0 mt-2">
-                  <h6 class="siz15">Habibur Rahman</h6>
-                </div>
-                <div class="col-3 Gp0m0 mt-2">
-                  <select name="Select" id="sablits" class="w-100 text-dark">
-                    <option selected class="text-dark">Select</option>
-                    <option value="1">1</option>
-                    <option value="3">2</option>
-                    <option value="5">3</option>
-                    <option value="7">4</option>
-                    <option value="10">5</option>
-                  </select>
-                </div>
-                <div class="col-3 Gp0m0">
-                  <div class="btn nBtn button5 btn-block btn-lg py-1 px-0">
-                    <h4 class="siz15">
+                    <h4 class="siz13">
                       Send<i class="fas fa-paper-plane"></i>
                     </h4>
                   </div>
@@ -475,6 +381,25 @@ export default {
         clan:true,
       },
       usrdata: [],
+          abl:[
+                {
+                     img:"1.png",
+                     nm:"Habibur Rahman"
+                },
+                 {
+                     img:"1.png",
+                     nm:"Habibur Rahman"
+                },
+                 {
+                     img:"1.png",
+                     nm:"Habibur Rahman"
+                },
+                 {
+                     img:"1.png",
+                     nm:"Habibur Rahman"
+                },
+ 
+         ],
       MmnDtlst: {
         mname: "HRhabib",
         mststs: "Modern Vampire",
@@ -482,6 +407,8 @@ export default {
         mage: "Age:25",
         mimg: "1.gif",
 
+
+   
         mn: [
           {
             clk: "1.png",
@@ -520,6 +447,8 @@ export default {
             icn: "naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
           },
         ],
+
+  
 
         bp: [
           {

@@ -64,7 +64,7 @@
                         <h4 class="rounded-0 py-1 text-center w-100 siz17" style="position:sticky;">Welcome To your Property
                         <span class="float-right" style="margin-right:2%;" @click="hide();"><div class="crossbtn"><i class="fas fa-times "></i></div></span></h4>
                    </div>
-                   <div class="card-body">
+                   <div class="card-body tmibg4">
                         <h2 class="subtitlefnt siz20">You have <span class="text-success">Successfully</span> Upgrade the (Property name)</h2>
                     </div>
             </div>
