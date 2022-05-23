@@ -14,7 +14,16 @@
                     <div class="row Gp0m0">
                         <div class="col-1"></div>
                         <div class="col-10 p-0"> 
-                                <div class="rotation_ainm m-2 p-0  ">
+                                <div v-if="layout === 'anm'" class="rotation_ainm m-2 p-0">
+                                    <img class="card-img" src="../../assets/img/elders/wheel.png" alt="">
+                                <div class="card-image-overlay">
+                                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                                    <h4 class="card-title subtitlefnt siz20"> </h4>
+                                    <h6 class="card-subtitle mb-2 siz15"></h6>
+                                </div>
+                            </div>
+                                </div>
+                                <div v-if="layout === 'anm2'" class="rotation_ainm2 m-2 p-0">
                                     <img class="card-img" src="../../assets/img/elders/wheel.png" alt="">
                                 <div class="card-image-overlay">
                                 <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -30,7 +39,7 @@
                         <div class="col-12">
                             <div class="nC-pd4p">
                                 <h6><em>"I am happy to see your progress. Let's try your luck. May Lord Dracula bless you."</em></h6>
-                                <button type="button" class=" mt-2 nBtn nBbg  py-2 button4  btn-block  w-100 float-right"><h5 class="">
+                                <button type="button" class=" mt-2 nBtn nBbg  py-2 button4  btn-block  w-100 float-right" @click= "layout = 'anm2',show()"><h5 class="">
                                     <strong>Spin for 19,470 Blood</strong></h5>
                                 </button>
                             </div>
@@ -39,7 +48,7 @@
                 </div>
             </div>
 
-        <modal name='Gspnso' :width='300'   :isAutoHeight="true"  @before-open="beforeOspen"> class="mblr bdr p-1 rounded-2">
+        <modal name='Gspnso' :delay="10" :width='300'   :isAutoHeight="true"  @before-open="beforeOspen" class="mblr bdr p-1 rounded-2">
             <div class="card Gp0m0" style="height:300px">
                 <div class="card-header blkgry p-1" >
                     <h4 class=" rounded-0 text-center py-1 w-100 " style="position: sticky;">Item Found <span class="float-right" style="margin-right: 2%;" @click="hide()">
@@ -57,20 +66,40 @@
 </template>
 
 <script>
+
+
 export default {
     data(){
         return{
 
+            layout:'anm'
         }
     },
 
     methods:{
         show(){
-            this.$modal.show('Gspnso')
+            
+         setTimeout(() => {
+        this.$modal.show('Gspnso')
+      }, 2000);
+            
         },
         hide(){
             this.$modal.hide('Gspnso')
-        }
+        },
+
+
+
+        md(){
+            
+             event.target.classList.add('rotation_ainm2');
+              event.target.classList.remove('rotation_ainm');
+              console.log('click trigger')
+        },
+         myFilter: function() {
+      this.isActive = !this.isActive;
+      // some code to filter users
+    }
     }
  
 }

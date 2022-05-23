@@ -253,6 +253,13 @@ export default {
                                             icn:"<i class='fas fa-store-slash'></i>",
                                             clk:'/game/blackmarket/buys'
                                         },
+
+                                         {
+                                            nm:"intellegence", 
+                                            icn:"<i class='fas fa-brain'></i>",
+                                            clk:'/game/shop/intellegence'
+                                         
+                                        },
                                 ]
                          },
                          

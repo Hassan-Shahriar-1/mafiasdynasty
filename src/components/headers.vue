@@ -154,7 +154,7 @@
 
                    <modal name="bmsho"  :width='300'   :height='550' class="bdr4 blksdo rounded  mblr">
                     <div class="card" style="width:300px; height:550px;" >
-                        <div class="card-header blkgry p-1">
+                        <div class="card-header blkgry p-2">
                             <h2 class="text-center">Hints and Tips <h3 class="float-right"><i class="fas fa-times text-danger"  @click="bmshd()"></i></h3></h2>
                         </div>
                         <div class="card-body tmibg" style="height:500px; overflow:scroll;">
@@ -169,9 +169,7 @@
                             <h5>9.	Visit Horkos twice or thrice in a day. .</h5><br>
                             <h5>10.	Blood from shop follows your income. So the more you have blood income the more you can buy bloods from shop at same cost.</h5><br>
                         </div>
-                        <div class="card-footer blkgry p-3">
-                            <div class="btn nBtn nBbg blkgry btn-block sticky-bottom"  @click="bmshd()">close</div>
-                        </div>
+                      
                     </div>
                 </modal>
            
