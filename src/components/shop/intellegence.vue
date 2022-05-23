@@ -53,6 +53,7 @@ export default {
                this.intilligence=rs.data
             }
         })
+        /* comment from main */
     }
 }
 </script>
