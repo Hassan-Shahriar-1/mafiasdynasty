@@ -90,7 +90,13 @@ export default {
                 console.log(rs)
             })
 
+console.log(
+this.rs.this.tmstrt,'from combaT')
         }
+
+        
+
+        
 
     }
 }

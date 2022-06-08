@@ -11,10 +11,10 @@
                  <h4 class=" dtlsfnt siz15 float-right ">10 min ago</h4>
                 <div class="titlefnt2 siz25 text-danger">{{ffed.anm}}</div> <div class="siz13 py-3 text-justify dtlsfnt" style="font-weight:100; word-spacing:normal;">Killed by <a href="#" class="siz15 subtitlefnt text-danger">Habibur Rahman</a> sit amet consectetur adipisicing elit. Magni nisi doloribus  tempora veritatis! Atque quae fugit quasi  {{ffed.dnm}}.</div>
                 <div class="row Gp0m0">
-                    <div class="col-6 p-1">
+                    <div class="col-6 p-0">
                         <div class="btn nBbg nBtn p-0 py-2 button6 btn-lg btn-block"><h4 class="siz15">Add to hitlist</h4></div>
                     </div>
-                     <div class="col-6 p-1">
+                     <div class="col-6 p-0 px-1">
                         <div class="btn nBbg nBtn p-0 py-2 button4 btn-lg btn-block"><h4 class="siz15">Attack</h4></div>
                     </div>
                 </div>

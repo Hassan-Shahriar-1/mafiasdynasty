@@ -42,7 +42,6 @@ methods:{
                     this.st[value]['shwsts'] = false;
                     }
                 });  
-            
                 if(Shwt.shwsts){
                     Shwt.shwsts = false;
                 }else{

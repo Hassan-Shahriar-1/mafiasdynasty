@@ -27,7 +27,7 @@
                     amet asperiores nam minima odio iusto officiis 
                     voluptatem eveniet natus. Atque quidem, voluptate numquam laborum accusantium architecto?
                 </h6>
-          <router-link :to="{name:'missionlist'}">
+          <router-link :to="{name:'mission'}">
               <div class="card-body p-1 tmibg">
                 <div class="card border-0  p-2 blksdo" v-for="(mnms, i) in mname" :key="i">
                   <img class="card-img img-fluid  my-2 rounded bdr1" style="height:120px;" :src="require('../../assets/img/land/' + mnms.mimg)" alt=""/>

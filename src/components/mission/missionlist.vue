@@ -5,7 +5,7 @@
             <img class="card-img img-fluid" style="height:130px;" src='../../assets/img/land/colombia.png' alt=""/>
             <div class="card-img-overlay">
                 <h4 class="card-text titlefnt text-center">
-                    Land Name <router-link to="missionintro"><span class="float-left"><i class="fas fa-arrow-circle-left siz25"></i></span></router-link>
+                    Land Name <router-link :to="{name:'missionintro'}"><span class="float-left"><i class="fas fa-arrow-circle-left siz25"></i></span></router-link>
                 </h4>
                 <h6 class="card-text subtitlefnt text-center">Subtitle here</h6>
             </div>
