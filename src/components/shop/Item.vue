@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="row py-2 text-center Gp0m0">
-            <h4 class='hr-sect jaldi'>Item Shop</h4>
+            <h4 class='hr-sect titlefntnew'>Item Shop</h4>
         </div>
         <div class="row Gp0m0">
             <div class="col-4 Gp0m0 p-1" v-for="(sitm,i) in spitm" :key='i'>
@@ -31,11 +31,11 @@
             </div> 
         </modal> 
         <div class="row py-2 text-center Gp0m0">
-            <h4 class='hr-sect jaldi'>Super Shop</h4>
+            <h4 class='hr-sect titlefntnew'>Super Shop</h4>
         </div>
         
         <div class="row py-2 text-center Gp0m0">
-        <h4 class='hr-sect jaldi'>Agora Shop</h4>
+        <h4 class='hr-sect titlefntnew'>Agora Shop</h4>
         </div>
    </div>
 </template>

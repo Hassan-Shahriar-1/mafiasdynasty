@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="card Gp0m0">
-            <div class="card-header blkgry"><h2 class="titlefnt">Avater Shop <span> <i @click="avaterinfo ^= true" class="fas fa-info-circle siz25 float-right"></i></span></h2> </div>
+            <div class="card-header blkgry"><h2 class="titlefntnew text-center">Avater Shop <span> <i @click="avaterinfo ^= true" class="fas fa-info-circle siz25 float-right"></i></span></h2> </div>
             <h6 class="p-1 blk50 m-1" style=" border: 1px solid rgb(131 124 124);" v-show="avaterinfo">All the Trophies that are achievable from the game are enlisted here. The dark ones are those Trophies that are still to be achieved and the highlighted ones are the Trophies that are already achieved.</h6>
             <div class="card-body Gp0m0">
                 <div class="row Gp0m0">

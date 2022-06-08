@@ -41,8 +41,14 @@
                         </div>
 
                         <div class="row no-gutters px-1 py-3 w-100 tmibg">
-                            <div>
-                                <h5 class="text-success" ><i class="fab fa-expeditedssl"></i>&nbsp;Exp:+4 &nbsp; <i class="fas fa-burn"></i>&nbsp;Blood:210 &nbsp; <i class="far fa-lightbulb"></i>&nbsp;Energy:-3 <br></h5>
+                            <div class="col-4 ">
+                                <h5 class="text-success siz18" ><i class="fab fa-expeditedssl"></i>&nbsp;Exp:+4 &nbsp; </h5>
+                            </div>
+                            <div class="col-4 ">
+                                <i class="fas fa-burn"></i>&nbsp;<strong class="text-danger siz18">Blood:210</strong> &nbsp;
+                            </div>
+                            <div class="col-4 text-success siz18">
+                                <i class="far fa-lightbulb"></i>&nbsp;Energy:-3 
                             </div>
                         </div>
 
@@ -63,7 +69,26 @@
                     </div> 
                 </div>
             </div>
-        </div> 
+        </div>
+
+        <modal name="donemsn" :width="350" :height="300" class=" blksdo mblr" >
+            <div class="card border-0 tmibg">
+                <div class="card-header blkgry p-1">
+                    <h4 class=" rounded-0 text-center py-1 w-100 " style="position:sticky;">
+                        <span class="float-right" style="margin-right:2%;"  @click="hide()">
+                            <div class="crossbtn"><i class="fas fa-times "></i></div>
+                        </span>
+                    </h4>
+                </div>             
+                <div class="card-body p-1">
+                    <div class="row Gp0m0 tmibg blksdo dtlsfnt" style="height:300px; width:340px; overflow-y: scroll;" >
+                        <h4 class="text-center siz18 dtlsfnt p-3">
+                            You have successfully Done with this mission.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </modal> 
     </div>
 </template>
 
@@ -140,15 +165,17 @@ export default {
         },
         demoV1(){
             if(this.bh.hpst!=this.bh.hped){
-            this.bh.hpst = this.bh.hpst+5;
+            this.bh.hpst = this.bh.hpst+10;
             
             }
 
-            if(this.bh.hpst!=this.bh.hped){
-            this.bh.hpst = this.bh.hpst+5;
+            if(this.bh.hpst==this.bh.hped){
+            this.$modal.show('donemsn');
             
             }
         },
+
+         hide(){this.$modal.hide('donemsn');}
     },
 }
 </script>

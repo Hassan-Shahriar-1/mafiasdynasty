@@ -1,7 +1,7 @@
 <template>
 <div>
     <tops></tops>     
-         <router-view id='Ingks' style="height:100%;" ></router-view>     
+         <router-view id='Ingks'  style="min-height:100vh; height:inherit; max-height:100%;"></router-view>     
     <foots></foots>
 </div>
 </template>

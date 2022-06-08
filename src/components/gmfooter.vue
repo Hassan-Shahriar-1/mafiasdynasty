@@ -255,9 +255,15 @@ export default {
                                         },
 
                                          {
-                                            nm:"intellegence", 
+                                            nm:"Intellegence", 
                                             icn:"<i class='fas fa-brain'></i>",
                                             clk:'/game/shop/intellegence'
+                                         
+                                        },
+                                        {
+                                            nm:"Gold", 
+                                            icn:"<i class='fas fa-brain'></i>",
+                                            clk:'/game/shop/gold'
                                          
                                         },
                                 ]

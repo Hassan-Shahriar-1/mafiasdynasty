@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="mb-2">
     <div class="card-body p-0 tmibg">
         <div class="card blksdo">
             <img class="card-img img-fluid" style="height:130px;" src='../../assets/img/land/colombia.png' alt=""/>
@@ -19,8 +19,8 @@
 
         <div class="card-body p-1 blkd50">
             <div class="row no-gutters">
-                <div class="col-6 "><h4 class="subtitlefnt siz20 pl-2">Requirments</h4> <br> <div class="bMbg3 bnrbxsdo  p-1 rounded mx-1"> <h6 class="dtlsfnt py-1"> <div class=" iC-rage incb1"></div>1</h6>   <h6 class="dtlsfnt  py-1"> <div class=" iC-rage incb1"></div>1</h6></div></div>
-                <div class="col-6 "><h4 class="subtitlefnt siz20 pl-2">Rewards</h4> <br> <div class="bMbg3 bnrbxsdo   p-1 rounded mx-1"> <h6 class="dtlsfnt  py-1"> <div class=" iC-cash incb1"></div> 100</h6>  <h6 class="dtlsfnt  py-1 "><div class=" iC-energy incb1"></div>101</h6></div></div>
+                <div class="col-6 "><h4 class="subtitlefnt siz20 pl-2">Requirments</h4> <br> <div class="bMbg3 bnrbxsdo  p-1 rounded mx-1"> <h6 class="dtlsfnt py-1"> <div class=" iC-rage incb1"></div>{{randomNumber}}</h6>   <h6 class="dtlsfnt  py-1"> <div class=" iC-rage incb1"></div>{{randomNumber}}</h6></div></div>
+                <div class="col-6 "><h4 class="subtitlefnt siz20 pl-2">Rewards</h4> <br> <div class="bMbg3 bnrbxsdo   p-1 rounded mx-1"> <h6 class="dtlsfnt  py-1"> <div class=" iC-cash incb1"></div> {{randomNumber}}</h6>  <h6 class="dtlsfnt  py-1 "><div class=" iC-energy incb1"></div>{{randomNumber}}</h6></div></div>
             </div>
             <div class="row Gp0m0 mt-2">
                 <div class="col-8 px-1">
@@ -40,6 +40,8 @@
 export default ({
     data() {
         return{
+
+            randomNumber:'',
             msnlst:[
                     {
                         msnnm:"Pock Someone",
@@ -59,5 +61,16 @@ export default ({
             ]
         }
     },
+
+    methods:{
+    myFunction: function () {		
+     this.randomNumber = Math.floor(Math.random()*1000); //multiply to generate random number between 0, 100
+    }   
+   },
+   mounted() {
+       this.myFunction()
+   },
+
+   
 })
 </script>

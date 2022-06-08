@@ -6,8 +6,6 @@
                :mImg="Munin.mImg" 
                :tl='Munin.tl'
                :tl2='Munin.tl2'
-               :tl3='Munin.tl3'
-               :tl4='Munin.tl4'
                :b='Munin.b'>
                </bmitm>
          </div>
@@ -20,35 +18,35 @@ export default {
         return{
              Munins:[
                        {
-                           mImg:"Gold-bar.jpg",
+                           mImg:"Gold-bar.png",
                            tl:"Youga Master",
                            tl2:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.  natus est debitis eius fuga aliquid, illum libero ut explicabo at enim! Quod animi quas possimus velit.",
 
                            b:"Sell"
                         },
                         {
-                           mImg:"Gold-bar.jpg",
+                           mImg:"Gold-bar.png",
                            tl:"Youga Master",
                            tl2:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.  natus est debitis eius fuga aliquid, illum libero ut explicabo at enim! Quod animi quas possimus velit.",
                            
                            b:"Sell"
                         },
                         {
-                           mImg:"Gold-bar.jpg",
+                           mImg:"Gold-bar.png",
                            tl:"Youga Master",
                            tl2:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.  natus est debitis eius fuga aliquid, illum libero ut explicabo at enim! Quod animi quas possimus velit.",
                            
                            b:"Sell"
                         },
                         {
-                           mImg:"Gold-bar.jpg",
+                           mImg:"Gold-bar.png",
                            tl:"Youga Master",
                            tl2:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.  natus est debitis eius fuga aliquid, illum libero ut explicabo at enim! Quod animi quas possimus velit.",
                            
                            b:"Sell"
                         },
                         {
-                           mImg:"Gold-bar.jpg",
+                           mImg:"Gold-bar.png",
                            tl:"Youga Master",
                            tl2:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.  natus est debitis eius fuga aliquid, illum libero ut explicabo at enim! Quod animi quas possimus velit.",
                            

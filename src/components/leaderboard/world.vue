@@ -8,20 +8,23 @@
 
 
         <div class="row blkgry py-3 text-center Gp0m0">
-                <div class="col-2 text-center">Rank</div>
-                <div class="col-4 text-center">Name</div>
-                <div class="col-3 text-center">Energy</div>
-                <div class="col-3 text-center">Level</div>
+                <div class="col-2 text-left">Rank</div>
+                <div class="col-4 text-left">Name</div>
+                <div class="col-3 text-left">Energy</div>
+                <div class="col-3 text-left">Level</div>
         </div>
-            <div class="blkd50 p-1" v-for="fdta in fdata" :key="fdta.rnk"  :class="cngclr(fdta.rnk)">
-        <div class="row Gp0m0 rounded blkd75 p-2">
-            <div class="col-2 p-0"> <br>  <img class="card-img rounded-circle blksdo3" style="height:50px; width:50px; margin-top:-30%;" :src="require('../../assets/img/item/'+fdta.limg)" alt="">
-            <div class="card-img-overlay">{{fdta.rnk}} </div></div>
-            <div class="col-4 px-1">
-            <h6 class="subtitlefnt">{{fdta.nm}}</h6></div>
-            <div class="col-3 p-1"><h6 class="ml-1 dtlsfnt"><span><i class="fas fa-burn text-danger"></i></span> &nbsp;{{fdta.enrg}}</h6></div>
-            <div class="col-3 p-1"><h6 class="ml-1 dtlsfnt"><span><i class="fas fa-layer-group text-success"></i></span>&nbsp;{{fdta.lvl}}</h6></div>
-        </div>
+
+        <div class="blkgry px-2 rounded  py-3">
+            <div class="rounded mb-2" v-for="fdta in fdata" :key="fdta.rnk"  :class="cngclr(fdta.rnk)">
+                <div class="row Gp0m0 rounded blkd75 p-2">
+                    <div class="col-2 p-0"> <br>  <img class="card-img rounded-circle blksdo3" style="height:50px; width:50px; margin-top:-30%;" :src="require('../../assets/img/item/'+fdta.limg)" alt="">
+                    <div class="card-img-overlay">{{fdta.rnk}} </div></div>
+                    <div class="col-4 px-1">
+                    <h6 class="subtitlefnt">{{fdta.nm}}</h6></div>
+                    <div class="col-3 p-1"><h6 class="ml-1 dtlsfnt"><span><i class="fas fa-burn text-danger"></i></span> &nbsp;{{fdta.enrg}}</h6></div>
+                    <div class="col-3 p-1"><h6 class="ml-1 dtlsfnt"><span><i class="fas fa-layer-group text-success"></i></span>&nbsp;{{fdta.lvl}}</h6></div>
+                </div>
+            </div>
         </div>
        <!--  <table class=" table Gp0m0" width="100%">
             <thead class=" text-left blkgry">
@@ -65,7 +68,7 @@ export default {
             fdata:[
                  {
                     rnk:"1st",
-                    limg:"Gold-bar.jpg",
+                    limg:"Gold-bar.png",
                     nm:"Abul Mall",
                     
                     enrg:"46",
@@ -73,7 +76,7 @@ export default {
                 },
                 {
                     rnk:"2nd",
-                    limg:"Gold-bar.jpg",
+                    limg:"Gold-bar.png",
                     nm:"Hasan Shahriar",
                     
                     enrg:"456",
@@ -82,7 +85,7 @@ export default {
                 },
                 {
                     rnk:"3rd",
-                    limg:"Gold-bar.jpg",
+                    limg:"Gold-bar.png",
                     nm:"Newaz Sharif",
                     
                     enrg:"456",
@@ -91,7 +94,7 @@ export default {
                 },
                 {
                     rnk:"4th",
-                    limg:"Gold-bar.jpg",
+                    limg:"Gold-bar.png",
                     nm:"Abdullah Al Baqi",
                     enrg:"456",
                     lvl:"456"
@@ -99,7 +102,7 @@ export default {
                 },
                    {
                     rnk:"5th",
-                    limg:"Gold-bar.jpg",
+                    limg:"Gold-bar.png",
                     nm:"Abul Mall",
                     
                     enrg:"46",
@@ -107,7 +110,7 @@ export default {
                 },
                 {
                     rnk:"6th",
-                    limg:"Gold-bar.jpg",
+                    limg:"Gold-bar.png",
                     nm:"Hasan Shahriar",
                     
                     enrg:"456",
@@ -116,7 +119,7 @@ export default {
                 },
                 {
                     rnk:"7th",
-                    limg:"Gold-bar.jpg",
+                    limg:"Gold-bar.png",
                     nm:"Newaz Sharif",
                     
                     enrg:"456",
@@ -125,7 +128,7 @@ export default {
                 },
                 {
                     rnk:"8th",
-                    limg:"Gold-bar.jpg",
+                    limg:"Gold-bar.png",
                     nm:"Abdullah Al Baqi",
                     enrg:"456",
                     lvl:"456"
@@ -133,7 +136,7 @@ export default {
                 },
                   {
                     rnk:"9th",
-                    limg:"Gold-bar.jpg",
+                    limg:"Gold-bar.png",
                     nm:"Abdullah Al Baqi",
                     enrg:"456",
                     lvl:"456"
@@ -141,7 +144,7 @@ export default {
                 },
                   {
                     rnk:"10th",
-                    limg:"Gold-bar.jpg",
+                    limg:"Gold-bar.png",
                     nm:"Abdullah Al Baqi",
                     enrg:"456",
                     lvl:"456"

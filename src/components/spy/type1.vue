@@ -1,8 +1,8 @@
 <template>
-    <div> 
+    <div class="mb-2"> 
         <div class="row m-0  py-3">
-            <div class="col-3 p-0" @click="$router.go(-1)"> <button class="float-left p-1 nBtn tmibg "><i class="fas fa-arrow-left"></i>Back</button> </div>
-            <div class="col-9 p-0">
+            <div class="col-1 px-2" @click="$router.go(-1)"> <button class="text-center px-2 py-1 nBtn tmibg "><i class="fas fa-arrow-left"></i></button> </div>
+            <div class="col-11 p-0">
                     <h4 class="text-center titlefnt">Hi I am demo center</h4>
             </div>
         </div>
@@ -49,37 +49,45 @@ export default {
         return{
                  mafia:[
                         {
-                           
+
                            mfattl:'Habibur loga agfsch jhasfdcb aufsc jf asfcvacf asfcdga fasfcjfg dfascg',
-                           
                         },
                          {
-                           
+
                            mfattl:'Habibur loga agfsch jhasfdcb aufsc jf asfcvacf asfcdga fasfcjfg dfascg',
-                           
                         },
                          {
-                           
+
                            mfattl:'Habibur loga agfsch jhasfdcb aufsc jf asfcvacf asfcdga fasfcjfg dfascg',
-                           
                         },
                          {
-                           
+
                            mfattl:'Habibur loga agfsch jhasfdcb aufsc jf asfcvacf asfcdga fasfcjfg dfascg',
-                           
                         },
                          {
-                           
+
                            mfattl:'Habibur loga agfsch jhasfdcb aufsc jf asfcvacf asfcdga fasfcjfg dfascg',
-                           
                         },
                          {
-                           
+
                            mfattl:'Habibur loga agfsch jhasfdcb aufsc jf asfcvacf asfcdga fasfcjfg dfascg',
-                           
+                        },
+                          {
+
+                           mfattl:'Habibur loga agfsch jhasfdcb aufsc jf asfcvacf asfcdga fasfcjfg dfascg',
+                        },
+                         {
+
+                           mfattl:'Habibur loga agfsch jhasfdcb aufsc jf asfcvacf asfcdga fasfcjfg dfascg',
+                        },
+                         {
+
+                           mfattl:'Habibur loga agfsch jhasfdcb aufsc jf asfcvacf asfcdga fasfcjfg dfascg',
+                        },
+                         {
+                           mfattl:'Habibur loga agfsch jhasfdcb aufsc jf asfcvacf asfcdga fasfcjfg dfascg',
                         }
                     ]
-
             }
     },
     methods:{

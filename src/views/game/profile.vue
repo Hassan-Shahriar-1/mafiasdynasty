@@ -21,7 +21,7 @@
             <modal name="ppup" :width="330" :height="550" class="bdr4 blksdo rounded mblr" >
                 <div class="card tmibg">
                 <div class="card-header blkgry p-1">
-                        <h4 class=" rounded-0 text-center py-1 w-100 " style="position:sticky;">Total Skill Point {{ tlskl }}
+                        <h4 class=" rounded-0 text-center py-1 w-100 " style="position:sticky;">Total Skill Point {{tlskl}}
                         <span class="float-right" style="margin-right:2%;"  @click="pphd()"><div class="crossbtn"><i class="fas fa-times "></i></div></span></h4>
                 </div>   
 
@@ -29,8 +29,8 @@
                         <div class="section tmibg pb-5" style="height:550px; width:330px;  overflow-y: scroll;">
                         <div class="tmibg  m-2 rounded">
                                 <div class="row no-gutters">
-                                <div class="col-9 px-1"><h4 class="subtitlefnt">Energy:101</h4>
-                                <input type="range" v-model="skp.eng" class="form-range w-100 px-2" min="0" :max="tlskl" step="1">
+                                <div class="col-9 px-1"><h4 class="subtitlefnt">Energy:{{energy+skp.eng}}</h4>
+                                <input type="range" v-model="skp.eng" class="form-range w-100 " min="0" :max="100" step="1">
                                 </div>
                                 <div class="col-3  pl-1"><div class="btn py-0 nBtn">{{ skp.eng }}<br>Add</div></div>
                             </div>
@@ -42,8 +42,10 @@
                         </div>
                             <div class="tmibg  m-2 rounded mt-2">
                                 <div class="row no-gutters">
-                                <div class="col-9 px-1"><h4 class="subtitlefnt">Stamina:100</h4>
-                                <input type="range" v-model="skp.stmn" class="form-range w-100 px-2" min="+0" :max="tlskl" step="2">
+                                <div class="col-9 px-1"><h4 class="subtitlefnt">Stamina:{{stamina+skp.stmn}}</h4>
+                               <!--  <input type="range" v-model="skp.stmn" class="form-range w-100" min="0" :max="tlskl" step="2"> -->
+
+                                <input type="range" v-model="skp.stmn" class="form-range w-100" min="0" :max="100" step="2">
                                 </div>
                                 <div class="col-3  pl-1"><div class="btn py-0 nBtn"> {{skp.stmn}}<br>Add</div></div>
                                 
@@ -59,8 +61,8 @@
 
                             <div class="tmibg  m-2 rounded mt-2">
                                 <div class="row no-gutters">
-                                <div class="col-9 px-1"><h4 class="subtitlefnt">Health:200</h4>
-                                <input type="range" v-model="skp.hlth" class="form-range w-100 px-2" min="0" :max="tlskl" step="1">
+                                <div class="col-9 px-1"><h4 class="subtitlefnt">Health:{{health+skp.hlth}}</h4>
+                                <input type="range" v-model="skp.hlth" class="form-range w-100" min="0" :max="100" step="1">
                                 </div>
                                 <div class="col-3  pl-1"><div class="btn py-0 nBtn">{{skp.hlth}} <br>Add</div></div>
                                 
@@ -74,8 +76,8 @@
                         </div>
                     <div class="tmibg  m-2 rounded mt-2">
                                 <div class="row no-gutters">
-                                <div class="col-9 px-1"><h4 class="subtitlefnt">Attack:452</h4>
-                                <input type="range" v-model="skp.atck" class="form-range w-100 px-2" min="0" :max="tlskl" step="1" @click="prgs(skp.atck)">
+                                <div class="col-9 px-1"><h4 class="subtitlefnt">Attack:{{attack+skp.atck}}</h4>
+                                <input type="range" v-model="skp.atck" class="form-range w-100" min="0" :max="100" step="1" @click="prgs(skp.atck)">
                                 </div>
                                 <div class="col-3  pl-1" ><div class="btn py-0 nBtn">{{skp.atck}} <br>Add</div></div>
                                 
@@ -89,8 +91,8 @@
 
                             <div class="tmibg  m-2 rounded mt-2">
                                 <div class="row no-gutters">
-                                <div class="col-9 px-1"><h4 class="subtitlefnt">Defence:352</h4>
-                                <input type="range" v-model="skp.defnc" class="form-range w-100 px-2" min="0" :max="tlskl" step="1">
+                                <div class="col-9 px-1"><h4 class="subtitlefnt">Defence:{{defense+skp.defnc}}</h4>
+                                <input type="range" v-model="skp.defnc" class="form-range w-100" min="0" :max="100" step="1">
                                 </div>
                                 <div class="col-3  pl-1"><div class="btn py-0 nBtn"> {{skp.defnc}}<br>Add</div></div>
                                 
@@ -161,7 +163,18 @@ export default {
                 atck:0,
                 defnc:0                
             },
-            tlskl:Number,
+
+            /* initial Values */
+            energy:10,
+            stamina:10,
+            health:10,
+            attack:10,
+            defense:10,
+
+            /* total skilll point left */
+
+            /* tlskl:Number, */
+            tlskl:20,
 
 
        MmnDtlst:{
@@ -256,6 +269,10 @@ export default {
         'skp.atck':function(val){
                
                     this.tlskl=this.tlskl-val;
+
+                    if(this.tlskl==0){
+                        this.tlskl=this.tlskl-0;
+                    }
                 
                     
                 
@@ -274,9 +291,15 @@ export default {
     },
     
         methods: {
-        ppup(val) {
+      /*   ppup(val) {
             this.$modal.show('ppup');
             this.tlskl=val
+            
+        }, */
+
+          ppup() {
+            this.$modal.show('ppup');
+            
             
         },
         prgs(val){
@@ -289,15 +312,17 @@ export default {
 
             add (val) {
                 if(val=='stmn'){
+                      if(this.tlskl>=2){
                     this.skp[val] = parseInt(this.skp[val])+1;  
-                    if(this.tlskl!=1){
+                  
                         
                         this.tlskl=this.tlskl-2 
                     }  
                       
                 }else{
+                     if(this.tlskl>0){ 
                 this.skp[val] = parseInt(this.skp[val])+1;
-                if(this.tlskl >=0){    
+                  
                 this.tlskl=this.tlskl-1 
                 }
                 }       

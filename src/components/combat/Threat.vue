@@ -9,7 +9,7 @@
     </div>
 </template> -->
 <template>
-    <div>
+    <div class="mb-2">
 
         <h4 class="p-4 blkgry text-center titlefnt">Threat Someone</h4>
         

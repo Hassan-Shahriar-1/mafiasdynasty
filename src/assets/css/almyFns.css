@@ -78,6 +78,14 @@
  @font-face {
     font-family: title;
     src: url("../fonts/Pieces\ of\ Eight.jpg");
+    /* src: url('../fonts/pieces_of_eight/PiecesofEight.ttf'); */
+}
+
+
+/* Alt title fnt */
+@font-face {
+    font-family: titlenew;
+    src: url('../fonts/pieces_of_eight/PiecesofEight.ttf');
 }
 
 

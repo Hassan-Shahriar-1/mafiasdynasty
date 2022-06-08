@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="row py-2 text-center Gp0m0">
-            <h4 class='hr-sect subtitlefnt'>{{ tl }}</h4>
+            <h4 class='hr-sect titlefntnew'>{{ tl }}</h4>
         </div>
     
         <div class="row Gp0m0">

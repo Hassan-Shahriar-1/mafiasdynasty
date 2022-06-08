@@ -2042,7 +2042,8 @@ pre code {
     font-size: 1rem;
     line-height: 1.5;
     color: #23232481;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(235, 235, 235);
+    /* background-color: rgb(219, 219, 219); */
     background-clip: padding-box;
     border: 1px solid #717272;
     border-radius: 0.25rem;
@@ -9169,12 +9170,12 @@ a.text-info:focus {
     color: #117a8b !important;
 }
 
-. {
+/* . {
     color: #ffc107 !important;
-}
+} */
 
-a.:hover,
-a.:focus {
+a:hover,
+a:focus {
     color: #d39e00 !important;
 }
 

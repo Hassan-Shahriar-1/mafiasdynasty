@@ -18,12 +18,12 @@
             <div class="col-4"> <img  class="card-img" src="../../../assets/img/item/1.gif" alt=""> </div>
 
             <div class="col-5">
-                <div class="tmibg bnrbxsdo "><div class="mlr2 border blkred rounded"><h6 class="py-2">Exp:{{MmnDtlst.ex}}</h6></div> </div>
-                <div class="tmibg bnrbxsdo "><div class="mlr2 border blkred rounded"><h6 class="py-2">Blood:{{MmnDtlst.bld}}</h6></div></div>
-                <div class="tmibg bnrbxsdo "><div class="mlr2 border blkred rounded"><h6 class="py-2">Energy:{{MmnDtlst.enrgy}}</h6></div></div><br> 
+                <div class="pb-1 "><div class="mlr2 border blkred rounded"><h6 class="py-2">Exp:{{MmnDtlst.ex}}</h6></div> </div>
+                <div class="pb-1 "><div class="mlr2 border blkred rounded"><h6 class="py-2">Blood:{{MmnDtlst.bld}}</h6></div></div>
+                <div class="pb-1 "><div class="mlr2 border blkred rounded"><h6 class="py-2">Energy:{{MmnDtlst.enrgy}}</h6></div></div><br> 
             </div>
         
-            <div class="col-3"> <div class="blkgry"><p class="siz15" >Item Found</p>  <img  class="card-img p-2" src="../../../assets/img/item/1.gif" alt=""> <p class="siz15" > 6X Puff perfume </p></div>  </div>
+            <div class="col-3"> <div class="blkgry rounded py-1"><p class="siz15" >Item Found</p>  <img  class="card-img p-2" src="../../../assets/img/item/1.gif" alt=""> <p class="siz15" > 6X Puff perfume </p></div>  </div>
              <div class="col-12 p-4 px-5">
                     <div class="btn btn-block nBtn nBbg blkgry p-1" @click="demoV1()">Attack</div>
                 </div>
@@ -31,10 +31,10 @@
         </div>
 
         <modal name="hdsg" :width='300'   :isAutoHeight="true"  class="mblr bdr p-1 rounded-2">
-            <div class="row Gp0m0 card bMbg bnrbxsdo" style="height:300px">
+            <div class="row Gp0m0 card bMbg bnrbxsdo rounded-0" style="height:300px">
                 <div class="card border-0">
                    <div class="card-header tmibg2 p-1">
-                        <h4 class="rounded-0 text-center py-1 w-100" style="position:sticky;">Welcome To the fight
+                        <h4 class="rounded-0 text-center py-1 w-100" style="position:sticky;">Boss Fight
                         <span class="float-right" style="margin-right:2%;" @click="hide();"><div class="crossbtn"><i class="fas fa-times "></i></div></span></h4>
                    </div>
 

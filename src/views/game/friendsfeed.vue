@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mb-2">
         <div class="row py-2 text-center Gp0m0">
             <h4 class='hr-sect titlefnt'>Friends Feed</h4>
         </div>

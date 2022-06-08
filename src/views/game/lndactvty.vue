@@ -50,14 +50,14 @@
                 <h6 class="siz15 text-center">X16</h6>
                 <div class="btn nBtn nBbg button4" @click="shift()" >shift</div>
             </div>
-             <modal name='sdone' :delay="10" :width='300'   :isAutoHeight="true"  @before-open="beforeOspen" class="mblr bdr p-1 rounded-2">
+             <modal name='sdone' id="sdone" :delay="10" :width='300'   :isAutoHeight="true"  @before-open="beforeOspen" class="mblr bdr p-1 rounded-2">
             <div class="card Gp0m0" style="height:300px">
                 <div class="card-header blkgry p-1" >
                     <h4 class=" rounded-0 text-center py-1 w-100 " style="position: sticky;">Item Found <span class="float-right" style="margin-right: 2%;" @click="hide()">
                     <div class="crossbtn"><i class="fas fa-times "></i></div></span></h4>
                 </div>
                 <div class="card-body Gp0m0 tmibg">
-                    <h4>You are done with this shifting</h4>
+                    <h4 class="siz20 text-center mt-2">You are done with this shifting</h4>
                 </div>
             </div>
         </modal> 
@@ -82,6 +82,14 @@ export default {
     this.TptrgrBr();
     },
     methods: {
+        
+        
+        
+    beforeOspen() {
+      setTimeout(() => {
+        window.jq(".vm--modal").height(window.jq("#fss").outerHeight());
+      },0);
+    },
     TptrgrBr(){
     this.bh.hltW = 100/this.bh.hped * this.bh.hpst;
     },

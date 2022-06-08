@@ -1,0 +1,10 @@
+https://codepen.io/tuanticker/pen/vqZxgX
+
+https://codepen.io/behseini/pen/mddXYqP
+
+https://codepen.io/joseluisq/pen/jONezB
+
+https://codepen.io/hchiam/pen/ZEzjrNY
+
+
+set canvas and then set card image with overlay inside the canvas and try again

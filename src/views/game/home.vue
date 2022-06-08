@@ -59,8 +59,53 @@
                 </div>
             </carousel>
         </div> 
+
+
+
+<!-- Godfathers Section start -->
+        <div class="row Gp0m0">
+            <div class="col-6 card">
+                <router-link :to="{name:'typ1'}">
+                    <img class="card-img" style="opacity:0.7;" src="../../assets/img/bannar/1.jpg" alt="">
+                    <div class=" p-0 card-img-overlay text-center">
+                        <h5 class="card-title-top">Fabrizio Carlos</h5>
+                        <p class="m-0">Collector</p>
+                        <div class="btn nBbg nBtn siz15 blkred">Collect</div>
+                    </div> 
+                </router-link>
+            </div>
+           
+         
+            <div class="col-6 card">
+                <router-link :to="{name:'typ2'}"><img class="card-img" style="opacity:0.7;" src="../../assets/img/bannar/1.jpg" alt="">
+                    <div class=" p-0 card-img-overlay text-center">
+                        <h5 class="card-title-top">Sandra Corleone</h5>
+                        <p class="m-0">Spinner</p>
+                        <div class="btn nBbg nBtn siz15 blkred">Spin</div>
+                    </div>
+                </router-link> 
+             </div>
+            <div class="col-6 card">
+                <router-link :to="{name:'gfight'}" >
+                    <img class="card-img" style="opacity:0.7;" src="../../assets/img/bannar/1.jpg" alt="">
+                    <div class=" p-0 card-img-overlay text-center">
+                        <h5 class="card-title-top">Boss name</h5>
+                        <div class="btn nBbg nBtn siz15 blkred btn-block">Boss Fight</div>
+                    </div>
+                </router-link>
+             </div>
+            <div class="col-6 card">
+                 <router-link :to="{name:'typ5'}" > <img class="card-img" style="opacity:0.7;" src="../../assets/img/bannar/1.jpg" alt="">
+                <div class=" p-0 card-img-overlay text-center">
+                        <h5 class="card-title-top">Robert and Linda</h5>
+                    </div> 
+                </router-link>
+            </div>
+        </div>
             </div> 
         </div>
+
+<!-- godfathers Section End -->
 
         <modal name="ban" :width='300' :isAutoHeight="true" v-if="alllnd"  @before-open="beforeOspen" class="mblr bdr p-1 rounded-2">
             <div class="row Gp0m0 card blkgry">

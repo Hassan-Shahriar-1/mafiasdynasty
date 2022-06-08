@@ -28,49 +28,37 @@
                 </div>
                 <div class="row Gp0m0">
                     <div class="col-7 Gp0m0" >
-                        <div id="html-content-holder" >
-        <strong>Codepedia.info</strong><hr/>
-        <h3 style="color: #3e4b51;">
-            Html to canvas, and canvas to proper image
-        </h3>
-      
+                        <canvas id="myCanvas" width="220" height="440">
+             
 
 
-       <div v-if="edt!=''" id="alpha" style="background:rgba(207, 33, 33, 0.514)">
-                                <img  class="card-img " v-if="bdy!=''"  :src="bdy" alt="">
-                                <div class="card-img-overlay Gp0m0" v-if="hr!=''"><img class="card-img" src="../../../assets/img/avatar/H2.png" alt=""></div>
-                                <div class="card-img-overlay Gp0m0" v-if="pnt!=''"> <img class="card-img"  src="../../../assets/img/avatar/pant2.png" alt=""></div>
-                                <div class="card-img-overlay Gp0m0" v-if="trs!=''"> <img class="card-img"  src="../../../assets/img/avatar/tops.png" alt=""></div>
-                                <div class="card-img-overlay Gp0m0" v-if="she!=''"> <img class="card-img"  src="../../../assets/img/avatar/shocks.png" alt=""></div>  
-                                <div class="card-img-overlay Gp0m0" v-if="otr!=''"> <img class="card-img"  src="../../../assets/img/avatar/cat.png" alt=""></div> 
-                            </div>
+                        <div v-if="edt!=''" id="alpha" style="background:rgba(207, 33, 33, 0.514)">
+                            <img  class="card-img " v-if="bdy!=''"  :src="bdy" alt="">
+                            <div class="card-img-overlay Gp0m0" v-if="hr!=''"><img class="card-img" src="../../../assets/img/avatar/H2.png" alt=""></div>
+                            <div class="card-img-overlay Gp0m0" v-if="pnt!=''"> <img class="card-img"  src="../../../assets/img/avatar/pant2.png" alt=""></div>
+                            <div class="card-img-overlay Gp0m0" v-if="trs!=''"> <img class="card-img"  src="../../../assets/img/avatar/tops.png" alt=""></div>
+                            <div class="card-img-overlay Gp0m0" v-if="she!=''"> <img class="card-img"  src="../../../assets/img/avatar/shocks.png" alt=""></div>  
+                            <div class="card-img-overlay Gp0m0" v-if="otr!=''"> <img class="card-img"  src="../../../assets/img/avatar/cat.png" alt=""></div> 
+                        </div>
 
-                            <div v-else>
-                                <img  class="card-img" src="../../../assets/img/avatar/H2.png">                
-                            </div>
-    </div>
-    <input id="btn-Preview-Image" type="button" value="Preview"/>
-    <a id="btn-Convert-Html2Image" href="#">Download</a>
-    <br/>
-    <h3>Preview :</h3>
-    <div id="previewImage">
-    </div>
-                           
-                        <!--     <vue-drawing-canvas ref="VueCanvasDrawing" :props="additionalImages" :inheritAttrs="true">
-                            </vue-drawing-canvas> -->
+                        <div v-else>
+                            <img  class="card-img" src="../../../assets/img/avatar/H2.png">                
+                        </div>
+                          </canvas>
+                
                             
-                            <div class="btn nBbg nBtn btn-lg btn-block tmibg text-center" style="z-index:+1055;" @click="print()">Save</div>
-                            <!--  <img class="card-img " :src="output"> -->
+                            <div class="btn nBbg nBtn  btn-block tmibg text-center" style="z-index:+1000055;" @click="print()">Save</div>
+                       <!--       <img class="card-img " :src="output"> -->
                         </div>
                 
                     <div class="col-5 Gp0m0 tmibg2">
                         <div class="card Gp0m0 ">
                             <div class="card-header Gp0m0"><h4 class="text-center blkgry">{{ title }}</h4></div>
                             <div class="card-body Gp0m0">
-                                <div class="row Gp0m0"  style="height:320px; overflow:scroll;" v-if="chk!=''">
+                                <div class="row Gp0m0"  style="height:420px; overflow:scroll;" v-if="chk!=''">
                                     <div class="col-6 Gp0m0 p-1 " v-for="(lst ,i) in list " :key="i" @click="vwavt(title,lst.img)"> <img  class="card-img border card-img-overlay Gp0m0" :src="lst.img" alt="" @click="vwavt(title,lst.img)"></div>
                                 </div>
-                                <div class="row Gp0m0"  style="height:440px; overflow:scroll;" v-else>
+                                <div class="row Gp0m0"  style="height:420px; overflow:scroll;" v-else>
                                     <div class="col-6 Gp0m0 p-1 " v-for="(lst ,i) in list " :key="i" @click="vwavt(title,lst.img)"> <img  class="card-img border" :src="lst.img" alt=""></div>
                                 </div>
                             </div>
@@ -168,6 +156,11 @@ export default {
             console.log('eid hobena')
             },  
   
+
+            dff(){
+                var canvas = document.getElementById("myCanvas");
+            window.open(canvas.toDataURL("image/png"));
+            },
  
         bind(val){
             

@@ -71,13 +71,32 @@
                         </div>
                     </div>
                    <!--  <div class="col-2 p-1"> <router-link :to="{path:'/game/attack/'+masrc.id}" @click="attack()"> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center"><i class="fab fa-wolf-pack-battalion"></i></h6></div></router-link></div> -->
-                    <div class="col-2 p-1"> <div @click="attack(masrc.id,i,masrc.name)"> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center"><i class="fab fa-wolf-pack-battalion"></i></h6></div></div></div>
+                    <div class="col-2 p-1"> <div @click="attack(masrc.id,i,masrc.name,masrc.lvl,mid,key)"> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center"><i class="fab fa-wolf-pack-battalion"></i></h6></div></div></div>
                         
                         
                         </div>
                 </li>
             </ul>
         </div>
+
+
+<!-- fight killed popup start -->
+        <modal name="fdone" :width='300' :isAutoHeight="true"  class="mblr bdr p-1 rounded-2">
+            <div class="row Gp0m0 card blkgry">
+                    <div class="card-header tmibg2 p-1">
+                    <h4 class=" rounded-0 text-center py-1 w-100 " style="position:sticky;">Welcome To the flight
+                        <span class="float-right" style="margin-right:2%;"  @click="hide()"><div class="crossbtn"><i class="fas fa-times "></i></div></span></h4>
+                    </div>
+                    <div class="card-body bg-transparent p-0"  style="height:250px; overflow:scroll;">
+                    <h4 class="text-center">
+                        You have successfully killed name Moshiur {{whos}} 
+                    </h4>
+                    </div>
+            </div>
+        </modal>
+
+<!-- fight killed popup End -->
+
     </div>
 </template>
 
@@ -89,7 +108,7 @@ export default {
 
   bh:{
                  hpW:0,
-                 hpst:700,
+                 hpst:950,
                  hped:1000, 
                  hpoW:0,
                  hpost:900,
@@ -130,11 +149,18 @@ export default {
     
        updated(){
         this.TptrgrBr();
+              this.whos;
+/* 
+              this.bh.hpost
+              this.bh.hpoed
+              this.bh.hpst
+              this.bh.hped */
      
     },
     mounted:function(){
         this.TptrgrBr();
           this.whos
+            this.attack();
     },
  
     
@@ -147,9 +173,10 @@ export default {
               if(res.sts=='found'){
                   this.atk=true,
                   this.whos=name,
+                
                   this.me=res.mme,
                   this.dfnd=mid
-
+                    this.reset_atas()
                   console.log(this.whos)
                   
               }else{
@@ -158,7 +185,17 @@ export default {
           })
 
         },
-            TptrgrBr(){
+        reset_atas(){
+            
+                this.bh.hpW=0
+                this.bh.hpst=950
+                 this.bh.hped=1000
+                 this.bh.hpoW=0
+                 this.bh.hpost=900
+                 this.bh.hpoed=1000
+
+        },
+        TptrgrBr(){
             this.bh.hpW = 100 / this.bh.hped * this.bh.hpst;
             this.bh.hpoW = 100 / this.bh.hpoed * this.bh.hpost;
         },
@@ -167,21 +204,27 @@ export default {
               this.$mgo.gt('/fight/attack/'+mid+'/'+key+'/arena',(res)=>{
                   console.log(res)
               })
-            if((this.bh.hpst!=this.bh.hped)&(this.bh.hpst>0)){
-            this.bh.hpst = this.bh.hpst-21;
+            if((this.bh.hpst!=this.bh.hped)&(this.bh.hpst>0)&(this.bh.hpost>0)){
+            this.bh.hpst = this.bh.hpst-20;
 
              if(this.bh.hpst <=0){    
                 this.bh.hpst=0
+
+                this.$modal.show('fdone');
                 }
             }
 
-             if((this.bh.hpost!=this.bh.hpoed)&(this.bh.hpost>0)){
+             if((this.bh.hpost!=this.bh.hpoed)&(this.bh.hpost>0)&(this.bh.hpst>0)){
              this.bh.hpost = this.bh.hpost-20;
               if(this.bh.hpost <=0){    
                 this.bh.hpost=0
+                this.$modal.show('fdone');
                 }
             
             }
+    },
+    hide(){
+        this.$modal.hide('fdone');
     }
 }
 }

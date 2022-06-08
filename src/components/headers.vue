@@ -1,5 +1,7 @@
 <template id="bdy" >
     <div class="header jaldi"  @click=" md()">
+
+
         <div class="row Gp0m0 hdbg  no-gutters" id='hdrvp10'>
             <div class="col-1 py-0">
                 <img class="logimg losdo my-2 ml-2" @click="$gm.bar();" src="../assets/img/logo.png">
@@ -36,6 +38,13 @@
                 </div>        
             </div>
         </div>
+
+
+<!-- =====================================================================================================================
+     *** This section is modified in pixel perfection for the vulnerability in the header section after scroll*** 
+     ===================================================================================================================== -->
+
+      
         <!-- sticky top start  -->
         <v-touch id='StkinHmnu' @doubletap="hdrdbltp()"  class="container Gp0m0 itmbg" style="z-index:+1030; max-width:575.98px;"> 
             <div class="row Gp0m0" >
@@ -88,12 +97,12 @@
               <div class=" col-4 p-1"><div tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0" v-on:click="toggle2()" @click="stngs=true"><i v-bind:class="{'fas fa-bell' :tgle === true, 'fas fa-bell-slash': tgle === false}" ></i><h6 class="siz15">notification</h6></div></div>
               <div class="col-4 p-1"><router-link to="/game/editprofile"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0 "><i class="fas fa-user"></i><br> <h6 class="siz15">Edit profile</h6></div> </router-link></div> 
               <div class="col-4 p-1"><div  tag="button"  class="btn btn-block   nBtn blkgry my-1 Gp0m0" v-on:click="toggle()" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" ></i><h6 class="siz15">Music</h6></div></div>
-              <div class="col-4 p-1"><div tag="button" @click="Lotsw(),stnghd(),stngs=true" class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-sign-out-alt"></i><br> <h6 class="siz15">Logout</h6> </div></div>
               <div class="col-4 p-1"><div  tag="button" @click="sconnectshow() ,stnghd()"  class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-share-alt"></i><br><h6 class="siz15"  > Social Connect</h6> </div></div>
               <div class="col-4 p-1"><div  tag="button"  @click="bmsho(),stnghd()" class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-lightbulb"></i><br><h6 class="siz15"> Hints</h6> </div></div>
               <div class="col-4 p-1"><router-link to="/gmail"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="far fa-envelope"></i><br> <h6 class="siz15">Mail </h6></div></router-link></div>     
               <div class="col-4 p-1"><router-link to="/game/forumlist"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fab fa-wpforms"></i><br> <h6 class="siz15">Forum</h6></div> </router-link></div> 
               <div class="col-4 p-1"><router-link to="/messenger"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fab fa-facebook-messenger"></i><br><h6 class="siz15"> Message </h6></div></router-link></div> 
+                            <div class="col-4 p-1"><div tag="button" @click="Lotsw(),stnghd(),stngs=true" class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-sign-out-alt"></i><br> <h6 class="siz15">Logout</h6> </div></div>
                 </div>
                 </div>
                 </div>
@@ -432,7 +441,7 @@ export default {
            var isPositionFixed = (window.jq('#StkinHmnu').css('position') == 'fixed');
          //   on Screoll down
             if (window.jq(window).scrollTop() >= window.jq('#hdrvp10').height() && !isPositionFixed){          
-               window.jq('#StkinHmnu').css({'position': 'fixed', 'top': '0px', 'max-width':'575.98px'}); 
+               window.jq('#StkinHmnu').css({'position': 'fixed', 'top': '0px', 'max-width':'575.98px'}); /* max-width':'532px' */
                 let sthgt = window.jq('#StkinHmnu').height();
                   window.jq('#Ingks').css('marginTop', sthgt+'px');
                   window.jq('#Ingks').css('marginTop', sthgt+'px');

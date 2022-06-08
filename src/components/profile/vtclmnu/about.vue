@@ -8,10 +8,10 @@
       <div class="card-body tmibg">
         <div class="row">
           <div class="col-6 p-1">
-            <h6 class="blk bdr1 py-2 rounded text-center">Toxic5</h6>
+            <h6 class="blk bdr1 py-2 rounded text-center">Toxic <br>654411</h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk bdr1 py-2 rounded text-center">Tempting3</h6>
+            <h6 class="blk bdr1 py-2 rounded text-center">Tempting <br> 555244</h6>
           </div>
         </div>
       </div>
@@ -25,10 +25,10 @@
       <div class="card-body tmibg">
         <div class="row">
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Toxic5</h6>
+            <h6 class="blk py-2 rounded text-center">Toxic <br>654411</h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Tempting3</h6>
+            <h6 class="blk py-2 rounded text-center">Tempting <br> 555244</h6>
           </div>
         </div>
       </div>
@@ -42,10 +42,10 @@
       <div class="card-body tmibg">
         <div class="row">
           <div class="col-6 p-1">
-            <h6 class="blk blkbdr py-2 rounded text-center">Toxic5</h6>
+            <h6 class="blk blkbdr py-2 rounded text-center">Toxic <br>654411</h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Tempting3</h6>
+            <h6 class="blk py-2 rounded text-center">Tempting <br> 555244</h6>
           </div>
         </div>
       </div>
@@ -59,16 +59,16 @@
       <div class="card-body tmibg">
         <div class="row">
           <div class="col-6 p-1">
-            <h6 class="blk blkbdr py-2 rounded text-center">Toxic5</h6>
+            <h6 class="blk blkbdr py-2 rounded text-center">Toxic <br>654411</h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Tempting3</h6>
+            <h6 class="blk py-2 rounded text-center">Tempting <br> 555244</h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk blkbdr py-2 rounded text-center">Toxic5</h6>
+            <h6 class="blk blkbdr py-2 rounded text-center">Toxic <br>654411</h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Tempting3</h6>
+            <h6 class="blk py-2 rounded text-center">Tempting <br> 555244</h6>
           </div>
         </div>
         <div class="row">
@@ -134,18 +134,18 @@
         </div>
         <div class="row">
           <div class="col-6 p-1">
-            <h6 class="blk blkbdr py-2 rounded text-center">Toxic5</h6>
+            <h6 class="blk blkbdr py-2 rounded text-center">Toxic <br>654411</h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Tempting3</h6>
+            <h6 class="blk py-2 rounded text-center">Tempting <br> 555244</h6>
           </div>
         </div>
         <div class="row">
           <div class="col-6 p-1">
-            <h6 class="blk blkbdr py-2 rounded text-center">Toxic5</h6>
+            <h6 class="blk blkbdr py-2 rounded text-center">Toxic <br>654411</h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Tempting3</h6>
+            <h6 class="blk py-2 rounded text-center">Tempting <br> 555244</h6>
           </div>
         </div>
       </div>

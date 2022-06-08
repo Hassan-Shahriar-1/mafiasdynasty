@@ -5,6 +5,10 @@
             <div class="rounded bMbg3 bnrbxsdo px-1 py-2 my-1" v-for="(gmnws,i) in gm" :key="i">
                 <h5 class="text-success subtitlefnt">{{gmnws.nttl}}<h6>{{gmnws.nsttl}}</h6></h5>
             </div>
+
+            <!-- <div class="rounded blk50 p-1 " v-for="(gmnws,i) in gm" :key="i">
+                <h5 class="text-success subtitlefnt rounded blkd75 p-2">{{gmnws.nttl}}<h6>{{gmnws.nsttl}}</h6></h5>
+            </div> -->
       
     </div>
 </template>

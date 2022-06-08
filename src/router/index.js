@@ -490,6 +490,11 @@ export default new Router({
                             component: () =>
                                 import ('@/components/shop/intellegence')
                         },
+                        {
+                            path: 'gold',
+                            component: () =>
+                                import ('@/components/shop/gold')
+                        },
 
 
 
@@ -656,12 +661,7 @@ export default new Router({
                     component: () =>
                         import ('@/components/spy/type1')
                 },
-                {
-                    path: 'Threat',
-                    name: 'Threat',
-                    component: () =>
-                        import ('@/views/game/Threat')
-                },
+              
 
 
 
@@ -704,6 +704,20 @@ export default new Router({
                         import ('@/components/combat/hitlist')
                 },
 
+                {
+                    path: 'safehouse',
+                    name: 'safehouse',
+                    component: () =>
+                        import ('@/components/combat/safehouse')
+                },
+                {
+                    path: 'Threat',
+                    name: 'Threat',
+                    component: () =>
+                        import ('@/components/combat/Threat')
+                },
+              
+
 
 
 
@@ -728,38 +742,45 @@ export default new Router({
 
                 {
                     path: 'typ1',
+                    name:'typ1',
                     component: () =>
                         import ('@/components/godfather/typ1')
                 },
                 {
                     path: 'typ2',
+                    name:'typ2',
                     component: () =>
                         import ('@/components/godfather/typ2')
                 },
                 {
                     path: 'typ3',
+                    name:'typ3',
                     component: () =>
                         import ('@/components/godfather/typ3')
                 },
 
                 {
                     path: 'typ4',
+                    name:'typ4',
                     component: () =>
                         import ('@/components/godfather/typ4')
                 },
                 {
                     path: 'typ5',
+                    name:'typ5',
                     component: () =>
                         import ('@/components/godfather/typ5')
                 },
                 {
                     path: 'typ6',
+                    name:'typ6',
                     component: () =>
                         import ('@/components/godfather/typ6')
                 },
 
                 {
                     path: 'typ7',
+                    name:'typ7',
                     component: () =>
                         import ('@/components/godfather/typ7')
 
@@ -767,11 +788,13 @@ export default new Router({
 
                 {
                     path: 'typ8',
+                    name:'typ8',
                     component: () =>
                         import ('@/components/godfather/typ8'),
                 },
                 {
                     path: 'gfight',
+                    name:'gfight',
                     component: () =>
                         import ('@/components/godfather/fight/gfight')
                 },
@@ -842,13 +865,7 @@ export default new Router({
                 },
 
 
-                {
-
-                    path: 'safehouse',
-                    name: 'safehouse',
-                    component: () =>
-                        import ('@/views/game/safehouse')
-                },
+            
                 {
 
                     path: 'friendsfeed',
@@ -867,13 +884,13 @@ export default new Router({
                 
 
                 {
-                    path: 'missionlist',
+                    path: '/missionlist',
                     name: 'missionlist',
                     component: () =>
                         import ('@/components/mission/missionlist')
                 },
                 {
-                    path: 'missionintro',
+                    path: 'missionintro/:lanmsndid',  /* Mission with mission ID  */
                     name: 'missionintro',
                     component: () =>
                         import ('@/components/mission/missionintro')
@@ -994,6 +1011,7 @@ export default new Router({
             component: () =>
                 import ('@/views/Screen')
         },
+
         {
             path: '/levelup',
             name: 'levelup',
@@ -1012,6 +1030,9 @@ export default new Router({
             path: '/gmail',
             beforeEnter() { location.href = 'mailto:support@mafiasrival.com?subject=New mail' }
         },
+
+     
+
         {
             path: '/messenger',
             beforeEnter() { location.href = 'https://m.me/mafiasrivalgame'}
