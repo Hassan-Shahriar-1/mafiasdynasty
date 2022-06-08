@@ -886,6 +886,7 @@ export default new Router({
                 {
                     path: '/missionlist',
                     name: 'missionlist',
+                    props:true,
                     component: () =>
                         import ('@/components/mission/missionlist')
                 },
@@ -899,6 +900,7 @@ export default new Router({
                 {
                     path: 'mission',
                     name: 'mission',
+                    props:true,
                     component: () =>
                         import ('@/components/mission/mission')
                 },
