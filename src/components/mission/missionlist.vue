@@ -5,16 +5,16 @@
             <img class="card-img img-fluid" style="height:130px;" src='../../assets/img/land/colombia.png' alt=""/>
             <div class="card-img-overlay">
                 <h4 class="card-text titlefnt text-center">
-                    Land Name <router-link :to="{name:'missionintro'}"><span class="float-left"><i class="fas fa-arrow-circle-left siz25"></i></span></router-link>
+                    {{msnlst.cpname}} <router-link to="missionintro"><span class="float-left"><i class="fas fa-arrow-circle-left siz25"></i></span></router-link>
                 </h4>
                 <h6 class="card-text subtitlefnt text-center">Subtitle here</h6>
             </div>
         </div>
     </div>
 
-    <div class="card  m-2 bdr1" v-for="(mlst,i) in msnlst" :key="i">
+    <div class="card  m-2 bdr1" v-for="(mlst,i) in msnlst.mission" :key="i">
             <div class="card-header px-1 blkgry">
-                <h4 class="titlefnt">{{mlst.msnnm}}</h4>
+                <h4 class="titlefnt">{{mlst[0].tl}}</h4>
             </div>
 
         <div class="card-body p-1 blkd50">
@@ -29,7 +29,7 @@
                     </div>
                     <h6 class="text-left text-white">100% complete</h6>
                 </div>
-                <div class="col-4 px-1"><router-link to="/game/mission"><div class="btn  py-2 nBtn btn-block bgD8 btnbfnt sizv20">Do job</div></router-link></div>
+                <div class="col-4 px-1"><router-link :to="{name:'mission',params:{mid:i}}"><div class="btn  py-2 nBtn btn-block bgD8 btnbfnt sizv20">Do job</div></router-link></div>
             </div>
         </div>
     </div>
@@ -38,38 +38,33 @@
 </template>
 <script>
 export default ({
+    props:['list'],
     data() {
-        return{
-
+        
+        return{ 
             randomNumber:'',
-            msnlst:[
-                    {
-                        msnnm:"Pock Someone",
-                    },
-                     {
-                        msnnm:"Rape Someone",
-                    },
-                     {
-                        msnnm:"Kill Someone",
-                    },
-                     {
-                        msnnm:"kidnap Someone",
-                    },
-                     {
-                        msnnm:"Drug dealing",
-                    }
-            ]
+            msnlst:'',
+            itmsrc:'http://mrdemo.com/item/'
+                    
         }
     },
 
     methods:{
-    myFunction: function () {		
-     this.randomNumber = Math.floor(Math.random()*1000); //multiply to generate random number between 0, 100
-    }   
+        domisson(mid){
+            this.$mgo.gt('/domsn'+mid,(response)=>{
+                console.log(response);
+            })
+        }
+ 
    },
-   mounted() {
-       this.myFunction()
+   
+   created() {
+       // console.log(this.$route.params.list);
+       this.msnlst=this.$route.params.list
+      // console.log('data',this.msnlst)
    },
+
+ 
 
    
 })

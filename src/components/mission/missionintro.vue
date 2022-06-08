@@ -27,17 +27,18 @@
                     amet asperiores nam minima odio iusto officiis 
                     voluptatem eveniet natus. Atque quidem, voluptate numquam laborum accusantium architecto?
                 </h6>
-          <router-link :to="{name:'mission'}">
+                <div v-for="(mnms, i) in chapter" :key="i">
+          <router-link :to="{name:'missionlist',params: { list:mnms }}">
               <div class="card-body p-1 tmibg">
-                <div class="card border-0  p-2 blksdo" v-for="(mnms, i) in mname" :key="i">
-                  <img class="card-img img-fluid  my-2 rounded bdr1" style="height:120px;" :src="require('../../assets/img/land/' + mnms.mimg)" alt=""/>
+                <div class="card border-0  p-2 blksdo" >
+                  <img class="card-img img-fluid  my-2 rounded bdr1" style="height:120px;" :src="imgsrc + mnms.img" alt=""/>
                   <div class="card-img-overlay">
                     <h4 class="card-text titlefnt">
-                      {{ mnms.mttl }}
-                      <span class="float-right" style="opacity: 0.5;">
+                      {{ mnms.cpname }}
+                      <span class="float-right" v-if="mnms.active==false" style="opacity: 0.5;">
                         <i class="fas fa-lock"></i>
                       </span>
-                      <span class="float-right">
+                      <span class="float-right" v-else>
                         <i class="fas fa-lock-open"></i>
                       </span>
                     </h4>
@@ -46,6 +47,7 @@
                 </div>
               </div>
           </router-link>
+          </div>
         </div>
     </div>
   </div>
@@ -58,41 +60,19 @@ export default {
         msndtls:false,
         props: ["lanmsndid"],
    
-      mname: [
-        {
-          mimg: "colombia.png",
-          mttl: "This is a wider",
-          mstl: "Last updated",
-        },
-        {
-          mimg: "colombia.png",
-          mttl: "This is a wider",
-          mstl: "Last updated",
-        },
-        {
-          mimg: "colombia.png",
-          mttl: "This is a wider",
-          mstl: "Last updated",
-        },
-        {
-          mimg: "colombia.png",
-          mttl: "This is a wider",
-          mstl: "Last updated",
-        },
-        {
-          mimg: "colombia.png",
-          mttl: "This is a wider",
-          mstl: "Last updated",
-        },
-      ],
+        chapter:'',
+        imgsrc:'http://mrdemo.com/land/'
     };
   },
 
   created(){
-    console.log('props data',this.$route.params.lanmsndid)
+   // console.log('props data',this.$route.params.lanmsndid)
 
     this.$mgo.gt('/mission/landmission/'+this.$route.params.lanmsndid,(response)=>{
-      console.log(response)
+      if(response.sts=='ok'){
+        this.chapter=response.data
+      }
+      
     })
 
    
