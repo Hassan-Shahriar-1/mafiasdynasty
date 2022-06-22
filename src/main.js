@@ -64,6 +64,8 @@ import orgcomp from '@/components/orgcomp'
 import axios from 'axios'
 import store from './store/index'
 import VueAxios from 'vue-axios'
+import ProgressBar from 'vue-simple-progress';
+import vueCountdownTimer from 'vuejs-countdown-timer';
 
 // import Swiper JS
 /*  import Swiper from 'swiper'; */
@@ -111,8 +113,10 @@ Vue.axios.interceptors.response.use(function(response) {
 });
 
 
-import vueCountdownTimer from 'vuejs-countdown-timer';
+
 Vue.use(vueCountdownTimer);
+
+Vue.component('ProgressBar', ProgressBar)
 
 Vue.use(store)
 Vue.use(Popover)
