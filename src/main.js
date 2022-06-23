@@ -114,13 +114,8 @@ Vue.axios.interceptors.response.use(function(response) {
 
 
 
-<<<<<<< HEAD
-
-import vueCountdownTimer from 'vuejs-countdown-timer';
-=======
->>>>>>> backend
 Vue.use(vueCountdownTimer);
-import ProgressBar from 'vue-simple-progress';
+
 Vue.component('ProgressBar', ProgressBar)
 
 Vue.component('ProgressBar', ProgressBar)
