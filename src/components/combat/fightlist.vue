@@ -63,31 +63,27 @@
                     <div class="row Gp0m0  rounded blkd75 p-2">
                         <div class="col-2 Gp0m0"><img src="../../assets/img/item/1.gif"  class="card-img " alt=""></div>
                         <div class="col-8 px-1"> <h5 class="text-info titlefnt2 siz25">{{masrc.name}}</h5> 
-                        <div class="row Gp0m0">
-                            <div class="col-6 p-0">  <h6 class="dtlsfnt siz17">Cash: {{masrc.mcash}}</h6></div>
-                            <div class="col-6 pl-2">  <h6 class="dtlsfnt siz17">Org: {{masrc.org}}</h6></div>
-                            <div class="col-6 p-0">  <h6 class="dtlsfnt siz17">Level: {{masrc.lvl}}</h6></div>
-                            <div class="col-6 pl-2">  <h6 class="dtlsfnt siz17">Rank: {{masrc.rank}}</h6></div>
+                            <div class="row Gp0m0">
+                                <div class="col-6 p-0">  <h6 class="dtlsfnt siz17">Cash: {{masrc.mcash}}</h6></div>
+                                <div class="col-6 pl-2">  <h6 class="dtlsfnt siz17">Org: {{masrc.org}}</h6></div>
+                                <div class="col-6 p-0">  <h6 class="dtlsfnt siz17">Level: {{masrc.lvl}}</h6></div>
+                                <div class="col-6 pl-2">  <h6 class="dtlsfnt siz17">Rank: {{masrc.rank}}</h6></div>
+                            </div>
                         </div>
+                        <!--  <div class="col-2 p-1"> <router-link :to="{path:'/game/attack/'+masrc.id}" @click="attack()"> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center"><i class="fab fa-wolf-pack-battalion"></i></h6></div></router-link></div> -->
+                        <div class="col-2 p-1"> <div @click="attack(masrc.id,i,masrc.name,masrc.lvl,mid,key)"> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center"><i class="fab fa-wolf-pack-battalion"></i></h6></div></div></div>
                     </div>
-                   <!--  <div class="col-2 p-1"> <router-link :to="{path:'/game/attack/'+masrc.id}" @click="attack()"> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center"><i class="fab fa-wolf-pack-battalion"></i></h6></div></router-link></div> -->
-                    <div class="col-2 p-1"> <div @click="attack(masrc.id,i,masrc.name,masrc.lvl,mid,key)"> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center"><i class="fab fa-wolf-pack-battalion"></i></h6></div></div></div>
-                        
-                        
-                        </div>
                 </li>
             </ul>
         </div>
-
-
-<!-- fight killed popup start -->
+        <!-- fight killed popup start -->
         <modal name="fdone" :width='300' :isAutoHeight="true"  class="mblr bdr p-1 rounded-2">
             <div class="row Gp0m0 card blkgry">
-                    <div class="card-header tmibg2 p-1">
+                    <div class="card-header blkgry px-1 py-0">
                     <h4 class=" rounded-0 text-center py-1 w-100 " style="position:sticky;">Welcome To the flight
                         <span class="float-right" style="margin-right:2%;"  @click="hide()"><div class="crossbtn"><i class="fas fa-times "></i></div></span></h4>
                     </div>
-                    <div class="card-body bg-transparent p-0"  style="height:250px; overflow:scroll;">
+                    <div class="card-body tmibg p-0"  style="height:250px; overflow:scroll;">
                     <h4 class="text-center">
                         You have successfully killed name Moshiur {{whos}} 
                     </h4>
@@ -95,7 +91,7 @@
             </div>
         </modal>
 
-<!-- fight killed popup End -->
+    <!-- fight killed popup End -->
 
     </div>
 </template>
@@ -123,7 +119,7 @@ export default {
                  cnt:'',
                  dfnd:Number,
                  arkey:Number,
-                 grnd:String,
+                 grnd:'',
            
         }
     },
@@ -145,8 +141,6 @@ export default {
             
         })
     },
-   
-    
        updated(){
         this.TptrgrBr();
               this.whos;
@@ -166,25 +160,26 @@ export default {
     
     methods:{
         attack(mid,key,name){
+
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // for chorme
             this.arkey=key;
             console.log(mid)
-          this.$mgo.gt('/fight/attack/'+mid+'/'+key+'/arena',(res)=>{
+            this.$mgo.gt('/fight/attack/'+mid+'/'+key+'/arena',(res)=>{
               this.atk=false
               if(res.sts=='found'){
                   this.atk=true,
                   this.whos=name,
-                
                   this.me=res.mme,
                   this.dfnd=mid
                     this.reset_atas()
                   console.log(this.whos)
-                  
               }else{
                   this.atk=false
               }
           })
-
         },
+        
         reset_atas(){
             
                 this.bh.hpW=0

@@ -35,8 +35,8 @@
             <modal name="mdlMempsts"  :width='300' :height='271' :isAutoHeight="true"   @before-open="beforeOspen" class="mblr" >
                     <div class="row Gp0m0 tmibg  bdr3 p-3 blksdout rounded" id='gtmhyHt' style=" height:271px; overflow: scroll;">
                         <div class="col-12 p-0 pb-2">
-                            <h4 class="subtitlefnt">{{mdl.nm}}</h4> <br>
-                            <h6 class="dtlsfnt"> {{ mdl.stl  }}</h6>
+                            <h4 class="subtitlefnt2 text-center">{{mdl.nm}}</h4> <br>
+                            <h6 class="dtlsfnt text-center">{{ mdl.stl}}</h6>
                         </div>
                         <div class="col-12 Gp0m0 pr-1" v-for="(btn, i) in mdl.btns" :key="i">
                             <div class="btn nBtn btn-lg text-center btnbfnt btn-block sizv35" :class="btn.cls" @click="fncCal(btn)">{{ btn.tl }}</div></div>                        
@@ -140,7 +140,6 @@
   -webkit-transition: .4s;
   transition: .4s;
 }
-
 .slider:before {
   position: absolute;
   content: "";
@@ -251,7 +250,7 @@ export default {
              err:'',
              mdl:{
                  nm:'',
-                 stl:'Habibur rahman is now doing this card',
+                 stl:'Modern Age Mafia',
                  btns:[
                      {tl:'Funcion 1', cls:'button5', act:'fncCal'},
                      {tl:'Funcion 2', cls:'blkredbtn', act:'fncCal'}

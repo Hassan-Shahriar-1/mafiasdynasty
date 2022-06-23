@@ -39,7 +39,7 @@
                     </div>
 
                     <div class="col-6 p-0"> 
-                        <div class="rotation_ainm m-2 p-0 btn nBtn nBbg blkgry " @click="show()">
+                        <div class="rotation_ainm m-2 p-0 btn nBtn nBbg blkgry " @click="show(),itmgt()">
                             <img class="card-img" src="../../assets/img/item/1.gif" alt="">
                             <div class="card-image-overlay">
                                 <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -51,7 +51,7 @@
                     </div>
 
                     <div class="col-6 p-0"> 
-                        <div class="rotation_ainm m-2 p-0 btn nBtn nBbg blkgry " @click="show()">
+                        <div class="rotation_ainm m-2 p-0 btn nBtn nBbg blkgry " @click="show(),itmgt()">
                             <img class="card-img" src="../../assets/img/item/1.gif" alt="">
                             <div class="card-image-overlay">
                                 <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -63,7 +63,7 @@
                     </div>
 
                     <div class="col-6 p-0"> 
-                        <div class="rotation_ainm m-2 p-0 btn nBtn nBbg blkgry " @click="show()">
+                        <div class="rotation_ainm m-2 p-0 btn nBtn nBbg blkgry " @click="show(),itmgt()">
                             <img class="card-img" src="../../assets/img/item/1.gif" alt="">
                             <div class="card-image-overlay">
                                 <div class="card-img-overlay text-white d-flex flex-column justify-content-center">

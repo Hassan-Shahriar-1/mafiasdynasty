@@ -3,9 +3,9 @@
         <div class="row Gp0m0">
             <img class="card-img img-fluid p-1" src="../../assets/img/land/colombia.png" alt="">
         </div>
-        <div class="row Gp0m0 tmibg" v-for="(MmnDtlsts, i) in MmnDtlst" :key="i">
-            <div class="card blkbg">
-                <div class="card-header tmibg bdr1">
+        <div class="row Gp0m0 tmibg p-2" v-for="(MmnDtlsts, i) in MmnDtlst" :key="i">
+            <div class="card blkbg mb-3 ">
+                <div class="card-header tmibg">
                     <h3 class="titlefnt text-center">{{MmnDtlsts.ttl}} </h3> 
                 </div>
                 <div class="card-body bMbg3">
@@ -21,10 +21,10 @@
                             <div class="rounded bMbg4 bdr1">
                                 <h4 class="text-center subtitlefnt">Requirments</h4>
                                 <div class="row Gp0m0  my-2 " v-for="(reqr, i) in MmnDtlsts.req" :key="i">
-                                    <div class="col-5 ">
+                                    <div class="col-5">
                                         <img  class="card-img" :src="require('/src/assets/img/'+reqr.mr)" alt="">
                                     </div>
-                                    <div class="col-7  "> <h6 class="text-danger float-left dtlsfnt">{{ reqr.mrt }}</h6></div>
+                                    <div class="col-7"> <h6 class="text-danger float-left dtlsfnt">{{ reqr.mrt }}</h6></div>
                                 </div>
                             </div>
                         </div>
@@ -39,10 +39,9 @@
                                 </div>
                             </div>
                         </div>
-
                 <!-- Expense area -->
-                        <div class="row no-gutters px-1 py-3 w-100 tmibg">
-                            <div class="col-4 ">
+                        <div class="row no-gutters px-1 py-3 mlr1  w-100 tmibg">
+                            <div class="col-4">
                                 <h5 class="text-success siz18" ><i class="fab fa-expeditedssl"></i>&nbsp;Exp:+4 &nbsp; </h5>
                             </div>
                             <div class="col-4 ">
@@ -54,21 +53,20 @@
                         </div>
                 <!-- Expense area -->
                 <!-- Income area -->
-                        <div class="row Gp0m0 w-100 text-center my-1">
-                            <div class="col-4 Gp0m0"><div class="mlr2 border blkred rounded"><h6 class="py-2">Exp:{{MmnDtlst.ex}}</h6></div> </div>
-                            <div class="col-4 Gp0m0"><div class="mlr2 border blkred rounded"><h6 class="py-2">Blood:{{MmnDtlst.bld}}</h6></div></div>
-                            <div class="col-4 Gp0m0"><div class="mlr2 border blkred rounded"><h6 class="py-2">Energy:{{MmnDtlst.enrgy}}</h6></div></div><br> 
+                        <div class="row Gp0m0 w-100 my-1">
+                            <div class="col-6 Gp0m0"><div class="mlr1 border bMbg4 blksdo rounded"><h6 class="p-2"><i class="fab fa-expeditedssl"></i> &nbsp;Exp:00000000{{MmnDtlst.ex}}</h6></div> </div>
+                            <div class="col-6 Gp0m0"><div class="mlrd5 border bMbg4 blksdo rounded"><h6 class="p-2"><i class="far fa-lightbulb text-secondary"></i> &nbsp;Energy:0000000{{MmnDtlst.enrgy}}</h6></div></div>
+                            <div class="col-12 text-center Gp0m0 mt-1 "><div class="mlr1 border bMbg4 blksdo rounded"><h6 class="p-2"><i class="fas fa-burn text-danger"></i> &nbsp;Blood:0000000{{MmnDtlst.bld}}</h6></div></div>
                         </div>
                     </div>
                 <!-- Income area -->
-
-
                     <div class="row Gp0m0 mb-5 mt-2">
                         <div class="col-6 Gp0m0 px-0 ">
-                        <router-link :to="{name:'missionintro'}"> <div class="btn  blkgry btn-lg btn-block nBtn nBbg py-1">Go back</div></router-link>
+                     <!--    <router-link :to="{name:'missionintro'}"> <div class="btn  blkgry btn-lg btn-block nBtn nBbg py-1">Go back</div></router-link> -->
                         </div>
                         <div class="col-6 Gp0m0 px-1 ">
-                            <div class="btn  button5 btn-lg btn-block nBtn py-1" @click="demoV1(mtn,mtn.uid)">Do Job</div>
+                         <!-- claa="button4&button5" as button color -->   
+                         <div class="btn  button_here btn-lg btn-block nBtn py-1" @click="demoV1(MmnDtlsts.uid)">Do Job</div>
                         </div>
                     </div> 
                 </div>
@@ -96,14 +94,12 @@
     </div>
 </template>
 
-
-
-
-
+<style>
+.button_here{
+    background: linear-gradient(0deg, rgb(54 12 12) 0%, rgb(153 10 10 / 92%) 39%, rgb(173 14 14 / 85%) 100%);
+}
+</style>
 <script>
-
-
- 
 export default {
    name : 'mission',
    data(){
@@ -270,8 +266,6 @@ export default {
                     },
                     ]
        }
-    
-    
    },
    created(){
        console.log(this.$route.params.mid)
@@ -286,17 +280,16 @@ export default {
     methods: {
           TptrgrBr(){
             this.bh.hpW = 100 / this.bh.hped * this.bh.hpst;
-           
         },
         demoV1(oid){
-            if(this.bh.hpst!=this.bh.hped&&this.MmnDtlst.uid==oid){
+             console.log(this.MmnDtlst.uid)
+            if(this.bh.hpst!=this.bh.hped&&this.MmnDtlst.uid==oid){   
             this.bh.hpst = this.bh.hpst+10;
             }
             if(this.bh.hpst==this.bh.hped){
             this.$modal.show('donemsn');
             }
         },
-
          hide(){this.$modal.hide('donemsn');}
     },
 }

@@ -119,7 +119,7 @@ export default {
         show (ind) {
             this.$modal.show('atk'); 
             this.index=ind;  
-            console.log(ind)         
+            console.log(ind) 
         },
         hide () {
             this.$modal.hide('atk');

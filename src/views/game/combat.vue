@@ -177,8 +177,6 @@ export default {
                  console.log(this.tmstrt,'here is start timer');
                  console.log(this.tmend,'here is End timer');
                  console.log(new Date()).getFullYear();
-
-          
                 this.htlst=rs.hitlist
 
             }

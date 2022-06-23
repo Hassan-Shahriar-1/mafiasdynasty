@@ -28,7 +28,7 @@
                     voluptatem eveniet natus. Atque quidem, voluptate numquam laborum accusantium architecto?
                 </h6>
                 <div v-for="(mnms, i) in chapter" :key="i">
-          <router-link :to="{name:'missionlist',params: { list:mnms }}">
+          <router-link :to="{name:'mission',params: { list:mnms }}">
               <div class="card-body p-1 tmibg">
                 <div class="card border-0  p-2 blksdo" >
                   <img class="card-img img-fluid  my-2 rounded bdr1" style="height:120px;" :src="imgsrc + mnms.img" alt=""/>

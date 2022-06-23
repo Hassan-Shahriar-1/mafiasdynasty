@@ -111,8 +111,12 @@ Vue.axios.interceptors.response.use(function(response) {
 });
 
 
+
+
 import vueCountdownTimer from 'vuejs-countdown-timer';
 Vue.use(vueCountdownTimer);
+import ProgressBar from 'vue-simple-progress';
+Vue.component('ProgressBar', ProgressBar)
 
 Vue.use(store)
 Vue.use(Popover)

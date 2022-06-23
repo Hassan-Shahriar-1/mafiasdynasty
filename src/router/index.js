@@ -1,9 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
-
 Vue.use(Router)
-
 export default new Router({
     /*  mode:'history', */
     routes: [
@@ -97,6 +94,19 @@ export default new Router({
                                 import ('@/components/home/bonus')
                         },
                         {
+                            path: 'publicchest',
+                            name:'publicchest',
+                            component: () =>
+                                import ('@/components/home/publicchest')
+                        },
+                        
+                        {
+                            path: 'clanchest',
+                            name:'clanchest',
+                            component: () =>
+                                import ('@/components/home/clanchest')
+                        },
+                        {
                             path: 'limited',
                             name: 'limited',
 
@@ -127,19 +137,14 @@ export default new Router({
                                     component: () =>
                                         import ('@/components/limited/avaterbg')
                                 },
-
-
                             ],
                         },
-
                         {
                             path: 'bank',
                             name: 'bank',
                             component: () =>
                                 import ('@/components/home/bank')
                         },
-
-
                     ]
                 },
 
@@ -194,7 +199,6 @@ export default new Router({
                             component: () =>
                                 import ('@/components/profile/vtclmnu/eprofile')
                         },
-
                         {
                             path: 'about',
                             component: () =>
@@ -205,7 +209,6 @@ export default new Router({
                             component: () =>
                                 import ('@/components/profile/vtclmnu/recordbook')
                         },
-
                         {
                             path: 'base',
                             component: () =>
@@ -216,12 +219,8 @@ export default new Router({
                             component: () =>
                                 import ('@/components/profile/vtclmnu/dfncwpn')
                         }
-
-
                     ],
                 },
-
-
                 {
                     path: '/game/profile/eavatar',
                     component: () =>
@@ -455,10 +454,6 @@ export default new Router({
                     component: () =>
                         import ('@/components/settings/frmlist/topic7')
                 },
-
-
-
-
                 {
                     name: 'shop',
                     path: 'shop',
@@ -479,12 +474,67 @@ export default new Router({
                             component: () =>
                                 import ('@/components/shop/Item')
                         },
-                        {
+                    /*     {
                             path: 'Avater',
                             component: () =>
                                 import ('@/components/shop/Avater')
                         },
+                    */
+                        {
+                            name: 'avater',
+                            path: 'avater',
+                            component: () =>
+                                import ('@/components/shop/Avater'),
+                            children: [{
+                                    path: 'male',
+                                    name: 'male',
+                                    component: () =>
+                                        import ('@/components/shop/avater/male'), 
+                                },
+                                {
+                                    path: 'dmale',
+                                    name: 'dmale',
+                                    component: () =>
+                                        import ('@/components/shop/avater/malefemale/dmale')
+                                },
+                                {
+                                    path: 'female',
+                                    name: 'female',
+                                    component: () =>
+                                        import ('@/components/shop/avater/female'),
+                                   
+                                },
+                                {
+                                    path: 'dfemale',
+                                    name: 'dfemale',
+                                    component: () =>
+                                        import ('@/components/shop/avater/malefemale/dfemale')
+                                },
+                                {
+                                    path: 'background',
+                                    name: 'background',
+                                    component: () =>
+                                        import ('@/components/shop/avater/background')
+                                },
+                               
+                                {
+                                    path: 'familiars',
+                                    name: 'familiars',
+                                    component: () =>
+                                        import ('@/components/shop/avater/familiars')
+                                },
 
+                                {
+                                    path: 'fullset',
+                                    name: 'fullset',
+                                    component: () =>
+                                        import ('@/components/shop/avater/fullset')
+                                },
+                           
+        
+        
+                            ],
+                        },
                         {
                             path: 'intellegence',
                             component: () =>
@@ -501,6 +551,12 @@ export default new Router({
 
                     ],
                 },
+
+
+                /* Avater shop sub sections are here to avoide multiple nesting */
+
+                
+                      
                 {
                     path: 'chat/:id',
                     component: () =>
@@ -1040,9 +1096,7 @@ export default new Router({
             beforeEnter() { location.href = 'https://m.me/mafiasrivalgame'}
         }
         /* external link End */
-
-
-
+        
         /*  {
            path:'/',
            redirect:'/home/gtns',          

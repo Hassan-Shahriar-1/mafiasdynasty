@@ -239,7 +239,7 @@ export default {
                                          {
                                             nm:"Avater", 
                                             icn:"<i class='fas fa-user-ninja'></i>",
-                                            clk:'/game/shop/Avater'
+                                            clk:'/game/shop/avater/fullset'
                                         },
 
                                         {
