@@ -149,7 +149,9 @@ export default {
    },
    mounted() {
     this.drp_itm
+   
    },
+   
  
 
     
@@ -160,7 +162,7 @@ export default {
            
         },
         domission(oid){
-            console.log('mid',oid)
+            
                   this.axios.get('/mission/domsn/'+oid).then((res)=>{
                        console.log(res)
                         if(res.sts=='ok'){
@@ -179,6 +181,7 @@ export default {
 
                          
                          console.log('array',this.drp_itm)
+                          
                         
                     })
           

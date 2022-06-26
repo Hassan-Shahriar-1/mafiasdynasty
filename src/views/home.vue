@@ -15,9 +15,10 @@ export default ({
     },
        
     mounted() {
-     
+       window.scrollTo(0, 0)
     },
-    beforeCreate() {         
+    beforeCreate() {     
+
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // for chorme
     this.$gm.lgnchk(this);      

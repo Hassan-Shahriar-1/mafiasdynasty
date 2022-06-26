@@ -102,7 +102,7 @@
                     <div class="col-4 p-1"> <router-link to="/game/alerts"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i    class="fas fa-exclamation-triangle"></i><br> <h6 class="siz15">Alerts </h6></div></router-link></div>
                     <div class=" col-4 p-1"><div tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0" v-on:click="toggle2()" @click="stngs=true"><i v-bind:class="{'fas fa-bell' :tgle === true, 'fas fa-bell-slash': tgle === false}" ></i><h6 class="siz15">notification</h6></div></div>
                     <div class="col-4 p-1"><router-link to="/game/editprofile"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0 "><i class="fas fa-user"></i><br> <h6 class="siz15">Edit profile</h6></div> </router-link></div> 
-                    <div class="col-4 p-1"><div  tag="button"  class="btn btn-block   nBtn blkgry my-1 Gp0m0" v-on:click="toggle()" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" ></i><audio ref="audioElm"  loop="true" preload="auto" src="https://file-examples.com/storage/fee788409562ada83b58ed5/2017/11/file_example_WAV_5MG.wav"></audio><h6 class="siz15">Music</h6></div></div>
+                    <div class="col-4 p-1"><div  tag="button"  class="btn btn-block   nBtn blkgry my-1 Gp0m0" v-on:click="toggle()" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" ></i><!-- <audio ref="audioElm"  loop="true" preload="auto" src="https://file-examples.com/storage/fee788409562ada83b58ed5/2017/11/file_example_WAV_5MG.wav"></audio> --><h6 class="siz15">Music</h6></div></div>
                     <div class="col-4 p-1"><div  tag="button" @click="sconnectshow() ,stnghd()"  class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-share-alt"></i><br><h6 class="siz15"  > Social Connect</h6> </div></div>
                     <div class="col-4 p-1"><div  tag="button"  @click="bmsho(),stnghd()" class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-lightbulb"></i><br><h6 class="siz15"> Hints</h6> </div></div>
                     <div class="col-4 p-1"><router-link to="/gmail"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="far fa-envelope"></i><br> <h6 class="siz15">Mail </h6></div></router-link></div>     
@@ -250,7 +250,8 @@
 </style>
 
 <script>  
-export default {   
+export default { 
+     
     data(){
         return{             
              Th:{
@@ -275,6 +276,12 @@ export default {
              sconnect:false,
              stngs:false,
              ntf:false,
+             hrtbtroute:{///header value api  trigger for those routes routes
+                'mission':true,'shop':true,'boss':true
+
+             },
+                
+            
 
 
                  
@@ -319,6 +326,7 @@ export default {
              clg:"Close",
              rcdlst:[],
              nrcd:'',
+             timer:null
         
 
 
@@ -329,6 +337,9 @@ export default {
     beforeCreate() {        
         window.addEventListener('scroll', this.handleScroll);       
     },
+    created(){
+        this.hdrdbltp()
+    },
     updated(){
         this.TptrgrBr(); 
       /*   this.growDiv();  */
@@ -336,58 +347,53 @@ export default {
         
     },
     mounted(){
-        this.TptrgrBr();  
+        
         window.addEventListener('scroll', this.handleScroll);
-         this.toggle()
+         
 
         /* this.socket.on('popupntf',(data)=>{
         console.log(data);
         })    */
-         this.hgtdt()
-        /* var audio = new Audio('https://file-examples.com/storage/fee788409562ada83b58ed5/2017/11/file_example_WAV_5MG.wav');
-        audio.play(); */
+     let routes=this.$route.name;
+      if(this.hrtbtroute[routes]){
+       
+        window.addEventListener('click',this.hgtdt)
+         
+      }
+     
+      
           
-    },  
-  
-       /*  beforeUpdate(){
-           this.$mgo.gt('mp/hrtbt', (rsp)=>{  
-                if(rsp.sts == 'ok'){
-                    const imr = rsp.data;
-                    for (const [key] of Object.entries(this.Th)) {
-                        if(imr[key]){  this.Th[key] = imr[key]; }         
-                    }    
-                }        
-            })
-        }, */
+    }, 
     
+
     methods: {
 
            beforeOspen() {
-      setTimeout(() => {
-        window.jq(".vm--modal").height(window.jq("#fds").outerHeight());
-      }, 0);
-    },
-        lnk(vl){
-            console.log(vl);
+                setTimeout(() => {
+                    window.jq(".vm--modal").height(window.jq("#fds").outerHeight());
+                }, 0);
+            },
+            lnk(vl){
+                    console.log(vl);
+                    
+                    if(vl==true){
+                        this.$router.push('/game/notification/news')
+                        var md = document.getElementById('grow');
+                        md.style.height = 0;
+                    }else{
             
-            if(vl==true){
-                this.$router.push('/game/notification/news')
-                 var md = document.getElementById('grow');
-                 md.style.height = 0;
-            }else{
-    
-               if(this.$router.currentRoute.path=='/game/notification/pchat'){
-                     this.$router.replace('/game/home/gtns') 
-               }else if(this.$router.currentRoute.path=='/game/notification/request'){
-                    this.$router.replace('/game/home/gtns')
-               }else if(this.$router.currentRoute.path=='/game/notification/activity'){
-                   this.$router.replace('/game/home/gtns')
-               }
-               else{
-                this.$router.go(-1) 
-                }
-            }
-        },
+                    if(this.$router.currentRoute.path=='/game/notification/pchat'){
+                            this.$router.replace('/game/home/gtns') 
+                    }else if(this.$router.currentRoute.path=='/game/notification/request'){
+                            this.$router.replace('/game/home/gtns')
+                    }else if(this.$router.currentRoute.path=='/game/notification/activity'){
+                        this.$router.replace('/game/home/gtns')
+                    }
+                    else{
+                        this.$router.go(-1) 
+                        }
+                    }
+            },
         logout(){
             this.$mgo.gt('auth/logout',(rs)=>{
                 console.log(rs)
@@ -411,9 +417,9 @@ export default {
       this.tgle = !this.tgle
     },
         hdrdbltp(){
-           // alert('called');
+           
            this.hgtdt();
-           // this.hdrFrsh();
+           
         },
         show(){
             this.$modal.show('ntfctn');
