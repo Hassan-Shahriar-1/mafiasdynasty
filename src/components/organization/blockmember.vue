@@ -4,7 +4,7 @@
             <h4 class='hr-sect Gp0m0 subtitlefnt'>Block List</h4>
         </div> 
             <h5 v-if="msg" class="text-white text-center">{{msg}}</h5>
-        <div class="row Gp0m0 " v-else>
+        <div class="row Gp0m0" v-else>
             <div class="col-3 Gp0m0 "  v-for="(blk,i) in blklst" :key="i">
                 <div class="m-1  blksdo2" @click="show(blk.id,blk.name)">
                     <img :src="require('/src/assets/img/1.png')" class="card-img rounded-0  " alt="">

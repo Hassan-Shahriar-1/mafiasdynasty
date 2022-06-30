@@ -17,16 +17,17 @@ export default {
   name: 'App',
   created(){
      // alert(window.jq);
-      window.jq.getScript('dist/js/jquery.fittext.js');
+    window.jq.getScript('dist/js/jquery.fittext.js');
+      /*This part will set everypage on top onload  */
+   
   },
+
 }
 
 </script>
 <style scoped src="@/assets/css/allcss.css">
-
 </style>
 <style>
-
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -34,10 +35,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 0px;
+ /*  margin-top: 0px; */
   margin-bottom:60px;
 /*   margin-bottom: auto; */
 }
-
 </style>
 

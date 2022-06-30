@@ -8,3 +8,14 @@ https://codepen.io/hchiam/pen/ZEzjrNY
 
 
 set canvas and then set card image with overlay inside the canvas and try again
+
+
+
+try to resolve multi layer canvas 
+https://www.youtube.com/watch?v=Q501OETXFBU
+https://drive.google.com/file/d/1pRXiEXeI2Wu_t84aCX4od70sy9vTFsF2/view
+
+
+
+
+simple vanish animation link:https://codepen.io/sl2782087/pen/OYyLeE

@@ -22,6 +22,8 @@
                 <div class="progress n_bar-a" style="height:8px;">
                     <div class="progress-bar clRBppl bgD0" id="itmBr" :style="{width: Th.expW+'%'}" ></div>
                 </div>
+                  <!--  <progress-bar bg-color="linear-gradient( #999, #000)" size="8" :bar-border-radius="10" bar-transition="width 0.6s ease;" bar-color="linear-gradient(0deg, rgba(42, 1, 69, 1) 0%, rgba(75, 6, 117, 1) 55%, rgba(50, 2, 65, 1) 100%)" ref="saha"  :val=Th.expW  >
+                  </progress-bar> -->
                 <h6 class="text-left">Exp:{{Th.expst}}/{{Th.exped}} </h6>
             </div>
             <div class="col-1 py-0 text-center  mt-2 Gp0m0 no-gutters" style="margin-left:1%;" >
@@ -49,10 +51,12 @@
         <v-touch id='StkinHmnu' @doubletap="hdrdbltp()"  class="container Gp0m0 itmbg" style="z-index:+1030; max-width:575.98px;"> 
             <div class="row Gp0m0" >
                 <div class="col-4 p-1 itmbgbdr blkgry">
-                    <h6 class='hrtl  '>Enargy  <span class="hdricnpsn float-right iC-energy incb3"></span> <br></h6>
+                    <h6 class='hrtl'>Enargy  <span class="hdricnpsn float-right iC-energy incb3"></span> <br></h6>
                     <div class="progress n_bar-a w-100" style="height:5px;">
                         <div class="progress-bar clRBblue bgD0" id="itmBr" :style="{width: Th.engW+'%'}"></div>
                     </div>
+                    <!-- <progress-bar bg-color="linear-gradient( #999, #000)" size="5" :bar-border-radius="10" bar-transition="width 0.6s ease;" bar-color="linear-gradient(180deg, rgba(54 ,19 ,209) 0%, rgba(15,3,122,1) 50%, rgba(15,1,77,1) 100%)" ref="saha"  :val=Th.engW  >
+                  </progress-bar> -->
                     <h6 class="text-left">{{Th.engst}}/{{Th.enged}}</h6>
                 </div>
 
@@ -61,6 +65,8 @@
                     <div class="progress n_bar-a w-100" style="height:5px;">
                         <div class="progress-bar clRBgreen bgD0" id="itmBr" :style="{width:Th.RagW+'%'}"></div>
                     </div>
+                    <!-- <progress-bar bg-color="linear-gradient( #999, #000)" size="5" :bar-border-radius="10" bar-transition="width 0.6s ease;" bar-color="linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(2, 161, 23, 0.8435749299719888) 55%, rgba(5, 224, 27, 1) 100%)" ref="saha"  :val=Th.engW  >
+                  </progress-bar> -->
                     <h6 class="text-left">{{Th.Ragst}}/{{Th.Raged}}</h6>
                 </div>
 
@@ -69,6 +75,8 @@
                     <div class="progress n_bar-a w-100" style="height:5px;">
                         <div class="progress-bar clRBrd bgD0" id="itmBr" :style="{width:Th.hltW+'%'}"></div>
                     </div>
+                     <!-- <progress-bar bg-color="linear-gradient( #999, #000)" size="5" :bar-border-radius="10" bar-transition="width 0.6s ease;" bar-color="linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(224, 5, 5 ,84)  55%, rgb(224 5 5) 100%)" ref="saha"  :val=Th.hltW  >
+                  </progress-bar> -->
                     <h6 class="text-left">{{Th.hltst}}/{{Th.hlted}}  </h6>
                 </div>
             
@@ -89,26 +97,23 @@
         <div class="container Gp0m0 jaldi mnbg"></div>
         <div class="btn-group rounded jaldi bw100"  role="group" aria-label="..." >
          <div  id='grow'>
-
-             <div class="measuringWrapper" >
-                 <div class=" row no-gutters blkgry" @click="handleClick">
-                
-              <div class="col-4 p-1"> <router-link to="/game/alerts"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i    class="fas fa-exclamation-triangle"></i><br> <h6 class="siz15">Alerts </h6></div></router-link></div>
-              <div class=" col-4 p-1"><div tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0" v-on:click="toggle2()" @click="stngs=true"><i v-bind:class="{'fas fa-bell' :tgle === true, 'fas fa-bell-slash': tgle === false}" ></i><h6 class="siz15">notification</h6></div></div>
-              <div class="col-4 p-1"><router-link to="/game/editprofile"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0 "><i class="fas fa-user"></i><br> <h6 class="siz15">Edit profile</h6></div> </router-link></div> 
-              <div class="col-4 p-1"><div  tag="button"  class="btn btn-block   nBtn blkgry my-1 Gp0m0" v-on:click="toggle()" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" ></i><h6 class="siz15">Music</h6></div></div>
-              <div class="col-4 p-1"><div  tag="button" @click="sconnectshow() ,stnghd()"  class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-share-alt"></i><br><h6 class="siz15"  > Social Connect</h6> </div></div>
-              <div class="col-4 p-1"><div  tag="button"  @click="bmsho(),stnghd()" class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-lightbulb"></i><br><h6 class="siz15"> Hints</h6> </div></div>
-              <div class="col-4 p-1"><router-link to="/gmail"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="far fa-envelope"></i><br> <h6 class="siz15">Mail </h6></div></router-link></div>     
-              <div class="col-4 p-1"><router-link to="/game/forumlist"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fab fa-wpforms"></i><br> <h6 class="siz15">Forum</h6></div> </router-link></div> 
-              <div class="col-4 p-1"><router-link to="/messenger"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fab fa-facebook-messenger"></i><br><h6 class="siz15"> Message </h6></div></router-link></div> 
-                            <div class="col-4 p-1"><div tag="button" @click="Lotsw(),stnghd(),stngs=true" class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-sign-out-alt"></i><br> <h6 class="siz15">Logout</h6> </div></div>
+            <div class="measuringWrapper" >
+                <div class="row p-2 no-gutters blkgry" @click="handleClick">
+                    <div class="col-4 p-1"> <router-link to="/game/alerts"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i    class="fas fa-exclamation-triangle"></i><br> <h6 class="siz15">Alerts </h6></div></router-link></div>
+                    <div class=" col-4 p-1"><div tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0" v-on:click="toggle2()" @click="stngs=true"><i v-bind:class="{'fas fa-bell' :tgle === true, 'fas fa-bell-slash': tgle === false}" ></i><h6 class="siz15">notification</h6></div></div>
+                    <div class="col-4 p-1"><router-link to="/game/editprofile"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0 "><i class="fas fa-user"></i><br> <h6 class="siz15">Edit profile</h6></div> </router-link></div> 
+                    <div class="col-4 p-1" id="musicbtn"><div  tag="button"  class="btn btn-block   nBtn blkgry my-1 Gp0m0" v-on:click="toggle()" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" ></i><audio ref="audioElm"  loop="true" preload="auto" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio><h6 class="siz15">Music</h6></div></div>
+                    <div class="col-4 p-1"><div  tag="button" @click="sconnectshow() ,stnghd()"  class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-share-alt"></i><br><h6 class="siz15"  > Social Connect</h6> </div></div>
+                    <div class="col-4 p-1"><div  tag="button"  @click="bmsho(),stnghd()" class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-lightbulb"></i><br><h6 class="siz15"> Hints</h6> </div></div>
+                    <div class="col-4 p-1"><router-link to="/gmail"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="far fa-envelope"></i><br> <h6 class="siz15">Mail </h6></div></router-link></div>     
+                    <div class="col-4 p-1"><router-link to="/game/forumlist"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fab fa-wpforms"></i><br> <h6 class="siz15">Forum</h6></div> </router-link></div> 
+                    <div class="col-4 p-1"><router-link to="/messenger"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fab fa-facebook-messenger"></i><br><h6 class="siz15"> Message </h6></div></router-link></div> 
+                    <div class="col-4 p-1"><div tag="button" @click="Lotsw(),stnghd(),stngs=true" class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-sign-out-alt"></i><br> <h6 class="siz15">Logout</h6> </div></div>
                 </div>
-                </div>
-                </div>
+            </div>
+        </div>
 
             <modal name="sconnect"  :width="330" :isAutoHeight="true" @before-open="beforeOspen"  class="bdr4 blksdo  rounded mblr"  >
-               
                          <div class="card tmibg" id="fds" >
                         <div class="card-header ">
                             <h2 class="text-left">Social Connect<h3 class="float-right"><i class="fas fa-times text-danger"  @click="sconnecthd()"></i></h3></h2>
@@ -129,7 +134,6 @@
                         </div>
                         <div class="card-body bg-transparent" style="height: 400px; overflow: scroll;" v-if="nrcd==''">
                             <h6>{{ nrcd }}</h6>
-                            
                         </div>
                         
                         <div class="card-body bg-transparent" style="height: 400px; overflow: scroll;" v-else>
@@ -160,13 +164,12 @@
                     </div>
                 </modal>
 
-
                    <modal name="bmsho"  :width='300'   :height='550' class="bdr4 blksdo rounded  mblr">
                     <div class="card" style="width:300px; height:550px;" >
                         <div class="card-header blkgry p-2">
                             <h2 class="text-center">Hints and Tips <h3 class="float-right"><i class="fas fa-times text-danger"  @click="bmshd()"></i></h3></h2>
                         </div>
-                        <div class="card-body tmibg" style="height:500px; overflow:scroll;">
+                        <div class="card-body blk" style="height:500px; overflow:scroll;">
                             <h5>1.	Double tap on the VD logo. It will work like reloading the game.</h5><br>
                             <h5>2.	Double tap on the bar which shows Energy, Rage, Health, Jewels and Experience. It will reload the stat and will show your current stats if there were any laggy. </h5><br>
                             <h5>3.	If the loader stays much longer, double tap on the stat bar. </h5><br>
@@ -178,10 +181,8 @@
                             <h5>9.	Visit Horkos twice or thrice in a day. .</h5><br>
                             <h5>10.	Blood from shop follows your income. So the more you have blood income the more you can buy bloods from shop at same cost.</h5><br>
                         </div>
-                      
                     </div>
                 </modal>
-           
         </div>
   </div>
 </template>
@@ -249,7 +250,8 @@
 </style>
 
 <script>  
-export default {   
+export default { 
+     
     data(){
         return{             
              Th:{
@@ -274,6 +276,12 @@ export default {
              sconnect:false,
              stngs:false,
              ntf:false,
+             hrtbtroute:{///header value api  trigger for those routes routes
+                'mission':true,'shop':true,'boss':true
+
+             },
+                
+            
 
 
                  
@@ -318,6 +326,7 @@ export default {
              clg:"Close",
              rcdlst:[],
              nrcd:'',
+             timer:null
         
 
 
@@ -328,6 +337,9 @@ export default {
     beforeCreate() {        
         window.addEventListener('scroll', this.handleScroll);       
     },
+    created(){
+        this.hdrdbltp()
+    },
     updated(){
         this.TptrgrBr(); 
         this.hgtdt();
@@ -335,67 +347,75 @@ export default {
         
     },
     mounted(){
-        this.TptrgrBr();  
         window.addEventListener('scroll', this.handleScroll);
-         this.hgtdt()
+        /* this.socket.on('popupntf',(data)=>{
+        console.log(data);
+        })    */
+     let routes=this.$route.name;
+      if(this.hrtbtroute[routes]){
+        window.addEventListener('click',this.hgtdt)
+         
+      }
+     
+      
           
-    },  
-  
-       /*  beforeUpdate(){
-           this.$mgo.gt('mp/hrtbt', (rsp)=>{  
-                if(rsp.sts == 'ok'){
-                    const imr = rsp.data;
-                    for (const [key] of Object.entries(this.Th)) {
-                        if(imr[key]){  this.Th[key] = imr[key]; }         
-                    }    
-                }        
-            })
-        }, */
+    }, 
     
+
     methods: {
 
            beforeOspen() {
-      setTimeout(() => {
-        window.jq(".vm--modal").height(window.jq("#fds").outerHeight());
-      }, 0);
-    },
-        lnk(vl){
-            console.log(vl);
+                setTimeout(() => {
+                    window.jq(".vm--modal").height(window.jq("#fds").outerHeight());
+                }, 0);
+            },
+            lnk(vl){
+                    console.log(vl);
+                    
+                    if(vl==true){
+                        this.$router.push('/game/notification/news')
+                        var md = document.getElementById('grow');
+                        md.style.height = 0;
+                    }else{
             
-            if(vl==true){
-                this.$router.push('/game/notification/news')
-                 var md = document.getElementById('grow');
-                 md.style.height = 0;
-            }else{
-    
-               if(this.$router.currentRoute.path=='/game/notification/pchat'){
-                     this.$router.replace('/game/home/gtns') 
-               }else if(this.$router.currentRoute.path=='/game/notification/request'){
-                    this.$router.replace('/game/home/gtns')
-               }else if(this.$router.currentRoute.path=='/game/notification/activity'){
-                   this.$router.replace('/game/home/gtns')
-               }
-               else{
-                this.$router.go(-1) 
-                }
-            }
-        },
+                    if(this.$router.currentRoute.path=='/game/notification/pchat'){
+                            this.$router.replace('/game/home/gtns') 
+                    }else if(this.$router.currentRoute.path=='/game/notification/request'){
+                            this.$router.replace('/game/home/gtns')
+                    }else if(this.$router.currentRoute.path=='/game/notification/activity'){
+                        this.$router.replace('/game/home/gtns')
+                    }
+                    else{
+                        this.$router.go(-1) 
+                        }
+                    }
+            },
         logout(){
             this.$mgo.gt('auth/logout',(rs)=>{
                 console.log(rs)
             })
         },
 
-    toggle: function() {
-      this.tog = !this.tog
-    },
-     toggle2: function() {
+    toggle() {
+        this.tog =!this.tog
+        var a = this.$refs.audioElm;
+        a.volume = 0.5;
+        a.currentTime = 0;
+        if (a.paused) {
+            a.play();
+        } 
+        else {
+            a.pause();
+        }
+        },
+
+    toggle2: function() {
       this.tgle = !this.tgle
     },
         hdrdbltp(){
-           // alert('called');
+           
            this.hgtdt();
-           // this.hdrFrsh();
+           
         },
         show(){
             this.$modal.show('ntfctn');
@@ -487,10 +507,10 @@ export default {
 
 handleClick() {
     var growDiv = document.getElementById('grow');
-  if (growDiv) {
-    this.$emit("hide"); //fires only on click outside
-    console.log('this is clicked')
-  }
+    if (growDiv) {
+         this.$emit("hide"); //fires only on click outside
+        console.log('this is clicked')
+    }
 },
 
 

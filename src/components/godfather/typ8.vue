@@ -4,7 +4,7 @@
         <div class="card bg-transparent border  Gp0m0">
             <div class="card-header blkgry text-center"><h4 class="titlefnt">Sophia Sharon <i @click="t8nws ^= true" class="float-right siz20 fas fa-question-circle"></i></h4>                
             </div>
-            <h6 class="p-2 m-2 text-justify dtlsfnt blkgry scale-up-center" v-show="t8nws">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio similique nulla aliquam,
+                <h6 class="p-2 m-2 text-justify dtlsfnt blkgry scale-up-center" v-show="t8nws">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio similique nulla aliquam,
                     amet asperiores nam minima odio iusto officiis 
                     voluptatem eveniet natus. Atque quidem, voluptate numquam laborum accusantium architecto?
                 </h6>
@@ -16,8 +16,8 @@
                         <h6>I have gathered all the knowledge and items for ages. To be updated with 
                             the upcoming news, come to pay a visit. My knowledge adroitness is unrevealed which will be revealed very soon. <br> 
                             </h6>
-                     </div>
-                 </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -29,7 +29,8 @@
 
         
         <div class="card-header blkgry"><h3 class="titlefnt"> Door WAY</h3></div>
-        <div class="card-body p-2 Gp0m0">
+        <div class="card-body blkd50 p-2 Gp0m0">
+            <!-- Carousel Slider start  -->
             <carousel :autoplay="true" :height="300" :dots="false" :autoplayTimeout="3000" :nav="false" :items='1' > 
                 <div class="card blkgry w-100 bdr1"  v-for="(hbimg, i) in bimg" :key="i">
                     <img class="card-img" style="height:150px;" 
@@ -39,13 +40,14 @@
                     </div>
                 </div>
             </carousel>
+            <!-- Carousel Slider End  -->
         </div>    
     </div>
 </template>
 
+
 <script>
 import carousel from 'vue-owl-carousel'
-
 export default {
       components: { carousel },
     data(){

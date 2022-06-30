@@ -118,6 +118,8 @@ Vue.use(vueCountdownTimer);
 
 Vue.component('ProgressBar', ProgressBar)
 
+Vue.component('ProgressBar', ProgressBar)
+
 Vue.use(store)
 Vue.use(Popover)
 

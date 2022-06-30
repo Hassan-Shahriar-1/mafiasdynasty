@@ -296,16 +296,16 @@
                 </h5>
               </h5>
             </div>
-            <div class="card-body Gp0m0 tmibg" >
-              <div class="row Gp0m0 py-2" v-for="(sabl, i) in abl" :key="i" >
+            <div class="card-body Gp0m0 tmibg"  style="height:300px;overflow:scroll;" >
+              <div class="row Gp0m0 rounded blkd75 p-2 my-2" v-for="(sabl, i) in abl" :key="i" >
                 <div class="col-2 Gp0m0">
                   <img class="card-img" :src="require('../../assets/img/'+sabl.img)" alt=""/>
                 </div>
                 <div class="col-4 Gp0m0 mt-2">
                   <h6 class="siz15">{{sabl.nm}}</h6>
                 </div>
-                <div class="col-3 Gp0m0 mt-2">
-                  <select name="Select" id="" class="w-100 text-dark">
+                <div class="col-3 Gp0m0 mt-1">
+                  <select name="Select" id="" class="w-100 text-dark form-control form-control-sm">
                     <option selected class="text-dark">Select</option>
                     <option value="1">1</option>
                     <option value="3">2</option>
@@ -314,8 +314,8 @@
                     <option value="10">5</option>
                   </select>
                 </div>
-                <div class="col-3 p-1">
-                  <div class="btn nBtn button5 btn-block btn-lg py-1 px-0">
+                <div class="col-3 px-1">
+                  <div class="btn nBtn button5 btn-block btn-lg py-2 px-0">
                     <h4 class="siz13">
                       Send<i class="fas fa-paper-plane"></i>
                     </h4>
@@ -383,6 +383,22 @@ export default {
       usrdata: [],
           abl:[
                 {
+                     img:"1.png",
+                     nm:"Habibur Rahman"
+                },
+                 {
+                     img:"1.png",
+                     nm:"Habibur Rahman"
+                },
+                 {
+                     img:"1.png",
+                     nm:"Habibur Rahman"
+                },
+                 {
+                     img:"1.png",
+                     nm:"Habibur Rahman"
+                },
+                  {
                      img:"1.png",
                      nm:"Habibur Rahman"
                 },

@@ -11,16 +11,10 @@
                         <router-link :to="{ name: 'fimiliers'}"  class="btn nBtn tmibg Gp0m0 "><i class="fas fa-dragon"></i> <br><h4 class="siz10">Familiers</h4></router-link>
                         <router-link :to="{ name: 'avater'}" class="btn nBtn tmibg Gp0m0 "><i class="fas fa-users fa"></i> <br><h4 class="siz10">Avater set</h4></router-link>
                         <router-link :to="{ name: 'avaterbg'}"  class="btn nBtn tmibg Gp0m0 "><i class="far fa-image"></i> <br><h4 class="siz10">Avater BG</h4></router-link>
-                        
                     </div>
-                    
                 </div>
-                 
             </div>
-           
-          
  <router-view></router-view>
-  
         </div>
     </div>
 </template>

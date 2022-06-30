@@ -1,10 +1,13 @@
 <template>
     <div class="container px-0  ">
-        <div class="StryCntnr" style="margin-bottom:1vh;">       
-            <carousel :autoplay="true" :height="200" :dots="false" :nav="false" :items='1' class="p-2"> 
-            <img v-for="(hbimg, i) in bimg" :key="i" class="card-img  bdr1 " style="height:200px; " 
-            :src="require('/src/assets/img/bannar/'+hbimg.img)">
-            </carousel>
+        <div class="StryCntnr" style="margin-bottom:1vh;">  
+
+            <div class="card tmibg bnrbxsdomn">     
+                <carousel :autoplay="true" :height="200" :dots="false" :nav="false" :items='1' class=""> 
+                <img v-for="(hbimg, i) in bimg" :key="i" class="card-img" style="height:200px; " 
+                :src="require('/src/assets/img/bannar/'+hbimg.img)">
+                </carousel>
+            </div>
             
             <div class="row Gp0m0 bg-dark  p-2">                       
                 <div class="col-9 Gp0m0"><h2 class=" siz30 titlefnt">Filght for Colambia</h2></div>
@@ -21,9 +24,11 @@
                         <router-link to="update" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fas fa-edit"></i> <br> Updates</router-link>
                         <router-link to="dailytask" class="btn btn-lg py-1 px-0  btn-block text-danger  nBtn bgD8"><i class="fas fa-tasks"></i> <br>Daily<br>task</router-link>
                         <router-link to="bonus" class="btn btn-lg p-1  btn-block text-light Anm-outln15si incb4 button4" v-if="bns!=''"><i class="fas fa-money-check-alt"></i> <br>  Bonus</router-link>
+                        <router-link to="publicchest" class="btn btn-lg py-1 px-0  btn-block text-danger  nBtn bgD8"><i class="fas fa-vest-patches"></i> <br>  Public <br>Chest</router-link>
+                        <router-link to="clanchest" class="btn btn-lg py-1 px-0  btn-block text-danger  nBtn bgD8"><i class="fas fa-vest-patches"></i> <br>  Clan <br>Chest</router-link>
+
                 </div>
                 <div class="col-9 Gp0m0 pl-2  overflow-scroll">
-
                     <router-view></router-view>
 
                 </div>
