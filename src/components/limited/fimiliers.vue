@@ -1,8 +1,5 @@
 <template>
     <div>
-
-
-
     <div class="blkred p-2 siz17">
       <vue-countdown-timer
       @start_callback="startCallBack('event started')"
@@ -20,8 +17,6 @@
       :seconds-txt="'seconds'">
     </vue-countdown-timer>
     </div>
-        <h1>hi fimiliars</h1>
-
     <div class="row Gp0m0 blkgry my-2" v-for="(fmlr, i) in bimg" :key="i">	
 		<div class="col-4 px-1"><img  :src="require('/src/assets/img/item/'+fmlr.img)"  class="card-img mt-4"></div> 
 		<div class="col-8"> 
@@ -33,15 +28,11 @@
             </div>
 		</div> 							 
     </div>
-
     </div>
 </template>
-
 <script>
 export default {
     data() {
-
-
         return{
                      itm:[],
             abl:[],
@@ -77,11 +68,8 @@ export default {
                     dfnc:"10",
                     jwls:"45"
                  },
-             
-               
             ]
-        }
-        
+        }  
     },
        beforeCreate(){
       this.$mgo.gt('mp/limited/editiopn/fmlr',(rs)=>{

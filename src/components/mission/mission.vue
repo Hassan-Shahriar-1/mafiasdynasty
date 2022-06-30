@@ -64,13 +64,8 @@
                         </div>
                             <div class="rounded bMbg4 bdr1" >
                                 <h4 class="text-center subtitlefnt ">Item found</h4>
-                                <div class="rounded bMbg4 bdr1" ></div>
-                                <div class="row Gp0m0 my-2">
-                                    <div class="col-3 " :id="i">
-                                        
-                                    </div>
-                                    
-                                   
+                                <div class="rounded bMbg4 bdr1"></div>
+                                <div class="row Gp0m0 my-2" :id="i">   
                                 </div>
                             </div>
 
@@ -170,7 +165,7 @@ export default {
                             this.lvl=res.ok['msnd'][0]
                             if( res.get !=false){
                                 this.drp_itm.push(res.get);
-                                window.jq('#'+oid).prepend( '<img  class="card-img" src="http://mrdemo.com/item/'+res.get['itid']+'.png"'+'alt=""/>')
+                                window.jq('#'+oid).prepend( ' <div class="col-3 card p-1" ><img  class="card-img" src="http://mrdemo.com/item/'+res.get['itid']+'.png"'+'alt=""/><div class="card-footer py-1 text-center blkgry">'+res.get['cnt']+'</div> </div>')
                             }
                         }else if(res.sts=='rq'){
                             this.msg='required Item are'

@@ -14,7 +14,7 @@
                     <div class="col-8">
 
                         <h5 class="subtitlefnt">{{ccard.title}}</h5>
-                         <div class="btn nBtn nBbg button4 btn-lg btn-block text-center">Open</div>   
+                         <div class="btn nBtn nBbg p-1 mb-3 button4 btn-lg btn-block text-center">Open</div>   
                     </div>
                 </div>
             </div>

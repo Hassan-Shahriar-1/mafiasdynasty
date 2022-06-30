@@ -98,11 +98,11 @@
         <div class="btn-group rounded jaldi bw100"  role="group" aria-label="..." >
          <div  id='grow'>
             <div class="measuringWrapper" >
-                <div class=" row no-gutters blkgry" @click="handleClick">
+                <div class="row p-2 no-gutters blkgry" @click="handleClick">
                     <div class="col-4 p-1"> <router-link to="/game/alerts"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i    class="fas fa-exclamation-triangle"></i><br> <h6 class="siz15">Alerts </h6></div></router-link></div>
                     <div class=" col-4 p-1"><div tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0" v-on:click="toggle2()" @click="stngs=true"><i v-bind:class="{'fas fa-bell' :tgle === true, 'fas fa-bell-slash': tgle === false}" ></i><h6 class="siz15">notification</h6></div></div>
                     <div class="col-4 p-1"><router-link to="/game/editprofile"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0 "><i class="fas fa-user"></i><br> <h6 class="siz15">Edit profile</h6></div> </router-link></div> 
-                    <div class="col-4 p-1"><div  tag="button"  class="btn btn-block   nBtn blkgry my-1 Gp0m0" v-on:click="toggle()" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" ></i><!-- <audio ref="audioElm"  loop="true" preload="auto" src="https://file-examples.com/storage/fee788409562ada83b58ed5/2017/11/file_example_WAV_5MG.wav"></audio> --><h6 class="siz15">Music</h6></div></div>
+                    <div class="col-4 p-1" id="musicbtn"><div  tag="button"  class="btn btn-block   nBtn blkgry my-1 Gp0m0" v-on:click="toggle()" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" ></i><audio ref="audioElm"  loop="true" preload="auto" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio><h6 class="siz15">Music</h6></div></div>
                     <div class="col-4 p-1"><div  tag="button" @click="sconnectshow() ,stnghd()"  class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-share-alt"></i><br><h6 class="siz15"  > Social Connect</h6> </div></div>
                     <div class="col-4 p-1"><div  tag="button"  @click="bmsho(),stnghd()" class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-lightbulb"></i><br><h6 class="siz15"> Hints</h6> </div></div>
                     <div class="col-4 p-1"><router-link to="/gmail"><div @click="stnghd()" tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="far fa-envelope"></i><br> <h6 class="siz15">Mail </h6></div></router-link></div>     
@@ -347,16 +347,12 @@ export default {
         
     },
     mounted(){
-        
         window.addEventListener('scroll', this.handleScroll);
-         
-
         /* this.socket.on('popupntf',(data)=>{
         console.log(data);
         })    */
      let routes=this.$route.name;
       if(this.hrtbtroute[routes]){
-       
         window.addEventListener('click',this.hgtdt)
          
       }
@@ -511,10 +507,10 @@ export default {
 
 handleClick() {
     var growDiv = document.getElementById('grow');
-  if (growDiv) {
-    this.$emit("hide"); //fires only on click outside
-    console.log('this is clicked')
-  }
+    if (growDiv) {
+         this.$emit("hide"); //fires only on click outside
+        console.log('this is clicked')
+    }
 },
 
 

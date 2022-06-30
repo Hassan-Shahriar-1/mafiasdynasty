@@ -17,7 +17,7 @@
                     <div class="col-8">
 
                         <h6 class="subdtlsfnt">{{ccard.dtls}}</h6>
-                         <div class="btn nBtn nBbg button4 siz15 py-1 text-center">Open</div>  
+                         <div class="btn nBtn nBbg p-1 mb-3 button4 siz15 py-1 text-center">Open</div>  
                     </div>
                 </div>
             </div>
