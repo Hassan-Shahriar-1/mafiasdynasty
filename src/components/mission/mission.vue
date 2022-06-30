@@ -183,9 +183,7 @@ export default {
                     })
           
                   
-                this.$refs['prg'+oid][0]['val']=parseInt(this.progress_data)
-                            
-           
+                this.$refs['prg'+oid][0]['val']=parseInt(this.progress_data)   
         },
 
         hide(){

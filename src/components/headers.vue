@@ -330,17 +330,13 @@ export default {
     },
     updated(){
         this.TptrgrBr(); 
-      /*   this.growDiv();  */
+        this.hgtdt();
        window.addEventListener('scroll', this.handleScroll);
         
     },
     mounted(){
         this.TptrgrBr();  
         window.addEventListener('scroll', this.handleScroll);
-
-        /* this.socket.on('popupntf',(data)=>{
-        console.log(data);
-        })    */
          this.hgtdt()
           
     },  
