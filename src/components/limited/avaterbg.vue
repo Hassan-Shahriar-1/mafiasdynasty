@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="blkred p-2 siz17">
-            <vue-countdown-timer
+      <!--       <vue-countdown-timer
             @start_callback="startCallBack('event started')"
             @end_callback="endCallBack('event ended')"
             :start-time="tmr"
@@ -15,7 +15,7 @@
             :hour-txt="'hours'"
             :minutes-txt="'minutes'"
             :seconds-txt="'seconds'">
-            </vue-countdown-timer>
+            </vue-countdown-timer> -->
         </div>
 
         <div class="row Gp0m0 blkgry m-1"  v-for="(abg,i) in avtrbg" :key="i">
@@ -81,13 +81,13 @@ export default {
         }
     },
        beforeCreate(){
-      this.$mgo.gt('mp/limited/editiopn/bg',(rs)=>{
+     /*  this.$mgo.gt('mp/limited/editiopn/bg',(rs)=>{
           console.log(rs);
           this.tmr=rs.data['sttm'];
           this.end=rs.data['endtm']; 
           console.log(this.tmr,'here is start timer');
           console.log(rs);
-      })
+      }) */
     }
 }
 </script>

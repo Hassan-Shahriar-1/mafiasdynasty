@@ -52,6 +52,8 @@ import './assets/css/allcss.css'
 import headers from './components/headers'
 import gmfooter from './components/gmfooter'
 import bmitm from './components/bmitm'
+
+
 import msgrcv from './components/msgrcv'
 import msgsend from './components/msgsend'
 import msgftr from './components/msgftr'
@@ -134,12 +136,10 @@ Vue.component('tops', headers)
 Vue.component('foots', gmfooter)
 Vue.component('bmitm', bmitm)
 
+
 Vue.component('msgrcv', msgrcv)
 Vue.component('msgsend', msgsend)
 Vue.component('msgftr', msgftr)
-
-
-
 Vue.component('chatcom', chatcom)
 
 Vue.component('property1', property1)
