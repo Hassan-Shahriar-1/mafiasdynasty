@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="blkred p-2 siz17">
-            <vue-countdown-timer
+        <!--     <vue-countdown-timer
             @start_callback="startCallBack('event started')"
             @end_callback="endCallBack('event ended')"
             :start-time="tmr"
@@ -15,7 +15,7 @@
             :hour-txt="'hours'"
             :minutes-txt="'minutes'"
             :seconds-txt="'seconds'">
-            </vue-countdown-timer>
+            </vue-countdown-timer> -->
         </div>
         <div class="card Gp0m0">
             <div class="card-header blkgry"><h2 class="titlefnt">Avater Shop <span> <i class="fas fa-info-circle siz25 float-right"></i></span></h2> </div>
@@ -69,67 +69,14 @@ export default {
   components: { carousel },
     data() {
         return{
-
-               itm:[],
+            itm:[],
             abl:[],
             fml:[],
             avtst:[],
             bg:[],
             tmr:'',
             end:'',
-    /*         avtr:[
-            {
-                mg:"01.jpg",
-            },
-            {
-                mg:"01.jpg",
-            },
-            {
-                mg:"01.jpg",
-            },
-            {
-                mg:"01.jpg",
-            },
-              {
-                mg:"01.jpg",
-            },
-            {
-                mg:"01.jpg",
-            },
-            {
-                mg:"01.jpg",
-            },
-            {
-                mg:"01.jpg",
-            },
-                        {
-                mg:"01.jpg",
-            },
-            {
-                mg:"01.jpg",
-            },
-            {
-                mg:"01.jpg",
-            },
-            {
-                mg:"01.jpg",
-            },
-              {
-                mg:"01.jpg",
-            },
-            {
-                mg:"01.jpg",
-            },
-            {
-                mg:"01.jpg",
-            },
-            {
-                mg:"01.jpg",
-            },
-            
-            ], */
-
-                      avtrshop:[
+            avtrshop:[
                  {
                      img:"1.jpg",
                      title:"Black Tanker 2"
@@ -159,14 +106,6 @@ export default {
         }
         
     },
-      beforeCreate(){
-      this.$mgo.gt('mp/limited/editiopn/avt',(rs)=>{
-          console.log(rs);
-          this.tmr=rs.data['sttm'];
-          this.end=rs.data['endtm'];
-          console.log(this.tmr,'here is start timer');
-          console.log(rs);
-      })
-    }
+     
 }
 </script>
