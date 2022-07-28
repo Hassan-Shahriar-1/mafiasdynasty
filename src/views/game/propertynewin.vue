@@ -1,9 +1,9 @@
 <template>
-    <div class="card border-0 ptnbg" style="margin-bottom:10%;">
+    <div class="card tmibg border-0">
         <div class="card-header blkgry">
             <h4 class="titlefnt text-center">Property Name</h4>
         </div>
-        <div class="card-body px-1 blksdo blk50">
+        <div class="card-body px-1 blksdo">
             <div class="card bg-dark text-white border-0 bnrbxsdo" >
                 <img src='../../assets/img/property/p1.jpg' class="card-img w-100" style="height:200px; filter: drop-shadow(0 0 0.75rem rgb(58, 52, 53));"  alt="">
             </div>
@@ -29,11 +29,11 @@
                 <div class="col-12">
                         <h5 class="text-center accid text-success dtlsfnt"> <div class=" mt-3 iC-cash incb1"></div> Cash:{{bcash}}</h5>
                         <div class="d-flex justify-content-center ">
-                            <h6 class="btn nBtn button3 px-5 text-center sizv20 mb-1">Built</h6>
+                            <h6 class="btn nBtn button3 px-5 text-center sizv20 mb-2">Built</h6>
                         </div>
                 </div>
             </div>
-            <div class="row Gp0m0 my-2 p-2 tmibg6 rounded">
+            <div class="row Gp0m0 my-3 p-2 tmibg6 rounded">
                     <h5 >level:{{bh.lvl}}</h5>
                 <div class="col-12 Gp0m0">
                         <div class="progress n_bar-a" style="height:10px;">
@@ -41,8 +41,6 @@
                     </div>
                 </div>
                 <div class="col-9 Gp0m0">
-                  
-                 
                         <div class="card tmibg6 px-1 " >
                             <div class="card-body p-0 ">
                                 <carousel :autoplay="true" :height="100" :dots="false" :nav="false" :items='4' > 

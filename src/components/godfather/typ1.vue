@@ -31,7 +31,7 @@
                             <img class="card-img" src="../../assets/img/item/1.gif" alt="">
                             <div class="card-image-overlay">
                                 <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                                    <h4 class="card-title subtitlefnt siz20">Fredo Carlos </h4>
+                                    <h4 class="card-title subtitlefnt siz18">Fredo Carlos </h4>
                                     <h6 class="card-subtitle mb-2 siz15">Gamber</h6>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                             <img class="card-img" src="../../assets/img/item/1.gif" alt="">
                             <div class="card-image-overlay">
                                 <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                                    <h4 class="card-title subtitlefnt siz20">Fredo Carlos </h4>
+                                    <h4 class="card-title subtitlefnt siz18">Fredo Carlos </h4>
                                     <h6 class="card-subtitle mb-2 siz15">Gamber</h6>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                             <img class="card-img" src="../../assets/img/item/1.gif" alt="">
                             <div class="card-image-overlay">
                                 <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                                    <h4 class="card-title subtitlefnt siz20">Fredo Carlos </h4>
+                                    <h4 class="card-title subtitlefnt siz18">Fredo Carlos </h4>
                                     <h6 class="card-subtitle mb-2 siz15">Gamber</h6>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                             <img class="card-img" src="../../assets/img/item/1.gif" alt="">
                             <div class="card-image-overlay">
                                 <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                                    <h4 class="card-title subtitlefnt siz20">Fredo Carlos </h4>
+                                    <h4 class="card-title subtitlefnt siz18">Fredo Carlos </h4>
                                     <h6 class="card-subtitle mb-2 siz15">Gamber</h6>
                                 </div>
                             </div>

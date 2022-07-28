@@ -24,7 +24,7 @@
              
          <div class="card-body p-0 tmibg"  v-for="(ndta, i) in lnd" :key="i" >
              
-            <div class="card blksdo" @click="lndpth(ndta.mid)">
+            <div class="card px-1 blksdo" @click="lndpth(ndta.mid)">
               <img class="card-img img-fluid py-2" style="height:130px;" :src="imglk+ndta.img">
               <div class="card-img-overlay">
                 <h4 class="card-text titlefnt text-center">

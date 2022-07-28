@@ -2,16 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-
-
 // import style
-
-
-
-
-
-
-
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
     // Optionally install the BootstrapVue icon components plugin
@@ -45,20 +36,14 @@ Vue.use(require('vue-moment'), { moment });
 Vue.prototype.socket = io('http://192.168.1.104:3000', { autoConnect: true });
 Vue.prototype.sktd = {};
 //tell socket.io to never give up :)
-
-
 //Vue.config.productionTip = false
 import './assets/css/allcss.css'
 import headers from './components/headers'
 import gmfooter from './components/gmfooter'
 import bmitm from './components/bmitm'
-
-
 import msgrcv from './components/msgrcv'
 import msgsend from './components/msgsend'
 import msgftr from './components/msgftr'
-
-
 import chatcom from '@/components/chatcom'
 import property1 from '@/components/property1'
 import property2 from '@/components/property2'
@@ -68,12 +53,8 @@ import store from './store/index'
 import VueAxios from 'vue-axios'
 import ProgressBar from 'vue-simple-progress';
 import vueCountdownTimer from 'vuejs-countdown-timer';
-
 // import Swiper JS
 /*  import Swiper from 'swiper'; */
-
-
-
 Vue.use(store)
 Vue.use(VueAxios, axios);
 Vue.axios.defaults.headers = {
@@ -86,11 +67,7 @@ Vue.axios.defaults.headers.Authorization = '';
 var VueTouch = require('vue-touch');
 VueTouch.registerCustomEvent('doubletap', { type: 'tap', taps: 2 });
 Vue.use(VueTouch, { name: 'v-touch' });
-
-
 Vue.axios.interceptors.response.use(function(response) {
-
-
     if (response.data.glb) { // globle game details change/ msg or any thing else from globale
         switch (response.data.glb.sts) {
             case 'mbrk': // maintanance break 
@@ -104,7 +81,6 @@ Vue.axios.interceptors.response.use(function(response) {
     if (response.data.error == 'Tkntfnd') {
         router.push('/login');
     }
-
     return response.data;
 }, function(error) {
     console.log(error.response.data.error);
@@ -114,50 +90,32 @@ Vue.axios.interceptors.response.use(function(response) {
     //  return Promise.reject(error);
 });
 
-
-
 Vue.use(vueCountdownTimer);
-
 Vue.component('ProgressBar', ProgressBar)
-
 Vue.component('ProgressBar', ProgressBar)
-
 Vue.use(store)
 Vue.use(Popover)
-
-
-
 Vue.use(Notifications)
     // Vue.use(AWN)
-
-
 Vue.use(router)
 Vue.component('tops', headers)
 Vue.component('foots', gmfooter)
 Vue.component('bmitm', bmitm)
-
-
 Vue.component('msgrcv', msgrcv)
 Vue.component('msgsend', msgsend)
 Vue.component('msgftr', msgftr)
 Vue.component('chatcom', chatcom)
-
 Vue.component('property1', property1)
 Vue.component('property2', property2)
-
 Vue.component('orgcomp', orgcomp)
-
 Vue.prototype.usrtkn = window.localStorage.getItem("Usrtkn");
 Vue.axios.defaults.headers.Authorization = 'Bearer ' + Vue.prototype.usrtkn;
 
 
 import jquery from './assets/js/lib/jquery-min'
 /* import fittext from './assets/js/lib/jquery.fittext'
-
 Vue.prototype.fittext = fittext; */
 window.jq = jquery;
-
-
 import gmthr from './plugins/gmthr';
 import mgo from './plugins/mgo';
 //Vue.use(mgo);

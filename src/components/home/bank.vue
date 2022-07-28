@@ -1,5 +1,5 @@
 <template>
-<div class="bMbg3 rounded bnrbxsdo overflow-auto">
+<div class="tmibg rounded bnrbxsdo overflow-auto">
     <div style="margin-bottom:50px;">
         <div class="row Gp0m0 text-center ">
             <div class="col-2"></div>

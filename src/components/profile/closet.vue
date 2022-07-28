@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="card tmibg2 bdr1">
-            <div class="card-header Gp0m0">
+            <div class="card-header tmibg2 py-2 Gp0m0">
                 <h3 class="text-center mb-1">Closet</h3>
             </div>
             <div class="card-body ">

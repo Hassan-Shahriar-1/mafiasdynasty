@@ -45,7 +45,7 @@
                                 <div class="card-body p-0">  <img class="card-img" src="../../assets/img/item/1.gif" alt="">
                                 <p>dsghfujasdfh asdhhfhyis asgfhqaf</p></div>
                                 <div class="card-footer p-0 py-2">
-                                    <div class="btn nBtn nBbg blkgry px-1 ">create now</div>
+                                    <div class="btn nBtn nBbg blkgry p-1 siz15">Create now</div>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                 </div>
          
                 <div class="row Gp0m0 mt-2">
-                    <div class="col-3 p-0">               
+                    <div class="col-3 p-0 border">               
                         <div class=" m-2 p-0 btn nBtn nBbg blkgry rounded-circle" @click="imgbind('1.gif')">
                             <img class="card-img p-1" src="../../assets/img/item/ak47.png" alt="">
                             
@@ -61,7 +61,7 @@
 
                         <h6 class="p-2 text-center">Devil's Green Wings</h6>
                     </div>
-                    <div class="col-3 p-0">               
+                    <div class="col-3 p-0 border">               
                         <div class=" m-2 p-0 btn nBtn nBbg blkgry rounded-circle" @click="imgbind('1.gif')">
                             <img class="card-img p-1" src="../../assets/img/item/ak47.png" alt="">
                             
@@ -69,7 +69,7 @@
 
                         <h6 class="p-2 text-center">Devil's Green Wings</h6>
                     </div>
-                    <div class="col-3 p-0">               
+                    <div class="col-3 p-0 border">               
                         <div class=" m-2 p-0 btn nBtn nBbg blkgry rounded-circle" @click="imgbind('1.gif')">
                             <img class="card-img p-1" src="../../assets/img/item/ak47.png" alt="">
                             
@@ -77,7 +77,7 @@
 
                         <h6 class="p-2 text-center">Devil's Green Wings</h6>
                     </div>
-                    <div class="col-3 p-0">               
+                    <div class="col-3 p-0 border">               
                         <div class=" m-2 p-0 btn nBtn nBbg blkgry rounded-circle" @click="imgbind('1.gif')">
                             <img class="card-img p-1" src="../../assets/img/item/ak47.png" alt="">
                             
@@ -85,7 +85,7 @@
 
                         <h6 class="p-2 text-center">Devil's Green Wings</h6>
                     </div>
-                    <div class="col-3 p-0">               
+                    <div class="col-3 p-0 border">               
                         <div class=" m-2 p-0 btn nBtn nBbg blkgry rounded-circle" @click="imgbind('1.gif')">
                             <img class="card-img p-1" src="../../assets/img/item/ak47.png" alt="">
                             
@@ -93,7 +93,7 @@
 
                         <h6 class="p-2 text-center">Devil's Green Wings</h6>
                     </div>
-                    <div class="col-3 p-0">               
+                    <div class="col-3 p-0 border">               
                         <div class=" m-2 p-0 btn nBtn nBbg blkgry rounded-circle" @click="imgbind('1.gif')">
                             <img class="card-img p-1" src="../../assets/img/item/ak47.png" alt="">
                             
@@ -101,7 +101,7 @@
 
                         <h6 class="p-2 text-center">Devil's Green Wings</h6>
                     </div>
-                    <div class="col-3 p-0">               
+                    <div class="col-3 p-0 border">               
                         <div class=" m-2 p-0 btn nBtn nBbg blkgry rounded-circle" @click="imgbind('1.gif')">
                             <img class="card-img p-1" src="../../assets/img/item/ak47.png" alt="">
                             
@@ -109,7 +109,7 @@
 
                         <h6 class="p-2 text-center">Devil's Green Wings</h6>
                     </div>
-                    <div class="col-3 p-0">               
+                    <div class="col-3 p-0 border">               
                         <div class=" m-2 p-0 btn nBtn nBbg blkgry rounded-circle" @click="imgbind('1.gif')">
                             <img class="card-img p-1" src="../../assets/img/item/ak47.png" alt="">
                             

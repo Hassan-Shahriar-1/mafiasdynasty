@@ -15,36 +15,36 @@
 
             <div class="card-body Gp0m0 bg-transparent">
                 <div class="pagination">
-                    <a class="blkgry btn nBtn" href="#">1</a>
-                    <a class="blkgry btn nBtn" href="#">2</a>
-                    <a class="blkgry btn nBtn" href="#">3</a>
-                    <a class="blkgry btn nBtn" href="#">4</a>
-                    <a class="blkgry btn nBtn" href="#">5</a>
-                    <a class="blkgry btn nBtn" href="#">6</a>
-                    <a class="blkgry btn nBtn" href="#">7</a>
-                    <a class="blkgry btn nBtn" href="#">8</a>
-                    <a class="blkgry btn nBtn" href="#">9</a>
-                    <a class="blkgry btn nBtn" href="#">10</a>
-                    <a class="blkgry btn nBtn" href="#">11</a>
-                    <a class="blkgry btn nBtn" href="#">12</a>  
-                    <a class="blkgry btn nBtn" href="#">13</a>
-                    <a class="blkgry btn nBtn" href="#">14</a>
-                    <a class="blkgry btn nBtn" href="#">15</a>
-                    <a class="blkgry btn nBtn" href="#">16</a>
-                    <a class="blkgry btn nBtn" href="#">17</a>
-                    <a class="blkgry btn nBtn" href="#">18</a>  
-                    <a class="blkgry btn nBtn" href="#">19</a>
-                    <a class="blkgry btn nBtn" href="#">20</a>
-                    <a class="blkgry btn nBtn" href="#">21</a>
-                    <a class="blkgry btn nBtn" href="#">22</a>
-                    <a class="blkgry btn nBtn" href="#">23</a>
-                    <a class="blkgry btn nBtn" href="#">24</a>  
-                    <a class="blkgry btn nBtn" href="#">25</a>
-                    <a class="blkgry btn nBtn" href="#">26</a>
-                    <a class="blkgry btn nBtn" href="#">27</a>
-                    <a class="blkgry btn nBtn" href="#">28</a>
-                    <a class="blkgry btn nBtn" href="#">29</a>
-                    <a class="blkgry btn nBtn" href="#">30</a>  
+                    <a class="blkgry btn nBtn siz15" href="#">1</a>
+                    <a class="blkgry btn nBtn siz15" href="#">2</a>
+                    <a class="blkgry btn nBtn siz15" href="#">3</a>
+                    <a class="blkgry btn nBtn siz15" href="#">4</a>
+                    <a class="blkgry btn nBtn siz15" href="#">5</a>
+                    <a class="blkgry btn nBtn siz15" href="#">6</a>
+                    <a class="blkgry btn nBtn siz15" href="#">7</a>
+                    <a class="blkgry btn nBtn siz15" href="#">8</a>
+                    <a class="blkgry btn nBtn siz15" href="#">9</a>
+                    <a class="blkgry btn nBtn siz15" href="#">10</a>
+                    <a class="blkgry btn nBtn siz15" href="#">11</a>
+                    <a class="blkgry btn nBtn siz15" href="#">12</a>  
+                    <a class="blkgry btn nBtn siz15" href="#">13</a>
+                    <a class="blkgry btn nBtn siz15" href="#">14</a>
+                    <a class="blkgry btn nBtn siz15" href="#">15</a>
+                    <a class="blkgry btn nBtn siz15" href="#">16</a>
+                    <a class="blkgry btn nBtn siz15" href="#">17</a>
+                    <a class="blkgry btn nBtn siz15" href="#">18</a>  
+                    <a class="blkgry btn nBtn siz15" href="#">19</a>
+                    <a class="blkgry btn nBtn siz15" href="#">20</a>
+                    <a class="blkgry btn nBtn siz15" href="#">21</a>
+                    <a class="blkgry btn nBtn siz15" href="#">22</a>
+                    <a class="blkgry btn nBtn siz15" href="#">23</a>
+                    <a class="blkgry btn nBtn siz15" href="#">24</a>  
+                    <a class="blkgry btn nBtn siz15" href="#">25</a>
+                    <a class="blkgry btn nBtn siz15" href="#">26</a>
+                    <a class="blkgry btn nBtn siz15" href="#">27</a>
+                    <a class="blkgry btn nBtn siz15" href="#">28</a>
+                    <a class="blkgry btn nBtn siz15" href="#">29</a>
+                    <a class="blkgry btn nBtn siz15" href="#">30</a>  
                 </div>
             </div>
         </div>

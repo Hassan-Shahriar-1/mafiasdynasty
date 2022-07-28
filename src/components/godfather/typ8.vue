@@ -4,7 +4,7 @@
         <div class="card bg-transparent border  Gp0m0">
             <div class="card-header blkgry text-center"><h4 class="titlefnt">Sophia Sharon <i @click="t8nws ^= true" class="float-right siz20 fas fa-question-circle"></i></h4>                
             </div>
-                <h6 class="p-2 m-2 text-justify dtlsfnt blkgry scale-up-center" v-show="t8nws">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio similique nulla aliquam,
+                <h6 class="p-2 bdr2 text-justify dtlsfnt blkgry scale-up-center" v-show="t8nws">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio similique nulla aliquam,
                     amet asperiores nam minima odio iusto officiis 
                     voluptatem eveniet natus. Atque quidem, voluptate numquam laborum accusantium architecto?
                 </h6>

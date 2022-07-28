@@ -68,6 +68,7 @@ export default new Router({
                             component: () =>
                                 import ('@/components/home/gmnews')
                         },
+                        
                         {
                             path: 'blab',
                             name: 'blab',
@@ -134,10 +135,10 @@ export default new Router({
                                         import ('@/components/limited/avater')
                                 },
                                 {
-                                    path: 'avaterbg',
-                                    name: 'avaterbg',
+                                    path: 'avatorbg',
+                                    name: 'avatorbg',
                                     component: () =>
-                                        import ('@/components/limited/avaterbg')
+                                        import ('@/components/limited/avatorbg')
                                 },
                             ],
                         },

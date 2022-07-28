@@ -317,13 +317,14 @@ Spin animation for all kind of rotation of 360 degree CSS
 
 .rotAnimate-x {
     -webkit-animation-name: spingskrotateD;
+    animation-direction: alternate-reverse;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 16s;
-    animation-name: spingskrotateD;
+    animation-name: spingskrotateD; 
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 26s;
+    animation-duration: 5s;
 }
 
 @keyframes spingskrotateD{
@@ -383,6 +384,94 @@ Spin animation for all kind of rotation of 360 degree CSS
 
   
 /* topbar css end */
+
+
+/* heart bit button effect start */
+.Anm-hrtbt {    
+    animation: hrtbt 1.4s ease-out infinite;
+}
+
+@keyframes outln15si {
+    0% {
+        outline-color: rgb(0, 0, 0);
+        outline-style: solid;
+        outline-offset: 0.5px;
+    }
+    85% {
+        outline-width: 0.9px;
+    }
+    100% {
+        outline-offset: 5px;
+        outline-color: transparent;
+    }
+}
+
+@keyframes hrtbt {
+    0% {
+      
+        width: auto;
+        height: auto;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 1px;
+     
+        font-smooth: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        -o-font-smoothing: antialiased;
+        -ms-font-smoothing: antialiased;
+        text-decoration: none;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.50);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        /* border-top: 1px solid rgba(0,0,0,0.001); */
+        box-shadow: 0 0 5px rgba(36, 36, 36, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(104, 103, 103, 0.877);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(139, 139, 139, 0.877);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(117, 115, 115, 0.877);
+        -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(109, 107, 107, 0.877);
+        -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(77, 76, 76, 0.87);
+        cursor: pointer;
+    }
+
+    100% {
+        outline-offset: 5px;
+        outline-color: transparent;
+        width: auto;
+        height: auto;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 1px;
+      
+        font-smooth: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        -o-font-smoothing: antialiased;
+        -ms-font-smoothing: antialiased;
+        text-decoration: none;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.50);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(41, 41, 41, 0.25);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(10, 10, 10, 0.25);
+        -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(0, 0, 0, 0.25);
+        -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(0, 0, 0, 0.25);
+        animation: glow 1s infinite ease-in-out;
+        cursor: pointer;
+        outline: none;
+    }
+}
+/* heart bit effect button end */
 
 /* limited offer button css start */
 
