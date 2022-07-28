@@ -34,7 +34,7 @@ export default {
                     mn:[
                          {
                             nm:"Home", 
-                            icn:"<i class='fas fa-hotel'></i>",
+                            icn:"<i class='fab fa-fort-awesome'></i>",
                             clk:'home',
                            
                         },
@@ -73,7 +73,7 @@ export default {
                              ta:[
                                         {
                                             nm:"Mafia Home", 
-                                            icn:"<i class='fas fa-hotel'></i>",
+                                            icn:"<i class='fab fa-fort-awesome'></i>",
                                             clk:'/game/home/gtns'
                                         },
                                         
@@ -187,7 +187,7 @@ export default {
                                         },
                                            {
                                             nm:"Abilities", 
-                                            icn:"<i class='fab fa-accessible-icon'></i>",
+                                            icn:"<i class='fas fa-dumbbell'></i>",
                                             clk:'/game/profile/abilities'
                                         },
                                           {
@@ -206,13 +206,14 @@ export default {
                               
                                          {
                                             nm:"loot", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fas fa-user-ninja'></i>",
                                             clk:'/game/loot'
+                                            /* <i class="fas fa-mask"></i> */
                                         },
                                  
                                          {
                                             nm:"Spy", 
-                                            icn:"<i class='fas fa-box'></i>",
+                                            icn:"<i class='fas fa-user-secret'></i>",
                                             clk:'/game/spy'
                                         },
 
@@ -238,7 +239,7 @@ export default {
                                         },
                                          {
                                             nm:"Avater", 
-                                            icn:"<i class='fas fa-user-ninja'></i>",
+                                            icn:"<i class='fab fa-atlassian'></i>",
                                             clk:'/game/shop/avater/fullset'
                                         },
 
@@ -262,7 +263,7 @@ export default {
                                         },
                                         {
                                             nm:"Gold", 
-                                            icn:"<i class='fas fa-brain'></i>",
+                                            icn:"<i class='fas fa-coins'></i>",
                                             clk:'/game/shop/gold'
                                          
                                         },

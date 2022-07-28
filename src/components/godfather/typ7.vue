@@ -41,7 +41,6 @@
                                         </h5>
                                         <div class="col-12 mt-3"><i class="fas fa-thumbs-up btn  p-1 bgmn float-left ">100&nbsp;</i><i class="fas fa-thumbs-down btn  p-1 bgmn mlr3 float-right ">100</i></div>
                                 </div>
-                                <div class="card-footer blkgry"><div class="btn nBtn nBbg btn-lg btn-block button4 px-3 text-center">Close</div></div>
                             </div>
                         </div>
                         <div class="col-12 dtlsfnt mt-3 tmibg bnrbxsdo rounded Gp0m0" v-show="t7gft">

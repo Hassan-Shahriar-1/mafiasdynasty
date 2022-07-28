@@ -3,7 +3,7 @@
         <!-- trophics section start -->
         <div class="container Gp0m0 " >
             <h3 class="w-100 dark50 text-center py-1 titlefntnew"> Intellegence <i @click="intellegenceinfo ^= true" class="fas fa-question-circle float-right sizv35 p-2"></i></h3>
-             <h6 class="p-1 blk50 m-1 scale-up-center" style=" border: 1px solid rgb(131 124 124);" v-show="intellegenceinfo">All the Intellegence that are achievable from the game are enlisted here. The dark ones are those Intellegence that are still to be achieved and the highlighted ones are the Intellegence that are already achieved.</h6>
+             <div class="p-1 siz15 rounded blk50 m-1 scale-up-center" style=" border: 1px solid rgb(131 124 124);" v-show="intellegenceinfo">All the Intellegence that are achievable from the game are enlisted here. The dark ones are those Intellegence that are still to be achieved and the highlighted ones are the Intellegence that are already achieved.</div>
             <div class="row Gp0m0 w-100 mt-2">
                 <div  v-for="(inint, i) in intilligence" :key="i" class=" col-4 Gp0m0">
                     <div v-if="inint.have==false"  style="opacity:0.4;"><div class=" m-1 border rounded"><img :src="link+inint.img" class="card-img" alt=""> <br> <h6 class="sizv13 blkred p-2 dtlsfnt">{{inint.name}}</h6></div>

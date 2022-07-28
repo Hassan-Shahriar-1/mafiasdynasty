@@ -1,10 +1,9 @@
 <template>
     <div>
         <div class="card">
-
             <div class="card-header blkgry"><h2 class="text-center titlefntnew">Gold Shop</h2></div>
             <div class="card-body p-0"> 
-                <h4 class="siz20 titlefnt2 text-center tbg">Gold play a vital role in faster gameplay and to purchese Special things as Avatar,Familiars and other things what can be purchased with your country currency.</h4>
+                <h4 class="siz20 titlefnt2 text-center tbg p-1">Gold play a vital role in faster gameplay and to purchese Special things as Avatar,Familiars and other things what can be purchased with your country currency.</h4>
                 <div class="row no-gutters w-100">
                     <ul class="list-group w-100" v-for="(masrc,i) in gold" :key="i">
                         <li class="list-group-item blk50 p-1 "> 

@@ -68,6 +68,7 @@ export default new Router({
                             component: () =>
                                 import ('@/components/home/gmnews')
                         },
+                        
                         {
                             path: 'blab',
                             name: 'blab',
@@ -115,6 +116,31 @@ export default new Router({
                             component: () =>
                                 import ('@/components/home/limited'),
 
+                            children: [{
+                                    path: 'abilities',
+                                    name: 'abilities',
+                                    component: () =>
+                                        import ('@/components/limited/abilities')
+                                },
+                                {
+                                    path: 'fimiliers',
+                                    name: 'fimiliers',
+                                    component: () =>
+                                        import ('@/components/limited/fimiliers')
+                                },
+                                {
+                                    path: 'avater',
+                                    name: 'avater',
+                                    component: () =>
+                                        import ('@/components/limited/avater')
+                                },
+                                {
+                                    path: 'avatorbg',
+                                    name: 'avatorbg',
+                                    component: () =>
+                                        import ('@/components/limited/avatorbg')
+                                },
+                            ],
                         },
                         {
                             path: 'bank',

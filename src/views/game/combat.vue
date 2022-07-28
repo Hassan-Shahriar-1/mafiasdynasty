@@ -57,8 +57,6 @@
                 </div>
                 </router-link>
 
-
-
                   <router-link to="arenalist">
                 <div class="row Gp0m0 py-2 my-1 blkgry">
                     <div class="col-3 "><img  class="card-img" src="../../assets/img/item/1.gif"  alt=""></div>

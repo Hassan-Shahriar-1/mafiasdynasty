@@ -1,8 +1,8 @@
 <template>
     <div class="container Gp0m0 my-1 py-1 blkgry">
         <div class="row no-gutters">
-            <div class="col-4 "><img class="card-img d-flex" style="height:80%;" :src="require('/src/assets/img/item/'+mImg)"> </div>
-            <div class="col-8 px-2 ">
+            <div class="col-3"><img class="card-img d-flex" style="height:80%;" :src="require('/src/assets/img/item/'+mImg)"> </div>
+            <div class="col-9 px-2 ">
                 <h6 class="subtitlefnt text-center mb-2">{{tl}}</h6>
                 <p class="dtlsfnt" style="text-align:justify">{{tl2}}
                 </p>
@@ -14,7 +14,7 @@
         
 
         <div class="row Gp0m0 px-0">
-            <div class="col-4 Gp0m0">
+            <div class="col-3 Gp0m0">
                 <select class=" form-control text-dark" name="" id="">
                         <option value="">Amount</option>
                         <option value="">5</option>

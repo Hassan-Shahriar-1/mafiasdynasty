@@ -21,7 +21,7 @@
                             <h6 class="siz13 p-1 text-center">{{item.name}}</h6>
                             <img :src="require('/src/assets/img/item/'+item.img)" class="card-img p-2">
                             <div class="text-center p-1"><h6 class=" siz13 ">{{item.amount}} Blood </h6><br>
-                                <button type="button" style="margin-top:-2%;" class="btn nBbg nBtn tmibg grysdo " ><h5 class="siz15"><strong> Collect</strong></h5></button>
+                                <button type="button" style="margin-top:-2%;" class="btn nBbg nBtn tmibg grysdo Anm-hrtbt " ><h5 class="siz15"><strong> Collect</strong></h5></button>
                             </div>
                         </div>		
                     </div>

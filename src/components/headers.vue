@@ -1,10 +1,10 @@
 <template id="bdy" >
-    <div class="header jaldi"  @click=" md()">
+    <div class="header jaldi">
 
 
         <div class="row Gp0m0 hdbg  no-gutters" id='hdrvp10'>
-            <div class="col-1 py-0">
-                <img class="logimg losdo my-2 ml-2" @click="$gm.bar();" src="../assets/img/logo.png">
+            <div class="col-1 py-0" @dblclick="reload()">
+                <img class="logimg losdo my-2 ml-2" @click="$gm.bar()" src="../assets/img/logo.png">
             </div>
 
             <div class="col-7 py-0 mt-2 " style="margin-left:10%;"  >
@@ -50,8 +50,8 @@
         <!-- sticky top start  -->
         <v-touch id='StkinHmnu' @doubletap="hdrdbltp()"  class="container Gp0m0 itmbg" style="z-index:+1030; max-width:575.98px;"> 
             <div class="row Gp0m0" >
-                <div class="col-4 p-1 itmbgbdr blkgry">
-                    <h6 class='hrtl'>Enargy  <span class="hdricnpsn float-right iC-energy incb3"></span> <br></h6>
+                <div class="col-4 p-1 itmbgbdr blkgry" @dblclick="engrfl()">
+                    <h6 class='hrtl' style="font-size:1rem;">Enargy  <span class="hdricnpsn float-right iC-energy incb3"></span> <br></h6>
                     <div class="progress n_bar-a w-100" style="height:5px;">
                         <div class="progress-bar clRBblue bgD0" id="itmBr" :style="{width: Th.engW+'%'}"></div>
                     </div>
@@ -60,8 +60,8 @@
                     <h6 class="text-left">{{Th.engst}}/{{Th.enged}}</h6>
                 </div>
 
-                <div class="col-4 p-1 itmbgbdr blkgry" >
-                    <h6 class='hrtl  '>Stamina<span class="hdricnpsn float-right iC-rage incb3"> </span></h6>
+                <div class="col-4 p-1 itmbgbdr blkgry"  @dblclick="stmnrfl()" >
+                    <h6 class='hrtl' style="font-size:1rem;">Stamina<span class="hdricnpsn float-right iC-rage incb3"> </span></h6>
                     <div class="progress n_bar-a w-100" style="height:5px;">
                         <div class="progress-bar clRBgreen bgD0" id="itmBr" :style="{width:Th.RagW+'%'}"></div>
                     </div>
@@ -70,8 +70,8 @@
                     <h6 class="text-left">{{Th.Ragst}}/{{Th.Raged}}</h6>
                 </div>
 
-                <div class="col-4 p-1   blkgry">
-                    <h6 class='hrtl' >Health<span class="hdricnpsn float-right iC-heart incb3"></span></h6> 
+                <div class="col-4 p-1 blkgry"  @dblclick="hlthrfl()">
+                    <h6 class='hrtl' style="font-size:1rem;" >Health<span class="hdricnpsn float-right iC-heart incb3"></span></h6> 
                     <div class="progress n_bar-a w-100" style="height:5px;">
                         <div class="progress-bar clRBrd bgD0" id="itmBr" :style="{width:Th.hltW+'%'}"></div>
                     </div>
@@ -96,12 +96,12 @@
         </v-touch>
         <div class="container Gp0m0 jaldi mnbg"></div>
         <div class="btn-group rounded jaldi bw100"  role="group" aria-label="..." >
-         <div  id='grow'>
+        <div id='grow'>
             <div class="measuringWrapper" >
                 <div class="row p-2 no-gutters blkgry" @click="handleClick">
                     <div class="col-4 p-1"> <router-link to="/game/alerts"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0"><i    class="fas fa-exclamation-triangle"></i><br> <h6 class="siz15">Alerts </h6></div></router-link></div>
                     <div class=" col-4 p-1"><div tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0" v-on:click="toggle2()" @click="stngs=true"><i v-bind:class="{'fas fa-bell' :tgle === true, 'fas fa-bell-slash': tgle === false}" ></i><h6 class="siz15">notification</h6></div></div>
-                    <div class="col-4 p-1"><router-link to="/game/editprofile"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0 "><i class="fas fa-user"></i><br> <h6 class="siz15">Edit profile</h6></div> </router-link></div> 
+                    <div class="col-4 p-1"><router-link to="/game/editprofile"><div @click="stnghd()"  tag="button"  class="btn btn-block  nBtn blkgry my-1 Gp0m0 "><i class="fas fa-user-cog"></i><br> <h6 class="siz15">Edit profile</h6></div> </router-link></div> 
                     <div class="col-4 p-1" id="musicbtn"><div  tag="button"  class="btn btn-block   nBtn blkgry my-1 Gp0m0" v-on:click="toggle()" @click="stngs=true"><i v-bind:class="{'fas fa-volume-down' :tog === true, 'fas fa-volume-mute': tog === false}" ></i><audio ref="audioElm"  loop="true" preload="auto" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio><h6 class="siz15">Music</h6></div></div>
                     <div class="col-4 p-1"><div  tag="button" @click="sconnectshow() ,stnghd()"  class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-share-alt"></i><br><h6 class="siz15"  > Social Connect</h6> </div></div>
                     <div class="col-4 p-1"><div  tag="button"  @click="bmsho(),stnghd()" class=" btn btn-block  nBtn blkgry my-1 Gp0m0"><i class="fas fa-lightbulb"></i><br><h6 class="siz15"> Hints</h6> </div></div>
@@ -112,20 +112,19 @@
                 </div>
             </div>
         </div>
-
-            <modal name="sconnect"  :width="330" :isAutoHeight="true" @before-open="beforeOspen"  class="bdr4 blksdo  rounded mblr"  >
-                         <div class="card tmibg" id="fds" >
-                        <div class="card-header ">
-                            <h2 class="text-left">Social Connect<h3 class="float-right"><i class="fas fa-times text-danger"  @click="sconnecthd()"></i></h3></h2>
-                        </div>
-                         <div class="row  mt-3 w-100 no-guttersb3px   p-2 m-0  rounded" >
-                    <div class="col-3"><a href="https://www.facebook.com/mafiasrivalgame" class="btn nBtn btn-block btn-lg button3 mlr2 "><i class="fab fa-facebook"></i></a></div>
-                    <div class="col-3"><a href="https://mafiasrival.com/" class="btn nBtn btn-block btn-lg button5 mlr2"><i class="fab fa-firefox-browser"></i></a></div>
-                    <div class="col-3"><router-link to="/gmail"><div class="btn nBtn btn-block btn-lg button7 mlr2"><i class="fas fa-envelope"></i></div></router-link></div>
-                    <div class="col-3"><div class="btn nBtn btn-block btn-lg button6 mlr2"><i class="fas fa-external-link-square-alt"></i></div></div>
-                </div>
-                  </div>
-            </modal>
+                <modal name="sconnect"  :width="330" :isAutoHeight="true" @before-open="beforeOspen"  class="bdr4 blksdo  rounded mblr"  >
+                            <div class="card tmibg" id="fds" >
+                            <div class="card-header ">
+                                <h2 class="text-left">Social Connect<h3 class="float-right"><i class="fas fa-times text-danger"  @click="sconnecthd()"></i></h3></h2>
+                            </div>
+                            <div class="row  mt-3 w-100 no-guttersb3px   p-2 m-0  rounded" >
+                        <div class="col-3"><a href="https://www.facebook.com/mafiasrivalgame" class="btn nBtn btn-block btn-lg button3 mlr2 "><i class="fab fa-facebook"></i></a></div>
+                        <div class="col-3"><a href="https://mafiasrival.com/" class="btn nBtn btn-block btn-lg button5 mlr2"><i class="fab fa-firefox-browser"></i></a></div>
+                        <div class="col-3"><router-link to="/gmail"><div class="btn nBtn btn-block btn-lg button7 mlr2"><i class="fas fa-envelope"></i></div></router-link></div>
+                        <div class="col-3"><div class="btn nBtn btn-block btn-lg button6 mlr2"><i class="fas fa-external-link-square-alt"></i></div></div>
+                    </div>
+                    </div>
+                </modal>
           
                 <modal name="nrbpup" :width="330" :height="450" class="bdr4 blksdo rounded  mblr" >
                     <div class="card">
@@ -147,8 +146,6 @@
                     </div>    
                 </modal>
 
-
-
                 <modal name="Lotsw" :width="330" :height="300" class="bdr4 blksdo rounded  mblr" style="height:300px">
                     <div class="card" style="height:300px">
                         <div class="card-header blkgry">
@@ -164,7 +161,7 @@
                     </div>
                 </modal>
 
-                   <modal name="bmsho"  :width='300'   :height='550' class="bdr4 blksdo rounded  mblr">
+                <modal name="bmsho"  :width='300'   :height='550' class="bdr4 blksdo rounded  mblr">
                     <div class="card" style="width:300px; height:550px;" >
                         <div class="card-header blkgry p-2">
                             <h2 class="text-center">Hints and Tips <h3 class="float-right"><i class="fas fa-times text-danger"  @click="bmshd()"></i></h3></h2>
@@ -183,13 +180,114 @@
                         </div>
                     </div>
                 </modal>
+                <modal name="engrfl"  :width='300'   :height='550' class="bdr4 blksdo rounded  mblr">
+                    <div class="card" style="width:300px; height:auto;" >
+                        <div class="card-header blkgry p-2">
+                            <h2 class="text-center">Energy Refill<h3 class="float-right"><i class="fas fa-times text-danger"  @click="engrflhd()"></i></h3></h2>
+                        </div>
+                        <div class="card-body blk" style="height:500px;">
+
+
+                            <div class="row Gp0m0" id="hltreqhd">
+                                <div class="col-4 Gp0m0"><img class="card-img" src="../assets/img/item/1.gif" alt=""></div>
+                                <div class="col-8"><h4>Heal for 10000 cash</h4>
+                                    <div class="btn nBtn nBbg siz15 blkgry">Refill Now</div>
+                                </div>
+                            </div>
+                               <div class="card p-1 tmibg" id="prcshlt" style="display:none;">
+                                 <div class="row Gp0m0">
+                                    <div class="col-4 Gp0m0"><img class="card-img" src="../assets/img/item/1.gif" alt=""></div>
+                                    <div class="col-8"><h5>Are you sure you want to  Purchase Health Boost for 5 Gold ? </h5>
+                                    </div>
+                                </div>
+                                 <div class="row Gp0m0">
+                                        <div class="col-6"><div class="btn btn-block nBtn nBbg siz15 blkgry">Yes</div></div>
+                                        <div class="col-6"><div class="btn btn-block nBtn nBbg siz15 blkgry">No</div></div>
+                                    </div>
+                               </div>
+                                <div class="hr-sect">Items</div>
+                                 <div class="row">
+                                <div class="col-4 Gp0m0"><img class="card-img" src="../assets/img/item/1.gif" alt=""></div>
+                                <div class="col-8 d-flex align-items-center">
+                                    <div class="btn nBtn nBbg siz15 blkgry" @click="prcshlt()">Purchase Now</div>
+                                </div>
+                                </div>
+
+                           
+                        </div>
+                    </div>
+                </modal>
+                  
+                <modal name="stmnrfl" :width='300'  :height='550' class="bdr4 blksdo rounded mblr">
+                       <div class="card" style="width:300px; height:auto;">
+                        <div class="card-header blkgry p-2">
+                            <h2 class="text-center">Stamina Refill<h3 class="float-right"><i class="fas fa-times text-danger"  @click="stmnrflhd()"></i></h3></h2>
+                        </div>
+                        <div class="card-body blk" style="height:500px;">
+                            <div class="row Gp0m0" id="stmnreqhd">
+                                <div class="col-4 Gp0m0"><img class="card-img" src="../assets/img/item/1.gif" alt=""></div>
+                                <div class="col-8"><h4>Heal for 10000 cash</h4>
+                                    <div class="btn nBtn nBbg siz15 blkgry">Refill Now</div>
+                                </div>
+                            </div>
+                               <div class="card p-1 tmibg" id="prcsstmn" style="display:none;">
+                                 <div class="row Gp0m0">
+                                    <div class="col-4 Gp0m0"><img class="card-img" src="../assets/img/item/1.gif" alt=""></div>
+                                    <div class="col-8"><h5>Are you sure you want to  Purchase Stamina Boost for 5 Gold ? </h5>
+                                    </div>
+                                </div>
+                                 <div class="row Gp0m0">
+                                        <div class="col-6"><div class="btn btn-block nBtn nBbg siz15 blkgry">Yes</div></div>
+                                        <div class="col-6"><div class="btn btn-block nBtn nBbg siz15 blkgry">No</div></div>
+                                    </div>
+                               </div>
+                                <div class="hr-sect">Items</div>
+                                 <div class="row">
+                                <div class="col-4 Gp0m0"><img class="card-img" src="../assets/img/item/1.gif" alt=""></div>
+                                <div class="col-8 d-flex align-items-center">
+                                    <div class="btn nBtn nBbg siz15 blkgry" @click="prcsstmn()">Purchase Now</div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </modal>
+                <modal name="hlthrfl" :width='300' :height='550' style="0px!important;" class="bdr4 blksdo rounded mblr ">
+                        <div class="card"   style="width:300px; height:auto;top:0px!important;" >
+                        <div class="card-header blkgry p-2">
+                            <h2 class="text-center">Health Refill<h3 class="float-right"><i class="fas fa-times text-danger"  @click="hlthrflhd()"></i></h3></h2>
+                        </div>
+                        <div class="card-body blk" style="height:500px;">
+                            <div class="row Gp0m0" id="hlthreqhd">
+                                <div class="col-4 Gp0m0"><img class="card-img" src="../assets/img/item/1.gif" alt=""></div>
+                                <div class="col-8"><h4>Heal for 10000 cash</h4>
+                                    <div class="btn nBtn nBbg siz15 blkgry">Refill Now</div>
+                                </div>
+                            </div>
+                               <div class="card p-1 tmibg" id="prcshlth" style="display:none;">
+                                 <div class="row Gp0m0">
+                                    <div class="col-4 Gp0m0"><img class="card-img" src="../assets/img/item/1.gif" alt=""></div>
+                                    <div class="col-8"><h5>Are you sure you want to  Purchase Health Boost for 5 Gold ? </h5>
+                                    </div>
+                                </div>
+                                 <div class="row Gp0m0">
+                                        <div class="col-6"><div class="btn btn-block nBtn nBbg siz15 blkgry">Yes</div></div>
+                                        <div class="col-6"><div class="btn btn-block nBtn nBbg siz15 blkgry">No</div></div>
+                                    </div>
+                               </div>
+                                <div class="hr-sect">Items</div>
+                                 <div class="row">
+                                <div class="col-4 Gp0m0"><img class="card-img" src="../assets/img/item/1.gif" alt=""></div>
+                                <div class="col-8 d-flex align-items-center">
+                                    <div class="btn nBtn nBbg siz15 blkgry" @click="prcshlth()">Purchase Now</div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </modal>
         </div>
   </div>
 </template>
-
-
 <style scoped>
-
 #more-button {
   border-style: none;
   background: none;
@@ -197,15 +295,12 @@
   color: blue;
   margin: 0 0 10px 0;
 }
-
 #grow input:checked {
   color: red;
 }
-
 #more-button:hover {
   color: black;
 }
-
 #grow {
   -moz-transition: height .5s;
   -ms-transition: height .5s;
@@ -215,7 +310,6 @@
   height: 0;
   overflow: hidden;
 }
-
 .slide-enter-active {
    -moz-transition-duration: 0.4s;
    -webkit-transition-duration: 0.4s;
@@ -226,7 +320,6 @@
    -o-transition-timing-function: ease-in;
    transition-timing-function: ease-in;
 }
-
 .slide-leave-active {
    -moz-transition-duration: 0.4s;
    -webkit-transition-duration: 0.4s;
@@ -237,18 +330,17 @@
    -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
-
 .slide-enter-to, .slide-leave {
    max-height: 120px;
    overflow: hidden;
 }
-
 .slide-enter, .slide-leave-to {
    overflow: hidden;
    max-height: 120px;
 }
-</style>
 
+.vm--modal { top: 0!important;}
+</style>
 <script>  
 export default { 
      
@@ -327,13 +419,8 @@ export default {
              rcdlst:[],
              nrcd:'',
              timer:null
-        
-
-
         }
     }, 
-    
-   
     beforeCreate() {        
         window.addEventListener('scroll', this.handleScroll);       
     },
@@ -344,7 +431,6 @@ export default {
         this.TptrgrBr(); 
         this.hgtdt();
        window.addEventListener('scroll', this.handleScroll);
-        
     },
     mounted(){
         window.addEventListener('scroll', this.handleScroll);
@@ -353,15 +439,9 @@ export default {
         })    */
      let routes=this.$route.name;
       if(this.hrtbtroute[routes]){
-        window.addEventListener('click',this.hgtdt)
-         
-      }
-     
-      
-          
+        window.addEventListener('click',this.hgtdt)  
+      }   
     }, 
-    
-
     methods: {
 
            beforeOspen() {
@@ -395,8 +475,7 @@ export default {
                 console.log(rs)
             })
         },
-
-    toggle() {
+        toggle() {
         this.tog =!this.tog
         var a = this.$refs.audioElm;
         a.volume = 0.5;
@@ -408,14 +487,11 @@ export default {
             a.pause();
         }
         },
-
-    toggle2: function() {
-      this.tgle = !this.tgle
-    },
+        toggle2: function() {
+        this.tgle = !this.tgle
+        },
         hdrdbltp(){
-           
            this.hgtdt();
-           
         },
         show(){
             this.$modal.show('ntfctn');
@@ -477,14 +553,10 @@ export default {
         },
 
         growDiv() {
-
         var growDiv = document.getElementById('grow');
         if (growDiv.clientHeight) {
             growDiv.style.height = 0;
- }
-        
-
-   
+        }
         else {
             var wrapper = document.querySelector('.measuringWrapper');
             growDiv.style.height = wrapper.clientHeight + "px";
@@ -492,42 +564,51 @@ export default {
             window.jq('#grow').css({'position':'fixed','z-index':'+1500'});
             this.ntf==false;
         }
-   
-      
         },
-
-
-        md(){
+  
+        handleClick() {
             var growDiv = document.getElementById('grow');
-        if (growDiv.clientHeight) {
-            growDiv.style.height = 0;
- }
-
+            if (growDiv) {
+                this.$emit("hide"); //fires only on click outside
+                console.log('this is clicked')
+            }
         },
 
-handleClick() {
-    var growDiv = document.getElementById('grow');
-    if (growDiv) {
-         this.$emit("hide"); //fires only on click outside
-        console.log('this is clicked')
-    }
-},
-
-
+        hlthrfl(){
+        this.$modal.show('hlthrfl')
+        console.log('Health clicked')
+        },
+        hlthrflhd(){
+        this.$modal.hide('hlthrfl')
+        },
+        stmnrfl(){
+        this.$modal.show('stmnrfl')
+        console.log('stamina clicked')
+        },
+        stmnrflhd(){
+        this.$modal.hide('stmnrfl')
+        },
+        engrfl(){
+        this.$modal.show('engrfl');
+        console.log('energy clicked')
         
-
-
-stnghd(){
- var growDiv = document.getElementById('grow');
-    growDiv.style.height = 0;
-},
-
-
+        },
+        engrflhd(){
+        this.$modal.hide('engrfl')
+        },
+        stnghd(){
+        var growDiv = document.getElementById('grow');
+            growDiv.style.height = 0;
+        },
         hdrFrsh(){         
             this.Th.engst=this.Th.enged;
             this.Th.Ragst=this.Th.Raged;
             this.Th.hltst=this.Th.hlted;
             this.Th.expst=this.Th.exped;
+        },
+        reload(){
+               /* location.reload(); */
+               location.href = "#/game/home/gtns";
         },
         demoV1(){
             this.Th.engst=this.Th.engst+5;
@@ -541,7 +622,18 @@ stnghd(){
         demoV4(){
             this.Th.expst=this.Th.expst+2;
         },
-        
+        prcshlt(){
+            document.getElementById('prcshlt').style.display='block'
+            document.getElementById('hltreqhd').style.display='none'
+        },
+          prcsstmn(){
+            document.getElementById('prcsstmn').style.display='block'
+            document.getElementById('stmnreqhd').style.display='none'
+        },
+           prcshlth(){
+            document.getElementById('prcshlth').style.display='block'
+            document.getElementById('hlthreqhd').style.display='none'
+        }
     },
 }
 </script>
@@ -590,5 +682,3 @@ h6{
   }
   } 
 </style>
- 
-

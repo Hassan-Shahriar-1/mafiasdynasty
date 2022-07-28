@@ -23,10 +23,10 @@
             </h4>
           
           </div>
-              <h6 class="p-1 px-1 dtlsfnt " v-show="msndtls">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio similique nulla aliquam,
+              <div class="p-2 siz15 text-center px-1 dtlsfnt " v-show="msndtls">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio similique nulla aliquam,
                     amet asperiores nam minima odio iusto officiis 
                     voluptatem eveniet natus. Atque quidem, voluptate numquam laborum accusantium architecto?
-                </h6>
+                </div>
                 <div v-for="(mnms, i) in chapter" :key="i">
           <router-link :to="{name:'mission',params: { list:mnms }}" v-if="mnms.active!=false">
               <div class="card-body p-1 tmibg">
