@@ -277,7 +277,7 @@ export default {
              stngs:false,
              ntf:false,
              hrtbtroute:{///header value api  trigger for those routes routes
-                'mission':true,'shop':true,'boss':true
+                'mission':true,'shop':true,'boss':true,'limited':true
 
              },
                 

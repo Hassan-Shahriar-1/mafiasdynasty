@@ -65,7 +65,7 @@ export default {
             defense:[],
             attck:[],
             err:'',
-            imglnk:'http://mrdemo.com/item/',
+            imglnk:'https://mafiasrival.com/item/',
             index:0,
             dfltimg:'../../assets/img/1.png',
              dfnitm:[

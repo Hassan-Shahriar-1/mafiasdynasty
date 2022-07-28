@@ -1,7 +1,7 @@
 <template>
     <div>
     <div class="blkred p-2 siz17">
-     <!--  <vue-countdown-timer
+      <vue-countdown-timer
       @start_callback="startCallBack('event started')"
       @end_callback="endCallBack('event ended')"
       :start-time="tmr"
@@ -15,10 +15,10 @@
       :hour-txt="'hours'"
       :minutes-txt="'minutes'"
       :seconds-txt="'seconds'">
-    </vue-countdown-timer> -->
+    </vue-countdown-timer>
     </div>
     <div class="row Gp0m0 blkgry my-2" v-for="(fmlr, i) in bimg" :key="i">	
-		<div class="col-4 px-1"><img  :src="require('/src/assets/img/item/'+fmlr.img)"  class="card-img mt-4"></div> 
+		<div class="col-4 px-1"><img  :src="src+fmlr.img"  class="card-img mt-4"></div> 
 		<div class="col-8"> 
 			<h5 class="b-h2" style="border-bottom:solid #fff 1px;">{{fmlr.fnm}}</h5>	
             <div class="col-12"> <h6 class="h6">Energy : 10</h6><h6 class="h6">Attack : {{fmlr.atk}}</h6><h6 class="h6">Defence : {{fmlr.dfnc}}</h6> <h6>Jewels {{fmlr.jwls}}</h6></div> 	
@@ -32,6 +32,9 @@
 </template>
 <script>
 export default {
+    props:{
+        fmlrs:Array
+    },
     data() {
         return{
             itm:[],
@@ -41,44 +44,18 @@ export default {
             bg:[],
             tmr:'',
             end:'',
+            src:'https://mafiasrival.com/familiers/',
+            
 
-            bimg:[
-                 {
-                    img:"1.gif",
-                    fnm:"Sandra soraz",
-                    atk:"5",
-                    dfnc:"10",
-                    jwls:"45"
-                 }, {
-                    img:"1.gif",
-                    fnm:"Sandra soraz",
-                    atk:"5",
-                    dfnc:"10",
-                    jwls:"45"
-                 }, {
-                    img:"1.gif",
-                    fnm:"Sandra soraz",
-                    atk:"5",
-                    dfnc:"10",
-                    jwls:"45"
-                 }, {
-                    img:"1.gif",
-                    fnm:"Sandra soraz",
-                    atk:"5",
-                    dfnc:"10",
-                    jwls:"45"
-                 },
-            ]
+            bimg:''
         }  
     },
-       beforeCreate(){
-      /* this.$mgo.gt('mp/limited/editiopn/fmlr',(rs)=>{
-          console.log(rs);
-          this.tmr=rs.data['sttm'];
-          this.end=rs.data['endtm']; 
-          console.log(this.tmr,'here is start timer');
-          console.log(rs);
-      }) */
-    }
+       created() {
+
+           this.bimg=this.$props['fmlrs'].itms
+            this.tmr=this.$props['fmlrs'].sttm
+            this.end=this.$props['fmlrs'].endtm
+
+       },
 }
 </script>

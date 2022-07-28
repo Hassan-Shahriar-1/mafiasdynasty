@@ -47,7 +47,7 @@ export default {
         return{
             itmnm:'',
             itmimg:'',
-            itmallimg:'http://mrdemo.com/item/',
+            itmallimg:'https://mafiasrival.com/item/',
             spitm:[],
             itmid:'',
                

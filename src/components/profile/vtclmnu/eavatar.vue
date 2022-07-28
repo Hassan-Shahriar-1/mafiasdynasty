@@ -240,7 +240,7 @@ const depict = options => {
   });
 };
 const imgs = [
-  { uri: 'http://mrdemo.com/avater/body/bdy1.png',  },
+  { uri: 'https://mafiasrival.com/avater/body/bdy1.png',  },
   { uri: 'http://192.168.1.107:8080/img/H2.b7170cf4.png',  },
   { uri: 'http://192.168.1.107:8080/img/tops.1f16861a.png',  },
   { uri: 'http://192.168.1.107:8080/img/shocks.2de2c037.png',  },
@@ -255,12 +255,12 @@ imgs.forEach(depict);
         var c = document.getElementById("myCanvas");
         var ctx = c.getContext("2d");
        const image = [
-  { uri: 'http://mrdemo.com/avater/body/bdy1.png'},
-  { uri: 'http://mrdemo.com/avater/body/bdy1.png' },
-  { uri: 'http://mrdemo.com/avater/body/bdy1.png' },
-  { uri: 'http://mrdemo.com/avater/body/bdy1.png' },
-  { uri: 'http://mrdemo.com/avater/body/bdy1.png' },
-  { uri: 'http://mrdemo.com/avater/body/bdy1.png' },
+  { uri: 'https://mafiasrival.com/avater/body/bdy1.png'},
+  { uri: 'https://mafiasrival.com/avater/body/bdy1.png' },
+  { uri: 'https://mafiasrival.com/avater/body/bdy1.png' },
+  { uri: 'https://mafiasrival.com/avater/body/bdy1.png' },
+  { uri: 'https://mafiasrival.com/avater/body/bdy1.png' },
+  { uri: 'https://mafiasrival.com/avater/body/bdy1.png' },
 ];
          let img2 = document.getElementById("scream2");
         let img3 = document.getElementById("scream3");
@@ -287,7 +287,7 @@ imgs.forEach(depict);
             imageObj1.src = "http://192.168.1.107:8080/img/H2.b7170cf4.png"
             imageObj1.onload = function() {
             ctx.drawImage(imageObj1, 0, 0, 236, 500);
-            imageObj2.src = "http://mrdemo.com/avater/body/bdy1.png";
+            imageObj2.src = "https://mafiasrival.com/avater/body/bdy1.png";
             imageObj2.onload = function() {
                 ctx.drawImage(imageObj2, 0, 0, 236, 500);
                 imageObj3.src = "http://192.168.1.107:8080/img/tops.1f16861a.png";

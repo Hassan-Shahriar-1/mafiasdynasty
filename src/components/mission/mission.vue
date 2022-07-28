@@ -128,7 +128,7 @@ export default {
            drp_itm:[],
          
            chapter_mission:'',
-           itm_src:'http://mrdemo.com/item/',
+           itm_src:'https://mafiasrival.com/item/',
              bh:{
                  hpW:0,
                  hpst:0,
@@ -165,7 +165,7 @@ export default {
                             this.lvl=res.ok['msnd'][0]
                             if( res.get !=false){
                                 this.drp_itm.push(res.get);
-                                window.jq('#'+oid).prepend( ' <div class="col-3 card p-1" ><img  class="card-img" src="http://mrdemo.com/item/'+res.get['itid']+'.png"'+'alt=""/><div class="card-footer py-1 text-center blkgry">'+res.get['cnt']+'</div> </div>')
+                                window.jq('#'+oid).prepend( ' <div class="col-3 card p-1" ><img  class="card-img" src="https://mafiasrival.com/item/'+res.get['itid']+'.png"'+'alt=""/><div class="card-footer py-1 text-center blkgry">'+res.get['cnt']+'</div> </div>')
                             }
                         }else if(res.sts=='rq'){
                             this.msg='required Item are'

@@ -43,7 +43,7 @@ export default {
     data(){
         return{
             lnd:[] ,
-            imglk:'http://mrdemo.com/land/',
+            imglk:'https://mafiasrival.com/land/',
             rtpth:'land/',
         }
     },

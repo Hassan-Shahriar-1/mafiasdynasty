@@ -44,7 +44,7 @@ export default ({
         return{ 
             randomNumber:'',
             msnlst:'',
-            itmsrc:'http://mrdemo.com/item/'
+            itmsrc:'https://mafiasrival.com/item/'
                     
         }
     },

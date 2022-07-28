@@ -118,7 +118,7 @@ export default ({
    this.$mgo.gt('mission/lndinf/'+this.$route.params.lndid,(res)=>{
      if(res.sts=='ok'){
        this.lndinf=res.data
-       this.imgnm='http://mrdemo.com/land/'+res.data.img
+       this.imgnm='https://mafiasrival.com/land/'+res.data.img
        console.log(this.imgnm)
         
      }

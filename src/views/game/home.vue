@@ -20,7 +20,7 @@
                         <router-link to="gtns"  class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fas fa-globe-americas"></i> <br> News</router-link>
                         <router-link :to="{name:'blab'}" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"> <i class="fas fa-comment-alt"></i><br> blab 2</router-link>
                         <router-link to="lmtdofr" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fab fa-buffer"></i><br> offers</router-link>
-                        <router-link :to="{name:'abilities'}" class="btn btn-lg p-1  btn-block text-light Anm-outln15si incb4 button4 " v-if="lmtd!=''"> <img  style="height:60px; width:60px;" src="../../assets/img/icon/Hi-habib-vai.png"  alt=""> </router-link>
+                        <router-link :to="{name:'limited'}" class="btn btn-lg p-1  btn-block text-light Anm-outln15si incb4 button4 " v-if="lmtd!=''"> <img  style="height:60px; width:60px;" src="../../assets/img/icon/Hi-habib-vai.png"  alt=""> </router-link>
                         <router-link to="update" class="btn btn-lg p-1  btn-block text-danger  nBtn bgD8"><i class="fas fa-edit"></i> <br> Updates</router-link>
                         <router-link to="dailytask" class="btn btn-lg py-1 px-0  btn-block text-danger  nBtn bgD8"><i class="fas fa-tasks"></i> <br>Daily<br>task</router-link>
                         <router-link to="bonus" class="btn btn-lg p-1  btn-block text-light Anm-outln15si incb4 button4" v-if="bns!=''"><i class="fas fa-money-check-alt"></i> <br>  Bonus</router-link>
@@ -152,7 +152,7 @@ export default ({
         return{
             alllnd:[],
             slide:[1,2,3,4,5],
-            lndimg:'http://mrdemo.com/land/',
+            lndimg:'https://mafiasrival.com/land/',
             bh:{
                  incm:500,
                  upkp:1000,

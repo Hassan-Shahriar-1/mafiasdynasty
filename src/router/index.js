@@ -115,31 +115,6 @@ export default new Router({
                             component: () =>
                                 import ('@/components/home/limited'),
 
-                            children: [{
-                                    path: 'abilities',
-                                    name: 'abilities',
-                                    component: () =>
-                                        import ('@/components/limited/abilities')
-                                },
-                                {
-                                    path: 'fimiliers',
-                                    name: 'fimiliers',
-                                    component: () =>
-                                        import ('@/components/limited/fimiliers')
-                                },
-                                {
-                                    path: 'avater',
-                                    name: 'avater',
-                                    component: () =>
-                                        import ('@/components/limited/avater')
-                                },
-                                {
-                                    path: 'avaterbg',
-                                    name: 'avaterbg',
-                                    component: () =>
-                                        import ('@/components/limited/avaterbg')
-                                },
-                            ],
                         },
                         {
                             path: 'bank',

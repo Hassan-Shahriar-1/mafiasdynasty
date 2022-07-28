@@ -76,7 +76,7 @@ export default {
         props: ["lanmsndid"],
    
         chapter:'',
-        imgsrc:'http://mrdemo.com/land/'
+        imgsrc:'https://mafiasrival.com/land/'
     };
   },
 

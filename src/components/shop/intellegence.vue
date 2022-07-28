@@ -34,7 +34,7 @@ export default {
         return{
 
             intellegenceinfo:false,
-            link:'http://mrdemo.com/intilligence/',                
+            link:'https://mafiasrival.com/intilligence/',                
             intilligence:[]
         }
     },

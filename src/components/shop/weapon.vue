@@ -64,7 +64,7 @@ export default {
             
             amnt:1,
             isAutoHeight:"false",
-            imglk:'http://mrdemo.com/item/',
+            imglk:'https://mafiasrival.com/item/',
  
         }
     },
