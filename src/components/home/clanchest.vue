@@ -10,11 +10,11 @@
             </div>
             <div class="card-body Gp0m0 mt-2">
                 <div class="row Gp0m0">
-                    <div class="col-4 p-0 vertical-center"><img class="card-img animated infinite pulse delay-2s mt-3"  :src="require('/src/assets/img/item/'+ccard.img)" alt=""></div>
+                    <div class="col-4 p-0 vertical-center" @click="popupshow()"><img class="card-img animated infinite pulse delay-2s mt-3"  :src="require('/src/assets/img/item/'+ccard.img)" alt=""></div>
                     <div class="col-8">
 
                         <h5 class="subtitlefnt">{{ccard.title}}</h5>
-                         <div class="btn nBtn nBbg p-1 mb-3 button4 btn-lg btn-block text-center">Open</div>   
+                         <div class="btn nBtn nBbg p-1 mb-3 button4 btn-lg btn-block text-center" @click="popupshow()">Open</div>   
                     </div>
                 </div>
             </div>
@@ -27,6 +27,32 @@
                 </div>
             </div>
         </div>
+
+        <modal name="popup" :width='300' :height='500'  @before-open="beforeOspen" class="mblr bdr p-1 rounded-2">
+            <div class="row Gp0m0 card blkgry">
+                    <div class="card-header blkgry p-1">
+                    <h4 class=" rounded-0 text-center w-100 " style="position:sticky;">Clan Chest
+                        <span class="float-right" style="margin-right:2%;"  @click="popuphd()"><div class="crossbtn"><i class="fas fa-times "></i></div></span></h4>
+                    </div>
+                    <div class="card-body bg-transparent p-0"  style="height:450px; overflow:scroll;">
+                        <div class="w-100 p-1" >   
+                            <p class="text-center">Chose One from the list</p>
+
+                            <div class="row Gp0m0">
+                                <div class="col-4 p-1" v-for="(clnchest, i) in clanchest" :key="i" >
+                                <div class="card p-1">
+                                    <img class="card-img" :src="require('/src/assets/img/item/'+clnchest.img)" alt="">
+                                    <div class="card-footer px-0 text-center">
+                                        <p class="titlefnt2 siz15">{{clnchest.name}}</p>
+                                    </div>
+                                </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </modal> 
     </div>
 </template>
 
@@ -35,6 +61,45 @@
 export default {
     data() {
         return{
+
+
+            clanchest:[
+                {
+                    img:'1.gif',
+                    name:'Name amnd Amount'
+                },
+                {
+                    img:'1.gif',
+                    name:'Name amnd Amount'
+                },
+                {
+                    img:'1.gif',
+                    name:'Name amnd Amount'
+                },
+                {
+                    img:'1.gif',
+                    name:'Name amnd Amount'
+                },
+                {
+                    img:'1.gif',
+                    name:'Name amnd Amount'
+                },
+                {
+                    img:'1.gif',
+                    name:'Name amnd Amount'
+                },
+                {
+                    img:'1.gif',
+                    name:'Name amnd Amount'
+                },
+                {
+                    img:'1.gif',
+                    name:'Name amnd Amount'
+                },{
+                    img:'1.gif',
+                    name:'Name amnd Amount'
+                },
+            ],
             clancard:[
                     {
                         avtr:'1.gif',
@@ -72,5 +137,14 @@ export default {
         }
         
     },
+
+    methods:{
+        popupshow(){
+            this.$modal.show('popup')
+        },
+         popuphd(){
+            this.$modal.hide('popup')
+        }
+    }
 }
 </script>

@@ -16,7 +16,7 @@
 
         <ul class="list-group w-100 rounded Gp0m0 " >
             <li class="list-group-item bMbg Gp0m0 "  v-for="(litm,i) in litms " :key="i">  
-                <div class="container Gp0m0  blkgry">
+                <div class="container-fluid Gp0m0  blkgry">
                     <div class="row Gp0m0" >
                         <div class="col-4 p-2"><img class="card-img" src="../../assets/img/item/1.gif" alt=""> </div>
                         <div class="col-8 p-2 ">

@@ -19,9 +19,7 @@ export default {
      // alert(window.jq);
     window.jq.getScript('dist/js/jquery.fittext.js');
       /*This part will set everypage on top onload  */
-   
   },
-
 }
 
 </script>

@@ -50,7 +50,7 @@
                 <div class="card-body Gp0m0 tmibg">
                     <div class="row Gp0m0 mt-3">
                         <div class="col-6"><img class="card-img" src="../../assets/img/item/1.gif" alt=""></div>
-                        <div class="col-6 Gp0m0"><h3 class="subtitlefnt">You found item name here.</h3></div>
+                        <div class="col-6 Gp0m0"><h3 class="subtitlefnt">You found Item name here...</h3></div>
                     </div>
                 </div>
                 </div>

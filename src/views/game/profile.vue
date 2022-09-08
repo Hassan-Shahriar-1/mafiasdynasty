@@ -15,9 +15,7 @@
                                 <h6 class="Gp0m0 dtlsfnt">Age:{{userdtls.age}}</h6>
                                 <h6 class="Gp0m0 dtlsfnt">Org:{{userdtls.org}}</h6>
                                 <h6 class="Gp0m0 dtlsfnt">Skill:{{userdtls.skl}}</h6>
-                            </div>
-                            <div>
-                                <button class="btn nBtn w-50 p-0 blkgry float-left mt-2 sizv30" style="border-radius:1rem 0% 1rem 0%;" ><i class="mt-1 fas fa-share-alt" ></i> <br> Share</button>
+                                <button class="btn nBtn w-50 py-2 blkgry float-left mt-2 sizv30" style="border-radius:1rem 0% 1rem 0%;">Share <i class="mt-1 fas fa-share-alt" ></i> </button>
                             </div>
                         </div>    
                     </div>

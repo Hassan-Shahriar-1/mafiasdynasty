@@ -5,11 +5,11 @@
             <div class="card-body Gp2m2">
 
                 <div class="row Gp0m0">
-                    <divm class="col-3"></divm>
+                    <div class="col-3"></div>
                 <div class="col-6">
                 <img src="../../assets/img/item/Gold-bar.png"  class="text-center rounded-0 blksdout" style="height:120px; width:150px;" alt="" >
                 </div>
-                    <divm class="col-3"></divm>
+                    <div class="col-3"></div>
 
                 </div>
                 <h6 class="dtlsfnt text-center py-2">

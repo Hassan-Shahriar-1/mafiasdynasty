@@ -3,8 +3,6 @@
         <div class="row py-2 text-center Gp0m0">
         <h4 class='hr-sect titlefnt'>Combat</h4>
         </div>
-
-
         <div class="row Gp0m0 ">
             <div class="col-4 ">
             <img class="card-img" src="../../assets/img/custom profile/01.jpg" alt="">

@@ -25,7 +25,7 @@
                     <div class="row" id="excngitem">
                         <div class="col-6" v-if="mainsrc!=''">
                             <div class="m-2 p-0 tmibg rounded">
-                                <img class="card-img" :src="require('/src/assets/img/item/'+mainsrc)" alt="">
+                                <img class="card-img" :src="require('/src/assets/img/item/'+mainsrc)" alt="">s
                                 <div class="card-image-overlay">
                                     <div class="card-img-overlay text-white d-flex flex-column justify-content-center"></div>
                                 </div>
@@ -123,7 +123,6 @@ export default {
                 },
 
             ],
-
             Exchanger:[
                 {
                     img:'knuckle.png',
@@ -171,7 +170,6 @@ export default {
                     img:'tommy-gun.png',
                     nm:"hassan shahriar"
                 },
-
             ]
         }
     },
@@ -182,7 +180,6 @@ export default {
     methods:{
     imgbind(imgnm){
         this.imgsrc=imgnm.img
-
     },
     mainbind(imgnm){
         this.mainsrc=imgnm.img
@@ -190,11 +187,7 @@ export default {
     excng(){
        document.getElementById("excngitem").style.display = "none";
        document.getElementById("getitem").style.display = "block";
-       
-
     }
     }
-
-
 }
 </script>

@@ -60,38 +60,38 @@
         </div>  -->
 <!-- Godfathers Section start -->
         <div class="row Gp0m0">
-            <div class="col-6 card">
+            <div class="col-6 card border py-2">
                 <router-link :to="{name:'typ1'}">
                     <img class="card-img" style="opacity:0.7;" src="../../assets/img/bannar/1.jpg" alt="">
                     <div class=" p-0 card-img-overlay text-center">
-                        <h5 class="card-title-top">Fabrizio Carlos</h5>
-                        <p class="m-0">Collector</p>
-                        <div class="btn nBbg nBtn siz15 blkred">Collect</div>
+                        <h5 class="card-title-top siz16">Fabrizio Carlos</h5>
+                        <p class="m-0 siz15">Collector</p>
+                        <div class="btn nBbg nBtn siz15 blkred siz13">Collect</div>
                     </div> 
                 </router-link>
             </div>
-            <div class="col-6 card">
+            <div class="col-6 card border py-2">
                 <router-link :to="{name:'typ2'}"><img class="card-img" style="opacity:0.7;" src="../../assets/img/bannar/1.jpg" alt="">
                     <div class=" p-0 card-img-overlay text-center">
-                        <h5 class="card-title-top">Sandra Corleone</h5>
-                        <p class="m-0">Spinner</p>
-                        <div class="btn nBbg nBtn siz15 blkred">Spin</div>
+                        <h5 class="card-title-top siz16">Sandra Corleone</h5>
+                        <p class="m-0 siz15">Spinner</p>
+                        <div class="btn nBbg nBtn siz13 blkred">Spin</div>
                     </div>
                 </router-link> 
              </div>
-            <div class="col-6 card">
+            <div class="col-6 card border py-2">
                 <router-link :to="{name:'gfight'}" >
                     <img class="card-img" style="opacity:0.7;" src="../../assets/img/bannar/1.jpg" alt="">
                     <div class=" p-0 card-img-overlay text-center">
-                        <h5 class="card-title-top">Boss name</h5>
-                        <div class="btn nBbg nBtn siz15 blkred btn-block">Boss Fight</div>
+                        <h5 class="card-title-top siz16">Boss name</h5>
+                        <div class="btn nBbg nBtn siz13 blkred ">Boss Fight</div>
                     </div>
                 </router-link>
              </div>
-            <div class="col-6 card">
+            <div class="col-6 card border py-2">
                  <router-link :to="{name:'typ5'}" > <img class="card-img" style="opacity:0.7;" src="../../assets/img/bannar/1.jpg" alt="">
                 <div class=" p-0 card-img-overlay text-center">
-                        <h5 class="card-title-top">Robert and Linda</h5>
+                        <h5 class="card-title-top siz16">Robert and Linda</h5>
                     </div> 
                 </router-link>
             </div>
