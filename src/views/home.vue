@@ -19,6 +19,10 @@ export default ({
     beforeCreate() {     
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // for chorme
+
+    if(window.localStorage.getItem('Usrtkn')==(null||'') ){
+        this.$router.push('/login')
+    }
     this.$gm.lgnchk(this);      
     // this.$mgo.temp('gspSktOnce').rmv();
     /* console.log(this.socket); */

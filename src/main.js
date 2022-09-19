@@ -62,7 +62,7 @@ Vue.axios.defaults.headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
 };
-Vue.axios.defaults.baseURL = 'http://mafiasrival.com/';
+Vue.axios.defaults.baseURL = 'https://mafiasrival.com/';
 Vue.axios.defaults.headers.Authorization = '';
 var VueTouch = require('vue-touch');
 VueTouch.registerCustomEvent('doubletap', { type: 'tap', taps: 2 });
