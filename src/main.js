@@ -33,7 +33,8 @@ Vue.use(InfiniteLoading)
 const moment = require('moment');
 Vue.use(require('vue-moment'), { moment });
 
-Vue.prototype.socket = io('http://192.168.1.104:3000', { autoConnect: true });
+Vue.prototype.socket = io('http://34.230.149.150:3000',{autoConnect: true } );
+console.log('hi',Vue.prototype.socket)
 Vue.prototype.sktd = {};
 //tell socket.io to never give up :)
 //Vue.config.productionTip = false
@@ -62,7 +63,7 @@ Vue.axios.defaults.headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
 };
-Vue.axios.defaults.baseURL = 'https://mafiasrival.com/';
+Vue.axios.defaults.baseURL = 'https://mafiasrival.com/api';
 Vue.axios.defaults.headers.Authorization = '';
 var VueTouch = require('vue-touch');
 VueTouch.registerCustomEvent('doubletap', { type: 'tap', taps: 2 });

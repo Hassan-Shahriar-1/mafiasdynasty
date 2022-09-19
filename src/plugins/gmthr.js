@@ -34,7 +34,7 @@ export default {
             }, 1000);   
          });
 
-        if(rt.axios.defaults.headers.Authorization == null){
+        if(rt.axios.defaults.headers.Authorization == null ||rt.axios.defaults.headers.Authorization=='Bearer null'){
             rt.$router.push('/login');
         }  
     }
