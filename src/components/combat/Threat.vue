@@ -1,3 +1,6 @@
+/* This page is a threating page and a user can threat them (as it is a mafia game) this list will generate randomly, by clicking the threat button there will be a popup modal component 
+ which is by vue.js modal component  and you can send customized threat. */
+
 <!-- <template>
     <div class=" Gp0m0 smlttlfnt3 ptnbg ">
         <div class="container text-center trtbg   trt">

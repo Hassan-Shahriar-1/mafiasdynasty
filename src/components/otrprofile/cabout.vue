@@ -76,7 +76,7 @@
             <div class="card">
               <img
                 class="card-img-top"
-               src="../../assets/img/item/1.gif"
+                src="../../assets/img/item/1.gif"
                 alt="Card image cap"
               />
               <div class="card-body p-1">
@@ -123,7 +123,7 @@
             <div class="card">
               <img
                 class="card-img-top"
-                 src="../../assets/img/item/1.gif"
+                src="../../assets/img/item/1.gif"
                 alt="Card image cap"
               />
               <div class="card-body p-1">

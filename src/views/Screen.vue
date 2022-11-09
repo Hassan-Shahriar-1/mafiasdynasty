@@ -1,12 +1,12 @@
 <template>
-          <div class="m-0 ptnbg " style="overflow: hidden;height:100vh; ">
-                  <!-- <div class="lgnFromIcn mt-3 ">
+  <div class="m-0 ptnbg" style="overflow: hidden; height: 100vh">
+    <!-- <div class="lgnFromIcn mt-3 ">
                       <div class="row justify-content-sm-center">
                           <div class="col-12"> <img src="../assets/img/logo.png" class='img-thumbnail'></div>
                       </div>
                   </div> -->
 
-              <!-- <div class="row Gp0m0">
+    <!-- <div class="row Gp0m0">
                   <div class="col-12 text-center mt-5" >              
                   <svg class="text-center ml-5" viewBox="0 0 300 300" width="150" height="150" xmlns="http://www.w3.org/2000/svg">
                   <defs>
@@ -27,30 +27,50 @@
                   </div>
               </div>
               <h4 class="text-center mt-2"> Loading <span class=" pl-2 loading-dots">•</span></h4> -->
-                 <div class="lgnFromIcn mt-5">
-                      <div class="row justify-content-sm-center">
-                          <div class="col-12"> <img src="../assets/img/logo.png" class='img-thumbnail'></div>
-                      </div>
-                  </div>
-            <div class="fixed-bottom mrgtp95 px-4">
-
-                <div class="row Gp0m0" style="margin-bottom:15%;">
-                  <div class="col-12">
-                       <h5 class="siz20 text-center">Loading <span class=" pl-2 loading-dots">•</span></h5>
-                    <div class="progress n_bar-a" style="height:10px;">
-                        <div class="progress-bar mv-value clRBrd bgD0" id="itmBr" style="width: 100%;">
-                        </div>
-                    </div>
-                    </div>
-                </div>
-              <div class="row  Gp0m0 text-center">
-                <div class="col-4 px-0"><a href="https://mafiasrival.com/" class="btn-lg button6 nBtn d-block"><i class="fab fa-firefox-browser"></i></a></div>
-                <div class="col-4 px-0"><a href="https://www.facebook.com/mafiasrivalgame" class="btn-lg button3 nBtn d-block"><i class="fab fa-facebook"></i></a></div>
-                <div class="col-4 px-0"><router-link to="/gmail"><a href="#" class="btn-lg button7 nBtn d-block"><i class="far fa-envelope"></i></a></router-link></div>
-              </div>
+    <div class="lgnFromIcn mt-5">
+      <div class="row justify-content-sm-center">
+        <div class="col-12">
+          <img src="../assets/img/logo.png" class="img-thumbnail" />
+        </div>
+      </div>
+    </div>
+    <div class="fixed-bottom mrgtp95 px-4">
+      <div class="row Gp0m0" style="margin-bottom: 15%">
+        <div class="col-12">
+          <h5 class="siz20 text-center">
+            Loading <span class="pl-2 loading-dots">•</span>
+          </h5>
+          <div class="progress n_bar-a" style="height: 10px">
+            <div
+              class="progress-bar mv-value clRBrd bgD0"
+              id="itmBr"
+              style="width: 100%"
+            ></div>
           </div>
-       </div>
-
+        </div>
+      </div>
+      <div class="row Gp0m0 text-center">
+        <div class="col-4 px-0">
+          <a href="https://mafiasrival.com/" class="btn-lg button6 nBtn d-block"
+            ><i class="fab fa-firefox-browser"></i
+          ></a>
+        </div>
+        <div class="col-4 px-0">
+          <a
+            href="https://www.facebook.com/mafiasrivalgame"
+            class="btn-lg button3 nBtn d-block"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </div>
+        <div class="col-4 px-0">
+          <router-link to="/gmail"
+            ><a href="#" class="btn-lg button7 nBtn d-block"
+              ><i class="far fa-envelope"></i></a
+          ></router-link>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 <style>
 #app {
@@ -60,13 +80,13 @@
   text-align: center;
   color: #2c3e50;
   margin-top: 0px;
-  margin-bottom:0px!important;
-/*   margin-bottom: auto; */
+  margin-bottom: 0px !important;
+  /*   margin-bottom: auto; */
 }
 </style>
 <style>
 .mrgtp95 {
-margin-bottom:5%; 
+  margin-bottom: 5%;
 }
 
 .pl {
@@ -74,7 +94,8 @@ margin-bottom:5%;
   width: 6.25em;
   height: 6.25em;
 }
-.pl__ring, .pl__ball {
+.pl__ring,
+.pl__ball {
   animation: ring 2s ease-out infinite;
 }
 .pl__ball {
@@ -84,8 +105,8 @@ margin-bottom:5%;
 /* Dark theme  */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: hsl(var(--hue),10%,10%);
-    --fg: hsl(var(--hue),10%,90%);
+    --bg: hsl(var(--hue), 10%, 10%);
+    --fg: hsl(var(--hue), 10%, 90%);
   }
 }
 
@@ -97,12 +118,14 @@ margin-bottom:5%;
   25% {
     stroke-dasharray: 0 0 0 0 257 0 258 0;
   }
-  50%, to {
+  50%,
+  to {
     stroke-dasharray: 0 0 0 0 0 515 0 0;
   }
 }
 @keyframes ball {
-  from, 50% {
+  from,
+  50% {
     animation-timing-function: ease-in;
     stroke-dashoffset: 1;
   }
@@ -118,16 +141,18 @@ margin-bottom:5%;
     animation-timing-function: ease-in;
     stroke-dashoffset: -157;
   }
-  57%, 71%, 85%, 99%, to {
+  57%,
+  71%,
+  85%,
+  99%,
+  to {
     animation-timing-function: ease-out;
     stroke-dashoffset: -163;
   }
 }
 
-
-
 .loading-dots {
-  color: rgba(255,2555,255,0);
+  color: rgba(255, 2555, 255, 0);
   animation-name: loading-dots-animation;
   animation-duration: 1.5s;
   animation-timing-function: linear;
@@ -136,26 +161,31 @@ margin-bottom:5%;
 
 @keyframes loading-dots-animation {
   0% {
-    text-shadow: -0.5em 0 0 rgba(255,2555,255,.6), 0em 0 0 rgba(255,2555,255,.2), 0.5em 0 0 rgba(255,2555,255,.2);
+    text-shadow: -0.5em 0 0 rgba(255, 2555, 255, 0.6),
+      0em 0 0 rgba(255, 2555, 255, 0.2), 0.5em 0 0 rgba(255, 2555, 255, 0.2);
   }
-   20% {
-    text-shadow: -0.5em 0 0 rgba(255,2555,255,1), 0em 0 0 rgba(255,2555,255,.6), 0.5em 0 0 rgba(255,2555,255,.2);
+  20% {
+    text-shadow: -0.5em 0 0 rgba(255, 2555, 255, 1),
+      0em 0 0 rgba(255, 2555, 255, 0.6), 0.5em 0 0 rgba(255, 2555, 255, 0.2);
   }
   40% {
-    text-shadow: -0.5em 0 0 rgba(255,2555,255,.6), 0em 0 0 rgba(255,2555,255,1), 0.5em 0 0 rgba(255,2555,255,0.6);
+    text-shadow: -0.5em 0 0 rgba(255, 2555, 255, 0.6),
+      0em 0 0 rgba(255, 2555, 255, 1), 0.5em 0 0 rgba(255, 2555, 255, 0.6);
   }
   60% {
-    text-shadow: -0.5em 0 0 rgba(255,2555,255,.2), 0em 0 0 rgba(255,2555,255,.6), 0.5em 0 0 rgba(255,2555,255,1);
+    text-shadow: -0.5em 0 0 rgba(255, 2555, 255, 0.2),
+      0em 0 0 rgba(255, 2555, 255, 0.6), 0.5em 0 0 rgba(255, 2555, 255, 1);
   }
   80% {
-    text-shadow: -0.5em 0 0 rgba(255,2555,255,.2), 0em 0 0 rgba(255,2555,255,.2), 0.5em 0 0 rgba(255,2555,255,.6);
+    text-shadow: -0.5em 0 0 rgba(255, 2555, 255, 0.2),
+      0em 0 0 rgba(255, 2555, 255, 0.2), 0.5em 0 0 rgba(255, 2555, 255, 0.6);
   }
   100% {
-    text-shadow: -0.5em 0 0 rgba(255,2555,255,.6), 0em 0 0 rgba(255,2555,255,.2), 0.5em 0 0 rgba(255,2555,255,.2);
+    text-shadow: -0.5em 0 0 rgba(255, 2555, 255, 0.6),
+      0em 0 0 rgba(255, 2555, 255, 0.2), 0.5em 0 0 rgba(255, 2555, 255, 0.2);
   }
 }
 </style>
 <script>
-export default{
-}
+export default {};
 </script>

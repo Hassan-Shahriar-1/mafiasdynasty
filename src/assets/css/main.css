@@ -231,12 +231,12 @@
 }
 
 .mntncbg {
-    background: url('../img/maintanance/break.gif');
+    background: url('../img/background/mbreak.gif');
     position: initial;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 15px;
-    height: 500px;
+
     overflow: hidden;
 }
 
@@ -691,7 +691,9 @@ p {
 
 .bgD {
     position: relative;
-    background: hsl(210, 30%, 0%) radial-gradient( hsl(210, 30%, 20%), hsl(210, 30%, 0%));
+   /*  background: hsl(210, 30%, 0%) radial-gradient( hsl(210, 30%, 20%), hsl(210, 30%, 0%)); */
+    background: rgb(12, 16, 19);
+    background: linear-gradient(90deg, rgb(16, 23, 27) 0%, rgba(27, 37, 46, 1) 15%, rgba(36, 51, 66, 1) 50%, rgba(27, 37, 46, 1) 85%, rgba(16, 23, 27, 1) 100%);
     border: 0.5px solid rgb(75, 73, 73);
     border-radius: 4px;
     box-shadow: inset 0px 0px 5px 1px rgb(75, 73, 73)

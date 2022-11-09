@@ -68,40 +68,45 @@
           <div class="row Gp0m0 itmbg rounded">
             <div class="col-3 Gp0m0 p-1">
               <popover name="foo" topCenter> Hello clan </popover>
-              <div  v-if="dclan=true" class="btn nBtn btn-block" v-popover:foo>
+              <div
+                v-if="(dclan = true)"
+                class="btn nBtn btn-block"
+                v-popover:foo
+              >
                 <i class="fas fa-user-slash"></i> <br />
                 <h4 class="siz13 text-danger">D-clan</h4>
               </div>
-              <div v-if="clan==false" class="btn nBtn btn-block">
+              <div v-if="clan == false" class="btn nBtn btn-block">
                 <i class="fas fa-users"></i> <br />
                 <h4 class="siz13 text-success">Clan <br />Request</h4>
               </div>
               <div class="btn nBtn btn-block">
-              <router-link to="/cablities"
-                >
+                <router-link to="/cablities">
                   <i class="fas fa-gopuram"></i> <br />
                   <h4 class="siz13">Ablities</h4>
-                </router-link> </div>
-                <div class="btn nBtn btn-block">
-                    <router-link to="/cabout">
-                        <i class="far fa-address-card"></i> <br />
-                        <h4 class="siz13">About</h4>
-                    </router-link> 
-                </div>
+                </router-link>
+              </div>
+              <div class="btn nBtn btn-block">
+                <router-link to="/cabout">
+                  <i class="far fa-address-card"></i> <br />
+                  <h4 class="siz13">About</h4>
+                </router-link>
+              </div>
 
-             <div class="btn nBtn btn-block"> <router-link to="/badge">
+              <div class="btn nBtn btn-block">
+                <router-link to="/badge">
                   <i class="fas fa-award"></i> <br />
                   <h4 class="siz13">Badge</h4>
-                </router-link> </div>
+                </router-link>
+              </div>
 
-
-                <div class="btn nBtn btn-block">
-              <router-link to="/wall">
+              <div class="btn nBtn btn-block">
+                <router-link to="/wall">
                   <i class="fas fa-pallet"></i> <br />
                   <h4 class="siz13">Wall</h4>
                 </router-link>
-                </div>
-                
+              </div>
+
               <div class="btn nBtn btn-block" @click="ppup()">
                 <i class="fas fa-heartbeat"></i> <br />
                 <h4 class="siz13">
@@ -121,11 +126,13 @@
                 <div class="card-body tmibg">
                   <div class="row">
                     <div class="col-6 p-1">
-                      <h6 class="blk bdr1 py-2 rounded text-center">Toxic <br>5264554</h6>
+                      <h6 class="blk bdr1 py-2 rounded text-center">
+                        Toxic <br />5264554
+                      </h6>
                     </div>
                     <div class="col-6 p-1">
                       <h6 class="blk bdr1 py-2 rounded text-center">
-                        Tempting <br>59645654
+                        Tempting <br />59645654
                       </h6>
                     </div>
                   </div>
@@ -140,10 +147,14 @@
                 <div class="card-body tmibg">
                   <div class="row">
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Toxic <br>5264554</h6>
+                      <h6 class="blk py-2 rounded text-center">
+                        Toxic <br />5264554
+                      </h6>
                     </div>
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Tempting <br>59645654</h6>
+                      <h6 class="blk py-2 rounded text-center">
+                        Tempting <br />59645654
+                      </h6>
                     </div>
                   </div>
                 </div>
@@ -158,11 +169,13 @@
                   <div class="row">
                     <div class="col-6 p-1">
                       <h6 class="blk blkbdr py-2 rounded text-center">
-                        Toxic <br>5264554
+                        Toxic <br />5264554
                       </h6>
                     </div>
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Tempting <br>59645654</h6>
+                      <h6 class="blk py-2 rounded text-center">
+                        Tempting <br />59645654
+                      </h6>
                     </div>
                   </div>
                 </div>
@@ -177,26 +190,35 @@
                   <div class="row">
                     <div class="col-6 p-1">
                       <h6 class="blk blkbdr py-2 rounded text-center">
-                        Toxic <br>5264554
+                        Toxic <br />5264554
                       </h6>
                     </div>
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Tempting <br>59645654</h6>
+                      <h6 class="blk py-2 rounded text-center">
+                        Tempting <br />59645654
+                      </h6>
                     </div>
                     <div class="col-6 p-1">
                       <h6 class="blk blkbdr py-2 rounded text-center">
-                        Toxic <br>5264554
+                        Toxic <br />5264554
                       </h6>
                     </div>
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Tempting <br>59645654</h6>
+                      <h6 class="blk py-2 rounded text-center">
+                        Tempting <br />59645654
+                      </h6>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-6 p-1">
                       <div class="card">
                         <img
-                          class="card-img-top" :src="require('../../assets/img/item/' + MmnDtlst.mimg)" alt="Card image cap"/>
+                          class="card-img-top"
+                          :src="
+                            require('../../assets/img/item/' + MmnDtlst.mimg)
+                          "
+                          alt="Card image cap"
+                        />
                         <div class="card-body p-1">
                           <p class="card-text p-2">Some quick</p>
                         </div>
@@ -259,21 +281,25 @@
                   <div class="row">
                     <div class="col-6 p-1">
                       <h6 class="blk blkbdr py-2 rounded text-center">
-                        Toxic <br>5264554
+                        Toxic <br />5264554
                       </h6>
                     </div>
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Tempting <br>59645654</h6>
+                      <h6 class="blk py-2 rounded text-center">
+                        Tempting <br />59645654
+                      </h6>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-6 p-1">
                       <h6 class="blk blkbdr py-2 rounded text-center">
-                        Toxic <br>5264554
+                        Toxic <br />5264554
                       </h6>
                     </div>
                     <div class="col-6 p-1">
-                      <h6 class="blk py-2 rounded text-center">Tempting <br>59645654</h6>
+                      <h6 class="blk py-2 rounded text-center">
+                        Tempting <br />59645654
+                      </h6>
                     </div>
                   </div>
                 </div>
@@ -284,7 +310,11 @@
       </div>
 
       <modal
-        name="ppup" :width="300" :isAutoHeight="true" @before-open="beforeOspen" class="mblr"
+        name="ppup"
+        :width="300"
+        :isAutoHeight="true"
+        @before-open="beforeOspen"
+        class="mblr"
       >
         <div class="row Gp0m0 px-1 tmibg" id="ablht">
           <div class="card">
@@ -296,16 +326,31 @@
                 </h5>
               </h5>
             </div>
-            <div class="card-body Gp0m0 tmibg"  style="height:300px;overflow:scroll;" >
-              <div class="row Gp0m0 rounded blkd75 p-2 my-2" v-for="(sabl, i) in abl" :key="i" >
+            <div
+              class="card-body Gp0m0 tmibg"
+              style="height: 300px; overflow: scroll"
+            >
+              <div
+                class="row Gp0m0 rounded blkd75 p-2 my-2"
+                v-for="(sabl, i) in abl"
+                :key="i"
+              >
                 <div class="col-2 Gp0m0">
-                  <img class="card-img" :src="require('../../assets/img/'+sabl.img)" alt=""/>
+                  <img
+                    class="card-img"
+                    :src="require('../../assets/img/' + sabl.img)"
+                    alt=""
+                  />
                 </div>
                 <div class="col-4 Gp0m0 mt-2">
-                  <h6 class="siz15">{{sabl.nm}}</h6>
+                  <h6 class="siz15">{{ sabl.nm }}</h6>
                 </div>
                 <div class="col-3 Gp0m0 mt-1">
-                  <select name="Select" id="" class="w-100 text-dark form-control form-control-sm">
+                  <select
+                    name="Select"
+                    id=""
+                    class="w-100 text-dark form-control form-control-sm"
+                  >
                     <option selected class="text-dark">Select</option>
                     <option value="1">1</option>
                     <option value="3">2</option>
@@ -335,8 +380,8 @@
         @before-open="beforeOspen"
         class="mblr"
       >
-        <div class="row Gp0m0 " id="ablht">
-          <div class="card w-100" style="height:300px; width:250px;">
+        <div class="row Gp0m0" id="ablht">
+          <div class="card w-100" style="height: 300px; width: 250px">
             <div class="card-header p-2 blkgry">
               <h5 class="subtitlefnt">
                 Send Your Abilities to Me
@@ -345,7 +390,9 @@
                 </h5>
               </h5>
             </div>
-            <div class="card-body Gp0m0 tmibg p-1"><h6>Lorem laudantium cupiditate vel vero!</h6></div>
+            <div class="card-body Gp0m0 tmibg p-1">
+              <h6>Lorem laudantium cupiditate vel vero!</h6>
+            </div>
           </div>
         </div>
       </modal>
@@ -377,45 +424,44 @@ export default {
         hlth: 0,
         atck: 0,
         defnc: 0,
-        dclan:true,
-        clan:true,
+        dclan: true,
+        clan: true,
       },
       usrdata: [],
-          abl:[
-                {
-                     img:"1.png",
-                     nm:"Habibur Rahman"
-                },
-                 {
-                     img:"1.png",
-                     nm:"Habibur Rahman"
-                },
-                 {
-                     img:"1.png",
-                     nm:"Habibur Rahman"
-                },
-                 {
-                     img:"1.png",
-                     nm:"Habibur Rahman"
-                },
-                  {
-                     img:"1.png",
-                     nm:"Habibur Rahman"
-                },
-                 {
-                     img:"1.png",
-                     nm:"Habibur Rahman"
-                },
-                 {
-                     img:"1.png",
-                     nm:"Habibur Rahman"
-                },
-                 {
-                     img:"1.png",
-                     nm:"Habibur Rahman"
-                },
- 
-         ],
+      abl: [
+        {
+          img: "1.png",
+          nm: "Habibur Rahman",
+        },
+        {
+          img: "1.png",
+          nm: "Habibur Rahman",
+        },
+        {
+          img: "1.png",
+          nm: "Habibur Rahman",
+        },
+        {
+          img: "1.png",
+          nm: "Habibur Rahman",
+        },
+        {
+          img: "1.png",
+          nm: "Habibur Rahman",
+        },
+        {
+          img: "1.png",
+          nm: "Habibur Rahman",
+        },
+        {
+          img: "1.png",
+          nm: "Habibur Rahman",
+        },
+        {
+          img: "1.png",
+          nm: "Habibur Rahman",
+        },
+      ],
       MmnDtlst: {
         mname: "HRhabib",
         mststs: "Modern Vampire",
@@ -423,8 +469,6 @@ export default {
         mage: "Age:25",
         mimg: "1.gif",
 
-
-   
         mn: [
           {
             clk: "1.png",
@@ -464,8 +508,6 @@ export default {
           },
         ],
 
-  
-
         bp: [
           {
             clk: "1.png",
@@ -497,7 +539,7 @@ export default {
   },
   created() {
     this.$mgo.gt("mp/mafiaprf/" + this.$route.params.uid, (resp) => {
-      if (resp.sts == "ok") {
+      if (resp.status_code === 200) {
         this.usrdata = resp.data;
       }
     });

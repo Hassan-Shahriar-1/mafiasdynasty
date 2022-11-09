@@ -436,7 +436,7 @@ export default {
   },
   created() {
     this.$mgo.gt("mission/allland", (rss) => {
-      if (rss.sts == "ok") {
+      if (rss.status_code === 200) {
         this.lmtd = rss.lmtd;
         this.bns = rss.sale;
 

@@ -1,3 +1,5 @@
+/* Bank section will update jeach mafias ,cogre balance cash , they can deposite cash  and mdeposite cash from here */
+
 <template>
   <div class="tmibg rounded bnrbxsdo overflow-auto">
     <div style="margin-bottom: 50px">

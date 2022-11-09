@@ -1,74 +1,97 @@
 <template>
   <div class="blk">
-    <div class="card  my-2 rounded grybdr">
+    <div class="card my-2 rounded grybdr">
       <div class="card-header blkgry p-0">
         <h3 class="text-center">Mafia States</h3>
         <h6 class="text-center">Level:1000</h6>
       </div>
-      <div class="card-body tmibg">
+      <div class="card-body bgD mt-1">
         <div class="row">
           <div class="col-6 p-1">
-            <h6 class="blk bdr1 py-2 rounded text-center">Toxic <br>654411</h6>
+            <h6 class="blk bdr1 py-2 rounded text-center">
+              Toxic <br />654411
+            </h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk bdr1 py-2 rounded text-center">Tempting <br> 555244</h6>
+            <h6 class="blk bdr1 py-2 rounded text-center">
+              Tempting <br />
+              555244
+            </h6>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="card  my-2 rounded grybdr">
+    <div class="card my-2 rounded grybdr">
       <div class="card-header blkgry p-0">
         <h3 class="text-center">Fight States</h3>
         <h6 class="text-center">Level:1000</h6>
       </div>
-      <div class="card-body tmibg">
+      <div class="card-body bgD mt-1">
         <div class="row">
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Toxic <br>654411</h6>
+            <h6 class="blk py-2 rounded text-center">Toxic <br />654411</h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Tempting <br> 555244</h6>
+            <h6 class="blk py-2 rounded text-center">
+              Tempting <br />
+              555244
+            </h6>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="card  my-2 rounded grybdr">
+    <div class="card my-2 rounded grybdr">
       <div class="card-header blkgry p-0">
         <h3 class="text-center">Arena States</h3>
         <h6 class="text-center">Level:1000</h6>
       </div>
-      <div class="card-body tmibg">
+      <div class="card-body bgD mt-1">
         <div class="row">
           <div class="col-6 p-1">
-            <h6 class="blk blkbdr py-2 rounded text-center">Toxic <br>654411</h6>
+            <h6 class="blk blkbdr py-2 rounded text-center">
+              Toxic <br />654411
+            </h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Tempting <br> 555244</h6>
+            <h6 class="blk py-2 rounded text-center">
+              Tempting <br />
+              555244
+            </h6>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="card  my-2 rounded grybdr">
+    <div class="card my-2 rounded grybdr">
       <div class="card-header blkgry p-0">
         <h3 class="text-center">Activity</h3>
         <h6 class="text-center">Level:1100</h6>
       </div>
-      <div class="card-body tmibg">
+      <div class="card-body bgD mt-1">
         <div class="row">
           <div class="col-6 p-1">
-            <h6 class="blk blkbdr py-2 rounded text-center">Toxic <br>654411</h6>
+            <h6 class="blk blkbdr py-2 rounded text-center">
+              Toxic <br />654411
+            </h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Tempting <br> 555244</h6>
+            <h6 class="blk py-2 rounded text-center">
+              Tempting <br />
+              555244
+            </h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk blkbdr py-2 rounded text-center">Toxic <br>654411</h6>
+            <h6 class="blk blkbdr py-2 rounded text-center">
+              Toxic <br />654411
+            </h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Tempting <br> 555244</h6>
+            <h6 class="blk py-2 rounded text-center">
+              Tempting <br />
+              555244
+            </h6>
           </div>
         </div>
         <div class="row">
@@ -76,7 +99,7 @@
             <div class="card">
               <img
                 class="card-img-top"
-               src="../../../assets/img/item/1.gif"
+                src="../../../assets/img/item/1.gif"
                 alt="Card image cap"
               />
               <div class="card-body p-1">
@@ -100,12 +123,12 @@
       </div>
     </div>
 
-    <div class="card  my-2 rounded grybdr">
+    <div class="card my-2 rounded grybdr">
       <div class="card-header blkgry p-0">
         <h3 class="text-center">Power</h3>
         <h6 class="text-center">Level:1200</h6>
       </div>
-      <div class="card-body tmibg">
+      <div class="card-body bgD mt-1">
         <div class="row">
           <div class="col-6 p-1">
             <div class="card">
@@ -123,7 +146,7 @@
             <div class="card">
               <img
                 class="card-img-top"
-                 src="../../../assets/img/item/1.gif"
+                src="../../../assets/img/item/1.gif"
                 alt="Card image cap"
               />
               <div class="card-body p-1">
@@ -134,18 +157,28 @@
         </div>
         <div class="row">
           <div class="col-6 p-1">
-            <h6 class="blk blkbdr py-2 rounded text-center">Toxic <br>654411</h6>
+            <h6 class="blk blkbdr py-2 rounded text-center">
+              Toxic <br />654411
+            </h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Tempting <br> 555244</h6>
+            <h6 class="blk py-2 rounded text-center">
+              Tempting <br />
+              555244
+            </h6>
           </div>
         </div>
         <div class="row">
           <div class="col-6 p-1">
-            <h6 class="blk blkbdr py-2 rounded text-center">Toxic <br>654411</h6>
+            <h6 class="blk blkbdr py-2 rounded text-center">
+              Toxic <br />654411
+            </h6>
           </div>
           <div class="col-6 p-1">
-            <h6 class="blk py-2 rounded text-center">Tempting <br> 555244</h6>
+            <h6 class="blk py-2 rounded text-center">
+              Tempting <br />
+              555244
+            </h6>
           </div>
         </div>
       </div>

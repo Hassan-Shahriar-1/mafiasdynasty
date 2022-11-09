@@ -1,3 +1,5 @@
+/* This  is the boss fight ground where you can defeat boss , data will be found from backend(Server)*/
+
 <template>
   <div style="margin-bottom: 87px">
     <div class="card bg-transparent border Gp0m0">

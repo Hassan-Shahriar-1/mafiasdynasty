@@ -1,98 +1,109 @@
 <template>
-    <div>
-        <div class="card border-0 p-2">
-            <div class="card-header blkgry"><h4 class="titlefnt text-center">In-Game-Alerts</h4></div>
-            <div class="card-body tmibg">
-                    <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
-                        <div class="col-9"><h5 class="subtitlefnt">Fight Alerts</h5></div>
-                        <div class="col-3">    
-                            <label class="switch">
-                            <input type="checkbox" v-model="fltrt" >
-                            <span class="slider round"></span>
-                            </label>
-                        </div>
-                    </div>
+  <div>
+    <div class="card border-0 p-2">
+      <div class="card-header blkgry">
+        <h4 class="titlefnt text-center">In-Game-Alerts</h4>
+      </div>
+      <div class="card-body tmibg">
+        <div class="row Gp0m0 rounded blkd75 mt-1 p-2">
+          <div class="col-9"><h5 class="subtitlefnt">Fight Alerts</h5></div>
+          <div class="col-3">
+            <label class="switch">
+              <input type="checkbox" v-model="fltrt" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
 
-                    <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
-                        <div class="col-9"><h5 class="subtitlefnt">Syndicate Quest Alerts</h5></div>
-                        <div class="col-3">    
-                            <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
-                            </label>
-                        </div>
-                    </div>
-                      <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
-                        <div class="col-9"><h5 class="dtlsfnt"> Battle pass</h5></div>
-                        <div class="col-3">    
-                            <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
-                            </label>
-                        </div>
-                    </div>  
-            </div>
-        </div>  
+        <div class="row Gp0m0 rounded blkd75 mt-1 p-2">
+          <div class="col-9">
+            <h5 class="subtitlefnt">Syndicate Quest Alerts</h5>
+          </div>
+          <div class="col-3">
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row Gp0m0 rounded blkd75 mt-1 p-2">
+          <div class="col-9"><h5 class="dtlsfnt">Battle pass</h5></div>
+          <div class="col-3">
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <div class="card mt-2 border-0 p-2">
+    <div class="card mt-2 border-0 p-2">
+      <div class="card-header blkgry">
+        <h4 class="titlefnt text-center">Push notifications</h4>
+      </div>
 
-        <div class="card-header blkgry"><h4 class="titlefnt text-center">Push notifications</h4></div>
-
-            <div class="card-body tmibg">       
-                  <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
-                      <div class="col-9"><h5 class="subtitlefnt">Mafias Notification</h5></div>
-                      <div class="col-3">    
-                          <label class="switch">
-                          <input type="checkbox" checked>
-                          <span class="slider round"></span>
-                          </label>  
-                      </div>
-                  </div> 
-                  <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
-                      <div class="col-9"><h5 class="subtitlefnt">Social Notification</h5></div>
-                      <div class="col-3">    
-                          <label class="switch">
-                          <input type="checkbox" checked>
-                          <span class="slider round"></span>
-                          </label>
-                      </div>
-                  </div> 
-                  <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
-                      <div class="col-9"><h5 class="subtitlefnt">Syndicate Notifications</h5></div>
-                      <div class="col-3">    
-                          <label class="switch">
-                          <input type="checkbox" checked>
-                          <span class="slider round"></span>
-                          </label>
-                      </div>
-                  </div> 
-                  <div class="row Gp0m0  rounded blkd75 mt-1 p-2">
-                      <div class="col-9"><h5 class="subtitlefnt">Flight Notifications</h5></div>
-                      <div class="col-3">    
-                          <label class="switch">
-                          <input type="checkbox" checked>
-                          <span class="slider round"></span>
-                          </label>
-                      </div>
-                  </div> 
-              </div>
-              </div>
-
-    </div>        
-
+      <div class="card-body tmibg">
+        <div class="row Gp0m0 rounded blkd75 mt-1 p-2">
+          <div class="col-9">
+            <h5 class="subtitlefnt">Mafias Notification</h5>
+          </div>
+          <div class="col-3">
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row Gp0m0 rounded blkd75 mt-1 p-2">
+          <div class="col-9">
+            <h5 class="subtitlefnt">Social Notification</h5>
+          </div>
+          <div class="col-3">
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row Gp0m0 rounded blkd75 mt-1 p-2">
+          <div class="col-9">
+            <h5 class="subtitlefnt">Syndicate Notifications</h5>
+          </div>
+          <div class="col-3">
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row Gp0m0 rounded blkd75 mt-1 p-2">
+          <div class="col-9">
+            <h5 class="subtitlefnt">Flight Notifications</h5>
+          </div>
+          <div class="col-3">
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return{
-            fltrt:true
-        }
-    },
-    updated(){
-        console.log(this.fltrt);
-    }
-}
+  data() {
+    return {
+      fltrt: true,
+    };
+  },
+  updated() {
+    console.log(this.fltrt);
+  },
+};
 </script>
 <style scoped>
 .switch {
@@ -102,7 +113,7 @@ export default {
   height: 24px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -116,8 +127,8 @@ export default {
   right: 0;
   bottom: 0;
   background-color: rgb(141, 1, 1);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -128,8 +139,8 @@ export default {
   left: 1px;
   bottom: 1px;
   background-color: rgb(255, 255, 255);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {

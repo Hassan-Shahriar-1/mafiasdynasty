@@ -7,11 +7,9 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 Vue.use(BootstrapVue)
     // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
-
 import Popover from 'vue-js-popover'
 import carousel from 'vue-owl-carousel'
 Vue.use(carousel);
-
 import VModal from 'vue-js-modal'
 Vue.use(VModal, {
     dynamicDefaults: {
@@ -53,7 +51,6 @@ import store from './store/index'
 import VueAxios from 'vue-axios'
 import ProgressBar from 'vue-simple-progress';
 import vueCountdownTimer from 'vuejs-countdown-timer';
-// import Swiper JS
 /*  import Swiper from 'swiper'; */
 Vue.use(store)
 Vue.use(VueAxios, axios);
@@ -62,7 +59,7 @@ Vue.axios.defaults.headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
 };
-Vue.axios.defaults.baseURL = 'https://mafiasrival.com/';
+Vue.axios.defaults.baseURL = 'https://mafiasrival.com/api';
 Vue.axios.defaults.headers.Authorization = '';
 var VueTouch = require('vue-touch');
 VueTouch.registerCustomEvent('doubletap', { type: 'tap', taps: 2 });
