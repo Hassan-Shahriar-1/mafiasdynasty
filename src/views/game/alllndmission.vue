@@ -32,7 +32,7 @@ export default {
   },
   beforeCreate() {
     this.$mgo.gt("mission/allland", (res) => {
-      if (res.sts == "ok") {
+      if (res.status_code == 200) {
         res.data.forEach((val) => {
           this.lnd.push(val);
         });
@@ -40,13 +40,7 @@ export default {
       console.log(res);
     });
   },
-  /*       created() {
-    this.$mgo.gt("mission/allland/" + this.$route.params.name, (resp) => {
-      if (resp.status_code === 200) {
-        this.usrdata = resp.data;
-      }
-    });
-  }, */
+
   methods: {
     lndpth(landid) {
       this.$router.push("/game/missionintro/" + landid);
