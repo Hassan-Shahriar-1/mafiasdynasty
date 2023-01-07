@@ -31,7 +31,9 @@ Vue.use(InfiniteLoading);
 const moment = require("moment");
 Vue.use(require("vue-moment"), { moment });
 
-Vue.prototype.socket = io("http://192.168.1.104:3000", { autoConnect: false });
+Vue.prototype.socket = io.connect("http://mafiasrival.com:3000/GET", {
+  autoConnect: false,
+});
 Vue.prototype.sktd = {};
 //tell socket.io to never give up :)
 //Vue.config.productionTip = false
@@ -54,13 +56,14 @@ import vueCountdownTimer from "vuejs-countdown-timer";
 /*  import Swiper from 'swiper'; */
 Vue.use(store);
 Vue.use(VueAxios, axios);
+
 Vue.axios.defaults.headers = {
   "Access-Control-Allow-Origin": "*",
   Accept: "application/json",
   "Content-Type": "application/json",
 };
-Vue.axios.defaults.baseURL = "https://mafiasrival.com/api";
-Vue.axios.defaults.headers.Authorization = "";
+Vue.axios.defaults.baseURL = "http://mafiasrival.com/api";
+Vue.axios.defaults.headers.Authorization = "*";
 var VueTouch = require("vue-touch");
 VueTouch.registerCustomEvent("doubletap", { type: "tap", taps: 2 });
 Vue.use(VueTouch, { name: "v-touch" });
@@ -102,7 +105,6 @@ Vue.component("property2", property2);
 Vue.component("orgcomp", orgcomp);
 Vue.prototype.usrtkn = window.localStorage.getItem("Usrtkn");
 Vue.axios.defaults.headers.Authorization = "Bearer " + Vue.prototype.usrtkn;
-
 import jquery from "./assets/js/lib/jquery-min";
 /* import fittext from './assets/js/lib/jquery.fittext'
 Vue.prototype.fittext = fittext; */

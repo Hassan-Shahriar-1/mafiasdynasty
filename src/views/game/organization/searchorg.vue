@@ -43,7 +43,7 @@
                       <h4 class="text-center&quot;">{{ orgsrMsg }}</h4>
                     </li>
                   </ul>
-                  <ul class="list-group w-100" v-if="orgmbrlst">
+                  <ul class="list-group w-100" v-if="orgmbrlst != false">
                     <h4 class="text-center">Found</h4>
                     <li
                       class="list-group-item blk50 p-2"
@@ -121,23 +121,43 @@ export default {
       srshsts: false,
       gngnms: "",
       ganglst: [],
+
       orgsrMsg: "",
       ntfmsg: "",
+
       orgmbrlst: false,
     };
+  },
+  beforeCreate() {
+    this.axios.get("/gang/user/gang").then((response) => {
+      if (response.status_code == 400) {
+        this.$router.push("/game/searchorg");
+      } else if (response.status_code == 200) {
+        this.org = "yOrg";
+        this.axios.get("/gang/member/list").then((response) => {
+          if (response.status_code === 200) {
+            this.clnmm = response.gnnm;
+          } else {
+            this.err = response.msg;
+          }
+        });
+      }
+      console.log(response);
+    });
   },
   created() {
     this.$mgo.gt("/gang/suggestion", (response) => {
       this.ganglst = response.data;
+      console.log("gangdata", this.ganglst);
     });
   },
 
   methods: {
     reqjngng: function (id, rmid) {
-      console.log(rmid);
-      this.$mgo.gp("/gangmember/mbrrequest/" + id, {}, (rspp) => {
-        console.log(rspp);
-        if (rspp.sts == "orgreq") {
+      console.log("ids here", id, rmid);
+      this.$mgo.gp("/organization/mbrrequest/" + id, {}, (rspp) => {
+        console.log("orgrequestdone", rspp);
+        if (rspp.status_code == "orgmsg") {
           let data = {
             rm: rmid,
             msg: "request",
@@ -145,7 +165,7 @@ export default {
           };
           console.log(data);
           this.socket.emit("reqorg", data);
-        } else if (rspp.sts == "orgmsg") {
+        } else if (rspp.status_code == "orgreq") {
           let data = {
             rm: rmid,
             msg: "join",
@@ -153,20 +173,25 @@ export default {
           };
           this.socket.emit("reqorg", data);
         }
+
         console.log(rspp);
       });
+
       console.log(id);
+      this.$router.push("/game/organization/member");
     },
     srch() {
       this.srshsts = true;
       this.$mgo.gt("/gang/search/" + this.gngnms, (rsp) => {
-        switch (rsp.sts) {
+        switch (rsp.status_code) {
           case "msg":
             this.orgmbrlst = false;
             this.orgsrMsg = rsp.msg;
             break;
           case "found":
+            console.log("list found", rsp.data);
             this.orgmbrlst = rsp.data;
+
             break;
         }
         console.log(rsp);

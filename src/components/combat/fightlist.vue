@@ -62,25 +62,31 @@
 
             <div class="col-3 Gp0m0">
               <div class="mx-1 blkgry">
-                <h6 class="text-center">Level:53 <br />Clan:45</h6>
+                <h6 class="text-center">
+                  Level:{{ this.bh.mylvl }} <br />Clan:45
+                </h6>
               </div>
             </div>
             <div class="col-3 Gp0m0">
               <div class="mx-1 blkgry">
-                <h6 class="text-center">Skill Rank <br />1562</h6>
+                <h6 class="text-center">
+                  Skill Rank <br />{{ this.bh.mysklrnk }}
+                </h6>
               </div>
             </div>
             <div class="col-3 Gp0m0">
               <div class="mx-1 blkgry">
-                <h6 class="text-center">Level:53 <br />Clan:455</h6>
+                <h6 class="text-center">
+                  Level:{{ hpolvl }}<br />
+                  Clan:{{ clan }}
+                </h6>
               </div>
             </div>
             <div class="col-3 Gp0m0">
               <div class="mx-1 blkgry">
-                <h6 class="text-center">Skill Rank <br />155562</h6>
+                <h6 class="text-center">Skill Rank <br />{{ skillrank }}</h6>
               </div>
             </div>
-
             <div
               class="
                 card-img-overlay
@@ -153,8 +159,20 @@
             <!--  <div class="col-2 p-1"> <router-link :to="{path:'/game/attack/'+masrc.id}" @click="attack()"> <div class=" button4 nBtn mt-2 border py-2 rounded"><h6 class="text-center"><i class="fab fa-wolf-pack-battalion"></i></h6></div></router-link></div> -->
             <div class="col-2 p-1">
               <div
-                @click="attack(masrc.id, i, masrc.name, masrc.lvl, mid, key)"
+                @click="
+                  attack(
+                    masrc.id,
+                    i,
+                    masrc.name,
+                    masrc.lvl,
+                    masrc.crtp,
+                    masrc.skpnt,
+                    masrc.hlths,
+                    masrc.hlthe
+                  )
+                "
               >
+                <!-- masrc.lvl, mid, key  -->
                 <div class="button4 nBtn mt-2 border py-2 rounded">
                   <h6 class="text-center">
                     <i class="fab fa-wolf-pack-battalion"></i>
@@ -202,12 +220,17 @@ export default {
   data() {
     return {
       bh: {
-        hpW: 0,
-        hpst: 950,
-        hped: 1000,
-        hpoW: 0,
-        hpost: 900,
-        hpoed: 1000,
+        hpW: "",
+        hpst: "",
+        hped: "",
+        hpoW: "",
+        hpost: "",
+        hpoed: "",
+        hpolvl: "",
+        clan: "",
+        mylvl: "",
+        mysklrnk: "",
+        skillrank: "",
         whos: "",
         me: "",
       },
@@ -223,12 +246,12 @@ export default {
   },
 
   /* mounted(){this.atk}, */
-  props: ["who"],
+  props: ["whos,hpoW,hpost,hpoed,skillrank,hpolvl,clan"],
 
   beforeCreate() {
     this.$mgo.gt("/fight/list/1", (rs) => {
       console.log(rs);
-      if (rs.sts == "fghtlst") {
+      if (rs.status_code == "200") {
         this.grnd = rs.lv;
         this.mbrlst = rs.list;
         this.cnt = rs.cnt;
@@ -237,10 +260,19 @@ export default {
         this.msg = rs.msg;
       }
     });
+    this.$mgo.gt("/mp/hrtbt", (rs) => {
+      console.log("heartbeat", rs);
+      (this.bh.hpst = rs.data.hltst),
+        (this.bh.hped = rs.data.hlted),
+        (this.bh.mysklrnk = rs.data.skpnt),
+        (this.bh.mylvl = rs.data.lvl);
+    });
   },
   updated() {
     this.TptrgrBr();
     this.whos;
+    this.bh.hpst, this.bh.hped, this.bh.hpW, this.hpoW, this.hpost, this.hpoed;
+    this.skillrank, this.hpolvl, this.clan;
     /* 
               this.bh.hpost
               this.bh.hpoed
@@ -250,22 +282,28 @@ export default {
   mounted: function () {
     this.TptrgrBr();
     this.whos;
-    this.attack();
+    this.bh.hpst, this.bh.hped, this.bh.hpW, this.hpoW, this.hpost, this.hpoed;
+    this.skillrank, this.hpolvl, this.clan;
+    /* this.attack(); */
   },
 
   methods: {
-    attack(mid, key, name) {
+    attack(mid, key, name, lvl, clan, skpnt, hltst, hlted) {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // for chorme
       this.arkey = key;
       console.log(mid);
       this.$mgo.gt("/fight/attack/" + mid + "/" + key + "/Fight", (res) => {
         this.atk = false;
-        if (res.sts == "found") {
+        if (res.status_code == "found") {
           (this.atk = true),
             (this.whos = name),
-            (this.me = res.mme),
-            (this.dfnd = mid);
+            (this.hpost = hltst),
+            (this.hpoed = hlted),
+            (this.hpolvl = lvl),
+            (this.clan = clan);
+          this.skillrank = skpnt;
+          (this.me = res.mme), (this.dfnd = mid);
           this.reset_atas();
           console.log(this.whos);
         } else {
@@ -275,12 +313,9 @@ export default {
     },
 
     reset_atas() {
-      this.bh.hpW = 0;
-      this.bh.hpst = 950;
-      this.bh.hped = 1000;
-      this.bh.hpoW = 0;
-      this.bh.hpost = 900;
-      this.bh.hpoed = 1000;
+      this.bh.hpoW = this.hpoW;
+      this.bh.hpost = this.hpost;
+      this.bh.hpoed = this.hpoed;
     },
     TptrgrBr() {
       this.bh.hpW = (100 / this.bh.hped) * this.bh.hpst;
@@ -290,11 +325,7 @@ export default {
       this.$mgo.gt("/fight/attack/" + mid + "/" + key + "/arena", (res) => {
         console.log(res);
       });
-      if (
-        (this.bh.hpst != this.bh.hped) &
-        (this.bh.hpst > 0) &
-        (this.bh.hpost > 0)
-      ) {
+      if ((this.bh.hpst > 0) & (this.bh.hpst > 0) & (this.bh.hpost > 0)) {
         this.bh.hpst = this.bh.hpst - 20;
 
         if (this.bh.hpst <= 0) {

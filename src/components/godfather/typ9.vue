@@ -1,6 +1,4 @@
 /* This page will provide game portals as gloria in vampire Dynasty game */
-
-
 <template>
   <div class="Gp0m0">
     <div class="row text-center Gp0m0">

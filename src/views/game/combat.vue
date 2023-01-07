@@ -273,7 +273,8 @@ export default {
   beforeCreate() {
     this.$mgo.gt("fight/alllist", (rs) => {
       console.log(rs);
-      if (rs.sts == "ldr") {
+      if (rs.status_code == "ldr") {
+        /* "ldr" */
         (this.arncnt = rs.arenacnt),
           (this.fghtcnt = rs.fghtcnt),
           (this.arlvl = rs.arnlvl),
@@ -284,7 +285,7 @@ export default {
           (this.tmend = rs.etm),
           console.log(this.tmstrt, "here is start timer");
         console.log(this.tmend, "here is End timer");
-        console.log(new Date()).getFullYear();
+        console.log(new Date().getFullYear());
         this.htlst = rs.hitlist;
       }
     });

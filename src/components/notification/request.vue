@@ -28,11 +28,11 @@
           </h6>
         </div>
       </div>
-      <div class="col-4 Gp0m0">
+      <!-- <div class="col-4 Gp0m0">
         <div class="mlr1 Gp1m1">
           <div class="btn nBtn btn-block blkblu">Request</div>
         </div>
-      </div>
+      </div> -->
 
       <div class="col-6 Gp0m0 p-2">
         <h6 class="mt-2 dtlsfnt">
@@ -73,7 +73,7 @@ export default {
     };
   },
   beforeCreate() {
-    this.axios.get("/mp/rqlist").then((response) => {
+    this.axios.get("/mp/request/list").then((response) => {
       if (response.status_code == 200) {
         this.relst = response.data;
       } else {
@@ -84,7 +84,7 @@ export default {
   },
   methods: {
     acpt: function (aid) {
-      this.axios.post("/mp/acpt/" + aid).then((response) => {
+      this.axios.post("/mp/accept/request/" + aid).then((response) => {
         console.log(response);
         if (response.status_code == 200) {
           this.smsg = response.msg;
@@ -94,7 +94,7 @@ export default {
       });
     },
     decln: function (did) {
-      this.axios.post("/mp/dlt/" + did).then((response) => {
+      this.axios.post("/mp/delete/request/" + did).then((response) => {
         console.log(response);
         if (response.status_code == 200) {
           this.smsg = response.msg;

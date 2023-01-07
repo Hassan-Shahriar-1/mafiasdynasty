@@ -538,9 +538,10 @@ export default {
     };
   },
   created() {
-    this.$mgo.gt("mp/mafiaprf/" + this.$route.params.uid, (resp) => {
+    this.$mgo.gt("mp/mafiaprofile/" + this.$route.params.uid, (resp) => {
       if (resp.status_code === 200) {
         this.usrdata = resp.data;
+        console.log("this is from others profile", resp.data);
       }
     });
   },

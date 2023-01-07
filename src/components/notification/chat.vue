@@ -6,6 +6,7 @@
           <i class="fas fa-arrow-left"></i>Back
         </button></router-link
       >
+
       <h3 class="ml-2 text-white text-center titlefnt">{{ usrnm }}</h3>
     </div>
 
@@ -150,11 +151,14 @@ export default {
         oid: this.oid,
         msg: this.Wmessage,
       };
-      this.MsgsLts.unshift({
+
+      let rmps = {
         pstn: "r",
         msg: this.Wmessage,
         tm: this.moment().format(),
-      });
+      };
+      this.MsgsLts.unshift(rmps);
+      console.log("msg inserted");
       this.socket.emit("usr1v1", this.data);
       this.Wmessage = "";
       if (this.Wmessage == null) {

@@ -103,7 +103,7 @@ export default {
     };
   },
   beforeCreate() {
-    this.$mgo.gt("itminvtry/vhcl", (rs) => {
+    this.$mgo.gt("inventory/game/vehicale", (rs) => {
       if (rs.status_code === 200) {
         this.tl = rs.tl;
         rs.data.forEach((dt) => {

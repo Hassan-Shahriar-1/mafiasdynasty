@@ -105,6 +105,12 @@ export default {
       this.MsgsLts.unshift(msg);
     });
   },
+  mounted() {
+    this.socket.on("gblrcv", (sckt) => {
+      console.log(sckt);
+      this.MsgsLts = sckt;
+    });
+  },
 
   methods: {
     insrtMsg: function () {

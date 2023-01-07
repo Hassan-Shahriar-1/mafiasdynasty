@@ -228,13 +228,13 @@ export default {
             password: this.pass1,
           },
           (response) => {
-            console.log(response);
-            switch (response.sts) {
-              case "ok":
+            console.log("this is from response", response.msg);
+            switch (response.status_code) {
+              case 200:
                 this.errorsts = true;
                 this.errormsg = response.msg;
                 break;
-              case "errormsg":
+              case 400:
                 this.errorsts = true;
                 this.errormsg = response.msg;
             }

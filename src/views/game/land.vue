@@ -11,6 +11,7 @@
         <div class="card-img-overlay">
           <h4 class="card-text titlefnt text-center">
             {{ lndinf.name }}
+            <!-- lndinf.name -->
           </h4>
           <!-- <h6 class="card-text subtitlefnt text-center">{{subtl}}</h6> -->
         </div>
@@ -105,10 +106,11 @@ export default {
     };
   },
   created() {
-    this.$mgo.gt("mission/lndinf/" + this.$route.params.lndid, (res) => {
+    this.$mgo.gt("mission/land/mission/" + this.$route.params.lndid, (res) => {
       if (res.status_code === 200) {
         this.lndinf = res.data;
         this.imgnm = "https://mafiasrival.com/land/" + res.data.img;
+        console.log("baqi data ase na keno", res.data);
         console.log(this.imgnm);
       }
     });

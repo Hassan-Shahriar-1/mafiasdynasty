@@ -20,7 +20,7 @@
               <h6 class="Gp0m0 dtlsfnt">defense:{{ userdtls.def }}</h6>
               <h6 class="Gp0m0 dtlsfnt">Age:{{ userdtls.age }}</h6>
               <h6 class="Gp0m0 dtlsfnt">Org:{{ userdtls.org }}</h6>
-              <h6 class="Gp0m0 dtlsfnt">Skill:{{ userdtls.skl }}</h6>
+              <h6 class="Gp0m0 dtlsfnt">Skill Rank:{{ userdtls.sklpnt }}</h6>
               <button
                 class="btn nBtn w-50 py-2 blkgry float-left mt-2 sizv30"
                 style="border-radius: 1rem 0% 1rem 0%"
@@ -374,7 +374,7 @@ export default {
       /* total skilll point left */
 
       /* tlskl:Number, */
-      tlskl: 20,
+      tlskl: "",
 
       MmnDtlst: {
         mname: "HRhabib",
@@ -466,6 +466,7 @@ export default {
     this.$mgo.gt("mp/profile", (res) => {
       this.userdtls = res.data;
       console.log(res);
+      this.tlskl = res.data.skl;
     });
     console.log(this.axios.defaults.headers.Authorization);
   },

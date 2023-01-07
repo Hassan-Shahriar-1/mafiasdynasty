@@ -145,7 +145,14 @@
     <modal name="donemsn" :width="350" :height="300" class="blksdo mblr">
       <div
         class="border-0 tmibg"
-        style="height: 300px; width: 340px; overflow-y: scroll"
+        style="
+          height: 300px;
+          width: 350px;
+          overflow-y: scroll;
+          ::-webkit-scrollbar {
+            display: none;
+          }
+        "
       >
         <div class="blkgry p-1">
           <h4 class="rounded-0 text-center py-1 w-100" style="position: sticky">
@@ -159,11 +166,11 @@
         <div class="p-1">
           <div class="row Gp0m0 tmibg dtlsfnt" v-if="rq_data != ''">
             <div class="col-4 p-0 card" v-for="(data, i) in rq_data" :key="i">
-              <div class="card-footer blkgry">{{ data }}</div>
+              <div class="card-header px-1 blkgry">{{ data }}</div>
               <div class="card-body">
                 <img class="card-img" :src="itm_src + (i + '.png')" />
               </div>
-              <div class="card-footer blkgry">{{ data }}</div>
+              <div class="card-footer px-1 blkgry">{{ data }}</div>
             </div>
           </div>
         </div>

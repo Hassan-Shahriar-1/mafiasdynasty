@@ -83,12 +83,12 @@ export default {
     };
   },
   created() {},
-  beforeCreate() {},
-  mounted() {
-    this.socket.on("gblrcv", (sckt) => {
-      console.log(sckt);
-      this.MsgsLts = sckt;
+  beforeCreate() {
+    this.$mgo.gt("mp/profile", (res) => {
+      this.MsgsLts.nm = res.data.name;
+      console.log(res);
     });
+    console.log(this.axios.defaults.headers.Authorization);
   },
   methods: {
     insrtMsg: function () {
@@ -100,7 +100,7 @@ export default {
         this.MsgsLts.push({
           msg: this.Gmessage,
           Tm: Date.now(),
-          nm: "Hasan Shahriar",
+          nm: this.MsgsLts.nm,
         });
         /* console.log(this.MsgsLts); */
         this.MsgsLts = this.MsgsLts.reverse();

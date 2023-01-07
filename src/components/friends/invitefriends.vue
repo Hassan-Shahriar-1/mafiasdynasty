@@ -10,24 +10,36 @@
         <br />
       </div>
       <div class="col-3">
-        <div class="btn nBtn btn-block btn-lg button3 mlr2">
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=https://play.google.com/store/apps/details?id=com.vampire.dynasty&hl=en&gl=US"
+          class="btn nBtn btn-block btn-lg button3 mlr2"
+        >
           <i class="fab fa-facebook"></i>
-        </div>
+        </a>
       </div>
       <div class="col-3">
-        <div class="btn nBtn btn-block btn-lg button5 mlr2">
-          <i class="fab fa-whatsapp"></i>
-        </div>
+        <a
+          href="https://www.linkedin.com/shareArticle?mini=true&url=https://play.google.com/store/apps/details?id=com.vampire.dynasty&hl=en&gl=US"
+          class="btn nBtn btn-block btn-lg button6 mlr2"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
       </div>
       <div class="col-3">
-        <div class="btn nBtn btn-block btn-lg button7 mlr2">
+        <a
+          href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://play.google.com/store/apps/details?id=com.vampire.dynasty&hl=en&gl=US%0A"
+          class="btn nBtn btn-block btn-lg button7 mlr2"
+        >
           <i class="fas fa-envelope"></i>
-        </div>
+        </a>
       </div>
       <div class="col-3">
-        <div class="btn nBtn btn-block btn-lg button6 mlr2">
+        <a
+          href="https://twitter.com/intent/tweet?url=https://play.google.com/store/apps/details?id=com.vampire.dynasty&hl=en&gl=US&text="
+          class="btn nBtn btn-block btn-lg button6 mlr2"
+        >
           <i class="fas fa-external-link-square-alt"></i>
-        </div>
+        </a>
       </div>
     </div>
     <div class="row no-gutters w-100">

@@ -17,7 +17,7 @@
                   justify-content-center
                 "
               >
-                <h4 class="subtitlefnt">Family Name: {{ clnmm }}</h4>
+                <h4 class="subtitlefnt">Org Name: {{ clnmm }}</h4>
               </div>
             </div>
             <div class="card-body p-1">
@@ -47,7 +47,7 @@
             </div>
           </div>
           <modal
-            v-if="org == true"
+            v-if="(org = 'yOrg')"
             name="leve"
             :width="350"
             :height="250"
@@ -89,7 +89,7 @@
 export default {
   data() {
     return {
-      org: false,
+      org: "",
       gngcrt: false,
       err: "",
       cln: "",
@@ -97,23 +97,26 @@ export default {
     };
   },
   created() {
-    /*  this.axios.get('/gang/gnglist').then(response=>{
-            console.log('gang list')
-            this.ganglst=response.data;
-          }) */
+    /*   this.axios.get("/gang/member/list").then((response) => {
+      this.ganglst = response.data;
+      console.log("gang list", this.ganglst);
+    }); */
   },
   beforeCreate() {
     this.axios.get("/gang/user/gang").then((response) => {
-      if (response.sts == "noOrg") {
+      if (response.status_code == 400) {
         this.$router.push("/game/searchorg");
-      } else if (response.sts == "yOrg") {
-        this.axios.get("/gang/mbrlist").then((response) => {
+      } else if (response.status_code == 200) {
+        this.clnmm = response.data.name;
+        this.org = "yOrg";
+        /*  this.axios.get("/gang/member/list").then((response) => {
           if (response.status_code === 200) {
-            this.clnmm = response.gnnm;
-          } else {
-            this.err = response.msg;
+            this.clnmm = response.data.name;
           }
-        });
+        }); */
+        /*    this.$router.push("/game/organization/member"); */
+      } else {
+        this.err = response.msg;
       }
       console.log(response);
     });
@@ -130,7 +133,7 @@ export default {
     leaveConfrm() {
       this.axios.post("/gang/leave").then((response) => {
         console.log(response);
-        if (response.sts == "orGlv") {
+        if (response.status_code == "orGlv") {
           this.ganglst = response.data;
           this.socket.emit("orgleave");
           this.$router.push("/game/searchorg");

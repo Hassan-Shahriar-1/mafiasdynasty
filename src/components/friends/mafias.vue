@@ -55,7 +55,7 @@
           v-for="(list, i) in frndlst"
           :key="i"
         >
-          <div class="bdrblk2 tmibg rounded blksdo" @click="show(list.uid)">
+          <div class="bdrblk2 tmibg rounded blksdo" @click="show(list.id)">
             <div class="row py-2 no-gutters bdr1">
               <div class="col-3">
                 <img src="../../assets/img/1.png" class="card-img p-1" alt="" />
@@ -92,7 +92,7 @@
             </div></router-link
           >
         </div>
-        <div class="col-12 Gp0m0">
+        <div class="col-12 Gp0m0" @click="unfriend()">
           <div class="btn nBtn btn-lg text-center btnbfnt btn-block sizv35">
             unfriend
           </div>
@@ -138,8 +138,23 @@ export default {
     };
   },
 
+  /*  created() {
+    this.unfriend();
+  }, */
+
+  ForcesUpdateComponent() {
+    this.errmsg;
+
+    // your code
+  },
+  //or in file components
+
+  /* mounted() {
+    this.unfriend();
+  }, */
+
   beforeCreate() {
-    this.axios.get("/mp/mlist").then((response) => {
+    this.axios.get("/mp/friend/list").then((response) => {
       if (response.status_code === 200) {
         this.frndlst = response.data;
       } else {
@@ -155,8 +170,16 @@ export default {
         window.jq(".v--modal").height(window.jq("#gtmhyHt").outerHeight());
       }, 10);
     },
+    unfriend() {
+      this.axios.post("/mp/delete/request/" + this.uid).then((respn) => {
+        console.log("userid is", this.uid, respn);
+
+        this.$modal.hide("mdlfndsts");
+      });
+    },
     show(id) {
       this.uid = id;
+      console.log("uid modal: " + this.uid);
       this.$modal.show("mdlfndsts", { height: "auto" });
     },
     hide() {

@@ -9,7 +9,7 @@
       <div class="col-3 Gp0m0"></div>
       <div class="col-6">
         <h4 class="rounded py-1 blk50 text-center subtitlefnt border">
-          Hihahsdyi:3
+          {{ this.cypr }}
         </h4>
       </div>
       <div class="col-3"></div>
@@ -154,7 +154,6 @@
       :width="300"
       :height="300"
       :isAutoHeight="true"
-      @before-open="beforeOspen"
       class="mblr bdr p-1 rounded-2"
     >
       <div class="card blkgry" style="width: 300px">
@@ -188,8 +187,11 @@
                   <h6 class="dtlsfnt">Level: {{ invt.lvl }}</h6>
                 </div>
                 <div class="col-4 Gp0m0">
-                  <div class="button4 nBtn mt-1 border btn-block py-2 rounded">
-                    <h6 class="text-center p-1" @click="reqsnd(invt.id)">
+                  <div
+                    class="nBtn button4 mt-1 border btn-block py-2 rounded"
+                    @click="reqsnd(invt.id)"
+                  >
+                    <h6 class="text-center p-1">
                       <i class="fas fa-plus-square"></i> &nbsp;Invite
                     </h6>
                   </div>
@@ -227,7 +229,7 @@
                     <input
                       type="text"
                       class="py-2 w-100 text-dark siz20"
-                      :value="copym"
+                      :value="this.cypr"
                       id="test"
                     />
                   </div>
@@ -262,14 +264,20 @@ export default {
       fndcyp: "",
       sucmsg: "",
       errmsg: "",
+      cypr: "",
 
       invite: [],
     };
   },
   beforeCreate() {
-    this.axios.get("mp/rndmmplist").then((resx) => {
+    this.axios.get("mp/random/mafia/list").then((resx) => {
       if (resx.status_code === 200) {
         this.invite = resx.data;
+      }
+    });
+    this.axios.get("mp/user/cypher").then((resx) => {
+      if (resx.status_code === 200) {
+        this.cypr = resx.data.cypr;
       }
     });
   },

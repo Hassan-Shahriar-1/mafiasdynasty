@@ -13,7 +13,7 @@
             src="../../assets/img/land/colombia.png"
           />
           <div class="card-img-overlay">
-            <h4 class="card-text titlefnt text-center">habib</h4>
+            <h4 class="card-text titlefnt text-center">{{ lnd[4].name }}</h4>
           </div>
         </div>
       </div>

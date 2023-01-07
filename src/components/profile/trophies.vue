@@ -130,8 +130,9 @@ export default {
     };
   },
   beforeCreate() {
-    this.$mgo.gt("itminvtry/trophielist", (rs) => {
-      if (rs.sts == "trpy") {
+    this.$mgo.gt("inventory/trophielist", (rs) => {
+      console.log("Trophy status", rs);
+      if (rs.status_code == "trpy") {
         rs.list.forEach((dt) => {
           this.trplst.push(dt);
         });

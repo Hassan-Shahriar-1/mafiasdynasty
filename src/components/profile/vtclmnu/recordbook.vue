@@ -66,7 +66,7 @@ export default {
 
   methods: {
     getdata() {
-      this.$mgo.gt("/mp/rcrdbook?page=" + this.page, (rs) => {
+      this.$mgo.gt("/mp/record/book?page=" + this.page, (rs) => {
         if (rs.data.last_page == this.page) {
           this.btn = "";
         } else {

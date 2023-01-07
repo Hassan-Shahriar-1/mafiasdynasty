@@ -85,7 +85,7 @@ export default {
     };
   },
   beforeCreate() {
-    this.$mgo.gt("itminvtry/itmlist", (rs) => {
+    this.$mgo.gt("inventory/game/item", (rs) => {
       if (rs.status_code === 200) {
         rs.data["wpn"].forEach((dt) => {
           this.spitm.push(dt);

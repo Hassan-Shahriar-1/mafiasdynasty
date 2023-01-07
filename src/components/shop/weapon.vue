@@ -101,12 +101,12 @@ export default {
 
       amnt: 1,
       isAutoHeight: "false",
-      imglk: "https://mafiasrival.com/item/",
+      imglk: "http://mafiasrival.com/item/",
     };
   },
 
   beforeCreate() {
-    this.$mgo.gt("itminvtry/wpn", (rs) => {
+    this.$mgo.gt("inventory/game/weapons", (rs) => {
       if (rs.status_code === 200) {
         this.tl = rs.tl;
         rs.data.forEach((dt) => {
@@ -134,7 +134,7 @@ export default {
       /* this.$mgo.gp('itminvtry/add/'+id+'/'+amnt,{},(rsp)=>{
                 console.log(rsp);
             }) */
-      this.$mgo.gp("/itminvtry/add/" + id + "/" + amnt, {}, (rspp) => {
+      this.$mgo.gt("/inventory/add/" + id + "/" + amnt, {}, (rspp) => {
         console.log(rspp);
       });
     },

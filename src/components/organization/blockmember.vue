@@ -83,14 +83,14 @@ export default {
     };
   },
   beforeCreate() {
-    this.$mgo.gt("gangmember/bnmbrlist", (resp) => {
+    this.$mgo.gt("organization/ban/members", (resp) => {
       if (resp.status_code == 200) {
         //response.data.mbr.forEach((val)=>{
         resp.data.forEach((dts) => {
           this.blklst.push(dts);
         });
         console.log(this.blklst);
-      } else if (resp.sts == "orgmsgerr") {
+      } else if (resp.status_code == "orgmsgerr") {
         this.msg = resp.msg;
       }
     });

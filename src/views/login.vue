@@ -134,7 +134,7 @@ export default {
         { email: this.email, password: this.password },
         (response) => {
           switch (response.status_code) {
-            case "errormsg":
+            case 400:
               this.errormsgsts = true;
               this.errormsg = response.msg;
               break;

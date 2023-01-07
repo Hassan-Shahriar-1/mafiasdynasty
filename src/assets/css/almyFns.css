@@ -77,8 +77,8 @@
 
  @font-face {
     font-family: title;
-    src: url("../fonts/Pieces\ of\ Eight.jpg");
-    /* src: url('../fonts/pieces_of_eight/PiecesofEight.ttf'); */
+   /*  src: url("../fonts/Pieces\ of\ Eight.jpg"); */
+     src: url('../fonts/pieces_of_eight/PiecesofEight.ttf');
 }
 
 

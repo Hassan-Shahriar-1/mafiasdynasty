@@ -385,8 +385,8 @@ export default {
     getAllmembrs() {
       this.member = [];
       this.admnn = [];
-      this.$mgo.gt("/gang/mbrlist", (response) => {
-        console.log(response);
+      this.$mgo.gt("/gang/member/list", (response) => {
+        console.log("list data from members", response);
         if (response.status_code == 200) {
           if (response.data.btn == "blklst") {
             this.blcklst = "Block List";
@@ -412,17 +412,20 @@ export default {
       console.log(dt.act);
       switch (dt.act) {
         case "kick":
-          this.axios.post("gangmember/remove/" + dt.mid).then((respn) => {
+          this.axios.post("organization/remove/" + dt.mid).then((respn) => {
             console.log(respn);
             this.socket.emit("ntfymsg", respn.msg);
             this.getAllmembrs();
           });
           break;
         case "vwprfl":
-          this.$router.push("/game/otrprofile/about" + dt.mid);
+          this.$router.push("/game/otrprofile/" + dt.mid).then((respn) => {
+            console.log("viewprofile rsponse", respn);
+          });
+
           break;
         case "pmtldr":
-          this.axios.post("gangmember/prmtldr/" + dt.mid).then((respn) => {
+          this.axios.post("organization/prmtldr/" + dt.mid).then((respn) => {
             console.log(respn);
             this.getAllmembrs();
           });
@@ -430,7 +433,7 @@ export default {
           break;
 
         case "pmtcoldr":
-          this.axios.post("gangmember/prmtcoldr/" + dt.mid).then((respn) => {
+          this.axios.post("organization/prmtcoldr/" + dt.mid).then((respn) => {
             console.log(respn);
             this.socket.emit("ntfymsg", respn.msg);
             this.getAllmembrs();
@@ -439,15 +442,14 @@ export default {
           break;
 
         case "ban":
-          this.axios.post("gangmember/banmbr/" + dt.mid).then((rsdata) => {
+          this.axios.post("organization/banmbr/" + dt.mid).then((rsdata) => {
             console.log(rsdata);
             this.socket.emit("ntfymsg", rsdata.msg);
             this.getAllmembrs();
           });
-
           break;
         case "dmtco":
-          this.axios.post("gangmember/demote/" + dt.mid).then((respn) => {
+          this.axios.post("organization/demote/" + dt.mid).then((respn) => {
             console.log(respn);
             this.socket.emit("ntfymsg", respn.msg);
             this.getAllmembrs();

@@ -377,7 +377,6 @@
         :width="330"
         :height="300"
         class="bdr4 blksdo rounded mblr"
-        style="height: 300px"
       >
         <div class="card" style="height: 300px">
           <div class="card-header blkgry">
@@ -399,11 +398,8 @@
                   No
                 </div>
               </div>
-              <div class="col-6 p-1">
-                <div
-                  class="btn nBtn btn-block btn-lg btnbfnt blkredbtn"
-                  @click="logout()"
-                >
+              <div class="col-6 p-1" @click="logout()">
+                <div class="btn nBtn btn-block btn-lg btnbfnt blkredbtn">
                   Yes
                 </div>
               </div>
@@ -801,6 +797,7 @@ export default {
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
     this.hdrdbltp();
+
     /* this.socket.on('popupntf',(data)=>{
         console.log(data);
         })    */

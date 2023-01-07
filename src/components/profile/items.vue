@@ -76,7 +76,7 @@ export default {
   },
 
   beforeCreate() {
-    this.$mgo.gt("itminvtry/Usritmlist", (rs) => {
+    this.$mgo.gt("inventory/item/list", (rs) => {
       console.log(rs);
       if (rs.status_code === 200) {
         rs.data.forEach((dt) => {
